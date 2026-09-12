@@ -1,0 +1,150 @@
+{
+  "head": {
+    "timestamp": 0.7,
+    "physics_step": 168,
+    "frame_counter": 1,
+    "position_world": [
+      0.3527628183364868,
+      -1.936903715133667,
+      1.3818995952606201
+    ],
+    "orientation_opengl_xyzw": [
+      0.2699117362499237,
+      -0.2700808048248291,
+      -0.6533611416816711,
+      0.6536996364593506
+    ],
+    "orientation_ros_xyzw": [
+      -0.6536996364593506,
+      0.6533610820770264,
+      -0.2700808048248291,
+      0.2699117362499237
+    ],
+    "optics": {
+      "parent_link": "camera_head_front_color_optical_frame",
+      "convention": "ros",
+      "resolution": [
+        1280,
+        720
+      ],
+      "model": "pinhole",
+      "fx": 1099.5,
+      "fy": 1099.5,
+      "cx": 640.0,
+      "cy": 360.0,
+      "near": 0.015,
+      "far": 15.0,
+      "local_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "left_wrist": {
+    "timestamp": 0.7,
+    "physics_step": 168,
+    "frame_counter": 1,
+    "position_world": [
+      0.7019727826118469,
+      -1.7820954322814941,
+      0.797709584236145
+    ],
+    "orientation_opengl_xyzw": [
+      0.4091605842113495,
+      -0.4091605842113495,
+      -0.5767040252685547,
+      0.5767040252685547
+    ],
+    "orientation_ros_xyzw": [
+      -0.5767040252685547,
+      0.5767040252685547,
+      -0.4091605842113495,
+      0.4091605842113495
+    ],
+    "optics": {
+      "parent_link": "left_in_hand_camera_link",
+      "convention": "opengl",
+      "resolution": [
+        1280,
+        720
+      ],
+      "model": "fisheye_equidistant",
+      "fx": 550.0,
+      "fy": 550.0,
+      "cx": 640.0,
+      "cy": 360.0,
+      "max_fov_deg": 180.0,
+      "near": 0.01,
+      "far": 8.0,
+      "local_position": [
+        0.02,
+        -0.01,
+        0.025
+      ],
+      "local_rotation_xyzw": [
+        -0.11882970770545538,
+        -0.6968866624763109,
+        -0.11810716239176804,
+        0.6973372056767293
+      ],
+      "mount_estimate": "Initial optical-center and roll estimate from the supplied mounting photographs; replace with hand-eye calibration."
+    }
+  },
+  "right_wrist": {
+    "timestamp": 0.7,
+    "physics_step": 168,
+    "frame_counter": 1,
+    "position_world": [
+      0.7019755840301514,
+      -2.091909885406494,
+      0.7977139949798584
+    ],
+    "orientation_opengl_xyzw": [
+      0.4091605842113495,
+      -0.4091605842113495,
+      -0.5767040252685547,
+      0.5767040252685547
+    ],
+    "orientation_ros_xyzw": [
+      -0.5767040252685547,
+      0.5767040252685547,
+      -0.4091605842113495,
+      0.4091605842113495
+    ],
+    "optics": {
+      "parent_link": "right_in_hand_camera_link",
+      "convention": "opengl",
+      "resolution": [
+        1280,
+        720
+      ],
+      "model": "fisheye_equidistant",
+      "fx": 550.0,
+      "fy": 550.0,
+      "cx": 640.0,
+      "cy": 360.0,
+      "max_fov_deg": 180.0,
+      "near": 0.01,
+      "far": 8.0,
+      "local_position": [
+        0.02,
+        0.01,
+        0.025
+      ],
+      "local_rotation_xyzw": [
+        0.6968879180579219,
+        0.11882670904860582,
+        -0.6973350873760649,
+        0.1181152775714852
+      ],
+      "mount_estimate": "Initial optical-center and roll estimate from the supplied mounting photographs; replace with hand-eye calibration."
+    }
+  }
+}

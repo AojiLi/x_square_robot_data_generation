@@ -1,0 +1,619 @@
+{
+  "urdf": "/home/aoji/x_square_robot_data_generation/assets/robots/quanta_x2/quanta_x2_dual_revo2_bridge.urdf",
+  "joint_link_references_valid": true,
+  "mesh_references_checked": 122,
+  "unreadable_or_pointer_meshes": [],
+  "ready": true,
+  "mesh_results": [
+    {
+      "file": "flange_adapter/x2_revo2_flange.stl",
+      "bytes": 2445284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/Base_L.STL",
+      "bytes": 204584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link1_L.STL",
+      "bytes": 563584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link2_L.STL",
+      "bytes": 1278784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link3_L.STL",
+      "bytes": 635484,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link4_L.STL",
+      "bytes": 621584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link5_L.STL",
+      "bytes": 498884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link6_L.STL",
+      "bytes": 559084,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link7_L.STL",
+      "bytes": 3316284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Base_L.STL",
+      "bytes": 12684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link1_L.STL",
+      "bytes": 25284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link2_L.STL",
+      "bytes": 37884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link3_L.STL",
+      "bytes": 25184,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link4_L.STL",
+      "bytes": 37584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link5_L.STL",
+      "bytes": 37684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link6_L.STL",
+      "bytes": 37584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link7_L.STL",
+      "bytes": 62784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/Base_R.STL",
+      "bytes": 204584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link1_R.STL",
+      "bytes": 563584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link2_R.STL",
+      "bytes": 1278784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link3_R.STL",
+      "bytes": 635484,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link4_R.STL",
+      "bytes": 621584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link5_R.STL",
+      "bytes": 498884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link6_R.STL",
+      "bytes": 559084,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link7_R.STL",
+      "bytes": 3313784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Base_R.STL",
+      "bytes": 12684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link1_R.STL",
+      "bytes": 25284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link2_R.STL",
+      "bytes": 37884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link3_R.STL",
+      "bytes": 25184,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link4_R.STL",
+      "bytes": 37584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link5_R.STL",
+      "bytes": 37684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link6_R.STL",
+      "bytes": 37384,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link7_R.STL",
+      "bytes": 50484,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/base_link.STL",
+      "bytes": 14131484,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/bow_pitch_link_01.STL",
+      "bytes": 1357084,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/bow_pitch_link_02.STL",
+      "bytes": 1197934,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/bow_pitch_link_03.STL",
+      "bytes": 572084,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/bow_yaw_link.STL",
+      "bytes": 5629434,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/collision/base_link.STL",
+      "bytes": 297384,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/collision/bow_pitch_link_01.STL",
+      "bytes": 149484,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/collision/bow_pitch_link_02.STL",
+      "bytes": 35684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/collision/bow_pitch_link_03.STL",
+      "bytes": 160484,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/collision/bow_yaw_link.STL",
+      "bytes": 188684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/collision/head_pitch_link.STL",
+      "bytes": 289084,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/collision/head_yaw_link.STL",
+      "bytes": 171884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/collision/left_wheel_link.STL",
+      "bytes": 229384,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/collision/right_wheel_link.STL",
+      "bytes": 295784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/head_pitch_link.STL",
+      "bytes": 1140934,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/head_yaw_link.STL",
+      "bytes": 896334,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/left_wheel_link.STL",
+      "bytes": 8344684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "mesh/rb001_base_dvt4/right_wheel_link.STL",
+      "bytes": 8344684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_base_link.STL",
+      "bytes": 2368784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_index_distal_link.STL",
+      "bytes": 408284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_index_proximal_link.STL",
+      "bytes": 339884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_index_touch_link.STL",
+      "bytes": 99984,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_middle_distal_link.STL",
+      "bytes": 406584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_middle_proximal_link.STL",
+      "bytes": 334284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_middle_touch_link.STL",
+      "bytes": 69884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_pinky_distal_link.STL",
+      "bytes": 554484,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_pinky_proximal_link.STL",
+      "bytes": 346784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_pinky_touch_link.STL",
+      "bytes": 68584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_ring_distal_link.STL",
+      "bytes": 529784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_ring_proximal_link.STL",
+      "bytes": 281184,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_ring_touch_link.STL",
+      "bytes": 71584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_distal_link.STL",
+      "bytes": 96284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_metacarpal_link.STL",
+      "bytes": 290384,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_proximal_link.STL",
+      "bytes": 620384,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_touch_link.STL",
+      "bytes": 125084,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_base_link.STL",
+      "bytes": 2364184,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_index_distal_link.STL",
+      "bytes": 411284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_index_proximal_link.STL",
+      "bytes": 339884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_index_touch_link.STL",
+      "bytes": 99984,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_middle_distal_link.STL",
+      "bytes": 408584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_middle_proximal_link.STL",
+      "bytes": 333384,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_middle_touch_link.STL",
+      "bytes": 69884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_pinky_distal_link.STL",
+      "bytes": 554084,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_pinky_proximal_link.STL",
+      "bytes": 343284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_pinky_touch_link.STL",
+      "bytes": 68584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_ring_distal_link.STL",
+      "bytes": 529684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_ring_proximal_link.STL",
+      "bytes": 281484,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_ring_touch_link.STL",
+      "bytes": 71584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_distal_link.STL",
+      "bytes": 95834,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_metacarpal_link.STL",
+      "bytes": 289584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_proximal_link.STL",
+      "bytes": 620984,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_touch_link.STL",
+      "bytes": 123084,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_base_link.STL",
+      "bytes": 2368784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_base_visual_link.STL",
+      "bytes": 252684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_index_distal_link.STL",
+      "bytes": 408284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_index_proximal_link.STL",
+      "bytes": 339884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_index_touch_link.STL",
+      "bytes": 99984,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_middle_distal_link.STL",
+      "bytes": 406584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_middle_proximal_link.STL",
+      "bytes": 334284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_middle_touch_link.STL",
+      "bytes": 69884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_pinky_distal_link.STL",
+      "bytes": 554484,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_pinky_proximal_link.STL",
+      "bytes": 346784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_pinky_touch_link.STL",
+      "bytes": 68584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_ring_distal_link.STL",
+      "bytes": 529784,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_ring_proximal_link.STL",
+      "bytes": 281184,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_ring_touch_link.STL",
+      "bytes": 71584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_distal_link.STL",
+      "bytes": 96284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_metacarpal_link.STL",
+      "bytes": 290384,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_proximal_link.STL",
+      "bytes": 620384,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_proximal_visual_link.STL",
+      "bytes": 771684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_touch_link.STL",
+      "bytes": 125084,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_base_link.STL",
+      "bytes": 2364184,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_base_visual_link.STL",
+      "bytes": 130584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_index_distal_link.STL",
+      "bytes": 411284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_index_proximal_link.STL",
+      "bytes": 339884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_index_touch_link.STL",
+      "bytes": 99984,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_middle_distal_link.STL",
+      "bytes": 408584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_middle_proximal_link.STL",
+      "bytes": 333384,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_middle_touch_link.STL",
+      "bytes": 69884,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_pinky_distal_link.STL",
+      "bytes": 554084,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_pinky_proximal_link.STL",
+      "bytes": 343284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_pinky_touch_link.STL",
+      "bytes": 68584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_ring_distal_link.STL",
+      "bytes": 529684,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_ring_proximal_link.STL",
+      "bytes": 281484,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_ring_touch_link.STL",
+      "bytes": 71584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_distal_link.STL",
+      "bytes": 95834,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_metacarpal_link.STL",
+      "bytes": 289584,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_proximal_visual_link.STL",
+      "bytes": 735284,
+      "format": "binary_stl"
+    },
+    {
+      "file": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_touch_link.STL",
+      "bytes": 123084,
+      "format": "binary_stl"
+    }
+  ]
+}

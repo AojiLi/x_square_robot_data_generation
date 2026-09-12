@@ -1,0 +1,47 @@
+{
+  "mode": "default",
+  "factor": 2,
+  "settings": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 3,
+    "/rtx/post/dlss/execMode": 0,
+    "/rtx/post/dlss/enableFrameGeneration": null,
+    "/rtx/post/dlss/fg/enabled": null,
+    "/rtx/post/motionblur/enabled": false,
+    "/rtx/post/dof/enabled": false,
+    "/rtx/rtpt/gaussian/skipTonemapping/enabled": true,
+    "/rtx/rtpt/gaussian/maxGaussiansToAccumulate": null,
+    "/rtx/rtpt/gaussian/accumulatedDepth/enabled": true,
+    "/rtx/rtpt/gaussian/accumulatedAlbedo/enabled": false,
+    "/rtx/post/tonemap/op": 6,
+    "/rtx/pathtracing/optixDenoiser/enabled": true
+  },
+  "frames": [
+    {
+      "frame_index": 4,
+      "frame_id": "357755788663",
+      "shape": [
+        368,
+        496,
+        3
+      ],
+      "mean": 143.2677634846891,
+      "std": 68.28150798438901,
+      "render_seconds": 1.9981129230000079
+    },
+    {
+      "frame_index": 124,
+      "frame_id": "357971838221",
+      "shape": [
+        368,
+        496,
+        3
+      ],
+      "mean": 157.43013491993923,
+      "std": 57.40318118647151,
+      "render_seconds": 1.2020475149911363
+    }
+  ],
+  "stage": "/home/aoji/x_square_robot_data_generation/assets/room01/room01_scene.usda",
+  "scene_mutations_saved": false
+}

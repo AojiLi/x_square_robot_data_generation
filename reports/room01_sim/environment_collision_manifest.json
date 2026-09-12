@@ -1,0 +1,1917 @@
+[
+  {
+    "prim": "/Room/Collisions/Floor_0",
+    "source": "Floor",
+    "approximation": "box"
+  },
+  {
+    "prim": "/Room/Collisions/Ceiling_0",
+    "source": "Ceiling",
+    "approximation": "box"
+  },
+  {
+    "prim": "/Room/Collisions/Floor_1",
+    "source": "Floor",
+    "approximation": "box"
+  },
+  {
+    "prim": "/Room/Collisions/Ceiling_1",
+    "source": "Ceiling",
+    "approximation": "box"
+  },
+  {
+    "prim": "/Room/Collisions/Black_package_base/Box",
+    "source": "Black_package_base",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Black_package_flap_x/Box",
+    "source": "Black_package_flap_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Black_package_flap_x_001/Box",
+    "source": "Black_package_flap_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Black_package_flap_y/Box",
+    "source": "Black_package_flap_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Black_package_flap_y_001/Box",
+    "source": "Black_package_flap_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Black_package_wall_x/Box",
+    "source": "Black_package_wall_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Black_package_wall_x_001/Box",
+    "source": "Black_package_wall_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Black_package_wall_y/Box",
+    "source": "Black_package_wall_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Black_package_wall_y_001/Box",
+    "source": "Black_package_wall_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Blue_floor_mailer",
+    "source": "Blue_floor_mailer",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Bottle_body",
+    "source": "Bottle_body",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Bottle_neck",
+    "source": "Bottle_neck",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Bottom_cardboard_box_base/Box",
+    "source": "Bottom_cardboard_box_base",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Bottom_cardboard_box_lid/Box",
+    "source": "Bottom_cardboard_box_lid",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Bottom_cardboard_box_wall_x/Box",
+    "source": "Bottom_cardboard_box_wall_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Bottom_cardboard_box_wall_x_001/Box",
+    "source": "Bottom_cardboard_box_wall_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Bottom_cardboard_box_wall_y/Box",
+    "source": "Bottom_cardboard_box_wall_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Bottom_cardboard_box_wall_y_001/Box",
+    "source": "Bottom_cardboard_box_wall_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Bubble_wrap_under_bench",
+    "source": "Bubble_wrap_under_bench",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Carton_loose_wire",
+    "source": "Carton_loose_wire",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Carton_loose_wire_001",
+    "source": "Carton_loose_wire.001",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Carton_loose_wire_002",
+    "source": "Carton_loose_wire.002",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Carton_loose_wire_003",
+    "source": "Carton_loose_wire.003",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Carton_loose_wire_004",
+    "source": "Carton_loose_wire.004",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Carton_loose_wire_005",
+    "source": "Carton_loose_wire.005",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Carton_loose_wire_006",
+    "source": "Carton_loose_wire.006",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_castor_wheel",
+    "source": "Case_castor_wheel",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_castor_wheel_001",
+    "source": "Case_castor_wheel.001",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_castor_wheel_002",
+    "source": "Case_castor_wheel.002",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_castor_wheel_003",
+    "source": "Case_castor_wheel.003",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_corner_guard",
+    "source": "Case_corner_guard",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_corner_guard_001",
+    "source": "Case_corner_guard.001",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_corner_guard_002",
+    "source": "Case_corner_guard.002",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_corner_guard_003",
+    "source": "Case_corner_guard.003",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_corner_guard_004",
+    "source": "Case_corner_guard.004",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_corner_guard_005",
+    "source": "Case_corner_guard.005",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_corner_guard_006",
+    "source": "Case_corner_guard.006",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_corner_guard_007",
+    "source": "Case_corner_guard.007",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_front_handle",
+    "source": "Case_front_handle",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_front_handle_plate",
+    "source": "Case_front_handle_plate",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_front_handle_well/Box",
+    "source": "Case_front_handle_well",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_horizontal_rail_x/Box",
+    "source": "Case_horizontal_rail_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_horizontal_rail_x_001/Box",
+    "source": "Case_horizontal_rail_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_horizontal_rail_x_002/Box",
+    "source": "Case_horizontal_rail_x.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_horizontal_rail_x_003/Box",
+    "source": "Case_horizontal_rail_x.003",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_horizontal_rail_y/Box",
+    "source": "Case_horizontal_rail_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_horizontal_rail_y_001/Box",
+    "source": "Case_horizontal_rail_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_horizontal_rail_y_002/Box",
+    "source": "Case_horizontal_rail_y.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_horizontal_rail_y_003/Box",
+    "source": "Case_horizontal_rail_y.003",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_side_XR/Box",
+    "source": "Case_side_XR",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_side_brand/Box",
+    "source": "Case_side_brand",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_side_handle",
+    "source": "Case_side_handle",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_side_handle_plate",
+    "source": "Case_side_handle_plate",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_side_handle_well/Box",
+    "source": "Case_side_handle_well",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_top_yellow_cube",
+    "source": "Case_top_yellow_cube",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Case_vertical_extrusion/Box",
+    "source": "Case_vertical_extrusion",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_vertical_extrusion_001/Box",
+    "source": "Case_vertical_extrusion.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_vertical_extrusion_002/Box",
+    "source": "Case_vertical_extrusion.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Case_vertical_extrusion_003/Box",
+    "source": "Case_vertical_extrusion.003",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_adjust_lever",
+    "source": "Chair_middle_adjust_lever",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_arm_brace__1",
+    "source": "Chair_middle_arm_brace_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_arm_brace_1",
+    "source": "Chair_middle_arm_brace_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_arm_pad__1",
+    "source": "Chair_middle_arm_pad_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_arm_pad_1",
+    "source": "Chair_middle_arm_pad_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_arm_post__1",
+    "source": "Chair_middle_arm_post_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_arm_post_1",
+    "source": "Chair_middle_arm_post_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_back_support",
+    "source": "Chair_middle_back_support",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_caster_pin_0",
+    "source": "Chair_middle_caster_pin_0",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_caster_pin_1",
+    "source": "Chair_middle_caster_pin_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_caster_pin_2",
+    "source": "Chair_middle_caster_pin_2",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_caster_pin_3",
+    "source": "Chair_middle_caster_pin_3",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_caster_pin_4",
+    "source": "Chair_middle_caster_pin_4",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_gas_lift",
+    "source": "Chair_middle_gas_lift",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_head_bracket",
+    "source": "Chair_middle_head_bracket",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_headrest",
+    "source": "Chair_middle_headrest",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_lever_grip",
+    "source": "Chair_middle_lever_grip",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_lift_sleeve",
+    "source": "Chair_middle_lift_sleeve",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_molded_back_frame",
+    "source": "Chair_middle_molded_back_frame",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_seat",
+    "source": "Chair_middle_seat",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_spoke_0",
+    "source": "Chair_middle_spoke_0",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_spoke_1",
+    "source": "Chair_middle_spoke_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_spoke_2",
+    "source": "Chair_middle_spoke_2",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_spoke_3",
+    "source": "Chair_middle_spoke_3",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_spoke_4",
+    "source": "Chair_middle_spoke_4",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_tilt_mechanism",
+    "source": "Chair_middle_tilt_mechanism",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_wheel_0__1",
+    "source": "Chair_middle_wheel_0_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_wheel_0_1",
+    "source": "Chair_middle_wheel_0_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_wheel_1__1",
+    "source": "Chair_middle_wheel_1_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_wheel_1_1",
+    "source": "Chair_middle_wheel_1_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_wheel_2__1",
+    "source": "Chair_middle_wheel_2_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_wheel_2_1",
+    "source": "Chair_middle_wheel_2_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_wheel_3__1",
+    "source": "Chair_middle_wheel_3_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_wheel_3_1",
+    "source": "Chair_middle_wheel_3_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_wheel_4__1",
+    "source": "Chair_middle_wheel_4_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_wheel_4_1",
+    "source": "Chair_middle_wheel_4_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_middle_woven_back",
+    "source": "Chair_middle_woven_back",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_adjust_lever",
+    "source": "Chair_west_adjust_lever",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_arm_brace__1",
+    "source": "Chair_west_arm_brace_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_arm_brace_1",
+    "source": "Chair_west_arm_brace_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_arm_pad__1",
+    "source": "Chair_west_arm_pad_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_arm_pad_1",
+    "source": "Chair_west_arm_pad_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_arm_post__1",
+    "source": "Chair_west_arm_post_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_arm_post_1",
+    "source": "Chair_west_arm_post_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_back_support",
+    "source": "Chair_west_back_support",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_caster_pin_0",
+    "source": "Chair_west_caster_pin_0",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_caster_pin_1",
+    "source": "Chair_west_caster_pin_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_caster_pin_2",
+    "source": "Chair_west_caster_pin_2",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_caster_pin_3",
+    "source": "Chair_west_caster_pin_3",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_caster_pin_4",
+    "source": "Chair_west_caster_pin_4",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_gas_lift",
+    "source": "Chair_west_gas_lift",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_head_bracket",
+    "source": "Chair_west_head_bracket",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_headrest",
+    "source": "Chair_west_headrest",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_lever_grip",
+    "source": "Chair_west_lever_grip",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_lift_sleeve",
+    "source": "Chair_west_lift_sleeve",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_lumbar",
+    "source": "Chair_west_lumbar",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_molded_back_frame",
+    "source": "Chair_west_molded_back_frame",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_seat",
+    "source": "Chair_west_seat",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_spoke_0",
+    "source": "Chair_west_spoke_0",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_spoke_1",
+    "source": "Chair_west_spoke_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_spoke_2",
+    "source": "Chair_west_spoke_2",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_spoke_3",
+    "source": "Chair_west_spoke_3",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_spoke_4",
+    "source": "Chair_west_spoke_4",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_tilt_mechanism",
+    "source": "Chair_west_tilt_mechanism",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_wheel_0__1",
+    "source": "Chair_west_wheel_0_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_wheel_0_1",
+    "source": "Chair_west_wheel_0_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_wheel_1__1",
+    "source": "Chair_west_wheel_1_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_wheel_1_1",
+    "source": "Chair_west_wheel_1_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_wheel_2__1",
+    "source": "Chair_west_wheel_2_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_wheel_2_1",
+    "source": "Chair_west_wheel_2_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_wheel_3__1",
+    "source": "Chair_west_wheel_3_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_wheel_3_1",
+    "source": "Chair_west_wheel_3_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_wheel_4__1",
+    "source": "Chair_west_wheel_4_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_wheel_4_1",
+    "source": "Chair_west_wheel_4_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_west_woven_back",
+    "source": "Chair_west_woven_back",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_adjust_lever",
+    "source": "Chair_workbench_adjust_lever",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_arm_brace__1",
+    "source": "Chair_workbench_arm_brace_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_arm_brace_1",
+    "source": "Chair_workbench_arm_brace_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_arm_pad__1",
+    "source": "Chair_workbench_arm_pad_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_arm_pad_1",
+    "source": "Chair_workbench_arm_pad_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_arm_post__1",
+    "source": "Chair_workbench_arm_post_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_arm_post_1",
+    "source": "Chair_workbench_arm_post_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_back_support",
+    "source": "Chair_workbench_back_support",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_caster_pin_0",
+    "source": "Chair_workbench_caster_pin_0",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_caster_pin_1",
+    "source": "Chair_workbench_caster_pin_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_caster_pin_2",
+    "source": "Chair_workbench_caster_pin_2",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_caster_pin_3",
+    "source": "Chair_workbench_caster_pin_3",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_caster_pin_4",
+    "source": "Chair_workbench_caster_pin_4",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_gas_lift",
+    "source": "Chair_workbench_gas_lift",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_head_bracket",
+    "source": "Chair_workbench_head_bracket",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_headrest",
+    "source": "Chair_workbench_headrest",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_lever_grip",
+    "source": "Chair_workbench_lever_grip",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_lift_sleeve",
+    "source": "Chair_workbench_lift_sleeve",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_lumbar",
+    "source": "Chair_workbench_lumbar",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_molded_back_frame",
+    "source": "Chair_workbench_molded_back_frame",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_seat",
+    "source": "Chair_workbench_seat",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_spoke_0",
+    "source": "Chair_workbench_spoke_0",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_spoke_1",
+    "source": "Chair_workbench_spoke_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_spoke_2",
+    "source": "Chair_workbench_spoke_2",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_spoke_3",
+    "source": "Chair_workbench_spoke_3",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_spoke_4",
+    "source": "Chair_workbench_spoke_4",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_tilt_mechanism",
+    "source": "Chair_workbench_tilt_mechanism",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_wheel_0__1",
+    "source": "Chair_workbench_wheel_0_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_wheel_0_1",
+    "source": "Chair_workbench_wheel_0_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_wheel_1__1",
+    "source": "Chair_workbench_wheel_1_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_wheel_1_1",
+    "source": "Chair_workbench_wheel_1_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_wheel_2__1",
+    "source": "Chair_workbench_wheel_2_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_wheel_2_1",
+    "source": "Chair_workbench_wheel_2_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_wheel_3__1",
+    "source": "Chair_workbench_wheel_3_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_wheel_3_1",
+    "source": "Chair_workbench_wheel_3_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_wheel_4__1",
+    "source": "Chair_workbench_wheel_4_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_wheel_4_1",
+    "source": "Chair_workbench_wheel_4_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Chair_workbench_woven_back",
+    "source": "Chair_workbench_woven_back",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Computer_tower/Box",
+    "source": "Computer_tower",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Controller_body",
+    "source": "Controller_body",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Controller_grip",
+    "source": "Controller_grip",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Controller_grip_001",
+    "source": "Controller_grip.001",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Documents_on_tray/Box",
+    "source": "Documents_on_tray",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Documents_on_tray_001/Box",
+    "source": "Documents_on_tray.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Documents_on_tray_002/Box",
+    "source": "Documents_on_tray.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Door_edge_filler/Box",
+    "source": "Door_edge_filler",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Door_leaf/Box",
+    "source": "Door_leaf",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/East_wall/Box",
+    "source": "East_wall",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Equipment_booklet",
+    "source": "Equipment_booklet",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Finned_power_supply",
+    "source": "Finned_power_supply",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Flightcase_shell",
+    "source": "Flightcase_shell",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Folded_tripod_leg/Box",
+    "source": "Folded_tripod_leg",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Folded_tripod_leg_001/Box",
+    "source": "Folded_tripod_leg.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Folded_tripod_leg_002/Box",
+    "source": "Folded_tripod_leg.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Gray_postal_bag",
+    "source": "Gray_postal_bag",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Headset_earcup",
+    "source": "Headset_earcup",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Headset_earcup_001",
+    "source": "Headset_earcup.001",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Headset_headband",
+    "source": "Headset_headband",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Inset_return/Box",
+    "source": "Inset_return",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Inset_wall/Box",
+    "source": "Inset_wall",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Interface_box/Box",
+    "source": "Interface_box",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Keyboard_shell",
+    "source": "Keyboard_shell",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Keyboard_space",
+    "source": "Keyboard_space",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Keyhole_rose/Box",
+    "source": "Keyhole_rose",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Loose_manual/Box",
+    "source": "Loose_manual",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Loose_manual_001/Box",
+    "source": "Loose_manual.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Loose_manual_002/Box",
+    "source": "Loose_manual.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Monitor_base/Box",
+    "source": "Monitor_base",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Monitor_bezel/Box",
+    "source": "Monitor_bezel",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Monitor_screen/Box",
+    "source": "Monitor_screen",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Monitor_stalk/Box",
+    "source": "Monitor_stalk",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Mouse",
+    "source": "Mouse",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Mouse_split/Box",
+    "source": "Mouse_split",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Open_electronics_carton_base/Box",
+    "source": "Open_electronics_carton_base",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Open_electronics_carton_flap_x/Box",
+    "source": "Open_electronics_carton_flap_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Open_electronics_carton_flap_x_001/Box",
+    "source": "Open_electronics_carton_flap_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Open_electronics_carton_flap_y/Box",
+    "source": "Open_electronics_carton_flap_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Open_electronics_carton_flap_y_001/Box",
+    "source": "Open_electronics_carton_flap_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Open_electronics_carton_wall_x/Box",
+    "source": "Open_electronics_carton_wall_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Open_electronics_carton_wall_x_001/Box",
+    "source": "Open_electronics_carton_wall_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Open_electronics_carton_wall_y/Box",
+    "source": "Open_electronics_carton_wall_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Open_electronics_carton_wall_y_001/Box",
+    "source": "Open_electronics_carton_wall_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Optical_table_body/Box",
+    "source": "Optical_table_body",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Optical_table_leg/Box",
+    "source": "Optical_table_leg",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Optical_table_leg_001/Box",
+    "source": "Optical_table_leg.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Optical_table_leg_002/Box",
+    "source": "Optical_table_leg.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Optical_table_leg_003/Box",
+    "source": "Optical_table_leg.003",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Optical_table_level_foot",
+    "source": "Optical_table_level_foot",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Optical_table_level_foot_001",
+    "source": "Optical_table_level_foot.001",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Optical_table_level_foot_002",
+    "source": "Optical_table_level_foot.002",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Optical_table_level_foot_003",
+    "source": "Optical_table_level_foot.003",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Optical_table_top",
+    "source": "Optical_table_top",
+    "approximation": "static triangle mesh"
+  },
+  {
+    "prim": "/Room/Collisions/Orange_cup",
+    "source": "Orange_cup",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent/Box",
+    "source": "PC_front_vent",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_001/Box",
+    "source": "PC_front_vent.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_002/Box",
+    "source": "PC_front_vent.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_003/Box",
+    "source": "PC_front_vent.003",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_004/Box",
+    "source": "PC_front_vent.004",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_005/Box",
+    "source": "PC_front_vent.005",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_006/Box",
+    "source": "PC_front_vent.006",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_007/Box",
+    "source": "PC_front_vent.007",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_008/Box",
+    "source": "PC_front_vent.008",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_009/Box",
+    "source": "PC_front_vent.009",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_010/Box",
+    "source": "PC_front_vent.010",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_front_vent_011/Box",
+    "source": "PC_front_vent.011",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/PC_port_panel/Box",
+    "source": "PC_port_panel",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Partition_crossbar/Box",
+    "source": "Partition_crossbar",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Partition_crossbar_001/Box",
+    "source": "Partition_crossbar.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Partition_glass/Box",
+    "source": "Partition_glass",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Partition_glass_001/Box",
+    "source": "Partition_glass.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Partition_upright/Box",
+    "source": "Partition_upright",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Partition_upright_001/Box",
+    "source": "Partition_upright.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Partition_upright_002/Box",
+    "source": "Partition_upright.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Partition_upright_003/Box",
+    "source": "Partition_upright.003",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Partition_upright_004/Box",
+    "source": "Partition_upright.004",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Pin_holder/Box",
+    "source": "Pin_holder",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Pink_packing_bag",
+    "source": "Pink_packing_bag",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Power_adapter_in_carton",
+    "source": "Power_adapter_in_carton",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Power_supply_fin/Box",
+    "source": "Power_supply_fin",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Power_supply_fin_001/Box",
+    "source": "Power_supply_fin.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Power_supply_fin_002/Box",
+    "source": "Power_supply_fin.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Power_supply_fin_003/Box",
+    "source": "Power_supply_fin.003",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Power_supply_fin_004/Box",
+    "source": "Power_supply_fin.004",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Power_supply_fin_005/Box",
+    "source": "Power_supply_fin.005",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Power_supply_fin_006/Box",
+    "source": "Power_supply_fin.006",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Power_supply_fin_007/Box",
+    "source": "Power_supply_fin.007",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Power_supply_fin_008/Box",
+    "source": "Power_supply_fin.008",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Power_supply_fin_009/Box",
+    "source": "Power_supply_fin.009",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Powerstrip_body",
+    "source": "Powerstrip_body",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Purple_cup",
+    "source": "Purple_cup",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Raised_tissue",
+    "source": "Raised_tissue",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_lift",
+    "source": "Rolling_stool_lift",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_seat",
+    "source": "Rolling_stool_seat",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_seat_piping/Box",
+    "source": "Rolling_stool_seat_piping",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_sleeve",
+    "source": "Rolling_stool_sleeve",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_spoke_0",
+    "source": "Rolling_stool_spoke_0",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_spoke_1",
+    "source": "Rolling_stool_spoke_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_spoke_2",
+    "source": "Rolling_stool_spoke_2",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_spoke_3",
+    "source": "Rolling_stool_spoke_3",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_spoke_4",
+    "source": "Rolling_stool_spoke_4",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_wheel_0__1",
+    "source": "Rolling_stool_wheel_0_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_wheel_0_1",
+    "source": "Rolling_stool_wheel_0_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_wheel_1__1",
+    "source": "Rolling_stool_wheel_1_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_wheel_1_1",
+    "source": "Rolling_stool_wheel_1_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_wheel_2__1",
+    "source": "Rolling_stool_wheel_2_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_wheel_2_1",
+    "source": "Rolling_stool_wheel_2_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_wheel_3__1",
+    "source": "Rolling_stool_wheel_3_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_wheel_3_1",
+    "source": "Rolling_stool_wheel_3_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_wheel_4__1",
+    "source": "Rolling_stool_wheel_4_-1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Rolling_stool_wheel_4_1",
+    "source": "Rolling_stool_wheel_4_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Slotted_rail",
+    "source": "Slotted_rail",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Small_top_carton_base/Box",
+    "source": "Small_top_carton_base",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Small_top_carton_flap_x/Box",
+    "source": "Small_top_carton_flap_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Small_top_carton_flap_x_001/Box",
+    "source": "Small_top_carton_flap_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Small_top_carton_flap_y/Box",
+    "source": "Small_top_carton_flap_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Small_top_carton_flap_y_001/Box",
+    "source": "Small_top_carton_flap_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Small_top_carton_wall_x/Box",
+    "source": "Small_top_carton_wall_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Small_top_carton_wall_x_001/Box",
+    "source": "Small_top_carton_wall_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Small_top_carton_wall_y/Box",
+    "source": "Small_top_carton_wall_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Small_top_carton_wall_y_001/Box",
+    "source": "Small_top_carton_wall_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Sorting_tray_base/Box",
+    "source": "Sorting_tray_base",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Sorting_tray_wall_x/Box",
+    "source": "Sorting_tray_wall_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Sorting_tray_wall_x_001/Box",
+    "source": "Sorting_tray_wall_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Sorting_tray_wall_y/Box",
+    "source": "Sorting_tray_wall_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Sorting_tray_wall_y_001/Box",
+    "source": "Sorting_tray_wall_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Stacked_cardboard_box_base/Box",
+    "source": "Stacked_cardboard_box_base",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Stacked_cardboard_box_lid/Box",
+    "source": "Stacked_cardboard_box_lid",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Stacked_cardboard_box_wall_x/Box",
+    "source": "Stacked_cardboard_box_wall_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Stacked_cardboard_box_wall_x_001/Box",
+    "source": "Stacked_cardboard_box_wall_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Stacked_cardboard_box_wall_y/Box",
+    "source": "Stacked_cardboard_box_wall_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Stacked_cardboard_box_wall_y_001/Box",
+    "source": "Stacked_cardboard_box_wall_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/TUBE_mark/Box",
+    "source": "TUBE_mark",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tall_shipping_carton_base/Box",
+    "source": "Tall_shipping_carton_base",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tall_shipping_carton_lid/Box",
+    "source": "Tall_shipping_carton_lid",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tall_shipping_carton_wall_x/Box",
+    "source": "Tall_shipping_carton_wall_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tall_shipping_carton_wall_x_001/Box",
+    "source": "Tall_shipping_carton_wall_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tall_shipping_carton_wall_y/Box",
+    "source": "Tall_shipping_carton_wall_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tall_shipping_carton_wall_y_001/Box",
+    "source": "Tall_shipping_carton_wall_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Task_cube_0",
+    "source": "Task_cube_0",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Task_cube_1",
+    "source": "Task_cube_1",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Task_cube_2",
+    "source": "Task_cube_2",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Task_cube_3",
+    "source": "Task_cube_3",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Task_pin",
+    "source": "Task_pin",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Task_pin_001",
+    "source": "Task_pin.001",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Task_pin_002",
+    "source": "Task_pin.002",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Tilted_open_carton_base/Box",
+    "source": "Tilted_open_carton_base",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tilted_open_carton_flap_x/Box",
+    "source": "Tilted_open_carton_flap_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tilted_open_carton_flap_x_001/Box",
+    "source": "Tilted_open_carton_flap_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tilted_open_carton_flap_y/Box",
+    "source": "Tilted_open_carton_flap_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tilted_open_carton_flap_y_001/Box",
+    "source": "Tilted_open_carton_flap_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tilted_open_carton_wall_x/Box",
+    "source": "Tilted_open_carton_wall_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tilted_open_carton_wall_x_001/Box",
+    "source": "Tilted_open_carton_wall_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tilted_open_carton_wall_y/Box",
+    "source": "Tilted_open_carton_wall_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tilted_open_carton_wall_y_001/Box",
+    "source": "Tilted_open_carton_wall_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tissue_box",
+    "source": "Tissue_box",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Tissue_box_band/Box",
+    "source": "Tissue_box_band",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_front_rib",
+    "source": "Toolcase_front_rib",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_front_rib_001",
+    "source": "Toolcase_front_rib.001",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_front_rib_002",
+    "source": "Toolcase_front_rib.002",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_front_rib_003",
+    "source": "Toolcase_front_rib.003",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_handle",
+    "source": "Toolcase_handle",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_handle_plate",
+    "source": "Toolcase_handle_plate",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_latch_back",
+    "source": "Toolcase_latch_back",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_latch_back_001",
+    "source": "Toolcase_latch_back.001",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_lid",
+    "source": "Toolcase_lid",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_lower",
+    "source": "Toolcase_lower",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_silver_latch/Box",
+    "source": "Toolcase_silver_latch",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Toolcase_silver_latch_001/Box",
+    "source": "Toolcase_silver_latch.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tripod_hinge",
+    "source": "Tripod_hinge",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Tripod_lock",
+    "source": "Tripod_lock",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Tripod_lock_001",
+    "source": "Tripod_lock.001",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Tripod_lock_002",
+    "source": "Tripod_lock.002",
+    "approximation": "convex hull per component"
+  },
+  {
+    "prim": "/Room/Collisions/Tube_cardboard_tray_base/Box",
+    "source": "Tube_cardboard_tray_base",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tube_cardboard_tray_flap_x/Box",
+    "source": "Tube_cardboard_tray_flap_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tube_cardboard_tray_flap_x_001/Box",
+    "source": "Tube_cardboard_tray_flap_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tube_cardboard_tray_flap_y/Box",
+    "source": "Tube_cardboard_tray_flap_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tube_cardboard_tray_flap_y_001/Box",
+    "source": "Tube_cardboard_tray_flap_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tube_cardboard_tray_wall_x/Box",
+    "source": "Tube_cardboard_tray_wall_x",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tube_cardboard_tray_wall_x_001/Box",
+    "source": "Tube_cardboard_tray_wall_x.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tube_cardboard_tray_wall_y/Box",
+    "source": "Tube_cardboard_tray_wall_y",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Tube_cardboard_tray_wall_y_001/Box",
+    "source": "Tube_cardboard_tray_wall_y.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/West_wall/Box",
+    "source": "West_wall",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/White_retail_box/Box",
+    "source": "White_retail_box",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Window_glass_0/Box",
+    "source": "Window_glass_0",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Window_glass_1/Box",
+    "source": "Window_glass_1",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Window_glass_2/Box",
+    "source": "Window_glass_2",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Window_glass_3/Box",
+    "source": "Window_glass_3",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Wood_sidelight/Box",
+    "source": "Wood_sidelight",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Workbench_crossbrace/Box",
+    "source": "Workbench_crossbrace",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Workbench_crossbrace_001/Box",
+    "source": "Workbench_crossbrace.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Workbench_depth_brace/Box",
+    "source": "Workbench_depth_brace",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Workbench_depth_brace_001/Box",
+    "source": "Workbench_depth_brace.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_apron/Box",
+    "source": "Writing_table_apron",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_apron_001/Box",
+    "source": "Writing_table_apron.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_edge",
+    "source": "Writing_table_edge",
+    "approximation": "static triangle mesh"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_foot/Box",
+    "source": "Writing_table_foot",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_foot_001/Box",
+    "source": "Writing_table_foot.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_foot_002/Box",
+    "source": "Writing_table_foot.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_foot_003/Box",
+    "source": "Writing_table_foot.003",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_grommet_rim",
+    "source": "Writing_table_grommet_rim",
+    "approximation": "static triangle mesh"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_leg/Box",
+    "source": "Writing_table_leg",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_leg_001/Box",
+    "source": "Writing_table_leg.001",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_leg_002/Box",
+    "source": "Writing_table_leg.002",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_leg_003/Box",
+    "source": "Writing_table_leg.003",
+    "approximation": "oriented box"
+  },
+  {
+    "prim": "/Room/Collisions/Writing_table_top",
+    "source": "Writing_table_top",
+    "approximation": "static triangle mesh"
+  }
+]

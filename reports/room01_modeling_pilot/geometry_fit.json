@@ -1,0 +1,22 @@
+{
+  "window_normal_xy": [
+    -0.28406551480293274,
+    0.9588048458099365
+  ],
+  "window_offset": 1.1829956769943237,
+  "window_fit_inliers": 1810,
+  "table_top_z": -0.7433727979660034,
+  "table_sample_extent": [
+    [
+      0.7349215745925903,
+      -2.5344907999038697,
+      -0.7593558609485627
+    ],
+    [
+      1.3481227159500122,
+      -1.4077606344223021,
+      -0.7287017297744751
+    ]
+  ],
+  "note": "Scan-derived approximate layout; bevel, thickness, pane divisions are modeling assumptions, not surveyed measurements."
+}

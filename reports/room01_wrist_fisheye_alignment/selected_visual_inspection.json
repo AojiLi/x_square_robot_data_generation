@@ -1,0 +1,134 @@
+[
+  {
+    "index": 0,
+    "reason": "original reference",
+    "session": "20260824T091633.664930Z-pid2632484-1c6fc5df",
+    "request": "request_000001",
+    "images": {
+      "cam_high": "20260824T091633.664930Z-pid2632484-1c6fc5df/requests/request_000001/cam_high.png",
+      "cam_left_wrist": "20260824T091633.664930Z-pid2632484-1c6fc5df/requests/request_000001/cam_left_wrist.png",
+      "cam_right_wrist": "20260824T091633.664930Z-pid2632484-1c6fc5df/requests/request_000001/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 4,
+    "reason": "rotation differs from first record",
+    "session": "20260827T034406.455573Z-pid3704-3140ecf3",
+    "request": "request_000001",
+    "images": {
+      "cam_high": "20260827T034406.455573Z-pid3704-3140ecf3/requests/request_000001/cam_high.png",
+      "cam_left_wrist": "20260827T034406.455573Z-pid3704-3140ecf3/requests/request_000001/cam_left_wrist.png",
+      "cam_right_wrist": "20260827T034406.455573Z-pid3704-3140ecf3/requests/request_000001/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 13,
+    "reason": "view naming/appearance swapped",
+    "session": "20260827T070644.644087Z-pid5474-48967a18",
+    "request": "request_000001",
+    "images": {
+      "cam_high": "20260827T070644.644087Z-pid5474-48967a18/requests/request_000001/cam_high.png",
+      "cam_left_wrist": "20260827T070644.644087Z-pid5474-48967a18/requests/request_000001/cam_left_wrist.png",
+      "cam_right_wrist": "20260827T070644.644087Z-pid5474-48967a18/requests/request_000001/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 21,
+    "reason": "current topic mapping begins",
+    "session": "20260827T100059.366121Z-pid1810455-7a9ecf75",
+    "request": "request_000001",
+    "images": {
+      "cam_high": "20260827T100059.366121Z-pid1810455-7a9ecf75/requests/request_000001/cam_high.png",
+      "cam_left_wrist": "20260827T100059.366121Z-pid1810455-7a9ecf75/requests/request_000001/cam_left_wrist.png",
+      "cam_right_wrist": "20260827T100059.366121Z-pid1810455-7a9ecf75/requests/request_000001/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 132,
+    "reason": "head camera aimed away from table",
+    "session": "20260828T084526.438056Z-pid2017242-6aa142a0",
+    "request": "request_000001",
+    "images": {
+      "cam_high": "20260828T084526.438056Z-pid2017242-6aa142a0/requests/request_000001/cam_high.png",
+      "cam_left_wrist": "20260828T084526.438056Z-pid2017242-6aa142a0/requests/request_000001/cam_left_wrist.png",
+      "cam_right_wrist": "20260828T084526.438056Z-pid2017242-6aa142a0/requests/request_000001/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 133,
+    "reason": "head camera aimed away from table",
+    "session": "20260828T090044.628712Z-pid2759289-d615d453",
+    "request": "request_000001",
+    "images": {
+      "cam_high": "20260828T090044.628712Z-pid2759289-d615d453/requests/request_000001/cam_high.png",
+      "cam_left_wrist": "20260828T090044.628712Z-pid2759289-d615d453/requests/request_000001/cam_left_wrist.png",
+      "cam_right_wrist": "20260828T090044.628712Z-pid2759289-d615d453/requests/request_000001/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 386,
+    "reason": "weak left boundary fit",
+    "session": "20260901T034523.717039Z-pid1241147-ce49d90a",
+    "request": "request_000026",
+    "images": {
+      "cam_high": "20260901T034523.717039Z-pid1241147-ce49d90a/requests/request_000026/cam_high.png",
+      "cam_left_wrist": "20260901T034523.717039Z-pid1241147-ce49d90a/requests/request_000026/cam_left_wrist.png",
+      "cam_right_wrist": "20260901T034523.717039Z-pid1241147-ce49d90a/requests/request_000026/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 444,
+    "reason": "dark right wrist",
+    "session": "20260901T050031.303627Z-pid1056943-aa0e5a4a",
+    "request": "request_000042",
+    "images": {
+      "cam_high": "20260901T050031.303627Z-pid1056943-aa0e5a4a/requests/request_000042/cam_high.png",
+      "cam_left_wrist": "20260901T050031.303627Z-pid1056943-aa0e5a4a/requests/request_000042/cam_left_wrist.png",
+      "cam_right_wrist": "20260901T050031.303627Z-pid1056943-aa0e5a4a/requests/request_000042/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 685,
+    "reason": "dark right wrist",
+    "session": "20260907T134146.171647Z-pid1006597-832fd4c4",
+    "request": "request_000007",
+    "images": {
+      "cam_high": "20260907T134146.171647Z-pid1006597-832fd4c4/requests/request_000007/cam_high.png",
+      "cam_left_wrist": "20260907T134146.171647Z-pid1006597-832fd4c4/requests/request_000007/cam_left_wrist.png",
+      "cam_right_wrist": "20260907T134146.171647Z-pid1006597-832fd4c4/requests/request_000007/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 729,
+    "reason": "darkest right wrist",
+    "session": "20260910T032247.521092Z-pid1690948-f1054f49",
+    "request": "request_000007",
+    "images": {
+      "cam_high": "20260910T032247.521092Z-pid1690948-f1054f49/requests/request_000007/cam_high.png",
+      "cam_left_wrist": "20260910T032247.521092Z-pid1690948-f1054f49/requests/request_000007/cam_left_wrist.png",
+      "cam_right_wrist": "20260910T032247.521092Z-pid1690948-f1054f49/requests/request_000007/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 739,
+    "reason": "weak right boundary fit",
+    "session": "20260910T062901.849993Z-pid2132702-c2a2ffc9",
+    "request": "request_000004",
+    "images": {
+      "cam_high": "20260910T062901.849993Z-pid2132702-c2a2ffc9/requests/request_000004/cam_high.png",
+      "cam_left_wrist": "20260910T062901.849993Z-pid2132702-c2a2ffc9/requests/request_000004/cam_left_wrist.png",
+      "cam_right_wrist": "20260910T062901.849993Z-pid2132702-c2a2ffc9/requests/request_000004/cam_right_wrist.png"
+    }
+  },
+  {
+    "index": 740,
+    "reason": "latest available request",
+    "session": "20260910T062901.849993Z-pid2132702-c2a2ffc9",
+    "request": "request_000005",
+    "images": {
+      "cam_high": "20260910T062901.849993Z-pid2132702-c2a2ffc9/requests/request_000005/cam_high.png",
+      "cam_left_wrist": "20260910T062901.849993Z-pid2132702-c2a2ffc9/requests/request_000005/cam_left_wrist.png",
+      "cam_right_wrist": "20260910T062901.849993Z-pid2132702-c2a2ffc9/requests/request_000005/cam_right_wrist.png"
+    }
+  }
+]

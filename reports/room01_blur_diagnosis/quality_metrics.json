@@ -1,0 +1,32 @@
+[
+  {
+    "frame_id": "357755788663",
+    "gsplat reference": {
+      "psnr_vs_gsplat": 120.0,
+      "ssim_vs_gsplat": 1.0
+    },
+    "Isaac default (DLSS)": {
+      "psnr_vs_gsplat": 22.727477490502746,
+      "ssim_vs_gsplat": 0.8197343349456787
+    },
+    "Isaac native (DLAA)": {
+      "psnr_vs_gsplat": 22.265084561989624,
+      "ssim_vs_gsplat": 0.817380428314209
+    }
+  },
+  {
+    "frame_id": "357971838221",
+    "gsplat reference": {
+      "psnr_vs_gsplat": 120.0,
+      "ssim_vs_gsplat": 1.0
+    },
+    "Isaac default (DLSS)": {
+      "psnr_vs_gsplat": 24.512906545615564,
+      "ssim_vs_gsplat": 0.7286500930786133
+    },
+    "Isaac native (DLAA)": {
+      "psnr_vs_gsplat": 24.853870071080447,
+      "ssim_vs_gsplat": 0.8587759137153625
+    }
+  }
+]

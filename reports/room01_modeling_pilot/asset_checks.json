@@ -1,0 +1,9 @@
+{
+  "result": "pass",
+  "modeled_meshes": 15,
+  "blender_to_usd_positions": "exact float32 match",
+  "unresolved_dependencies": [],
+  "source_gaussians_unchanged": true,
+  "original_gaussian_sha256": "13c06527554f97487a9fabc6126c1a55a03afba1c14f3f86f972ac8c4ae717bb",
+  "preview_scene_sha256": "064374af208ea09485cd20bf43fa87019c16893e76fc78f65c671a6593dce08c"
+}

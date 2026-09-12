@@ -1,0 +1,14 @@
+{
+  "urdf": "/home/aoji/x_square_robot_data_generation/assets/robots/quanta_x2/quanta_x2_dual_revo2_bridge.urdf",
+  "urdf_sha256": "9f57ade374229fc51f1dc84283679c36f2d45a7bdd88a590fa3d3c9e58548e94",
+  "robot_name": "quanta_x2_dual_revo2",
+  "links": 103,
+  "joints": 102,
+  "unique_mesh_references": 122,
+  "lfs_files_materialized": 124,
+  "lfs_files_pending": [],
+  "missing_meshes": [],
+  "mesh_pointers_remaining": [],
+  "ready_to_load_urdf": true,
+  "verification": "Every materialized resource matches the SHA-256 recorded in its source LFS pointer."
+}

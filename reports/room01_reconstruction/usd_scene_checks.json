@@ -1,0 +1,26 @@
+{
+  "openusd_version": [
+    0,
+    26,
+    8
+  ],
+  "typed_particle_field": true,
+  "gaussians": 3001853,
+  "stage_units_m": 1.0,
+  "stage_up_axis": "Z",
+  "camera_projection_max_error_pixels": 1.1198979450455226e-06,
+  "source_mesh": {
+    "vertices": 251470,
+    "triangles": 428941,
+    "materials": 3
+  },
+  "capture_views": 488,
+  "relative_duration_s": 512.294376,
+  "collision_apis_authored": false,
+  "isaac_sim_runtime_render_test": {
+    "status": "pass",
+    "runtime": "Isaac Sim 6.0.1",
+    "verification": "reports/room01_blur_diagnosis/fixed_scene_v3/verification.json",
+    "gaussian_asset_sha256": "13c06527554f97487a9fabc6126c1a55a03afba1c14f3f86f972ac8c4ae717bb"
+  }
+}

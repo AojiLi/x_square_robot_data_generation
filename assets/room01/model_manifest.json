@@ -1,0 +1,20 @@
+{
+  "selected_model": "gsplat_fullres_v3",
+  "gaussians": 3001853,
+  "source_ply": "outputs/room01/gsplat_fullres_v3/room01_gaussians.ply",
+  "source_checkpoint": "outputs/room01/gsplat_fullres_v3/checkpoint.pt",
+  "training_resolution": [
+    992,
+    736
+  ],
+  "evaluation_resolution": [
+    992,
+    736
+  ],
+  "evaluation_views": 49,
+  "psnr_db": 21.62765360851677,
+  "ssim": 0.752241028206689,
+  "usd": "assets/room01/gaussians.usdc",
+  "usd_sha256": "13c06527554f97487a9fabc6126c1a55a03afba1c14f3f86f972ac8c4ae717bb",
+  "previous_model_usd": "assets/room01/gaussians_v2.usdc"
+}

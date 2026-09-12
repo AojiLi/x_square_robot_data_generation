@@ -1,0 +1,241 @@
+{
+  "version": 2,
+  "platform": {
+    "architecture_profile": "umi_v2_a"
+  },
+  "session": {
+    "root": "/var/lib/rock5b-umi/sessions"
+  },
+  "logging": {
+    "events_log": "meta/events.log",
+    "health_summary": "meta/health_summary.json",
+    "console_echo": true
+  },
+  "runtime": {
+    "mode": "continuous",
+    "continuous": {
+      "create_session_on": "first_required_begin",
+      "allow_new_session_after_end": true,
+      "max_sessions": 0,
+      "idle_exit_timeout_ms": 0,
+      "end_drain_ms": 200,
+      "session_duration_limit_sec": 1800,
+      "treat_quest3_failure_as_fatal": true
+    }
+  },
+  "quest3": {
+    "enabled": false,
+    "receiver_path": "build/quest3pos_receiver/quest3pos_receiver",
+    "config_path": "configs/quest3pos_receiver.yaml",
+    "adb_reverse_script": "scripts/quest3_adb_reverse.sh",
+    "auto_launch_app": true,
+    "package_name": "com.DefaultCompany.Quest3Pos",
+    "activity_name": "com.unity3d.player.UnityPlayerActivity"
+  },
+  "e6": {
+    "enabled": false,
+    "adb_path": "adb",
+    "serial": "auto",
+    "package_name": "com.ssnwt.helloxr",
+    "activity_name": "com.ssnwt.helloxr/com.ssnwt.helloxr.VrNativeActivity",
+    "dataset_root": "/storage/emulated/0/Android/data/com.ssnwt.helloxr/files/dataset",
+    "time_sync_log": "/run/rock5b-umi/e6_time_sync_batches.jsonl",
+    "start_timeout_ms": 10000,
+    "stop_timeout_ms": 10000,
+    "finalize_wait_ms": 5000,
+    "pull_timeout_ms": 300000
+  },
+  "e6_stream": {
+    "enabled": true,
+    "adb_path": "adb",
+    "serial": "1150093702826082400078",
+    "package_name": "com.ssnwt.e6stream.debug",
+    "activity_name": "com.ssnwt.e6stream.debug/com.ssnwt.e6stream.VrNativeActivity",
+    "time_sync_log": "/run/rock5b-umi/e6_time_sync_batches.jsonl",
+    "time_sync_python": "python3",
+    "time_sync_script": "tools/session/align_e6_stream_clock.py",
+    "time_sync_timeout_ms": 30000,
+    "time_sync_max_uncertainty_ns": 1000000,
+    "receiver_path": "build/e6_stream_receiver/e6_stream_receiver",
+    "host": "127.0.0.1",
+    "port": 8554,
+    "ffmpeg_path": "/usr/bin/ffmpeg",
+    "connect_timeout_ms": 2000,
+    "ready_timeout_ms": 5000,
+    "first_rgb_warning_ms": 500,
+    "first_rgb_max_delay_ms": 1000,
+    "stop_response_timeout_ms": 5000,
+    "finalize_timeout_ms": 30000,
+    "kill_grace_ms": 2000
+  },
+  "session_export": {
+    "enabled": false,
+    "python": "python3",
+    "script": "tools/session/prepare_session_export.py",
+    "side": "auto",
+    "include_legacy": false,
+    "max_marker_age_ms": 1500,
+    "timeout_ms": 120000,
+    "fail_on_error": false
+  },
+  "final_button": {
+    "enabled": true,
+    "chip": "gpiochip3",
+    "line": 9,
+    "active_high": true,
+    "bias": "pull_down",
+    "debounce_ms": 50,
+    "hold_ms": 4000,
+    "policy": "abort_current_session_then_export"
+  },
+  "audio": {
+    "enabled": true,
+    "device": "plughw:rock5bi2s2max98,0",
+    "sd_gpiochip": "gpiochip3",
+    "sd_gpioline": 15,
+    "queue_capacity": 8
+  },
+  "batch_export": {
+    "enabled": false,
+    "existing_policy": "skip_ok",
+    "max_parallel": 1,
+    "fail_on_error": true
+  },
+  "recording": {
+    "container": "mkv",
+    "camera_backend": "internal_v4l2",
+    "video_codec_mode": "copy",
+    "h264_qp": 32,
+    "h264_gop": 30,
+    "single_camera_id": "",
+    "segment_seconds": 0,
+    "duration_limit_sec": 0,
+    "camera_warmup_ms": 0,
+    "late_frame_threshold_percent": 200,
+    "min_free_bytes": 10737418240,
+    "disk_check_interval_ms": 1000,
+    "stop_grace_ms": 10000,
+    "start_on_app_start": false,
+    "stop_on_stm32_end": true
+  },
+  "camera_trigger": {
+    "enabled": false,
+    "backend": "pwm_sysfs",
+    "pwm_node": "febf0020.pwm",
+    "channel": 0,
+    "frequency_hz": 60,
+    "duty_percent": 50,
+    "start_policy": "on_process_start",
+    "stop_policy": "on_process_exit",
+    "idle_behavior": "keep_running",
+    "prestream_ready_frames": 5,
+    "prestream_ready_timeout_ms": 15000,
+    "prestream_settle_ms": 0,
+    "record_trigger_index": false,
+    "fatal_on_error": true
+  },
+  "marker": {
+    "frequency_hz": 600,
+    "interval_ms": 1000,
+    "capture_tolerance_ms": 1,
+    "missing_threshold_ms": 3,
+    "early_threshold_ms": 1,
+    "signal": {
+      "backend": "pwm",
+      "chip": "gpiochip3",
+      "line": 7,
+      "pwmchip": "/sys/class/pwm/pwmchip1",
+      "channel": 0,
+      "pulse_width_us": 100000,
+      "duty_percent": 50,
+      "start_high_ms": 1000,
+      "active_start_low_ms": 500
+    },
+    "loopback_gpio": {
+      "chip": "gpiochip3",
+      "line": 4
+    }
+  },
+  "marker_test": {
+    "enabled": false,
+    "begin_delay_ms": 1000,
+    "active_duration_ms": 10000
+  },
+  "button_event_test": {
+    "enabled": false,
+    "left_begin_delay_ms": 1000,
+    "right_begin_delay_ms": 1200,
+    "active_duration_ms": 10000,
+    "send_end": true,
+    "end_delay_ms": 0,
+    "repeat_count": 1,
+    "marker_hardware_enabled": true,
+    "stop_after_begin_reason": "",
+    "stop_after_begin_delay_ms": 0
+  },
+  "serial": {
+    "hand_mode": "dual_hand",
+    "baud_rate": 921600,
+    "loopback_test_enabled": false,
+    "protocol_loopback_test_enabled": false,
+    "protocol_negative_test_case": "none",
+    "protocol_loopback_active_duration_ms": 3000,
+    "sensor_raw_recording_enabled": false,
+    "rx_raw_dump_enabled": true,
+    "sensor_frame_log_throttle_enabled": true,
+    "sensor_frame_log_first_n": 20,
+    "sensor_frame_log_every_n": 100,
+    "sensor_frame_log_summary_interval_ms": 1000,
+    "protocol_loopback_sensor_frame_count": 0,
+    "protocol_loopback_sensor_interval_ms": 10,
+    "health": {
+      "sensor_first_frame_timeout_ms": 2000,
+      "sensor_inter_frame_timeout_ms": 1000,
+      "max_single_gap_missing_packets": 3,
+      "max_consecutive_type_mismatches": 3,
+      "missing_window_expected_packets": 1000,
+      "max_missing_packets_per_window": 10
+    },
+    "left": {
+      "device": "/dev/ttyS7",
+      "device_id": "left"
+    },
+    "right": {
+      "device": "/dev/ttyS4",
+      "device_id": "right"
+    }
+  },
+  "control_event": {
+    "begin_pair_timeout_ms": 5000,
+    "end_pair_timeout_ms": 5000,
+    "wait_begin_timeout_ms": 1800000
+  },
+  "camera_count": 0,
+  "cameras": [
+  ],
+  "storage": {
+    "queue_capacity": 4096,
+    "max_payload_bytes": 262144,
+    "left_sensor_events_bin": "serial/left_sensor_events.bin",
+    "right_sensor_events_bin": "serial/right_sensor_events.bin",
+    "left_tactile_frames_bin": "serial/left_tactile_frames.bin",
+    "right_tactile_frames_bin": "serial/right_tactile_frames.bin",
+    "left_encoder_frames_bin": "serial/left_encoder_frames.bin",
+    "right_encoder_frames_bin": "serial/right_encoder_frames.bin",
+    "left_motor_frames_bin": "serial/left_motor_frames.bin",
+    "right_motor_frames_bin": "serial/right_motor_frames.bin",
+    "left_rx_raw_bin": "serial/left_rx_raw.bin",
+    "right_rx_raw_bin": "serial/right_rx_raw.bin",
+    "left_rx_raw_csv": "serial/left_rx_raw.csv",
+    "right_rx_raw_csv": "serial/right_rx_raw.csv",
+    "left_rx_packets_csv": "serial/left_rx_packets.csv",
+    "right_rx_packets_csv": "serial/right_rx_packets.csv",
+    "button_events_csv": "marker/button_events.csv",
+    "marker_pulses_csv": "marker/marker_pulses.csv",
+    "diagnostics_csv": "diagnostics/diagnostics.csv",
+    "mock_pressure_test_enabled": false,
+    "mock_pressure_test_requests": 0,
+    "mock_pressure_test_payload_bytes": 0,
+    "mock_pressure_test_output": "diagnostics/storage_mock_pressure.bin"
+  }
+}

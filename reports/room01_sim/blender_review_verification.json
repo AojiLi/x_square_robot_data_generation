@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "checks": {
+    "383_passive_colliders": true,
+    "one_dynamic_object": true,
+    "meter_units": true,
+    "collision_collection_hidden": true,
+    "collision_meshes_hidden_from_render": true,
+    "calibration_status": true,
+    "reset_pose_profile": true,
+    "reset_joint_positions": true,
+    "head_camera_present": true,
+    "head_review_aperture": true,
+    "head_distortion_limit_disclosed": true,
+    "left_wrist_camera_present": true,
+    "left_wrist_review_aperture": true,
+    "left_wrist_distortion_limit_disclosed": true,
+    "right_wrist_camera_present": true,
+    "right_wrist_review_aperture": true,
+    "right_wrist_distortion_limit_disclosed": true
+  },
+  "objects": 1609,
+  "calibration_status": "Head user-supplied K with provisional KB4 interpretation; wrist roll and pitch follow the user-authoritative 20260824 request_000001 images. Circular fisheye K and real hand-eye remain image-based estimates.",
+  "scope": "Blender geometry/camera review; exact fisheye rendering is checked in Isaac Sim."
+}

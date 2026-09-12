@@ -1,0 +1,26 @@
+{
+  "running": [],
+  "related_dirs": [
+    "/home/dzq/umi_x2_mujoco",
+    "/home/dzq/pi05_offline_inputs",
+    "/home/dzq/pi05_manifest_backup_no_rotation.NrLEfl",
+    "/home/dzq/pi05_offline_dry_runs",
+    "/home/dzq/pi05_live_input_20260827_1017",
+    "/home/dzq/umi_data",
+    "/home/dzq/pi05_saved_dry_runs",
+    "/home/dzq/umi-deployment",
+    "/home/dzq/umi_hand_pose_v2_v3",
+    "/home/dzq/pi05_inference_records_rtc_v1",
+    "/home/dzq/umi_x2_action_comparison",
+    "/home/dzq/pi05_inference",
+    "/home/dzq/pi05_live_input_20260827",
+    "/home/dzq/pi05_inference_records",
+    "/home/dzq/umi_rviz_ws"
+  ],
+  "source_mtime": {
+    "camera_transport.py": 1788160278.9788575,
+    "umi_policy_common.py": 1788160278.9871318,
+    "e6_tcp_cam_h.py": 1789013465.9142358,
+    "serve_umi_v2_policy.py": 1789021076.5656693
+  }
+}

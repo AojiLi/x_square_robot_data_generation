@@ -1,0 +1,62 @@
+{
+  "source": "自变量法兰转强脑.STEP",
+  "units": "meters",
+  "transform": "STEP_mm(x,y,z)->URDF_m(-z,y,x) then XMin->0, YZ centered",
+  "shift_m": [
+    0.001350000023841858,
+    -0.015503827095031739,
+    -0.009500000000000001
+  ],
+  "bbox_min_m": [
+    0.0,
+    -0.040496172904968264,
+    -0.0405
+  ],
+  "bbox_max_m": [
+    0.0561499992609024,
+    0.040496172904968264,
+    0.0405
+  ],
+  "bbox_size_m": [
+    0.0561499992609024,
+    0.08099234580993653,
+    0.081
+  ],
+  "assumed_thickness_m": 0.0561499992609024,
+  "visual_faces": 48904,
+  "collision_faces": 48904,
+  "stl": "/data/Projects/quanta_x2/assets/quanta_x2/flange_adapter/x2_revo2_flange.stl",
+  "collision_stl": "/data/Projects/quanta_x2/assets/quanta_x2/flange_adapter/x2_revo2_flange_collision.stl",
+  "hand_mount_xyz_m": [
+    0.04335,
+    0.0,
+    0.0
+  ],
+  "density_kg_m3": 2700.0,
+  "volume_m3_brep": 6.538943539271927e-05,
+  "mass_kg_est": 0.176551475560342,
+  "flange_thickness_m": 0.036,
+  "notes": "Visual mesh includes \u6444\u50cf\u5934A. Hand mounts on \u00d848 face (~X=0.043), not camera tip (bbox X=0.056). Collision uses cylinder by default.",
+  "in_hand_camera_xyz_m": [
+    0.025,
+    0.0,
+    0.04
+  ],
+  "adapter_roll_rad": {
+    "left": -1.5707963267948966,
+    "right": 1.5707963267948966
+  },
+  "palm_orientation": "adapter L=-90 R=+90 about +X; mount rpy=(0, pi/2, 0)",
+  "mount_rpy_rad": {
+    "left": [
+      0.0,
+      1.5707963267948966,
+      0.0
+    ],
+    "right": [
+      0.0,
+      1.5707963267948966,
+      0.0
+    ]
+  }
+}

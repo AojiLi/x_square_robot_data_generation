@@ -1,0 +1,47 @@
+{
+  "reference_authority": "explicit_user_selection",
+  "reference_session": "20260824T091633.664930Z-pid2632484-1c6fc5df",
+  "reference_request": "request_000001",
+  "default_reset_pose": "side-facing palms from assets/room01/sim/calibration/wrist_reference_pose_estimate.json",
+  "native_image_post_rotation": false,
+  "camera_optics_or_mount_changed_in_this_fix": false,
+  "wrist_collision_filter_pairs": [
+    [
+      "left_wrist_pitch_link",
+      "left_elbow_yaw_link"
+    ],
+    [
+      "right_wrist_pitch_link",
+      "right_elbow_yaw_link"
+    ]
+  ],
+  "control_gains_changed": false,
+  "grasp_preparation_seconds": 1.5,
+  "status": "validated",
+  "grasp_contact_offset_world_m": [
+    0.087,
+    0.036,
+    -0.05
+  ],
+  "grasp_contact_offset_basis": "Previous successful stable pinch transformed into the actual hand coordinate frame.",
+  "episode": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1",
+  "first_frame_verification": "reports/room01_wrist_reset_fix/first_frame_verification.json",
+  "config_sha256": "26546f8e625dbd8c02cf6f053037d657b1b273b56039b50219a0eb36ba3e5c91",
+  "source_urdf_unchanged": true,
+  "source_room_blend_unchanged": true,
+  "checks": {
+    "assets": "pass",
+    "physics": "pass",
+    "vla_io": "pass",
+    "episode": "pass",
+    "grasp": "pass",
+    "blender_review": "pass",
+    "video": "pass",
+    "actual_reset_first_frame": "pass",
+    "camera_optics": "pass",
+    "fisheye_boundary": "pass",
+    "wrist_reference_orientation": "pass"
+  },
+  "grasp_stable_hold_seconds": 1.8666666666666667,
+  "delivery_manifest": "reports/room01_sim/delivery_manifest.json"
+}

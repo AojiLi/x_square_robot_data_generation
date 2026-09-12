@@ -1,0 +1,42 @@
+[
+  {
+    "camera": "ReviewWindow",
+    "max_projection_error_px": 6.175053476908943e-05
+  },
+  {
+    "camera": "ReviewDoor",
+    "max_projection_error_px": 7.51230135165315e-05
+  },
+  {
+    "camera": "ReviewChairs",
+    "max_projection_error_px": 2.3423143545642233e-05
+  },
+  {
+    "camera": "ReviewStorage",
+    "max_projection_error_px": 6.129138239430176e-05
+  },
+  {
+    "camera": "ReviewTable",
+    "max_projection_error_px": 3.1253994961844e-05
+  },
+  {
+    "camera": "ReviewWorkbench",
+    "max_projection_error_px": 7.8821764532222e-05
+  },
+  {
+    "camera": "ReviewChairDetail",
+    "max_projection_error_px": 6.129138239430176e-05
+  },
+  {
+    "camera": "ReviewBenchFront",
+    "max_projection_error_px": 2.3423143545642233e-05
+  },
+  {
+    "camera": "ReviewCeiling",
+    "max_projection_error_px": 6.237088257421419e-05
+  },
+  {
+    "camera": "ReviewWest",
+    "max_projection_error_px": 2.3423143545642233e-05
+  }
+]

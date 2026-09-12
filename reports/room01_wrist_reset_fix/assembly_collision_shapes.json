@@ -1,0 +1,34 @@
+{
+  "shape_0": {
+    "body": "left_elbow_yaw_link",
+    "prim": "/World/Robot/left_elbow_yaw_link/collisions/left_elbow_yaw_link_collision_1/node_STL_BINARY_/mesh"
+  },
+  "shape_1": {
+    "body": "left_wrist_pitch_link",
+    "prim": "/World/Robot/left_wrist_pitch_link/collisions/left_wrist_pitch_link_collision_1/node_STL_BINARY_/mesh"
+  },
+  "shape_2": {
+    "body": "left_wrist_pitch_link",
+    "prim": "/World/Robot/left_wrist_pitch_link/FixedFrames/left_hand_base_link/collisions/left_hand_base_link_collision_2/node_STL_BINARY_/mesh"
+  },
+  "shape_3": {
+    "body": "left_thumb_proximal_link",
+    "prim": "/World/Robot/left_thumb_proximal_link/collisions/left_thumb_proximal_link_collision_2/node_STL_BINARY_/mesh"
+  },
+  "shape_4": {
+    "body": "right_elbow_yaw_link",
+    "prim": "/World/Robot/right_elbow_yaw_link/collisions/right_elbow_yaw_link_collision_1/node_STL_BINARY_/mesh"
+  },
+  "shape_5": {
+    "body": "right_wrist_pitch_link",
+    "prim": "/World/Robot/right_wrist_pitch_link/collisions/right_wrist_pitch_link_collision_1/node_STL_BINARY_/mesh"
+  },
+  "shape_6": {
+    "body": "right_wrist_pitch_link",
+    "prim": "/World/Robot/right_wrist_pitch_link/FixedFrames/right_hand_base_link/collisions/right_hand_base_link_collision_2/node_STL_BINARY_/mesh"
+  },
+  "shape_7": {
+    "body": "right_thumb_proximal_link",
+    "prim": "/World/Robot/right_thumb_proximal_link/collisions/right_thumb_proximal_link_collision_1/node_STL_BINARY_/mesh"
+  }
+}

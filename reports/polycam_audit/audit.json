@@ -1,0 +1,219 @@
+{
+  "scope": "File integrity and structural audit; not a reconstruction quality acceptance test.",
+  "archives": [
+    {
+      "name": "GLTF_room.zip",
+      "bytes": 11747207,
+      "sha256": "810831ab0b3d2554b268cf43a56193c20d71240c1c91241475d9961db01a4606",
+      "file_count": 1,
+      "uncompressed_bytes": 15929244,
+      "groups": {
+        ".": 1
+      },
+      "crc_check": "pass"
+    },
+    {
+      "name": "Image_room.zip",
+      "bytes": 327578791,
+      "sha256": "1895c2669b8b8f2e7c6bc19f0eb940566ce25d3e58ec190c66e17ff50f40b436",
+      "file_count": 5500,
+      "uncompressed_bytes": 370705934,
+      "groups": {
+        "keyframes": 3,
+        "keyframes/anchor_updates": 46,
+        "keyframes/arkit_motion": 31,
+        "keyframes/cameras": 488,
+        "keyframes/confidence": 976,
+        "keyframes/corrected_cameras": 488,
+        "keyframes/corrected_depth": 976,
+        "keyframes/corrected_images": 488,
+        "keyframes/depth": 976,
+        "keyframes/images": 488,
+        "keyframes/location": 488,
+        "keyframes/motion": 52
+      },
+      "crc_check": "pass"
+    },
+    {
+      "name": "OBJ_room.zip",
+      "bytes": 16617024,
+      "sha256": "017078682ff01f52263aa0392765232afd5728d3dcaa4c4c8fee52749d13fe61",
+      "file_count": 5,
+      "uncompressed_bytes": 52762687,
+      "groups": {
+        ".": 2,
+        "textures": 3
+      },
+      "crc_check": "pass"
+    },
+    {
+      "name": "Point_cloud_ply.zip",
+      "bytes": 59376140,
+      "sha256": "4df0308a3345eb1a4a488510d3456566230948a55eff5ba5d5866883825ed51a",
+      "file_count": 1,
+      "uncompressed_bytes": 67897111,
+      "groups": {
+        ".": 1
+      },
+      "crc_check": "pass"
+    },
+    {
+      "name": "Raw_room.zip",
+      "bytes": 202558817,
+      "sha256": "a9b99d51ad33d6ecebeb7b2c9d558d57b034b0241a80ca77caab4d4765ac6cbc",
+      "file_count": 2931,
+      "uncompressed_bytes": 205182405,
+      "groups": {
+        ".": 3,
+        "keyframes/cameras": 488,
+        "keyframes/confidence": 488,
+        "keyframes/corrected_cameras": 488,
+        "keyframes/corrected_images": 488,
+        "keyframes/depth": 488,
+        "keyframes/images": 488
+      },
+      "crc_check": "pass"
+    }
+  ],
+  "shared_archive_members": {
+    "count": 2928,
+    "identical_payloads": 2928,
+    "different_payloads": []
+  },
+  "unique_frames": 488,
+  "image_decode_checks": {
+    "rgb_original": {
+      "1024x768:RGB": 488
+    },
+    "rgb_corrected": {
+      "1024x768:RGB": 488
+    },
+    "depth_original": {
+      "256x192:I": 488
+    },
+    "depth_original_clean_variant": {
+      "256x192:I": 488
+    },
+    "depth_corrected": {
+      "512x384:I": 488
+    },
+    "depth_corrected_clean_variant": {
+      "512x384:I": 488
+    },
+    "confidence_original": {
+      "256x192:L": 488
+    },
+    "confidence_clean_variant": {
+      "256x192:L": 488
+    }
+  },
+  "sfm_stats": {
+    "sfmTotalTracks": 26795,
+    "sfmTracks": 12565,
+    "sfmObservations": 40030,
+    "sfmImages": 488,
+    "sfmTracksPerImage": 25.748,
+    "sfmViewsPerTrack": 3.18583,
+    "sfmRMS": 0.632822,
+    "sfmWeaklyConnectedImages": 368,
+    "sfmIsolatedImages": 66,
+    "sfmComponents": 75,
+    "sfmStrongComponents": 317,
+    "sfmPairs": 2143,
+    "sfmLineTracks": 0,
+    "sfmPlaneTracks": 0
+  },
+  "camera_checks": {
+    "max_rotation_orthogonality_error": 8.301427367740644e-08,
+    "median_pose_correction_translation_m": 0.02598112288529274,
+    "max_pose_correction_translation_m": 0.20917288984845406,
+    "blur_min_median_max": [
+      45.905235,
+      259.336635,
+      2880.022
+    ],
+    "weakly_connected_true": 368,
+    "note": "Rigid matrices and paired files do not prove accurate poses."
+  },
+  "mesh_metadata": {
+    "bboxSize": [
+      6.141817092895508,
+      3.143360137939453,
+      5.186875343322754
+    ],
+    "vertexCount": 251470,
+    "triangleCount": 428941,
+    "alignmentTransform": [
+      0.5272254347801208,
+      0,
+      0.8497254252433777,
+      0,
+      0,
+      1,
+      0,
+      0,
+      -0.8497254252433777,
+      0,
+      0.5272254347801208,
+      0,
+      -1.5123218297958374,
+      -0.009987831115722656,
+      1.6307827234268188,
+      1
+    ]
+  },
+  "ply": {
+    "header": [
+      "ply",
+      "format binary_little_endian 1.0",
+      "comment Created by Polycam",
+      "element vertex 2514700",
+      "property double x",
+      "property double y",
+      "property double z",
+      "property uchar red",
+      "property uchar green",
+      "property uchar blue",
+      "end_header"
+    ],
+    "points": 2514700,
+    "bounds": [
+      [
+        -3.069395349563066,
+        -2.5929205549369314,
+        -1.5700636551757698
+      ],
+      [
+        3.070620329101014,
+        2.59315666456881,
+        1.5655866500595605
+      ]
+    ],
+    "extents": [
+      6.14001567866408,
+      5.186077219505742,
+      3.1356503052353304
+    ],
+    "trained_gaussian_splat": false
+  },
+  "glb": {
+    "vertices": 251470,
+    "triangles": 428941,
+    "materials": 3,
+    "textures": 3,
+    "bounds": [
+      [
+        -3.070908546447754,
+        3.070908546447754
+      ],
+      [
+        -1.5716800689697266,
+        1.5716800689697266
+      ],
+      [
+        -2.593437671661377,
+        2.593437671661377
+      ]
+    ]
+  }
+}

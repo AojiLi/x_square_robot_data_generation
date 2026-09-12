@@ -1,0 +1,134 @@
+[
+  {
+    "body0": "/World/Robot/left_wrist_pitch_link",
+    "body1": "/World/Robot/left_pinky_proximal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005989215527924607
+  },
+  {
+    "body0": "/World/Robot/right_wrist_pitch_link",
+    "body1": "/World/Robot/right_pinky_proximal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005989011212811623
+  },
+  {
+    "body0": "/World/Robot/left_wrist_pitch_link",
+    "body1": "/World/Robot/left_index_proximal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005939084654868431
+  },
+  {
+    "body0": "/World/Robot/right_wrist_pitch_link",
+    "body1": "/World/Robot/right_index_proximal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005939068757134934
+  },
+  {
+    "body0": "/World/Robot/left_wrist_pitch_link",
+    "body1": "/World/Robot/left_middle_proximal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005906350132173919
+  },
+  {
+    "body0": "/World/Robot/right_wrist_pitch_link",
+    "body1": "/World/Robot/right_middle_proximal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.0059063469494114035
+  },
+  {
+    "body0": "/World/Robot/left_wrist_pitch_link",
+    "body1": "/World/Robot/left_ring_proximal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005866643419558754
+  },
+  {
+    "body0": "/World/Robot/right_wrist_pitch_link",
+    "body1": "/World/Robot/right_ring_proximal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005866632320376362
+  },
+  {
+    "body0": "/World/Robot/left_wrist_pitch_link",
+    "body1": "/World/Robot/left_thumb_metacarpal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.0055098374561523555
+  },
+  {
+    "body0": "/World/Robot/right_ring_proximal_link",
+    "body1": "/World/Robot/right_ring_distal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005071378189445475
+  },
+  {
+    "body0": "/World/Robot/left_ring_proximal_link",
+    "body1": "/World/Robot/left_ring_distal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005071377728107951
+  },
+  {
+    "body0": "/World/Robot/right_wrist_pitch_link",
+    "body1": "/World/Robot/right_thumb_metacarpal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005069724520048895
+  },
+  {
+    "body0": "/World/Robot/left_middle_proximal_link",
+    "body1": "/World/Robot/left_middle_distal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.0050358853787078614
+  },
+  {
+    "body0": "/World/Robot/right_middle_proximal_link",
+    "body1": "/World/Robot/right_middle_distal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005035884850583095
+  },
+  {
+    "body0": "/World/Robot/left_pinky_proximal_link",
+    "body1": "/World/Robot/left_pinky_distal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005005723434245934
+  },
+  {
+    "body0": "/World/Robot/right_pinky_proximal_link",
+    "body1": "/World/Robot/right_pinky_distal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.005004249496238234
+  },
+  {
+    "body0": "/World/Robot/left_index_proximal_link",
+    "body1": "/World/Robot/left_index_distal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.004999840144947032
+  },
+  {
+    "body0": "/World/Robot/right_index_proximal_link",
+    "body1": "/World/Robot/right_index_distal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.004999840144946921
+  },
+  {
+    "body0": "/World/Robot/right_thumb_metacarpal_link",
+    "body1": "/World/Robot/right_thumb_proximal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.003982170465633095
+  },
+  {
+    "body0": "/World/Robot/left_thumb_metacarpal_link",
+    "body1": "/World/Robot/left_thumb_proximal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.003982166996898366
+  },
+  {
+    "body0": "/World/Robot/right_thumb_proximal_link",
+    "body1": "/World/Robot/right_thumb_distal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.0023412622325619534
+  },
+  {
+    "body0": "/World/Robot/left_thumb_proximal_link",
+    "body1": "/World/Robot/left_thumb_distal_link",
+    "adjacent": true,
+    "penetration_radius_m": 0.002341168520136724
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "result": "pass",
+  "camera_count": 3,
+  "same_physics_step": true,
+  "timestamp": 0.05,
+  "joint_positions_finite": true,
+  "review_joint_pose": null,
+  "config_sha256": "26546f8e625dbd8c02cf6f053037d657b1b273b56039b50219a0eb36ba3e5c91",
+  "calibration_status": "Head user-supplied K with provisional KB4 interpretation; wrist roll and pitch follow the user-authoritative 20260824 request_000001 images. Circular fisheye K and real hand-eye remain image-based estimates.",
+  "source_episode": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1",
+  "source_frame": 0,
+  "first_frame_verification": "reports/room01_wrist_reset_fix/first_frame_verification.json"
+}

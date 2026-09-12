@@ -1,0 +1,27 @@
+{
+  "result": "pass",
+  "checks": {
+    "size": true,
+    "frames": true,
+    "fps": true,
+    "duration": true,
+    "codec": true
+  },
+  "video": "reports/room01_sim/three_camera_grasp.mp4",
+  "source_episode": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1",
+  "probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "nb_frames": "300"
+      }
+    ],
+    "format": {
+      "duration": "10.000000"
+    }
+  }
+}

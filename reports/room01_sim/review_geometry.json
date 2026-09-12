@@ -1,0 +1,5954 @@
+{
+  "meshes": [
+    {
+      "key": "mesh_0000",
+      "prim": "/World/Room/Collisions/Floor_0",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0001",
+      "prim": "/World/Room/Collisions/Ceiling_0",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0002",
+      "prim": "/World/Room/Collisions/Floor_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0003",
+      "prim": "/World/Room/Collisions/Ceiling_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0004",
+      "prim": "/World/Room/Collisions/Black_package_base/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0005",
+      "prim": "/World/Room/Collisions/Black_package_flap_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0006",
+      "prim": "/World/Room/Collisions/Black_package_flap_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0007",
+      "prim": "/World/Room/Collisions/Black_package_flap_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0008",
+      "prim": "/World/Room/Collisions/Black_package_flap_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0009",
+      "prim": "/World/Room/Collisions/Black_package_wall_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0010",
+      "prim": "/World/Room/Collisions/Black_package_wall_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0011",
+      "prim": "/World/Room/Collisions/Black_package_wall_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0012",
+      "prim": "/World/Room/Collisions/Black_package_wall_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0013",
+      "prim": "/World/Room/Collisions/Blue_floor_mailer",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0014",
+      "prim": "/World/Room/Collisions/Bottle_body",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0015",
+      "prim": "/World/Room/Collisions/Bottle_neck",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0016",
+      "prim": "/World/Room/Collisions/Bottom_cardboard_box_base/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0017",
+      "prim": "/World/Room/Collisions/Bottom_cardboard_box_lid/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0018",
+      "prim": "/World/Room/Collisions/Bottom_cardboard_box_wall_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0019",
+      "prim": "/World/Room/Collisions/Bottom_cardboard_box_wall_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0020",
+      "prim": "/World/Room/Collisions/Bottom_cardboard_box_wall_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0021",
+      "prim": "/World/Room/Collisions/Bottom_cardboard_box_wall_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0022",
+      "prim": "/World/Room/Collisions/Bubble_wrap_under_bench",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0023",
+      "prim": "/World/Room/Collisions/Carton_loose_wire",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0024",
+      "prim": "/World/Room/Collisions/Carton_loose_wire_001",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0025",
+      "prim": "/World/Room/Collisions/Carton_loose_wire_002",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0026",
+      "prim": "/World/Room/Collisions/Carton_loose_wire_003",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0027",
+      "prim": "/World/Room/Collisions/Carton_loose_wire_004",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0028",
+      "prim": "/World/Room/Collisions/Carton_loose_wire_005",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0029",
+      "prim": "/World/Room/Collisions/Carton_loose_wire_006",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0030",
+      "prim": "/World/Room/Collisions/Case_castor_wheel",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0031",
+      "prim": "/World/Room/Collisions/Case_castor_wheel_001",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0032",
+      "prim": "/World/Room/Collisions/Case_castor_wheel_002",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0033",
+      "prim": "/World/Room/Collisions/Case_castor_wheel_003",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0034",
+      "prim": "/World/Room/Collisions/Case_corner_guard",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0035",
+      "prim": "/World/Room/Collisions/Case_corner_guard_001",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0036",
+      "prim": "/World/Room/Collisions/Case_corner_guard_002",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0037",
+      "prim": "/World/Room/Collisions/Case_corner_guard_003",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0038",
+      "prim": "/World/Room/Collisions/Case_corner_guard_004",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0039",
+      "prim": "/World/Room/Collisions/Case_corner_guard_005",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0040",
+      "prim": "/World/Room/Collisions/Case_corner_guard_006",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0041",
+      "prim": "/World/Room/Collisions/Case_corner_guard_007",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0042",
+      "prim": "/World/Room/Collisions/Case_front_handle",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0043",
+      "prim": "/World/Room/Collisions/Case_front_handle_plate",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0044",
+      "prim": "/World/Room/Collisions/Case_front_handle_well/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0045",
+      "prim": "/World/Room/Collisions/Case_horizontal_rail_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0046",
+      "prim": "/World/Room/Collisions/Case_horizontal_rail_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0047",
+      "prim": "/World/Room/Collisions/Case_horizontal_rail_x_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0048",
+      "prim": "/World/Room/Collisions/Case_horizontal_rail_x_003/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0049",
+      "prim": "/World/Room/Collisions/Case_horizontal_rail_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0050",
+      "prim": "/World/Room/Collisions/Case_horizontal_rail_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0051",
+      "prim": "/World/Room/Collisions/Case_horizontal_rail_y_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0052",
+      "prim": "/World/Room/Collisions/Case_horizontal_rail_y_003/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0053",
+      "prim": "/World/Room/Collisions/Case_side_XR/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0054",
+      "prim": "/World/Room/Collisions/Case_side_brand/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0055",
+      "prim": "/World/Room/Collisions/Case_side_handle",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0056",
+      "prim": "/World/Room/Collisions/Case_side_handle_plate",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0057",
+      "prim": "/World/Room/Collisions/Case_side_handle_well/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0058",
+      "prim": "/World/Room/Collisions/Case_top_yellow_cube",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0059",
+      "prim": "/World/Room/Collisions/Case_vertical_extrusion/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0060",
+      "prim": "/World/Room/Collisions/Case_vertical_extrusion_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0061",
+      "prim": "/World/Room/Collisions/Case_vertical_extrusion_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0062",
+      "prim": "/World/Room/Collisions/Case_vertical_extrusion_003/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0063",
+      "prim": "/World/Room/Collisions/Chair_middle_adjust_lever",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0064",
+      "prim": "/World/Room/Collisions/Chair_middle_arm_brace__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0065",
+      "prim": "/World/Room/Collisions/Chair_middle_arm_brace_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0066",
+      "prim": "/World/Room/Collisions/Chair_middle_arm_pad__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0067",
+      "prim": "/World/Room/Collisions/Chair_middle_arm_pad_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0068",
+      "prim": "/World/Room/Collisions/Chair_middle_arm_post__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0069",
+      "prim": "/World/Room/Collisions/Chair_middle_arm_post_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0070",
+      "prim": "/World/Room/Collisions/Chair_middle_back_support",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0071",
+      "prim": "/World/Room/Collisions/Chair_middle_caster_pin_0",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0072",
+      "prim": "/World/Room/Collisions/Chair_middle_caster_pin_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0073",
+      "prim": "/World/Room/Collisions/Chair_middle_caster_pin_2",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0074",
+      "prim": "/World/Room/Collisions/Chair_middle_caster_pin_3",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0075",
+      "prim": "/World/Room/Collisions/Chair_middle_caster_pin_4",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0076",
+      "prim": "/World/Room/Collisions/Chair_middle_gas_lift",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0077",
+      "prim": "/World/Room/Collisions/Chair_middle_head_bracket",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0078",
+      "prim": "/World/Room/Collisions/Chair_middle_headrest",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0079",
+      "prim": "/World/Room/Collisions/Chair_middle_lever_grip",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0080",
+      "prim": "/World/Room/Collisions/Chair_middle_lift_sleeve",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0081",
+      "prim": "/World/Room/Collisions/Chair_middle_molded_back_frame",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0082",
+      "prim": "/World/Room/Collisions/Chair_middle_seat",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0083",
+      "prim": "/World/Room/Collisions/Chair_middle_spoke_0",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0084",
+      "prim": "/World/Room/Collisions/Chair_middle_spoke_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0085",
+      "prim": "/World/Room/Collisions/Chair_middle_spoke_2",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0086",
+      "prim": "/World/Room/Collisions/Chair_middle_spoke_3",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0087",
+      "prim": "/World/Room/Collisions/Chair_middle_spoke_4",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0088",
+      "prim": "/World/Room/Collisions/Chair_middle_tilt_mechanism",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0089",
+      "prim": "/World/Room/Collisions/Chair_middle_wheel_0__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0090",
+      "prim": "/World/Room/Collisions/Chair_middle_wheel_0_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0091",
+      "prim": "/World/Room/Collisions/Chair_middle_wheel_1__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0092",
+      "prim": "/World/Room/Collisions/Chair_middle_wheel_1_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0093",
+      "prim": "/World/Room/Collisions/Chair_middle_wheel_2__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0094",
+      "prim": "/World/Room/Collisions/Chair_middle_wheel_2_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0095",
+      "prim": "/World/Room/Collisions/Chair_middle_wheel_3__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0096",
+      "prim": "/World/Room/Collisions/Chair_middle_wheel_3_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0097",
+      "prim": "/World/Room/Collisions/Chair_middle_wheel_4__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0098",
+      "prim": "/World/Room/Collisions/Chair_middle_wheel_4_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0099",
+      "prim": "/World/Room/Collisions/Chair_middle_woven_back",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0100",
+      "prim": "/World/Room/Collisions/Chair_west_adjust_lever",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0101",
+      "prim": "/World/Room/Collisions/Chair_west_arm_brace__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0102",
+      "prim": "/World/Room/Collisions/Chair_west_arm_brace_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0103",
+      "prim": "/World/Room/Collisions/Chair_west_arm_pad__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0104",
+      "prim": "/World/Room/Collisions/Chair_west_arm_pad_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0105",
+      "prim": "/World/Room/Collisions/Chair_west_arm_post__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0106",
+      "prim": "/World/Room/Collisions/Chair_west_arm_post_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0107",
+      "prim": "/World/Room/Collisions/Chair_west_back_support",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0108",
+      "prim": "/World/Room/Collisions/Chair_west_caster_pin_0",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0109",
+      "prim": "/World/Room/Collisions/Chair_west_caster_pin_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0110",
+      "prim": "/World/Room/Collisions/Chair_west_caster_pin_2",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0111",
+      "prim": "/World/Room/Collisions/Chair_west_caster_pin_3",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0112",
+      "prim": "/World/Room/Collisions/Chair_west_caster_pin_4",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0113",
+      "prim": "/World/Room/Collisions/Chair_west_gas_lift",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0114",
+      "prim": "/World/Room/Collisions/Chair_west_head_bracket",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0115",
+      "prim": "/World/Room/Collisions/Chair_west_headrest",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0116",
+      "prim": "/World/Room/Collisions/Chair_west_lever_grip",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0117",
+      "prim": "/World/Room/Collisions/Chair_west_lift_sleeve",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0118",
+      "prim": "/World/Room/Collisions/Chair_west_lumbar",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0119",
+      "prim": "/World/Room/Collisions/Chair_west_molded_back_frame",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0120",
+      "prim": "/World/Room/Collisions/Chair_west_seat",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0121",
+      "prim": "/World/Room/Collisions/Chair_west_spoke_0",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0122",
+      "prim": "/World/Room/Collisions/Chair_west_spoke_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0123",
+      "prim": "/World/Room/Collisions/Chair_west_spoke_2",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0124",
+      "prim": "/World/Room/Collisions/Chair_west_spoke_3",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0125",
+      "prim": "/World/Room/Collisions/Chair_west_spoke_4",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0126",
+      "prim": "/World/Room/Collisions/Chair_west_tilt_mechanism",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0127",
+      "prim": "/World/Room/Collisions/Chair_west_wheel_0__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0128",
+      "prim": "/World/Room/Collisions/Chair_west_wheel_0_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0129",
+      "prim": "/World/Room/Collisions/Chair_west_wheel_1__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0130",
+      "prim": "/World/Room/Collisions/Chair_west_wheel_1_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0131",
+      "prim": "/World/Room/Collisions/Chair_west_wheel_2__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0132",
+      "prim": "/World/Room/Collisions/Chair_west_wheel_2_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0133",
+      "prim": "/World/Room/Collisions/Chair_west_wheel_3__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0134",
+      "prim": "/World/Room/Collisions/Chair_west_wheel_3_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0135",
+      "prim": "/World/Room/Collisions/Chair_west_wheel_4__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0136",
+      "prim": "/World/Room/Collisions/Chair_west_wheel_4_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0137",
+      "prim": "/World/Room/Collisions/Chair_west_woven_back",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0138",
+      "prim": "/World/Room/Collisions/Chair_workbench_adjust_lever",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0139",
+      "prim": "/World/Room/Collisions/Chair_workbench_arm_brace__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0140",
+      "prim": "/World/Room/Collisions/Chair_workbench_arm_brace_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0141",
+      "prim": "/World/Room/Collisions/Chair_workbench_arm_pad__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0142",
+      "prim": "/World/Room/Collisions/Chair_workbench_arm_pad_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0143",
+      "prim": "/World/Room/Collisions/Chair_workbench_arm_post__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0144",
+      "prim": "/World/Room/Collisions/Chair_workbench_arm_post_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0145",
+      "prim": "/World/Room/Collisions/Chair_workbench_back_support",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0146",
+      "prim": "/World/Room/Collisions/Chair_workbench_caster_pin_0",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0147",
+      "prim": "/World/Room/Collisions/Chair_workbench_caster_pin_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0148",
+      "prim": "/World/Room/Collisions/Chair_workbench_caster_pin_2",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0149",
+      "prim": "/World/Room/Collisions/Chair_workbench_caster_pin_3",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0150",
+      "prim": "/World/Room/Collisions/Chair_workbench_caster_pin_4",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0151",
+      "prim": "/World/Room/Collisions/Chair_workbench_gas_lift",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0152",
+      "prim": "/World/Room/Collisions/Chair_workbench_head_bracket",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0153",
+      "prim": "/World/Room/Collisions/Chair_workbench_headrest",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0154",
+      "prim": "/World/Room/Collisions/Chair_workbench_lever_grip",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0155",
+      "prim": "/World/Room/Collisions/Chair_workbench_lift_sleeve",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0156",
+      "prim": "/World/Room/Collisions/Chair_workbench_lumbar",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0157",
+      "prim": "/World/Room/Collisions/Chair_workbench_molded_back_frame",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0158",
+      "prim": "/World/Room/Collisions/Chair_workbench_seat",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0159",
+      "prim": "/World/Room/Collisions/Chair_workbench_spoke_0",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0160",
+      "prim": "/World/Room/Collisions/Chair_workbench_spoke_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0161",
+      "prim": "/World/Room/Collisions/Chair_workbench_spoke_2",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0162",
+      "prim": "/World/Room/Collisions/Chair_workbench_spoke_3",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0163",
+      "prim": "/World/Room/Collisions/Chair_workbench_spoke_4",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0164",
+      "prim": "/World/Room/Collisions/Chair_workbench_tilt_mechanism",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0165",
+      "prim": "/World/Room/Collisions/Chair_workbench_wheel_0__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0166",
+      "prim": "/World/Room/Collisions/Chair_workbench_wheel_0_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0167",
+      "prim": "/World/Room/Collisions/Chair_workbench_wheel_1__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0168",
+      "prim": "/World/Room/Collisions/Chair_workbench_wheel_1_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0169",
+      "prim": "/World/Room/Collisions/Chair_workbench_wheel_2__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0170",
+      "prim": "/World/Room/Collisions/Chair_workbench_wheel_2_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0171",
+      "prim": "/World/Room/Collisions/Chair_workbench_wheel_3__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0172",
+      "prim": "/World/Room/Collisions/Chair_workbench_wheel_3_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0173",
+      "prim": "/World/Room/Collisions/Chair_workbench_wheel_4__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0174",
+      "prim": "/World/Room/Collisions/Chair_workbench_wheel_4_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0175",
+      "prim": "/World/Room/Collisions/Chair_workbench_woven_back",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0176",
+      "prim": "/World/Room/Collisions/Computer_tower/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0177",
+      "prim": "/World/Room/Collisions/Controller_body",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0178",
+      "prim": "/World/Room/Collisions/Controller_grip",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0179",
+      "prim": "/World/Room/Collisions/Controller_grip_001",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0180",
+      "prim": "/World/Room/Collisions/Documents_on_tray/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0181",
+      "prim": "/World/Room/Collisions/Documents_on_tray_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0182",
+      "prim": "/World/Room/Collisions/Documents_on_tray_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0183",
+      "prim": "/World/Room/Collisions/Door_edge_filler/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0184",
+      "prim": "/World/Room/Collisions/Door_leaf/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0185",
+      "prim": "/World/Room/Collisions/East_wall/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0186",
+      "prim": "/World/Room/Collisions/Equipment_booklet",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0187",
+      "prim": "/World/Room/Collisions/Finned_power_supply",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0188",
+      "prim": "/World/Room/Collisions/Flightcase_shell",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0189",
+      "prim": "/World/Room/Collisions/Folded_tripod_leg/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0190",
+      "prim": "/World/Room/Collisions/Folded_tripod_leg_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0191",
+      "prim": "/World/Room/Collisions/Folded_tripod_leg_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0192",
+      "prim": "/World/Room/Collisions/Gray_postal_bag",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0193",
+      "prim": "/World/Room/Collisions/Headset_earcup",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0194",
+      "prim": "/World/Room/Collisions/Headset_earcup_001",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0195",
+      "prim": "/World/Room/Collisions/Headset_headband",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0196",
+      "prim": "/World/Room/Collisions/Inset_return/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0197",
+      "prim": "/World/Room/Collisions/Inset_wall/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0198",
+      "prim": "/World/Room/Collisions/Interface_box/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0199",
+      "prim": "/World/Room/Collisions/Keyboard_shell",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0200",
+      "prim": "/World/Room/Collisions/Keyboard_space",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0201",
+      "prim": "/World/Room/Collisions/Keyhole_rose/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0202",
+      "prim": "/World/Room/Collisions/Loose_manual/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0203",
+      "prim": "/World/Room/Collisions/Loose_manual_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0204",
+      "prim": "/World/Room/Collisions/Loose_manual_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0205",
+      "prim": "/World/Room/Collisions/Monitor_base/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0206",
+      "prim": "/World/Room/Collisions/Monitor_bezel/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0207",
+      "prim": "/World/Room/Collisions/Monitor_screen/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0208",
+      "prim": "/World/Room/Collisions/Monitor_stalk/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0209",
+      "prim": "/World/Room/Collisions/Mouse",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0210",
+      "prim": "/World/Room/Collisions/Mouse_split/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0211",
+      "prim": "/World/Room/Collisions/Open_electronics_carton_base/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0212",
+      "prim": "/World/Room/Collisions/Open_electronics_carton_flap_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0213",
+      "prim": "/World/Room/Collisions/Open_electronics_carton_flap_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0214",
+      "prim": "/World/Room/Collisions/Open_electronics_carton_flap_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0215",
+      "prim": "/World/Room/Collisions/Open_electronics_carton_flap_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0216",
+      "prim": "/World/Room/Collisions/Open_electronics_carton_wall_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0217",
+      "prim": "/World/Room/Collisions/Open_electronics_carton_wall_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0218",
+      "prim": "/World/Room/Collisions/Open_electronics_carton_wall_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0219",
+      "prim": "/World/Room/Collisions/Open_electronics_carton_wall_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0220",
+      "prim": "/World/Room/Collisions/Optical_table_body/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0221",
+      "prim": "/World/Room/Collisions/Optical_table_leg/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0222",
+      "prim": "/World/Room/Collisions/Optical_table_leg_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0223",
+      "prim": "/World/Room/Collisions/Optical_table_leg_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0224",
+      "prim": "/World/Room/Collisions/Optical_table_leg_003/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0225",
+      "prim": "/World/Room/Collisions/Optical_table_level_foot",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0226",
+      "prim": "/World/Room/Collisions/Optical_table_level_foot_001",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0227",
+      "prim": "/World/Room/Collisions/Optical_table_level_foot_002",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0228",
+      "prim": "/World/Room/Collisions/Optical_table_level_foot_003",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0229",
+      "prim": "/World/Room/Collisions/Optical_table_top",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "none"
+    },
+    {
+      "key": "mesh_0230",
+      "prim": "/World/Room/Collisions/Orange_cup",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0231",
+      "prim": "/World/Room/Collisions/PC_front_vent/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0232",
+      "prim": "/World/Room/Collisions/PC_front_vent_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0233",
+      "prim": "/World/Room/Collisions/PC_front_vent_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0234",
+      "prim": "/World/Room/Collisions/PC_front_vent_003/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0235",
+      "prim": "/World/Room/Collisions/PC_front_vent_004/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0236",
+      "prim": "/World/Room/Collisions/PC_front_vent_005/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0237",
+      "prim": "/World/Room/Collisions/PC_front_vent_006/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0238",
+      "prim": "/World/Room/Collisions/PC_front_vent_007/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0239",
+      "prim": "/World/Room/Collisions/PC_front_vent_008/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0240",
+      "prim": "/World/Room/Collisions/PC_front_vent_009/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0241",
+      "prim": "/World/Room/Collisions/PC_front_vent_010/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0242",
+      "prim": "/World/Room/Collisions/PC_front_vent_011/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0243",
+      "prim": "/World/Room/Collisions/PC_port_panel/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0244",
+      "prim": "/World/Room/Collisions/Partition_crossbar/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0245",
+      "prim": "/World/Room/Collisions/Partition_crossbar_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0246",
+      "prim": "/World/Room/Collisions/Partition_glass/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0247",
+      "prim": "/World/Room/Collisions/Partition_glass_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0248",
+      "prim": "/World/Room/Collisions/Partition_upright/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0249",
+      "prim": "/World/Room/Collisions/Partition_upright_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0250",
+      "prim": "/World/Room/Collisions/Partition_upright_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0251",
+      "prim": "/World/Room/Collisions/Partition_upright_003/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0252",
+      "prim": "/World/Room/Collisions/Partition_upright_004/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0253",
+      "prim": "/World/Room/Collisions/Pin_holder/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0254",
+      "prim": "/World/Room/Collisions/Pink_packing_bag",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0255",
+      "prim": "/World/Room/Collisions/Power_adapter_in_carton",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0256",
+      "prim": "/World/Room/Collisions/Power_supply_fin/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0257",
+      "prim": "/World/Room/Collisions/Power_supply_fin_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0258",
+      "prim": "/World/Room/Collisions/Power_supply_fin_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0259",
+      "prim": "/World/Room/Collisions/Power_supply_fin_003/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0260",
+      "prim": "/World/Room/Collisions/Power_supply_fin_004/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0261",
+      "prim": "/World/Room/Collisions/Power_supply_fin_005/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0262",
+      "prim": "/World/Room/Collisions/Power_supply_fin_006/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0263",
+      "prim": "/World/Room/Collisions/Power_supply_fin_007/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0264",
+      "prim": "/World/Room/Collisions/Power_supply_fin_008/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0265",
+      "prim": "/World/Room/Collisions/Power_supply_fin_009/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0266",
+      "prim": "/World/Room/Collisions/Powerstrip_body",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0267",
+      "prim": "/World/Room/Collisions/Purple_cup",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0268",
+      "prim": "/World/Room/Collisions/Raised_tissue",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0269",
+      "prim": "/World/Room/Collisions/Rolling_stool_lift",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0270",
+      "prim": "/World/Room/Collisions/Rolling_stool_seat",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0271",
+      "prim": "/World/Room/Collisions/Rolling_stool_seat_piping/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0272",
+      "prim": "/World/Room/Collisions/Rolling_stool_sleeve",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0273",
+      "prim": "/World/Room/Collisions/Rolling_stool_spoke_0",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0274",
+      "prim": "/World/Room/Collisions/Rolling_stool_spoke_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0275",
+      "prim": "/World/Room/Collisions/Rolling_stool_spoke_2",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0276",
+      "prim": "/World/Room/Collisions/Rolling_stool_spoke_3",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0277",
+      "prim": "/World/Room/Collisions/Rolling_stool_spoke_4",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0278",
+      "prim": "/World/Room/Collisions/Rolling_stool_wheel_0__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0279",
+      "prim": "/World/Room/Collisions/Rolling_stool_wheel_0_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0280",
+      "prim": "/World/Room/Collisions/Rolling_stool_wheel_1__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0281",
+      "prim": "/World/Room/Collisions/Rolling_stool_wheel_1_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0282",
+      "prim": "/World/Room/Collisions/Rolling_stool_wheel_2__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0283",
+      "prim": "/World/Room/Collisions/Rolling_stool_wheel_2_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0284",
+      "prim": "/World/Room/Collisions/Rolling_stool_wheel_3__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0285",
+      "prim": "/World/Room/Collisions/Rolling_stool_wheel_3_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0286",
+      "prim": "/World/Room/Collisions/Rolling_stool_wheel_4__1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0287",
+      "prim": "/World/Room/Collisions/Rolling_stool_wheel_4_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0288",
+      "prim": "/World/Room/Collisions/Slotted_rail",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0289",
+      "prim": "/World/Room/Collisions/Small_top_carton_base/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0290",
+      "prim": "/World/Room/Collisions/Small_top_carton_flap_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0291",
+      "prim": "/World/Room/Collisions/Small_top_carton_flap_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0292",
+      "prim": "/World/Room/Collisions/Small_top_carton_flap_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0293",
+      "prim": "/World/Room/Collisions/Small_top_carton_flap_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0294",
+      "prim": "/World/Room/Collisions/Small_top_carton_wall_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0295",
+      "prim": "/World/Room/Collisions/Small_top_carton_wall_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0296",
+      "prim": "/World/Room/Collisions/Small_top_carton_wall_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0297",
+      "prim": "/World/Room/Collisions/Small_top_carton_wall_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0298",
+      "prim": "/World/Room/Collisions/Sorting_tray_base/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0299",
+      "prim": "/World/Room/Collisions/Sorting_tray_wall_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0300",
+      "prim": "/World/Room/Collisions/Sorting_tray_wall_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0301",
+      "prim": "/World/Room/Collisions/Sorting_tray_wall_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0302",
+      "prim": "/World/Room/Collisions/Sorting_tray_wall_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0303",
+      "prim": "/World/Room/Collisions/Stacked_cardboard_box_base/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0304",
+      "prim": "/World/Room/Collisions/Stacked_cardboard_box_lid/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0305",
+      "prim": "/World/Room/Collisions/Stacked_cardboard_box_wall_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0306",
+      "prim": "/World/Room/Collisions/Stacked_cardboard_box_wall_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0307",
+      "prim": "/World/Room/Collisions/Stacked_cardboard_box_wall_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0308",
+      "prim": "/World/Room/Collisions/Stacked_cardboard_box_wall_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0309",
+      "prim": "/World/Room/Collisions/TUBE_mark/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0310",
+      "prim": "/World/Room/Collisions/Tall_shipping_carton_base/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0311",
+      "prim": "/World/Room/Collisions/Tall_shipping_carton_lid/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0312",
+      "prim": "/World/Room/Collisions/Tall_shipping_carton_wall_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0313",
+      "prim": "/World/Room/Collisions/Tall_shipping_carton_wall_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0314",
+      "prim": "/World/Room/Collisions/Tall_shipping_carton_wall_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0315",
+      "prim": "/World/Room/Collisions/Tall_shipping_carton_wall_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0316",
+      "prim": "/World/Room/Collisions/Task_cube_0",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0317",
+      "prim": "/World/Room/Collisions/Task_cube_1",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0318",
+      "prim": "/World/Room/Collisions/Task_cube_2",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0319",
+      "prim": "/World/Room/Collisions/Task_cube_3",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0320",
+      "prim": "/World/Room/Collisions/Task_pin",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0321",
+      "prim": "/World/Room/Collisions/Task_pin_001",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0322",
+      "prim": "/World/Room/Collisions/Task_pin_002",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0323",
+      "prim": "/World/Room/Collisions/Tilted_open_carton_base/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0324",
+      "prim": "/World/Room/Collisions/Tilted_open_carton_flap_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0325",
+      "prim": "/World/Room/Collisions/Tilted_open_carton_flap_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0326",
+      "prim": "/World/Room/Collisions/Tilted_open_carton_flap_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0327",
+      "prim": "/World/Room/Collisions/Tilted_open_carton_flap_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0328",
+      "prim": "/World/Room/Collisions/Tilted_open_carton_wall_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0329",
+      "prim": "/World/Room/Collisions/Tilted_open_carton_wall_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0330",
+      "prim": "/World/Room/Collisions/Tilted_open_carton_wall_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0331",
+      "prim": "/World/Room/Collisions/Tilted_open_carton_wall_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0332",
+      "prim": "/World/Room/Collisions/Tissue_box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0333",
+      "prim": "/World/Room/Collisions/Tissue_box_band/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0334",
+      "prim": "/World/Room/Collisions/Toolcase_front_rib",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0335",
+      "prim": "/World/Room/Collisions/Toolcase_front_rib_001",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0336",
+      "prim": "/World/Room/Collisions/Toolcase_front_rib_002",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0337",
+      "prim": "/World/Room/Collisions/Toolcase_front_rib_003",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0338",
+      "prim": "/World/Room/Collisions/Toolcase_handle",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0339",
+      "prim": "/World/Room/Collisions/Toolcase_handle_plate",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0340",
+      "prim": "/World/Room/Collisions/Toolcase_latch_back",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0341",
+      "prim": "/World/Room/Collisions/Toolcase_latch_back_001",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0342",
+      "prim": "/World/Room/Collisions/Toolcase_lid",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0343",
+      "prim": "/World/Room/Collisions/Toolcase_lower",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0344",
+      "prim": "/World/Room/Collisions/Toolcase_silver_latch/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0345",
+      "prim": "/World/Room/Collisions/Toolcase_silver_latch_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0346",
+      "prim": "/World/Room/Collisions/Tripod_hinge",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0347",
+      "prim": "/World/Room/Collisions/Tripod_lock",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0348",
+      "prim": "/World/Room/Collisions/Tripod_lock_001",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0349",
+      "prim": "/World/Room/Collisions/Tripod_lock_002",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "convexHull"
+    },
+    {
+      "key": "mesh_0350",
+      "prim": "/World/Room/Collisions/Tube_cardboard_tray_base/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0351",
+      "prim": "/World/Room/Collisions/Tube_cardboard_tray_flap_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0352",
+      "prim": "/World/Room/Collisions/Tube_cardboard_tray_flap_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0353",
+      "prim": "/World/Room/Collisions/Tube_cardboard_tray_flap_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0354",
+      "prim": "/World/Room/Collisions/Tube_cardboard_tray_flap_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0355",
+      "prim": "/World/Room/Collisions/Tube_cardboard_tray_wall_x/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0356",
+      "prim": "/World/Room/Collisions/Tube_cardboard_tray_wall_x_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0357",
+      "prim": "/World/Room/Collisions/Tube_cardboard_tray_wall_y/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0358",
+      "prim": "/World/Room/Collisions/Tube_cardboard_tray_wall_y_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0359",
+      "prim": "/World/Room/Collisions/West_wall/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0360",
+      "prim": "/World/Room/Collisions/White_retail_box/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0361",
+      "prim": "/World/Room/Collisions/Window_glass_0/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0362",
+      "prim": "/World/Room/Collisions/Window_glass_1/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0363",
+      "prim": "/World/Room/Collisions/Window_glass_2/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0364",
+      "prim": "/World/Room/Collisions/Window_glass_3/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0365",
+      "prim": "/World/Room/Collisions/Wood_sidelight/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0366",
+      "prim": "/World/Room/Collisions/Workbench_crossbrace/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0367",
+      "prim": "/World/Room/Collisions/Workbench_crossbrace_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0368",
+      "prim": "/World/Room/Collisions/Workbench_depth_brace/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0369",
+      "prim": "/World/Room/Collisions/Workbench_depth_brace_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0370",
+      "prim": "/World/Room/Collisions/Writing_table_apron/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0371",
+      "prim": "/World/Room/Collisions/Writing_table_apron_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0372",
+      "prim": "/World/Room/Collisions/Writing_table_edge",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "none"
+    },
+    {
+      "key": "mesh_0373",
+      "prim": "/World/Room/Collisions/Writing_table_foot/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0374",
+      "prim": "/World/Room/Collisions/Writing_table_foot_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0375",
+      "prim": "/World/Room/Collisions/Writing_table_foot_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0376",
+      "prim": "/World/Room/Collisions/Writing_table_foot_003/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0377",
+      "prim": "/World/Room/Collisions/Writing_table_grommet_rim",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "none"
+    },
+    {
+      "key": "mesh_0378",
+      "prim": "/World/Room/Collisions/Writing_table_leg/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0379",
+      "prim": "/World/Room/Collisions/Writing_table_leg_001/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0380",
+      "prim": "/World/Room/Collisions/Writing_table_leg_002/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0381",
+      "prim": "/World/Room/Collisions/Writing_table_leg_003/Box",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0382",
+      "prim": "/World/Room/Collisions/Writing_table_top",
+      "role": "environment_collision",
+      "color": [
+        0.7,
+        0.72,
+        0.73
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "none"
+    },
+    {
+      "key": "mesh_0383",
+      "prim": "/World/Robot/base_link/visuals/base_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7921568751335144,
+        0.8196078538894653,
+        0.9333333373069763
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0384",
+      "prim": "/World/Robot/base_link/FixedFrames/left_wheel_link/visuals/left_wheel_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.012000000104308128,
+        0.013000000268220901,
+        0.01600000075995922
+      ],
+      "roughness": 0.800000011920929,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0385",
+      "prim": "/World/Robot/base_link/FixedFrames/right_wheel_link/visuals/right_wheel_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.012000000104308128,
+        0.013000000268220901,
+        0.01600000075995922
+      ],
+      "roughness": 0.800000011920929,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0386",
+      "prim": "/World/Robot/base_link/FixedFrames/bow_pitch_link_01/visuals/bow_pitch_link_01_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0387",
+      "prim": "/World/Robot/base_link/FixedFrames/bow_pitch_link_02/visuals/bow_pitch_link_02_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.6000000238418579
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0388",
+      "prim": "/World/Robot/base_link/FixedFrames/bow_pitch_link_03/visuals/bow_pitch_link_03_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.6000000238418579
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0389",
+      "prim": "/World/Robot/base_link/FixedFrames/bow_yaw_link/visuals/bow_yaw_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7921568751335144,
+        0.8196078538894653,
+        0.9333333373069763
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0390",
+      "prim": "/World/Robot/base_link/FixedFrames/head_yaw_link/visuals/head_yaw_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7490196228027344,
+        0.46666666865348816,
+        0.4941176474094391
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0391",
+      "prim": "/World/Robot/base_link/FixedFrames/head_pitch_link/visuals/head_pitch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7921568751335144,
+        0.8196078538894653,
+        0.9333333373069763
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0392",
+      "prim": "/World/Robot/base_link/FixedFrames/left_base_link/visuals/left_base_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0393",
+      "prim": "/World/Robot/base_link/FixedFrames/right_base_link/visuals/right_base_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0394",
+      "prim": "/World/Robot/left_shoulder_pitch_link/visuals/left_shoulder_pitch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0395",
+      "prim": "/World/Robot/left_shoulder_roll_link/visuals/left_shoulder_roll_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0396",
+      "prim": "/World/Robot/left_shoulder_yaw_link/visuals/left_shoulder_yaw_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0397",
+      "prim": "/World/Robot/left_elbow_roll_link/visuals/left_elbow_roll_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0398",
+      "prim": "/World/Robot/left_elbow_yaw_link/visuals/left_elbow_yaw_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0399",
+      "prim": "/World/Robot/left_wrist_roll_link/visuals/left_wrist_roll_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0400",
+      "prim": "/World/Robot/left_wrist_pitch_link/visuals/left_wrist_pitch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0401",
+      "prim": "/World/Robot/left_wrist_pitch_link/FixedFrames/left_revo2_adapter/visuals/left_revo2_adapter_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.04500000178813934,
+        0.06499999761581421,
+        0.10999999940395355
+      ],
+      "roughness": 0.44999998807907104,
+      "metallic": 0.44999998807907104,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0402",
+      "prim": "/World/Robot/left_wrist_pitch_link/FixedFrames/left_hand_base_link/visuals/left_hand_base_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0403",
+      "prim": "/World/Robot/left_wrist_pitch_link/FixedFrames/left_hand_base_link/visuals/left_hand_base_link_visual_1/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0404",
+      "prim": "/World/Robot/left_index_proximal_link/visuals/left_index_proximal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0405",
+      "prim": "/World/Robot/left_index_distal_link/visuals/left_index_distal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0406",
+      "prim": "/World/Robot/left_index_distal_link/FixedFrames/left_index_touch_link/visuals/left_index_touch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0407",
+      "prim": "/World/Robot/left_middle_proximal_link/visuals/left_middle_proximal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0408",
+      "prim": "/World/Robot/left_middle_distal_link/visuals/left_middle_distal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0409",
+      "prim": "/World/Robot/left_middle_distal_link/FixedFrames/left_middle_touch_link/visuals/left_middle_touch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0410",
+      "prim": "/World/Robot/left_pinky_proximal_link/visuals/left_pinky_proximal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0411",
+      "prim": "/World/Robot/left_pinky_distal_link/visuals/left_pinky_distal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0412",
+      "prim": "/World/Robot/left_pinky_distal_link/FixedFrames/left_pinky_touch_link/visuals/left_pinky_touch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0413",
+      "prim": "/World/Robot/left_ring_proximal_link/visuals/left_ring_proximal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0414",
+      "prim": "/World/Robot/left_ring_distal_link/visuals/left_ring_distal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0415",
+      "prim": "/World/Robot/left_ring_distal_link/FixedFrames/left_ring_touch_link/visuals/left_ring_touch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0416",
+      "prim": "/World/Robot/left_thumb_metacarpal_link/visuals/left_thumb_metacarpal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0417",
+      "prim": "/World/Robot/left_thumb_proximal_link/visuals/left_thumb_proximal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0418",
+      "prim": "/World/Robot/left_thumb_proximal_link/visuals/left_thumb_proximal_link_visual_1/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0419",
+      "prim": "/World/Robot/left_thumb_distal_link/visuals/left_thumb_distal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0420",
+      "prim": "/World/Robot/left_thumb_distal_link/FixedFrames/left_thumb_touch_link/visuals/left_thumb_touch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0421",
+      "prim": "/World/Robot/right_shoulder_pitch_link/visuals/right_shoulder_pitch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0422",
+      "prim": "/World/Robot/right_shoulder_roll_link/visuals/right_shoulder_roll_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0423",
+      "prim": "/World/Robot/right_shoulder_yaw_link/visuals/right_shoulder_yaw_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0424",
+      "prim": "/World/Robot/right_elbow_roll_link/visuals/right_elbow_roll_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0425",
+      "prim": "/World/Robot/right_elbow_yaw_link/visuals/right_elbow_yaw_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0426",
+      "prim": "/World/Robot/right_wrist_roll_link/visuals/right_wrist_roll_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0427",
+      "prim": "/World/Robot/right_wrist_pitch_link/visuals/right_wrist_pitch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.7200000286102295,
+        0.7450000047683716,
+        0.7300000190734863
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.07999999821186066,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0428",
+      "prim": "/World/Robot/right_wrist_pitch_link/FixedFrames/right_revo2_adapter/visuals/right_revo2_adapter_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.04500000178813934,
+        0.06499999761581421,
+        0.10999999940395355
+      ],
+      "roughness": 0.44999998807907104,
+      "metallic": 0.44999998807907104,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0429",
+      "prim": "/World/Robot/right_wrist_pitch_link/FixedFrames/right_hand_base_link/visuals/right_hand_base_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0430",
+      "prim": "/World/Robot/right_wrist_pitch_link/FixedFrames/right_hand_base_link/visuals/right_hand_base_link_visual_1/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0431",
+      "prim": "/World/Robot/right_index_proximal_link/visuals/right_index_proximal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0432",
+      "prim": "/World/Robot/right_index_distal_link/visuals/right_index_distal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0433",
+      "prim": "/World/Robot/right_index_distal_link/FixedFrames/right_index_touch_link/visuals/right_index_touch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0434",
+      "prim": "/World/Robot/right_middle_proximal_link/visuals/right_middle_proximal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0435",
+      "prim": "/World/Robot/right_middle_distal_link/visuals/right_middle_distal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0436",
+      "prim": "/World/Robot/right_middle_distal_link/FixedFrames/right_middle_touch_link/visuals/right_middle_touch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0437",
+      "prim": "/World/Robot/right_pinky_proximal_link/visuals/right_pinky_proximal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0438",
+      "prim": "/World/Robot/right_pinky_distal_link/visuals/right_pinky_distal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0439",
+      "prim": "/World/Robot/right_pinky_distal_link/FixedFrames/right_pinky_touch_link/visuals/right_pinky_touch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0440",
+      "prim": "/World/Robot/right_ring_proximal_link/visuals/right_ring_proximal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0441",
+      "prim": "/World/Robot/right_ring_distal_link/visuals/right_ring_distal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0442",
+      "prim": "/World/Robot/right_ring_distal_link/FixedFrames/right_ring_touch_link/visuals/right_ring_touch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0443",
+      "prim": "/World/Robot/right_thumb_metacarpal_link/visuals/right_thumb_metacarpal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0444",
+      "prim": "/World/Robot/right_thumb_proximal_link/visuals/right_thumb_proximal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0445",
+      "prim": "/World/Robot/right_thumb_distal_link/visuals/right_thumb_distal_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0446",
+      "prim": "/World/Robot/right_thumb_distal_link/FixedFrames/right_thumb_touch_link/visuals/right_thumb_touch_link_visual_0/node_STL_BINARY_/mesh",
+      "role": "robot_visual",
+      "color": [
+        0.017000000923871994,
+        0.019999999552965164,
+        0.024000000208616257
+      ],
+      "roughness": 0.47999998927116394,
+      "metallic": 0.11999999731779099,
+      "approximation": "box"
+    },
+    {
+      "key": "mesh_0447",
+      "prim": "/World/Task/RedCube/Shape",
+      "role": "task_cube",
+      "color": [
+        0.6200000047683716,
+        0.02500000037252903,
+        0.017999999225139618
+      ],
+      "roughness": 0.550000011920929,
+      "metallic": 0.0,
+      "approximation": "box"
+    }
+  ],
+  "cameras": [
+    {
+      "name": "RGB_head",
+      "matrix_world": [
+        [
+          0.00035122233670647086,
+          0.7084078699919284,
+          -0.7058032065500763,
+          0.43276282049039344
+        ],
+        [
+          -0.9999998568199944,
+          0.0005337669510890461,
+          3.811603889718725e-05,
+          -1.9699036876849354
+        ],
+        [
+          0.0004037361275567924,
+          0.705803092105965,
+          0.7084079560329614,
+          1.561899543758832
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "focal_mm": 20.0,
+      "sensor_width_mm": 65.58924865722656
+    },
+    {
+      "name": "RGB_left_wrist",
+      "matrix_world": [
+        [
+          2.703631440289064e-06,
+          0.07562901113863459,
+          -0.9971360251574923,
+          0.7416501758723931
+        ],
+        [
+          -0.9999999999906318,
+          -3.1660935844714218e-06,
+          -2.9515330836845766e-06,
+          -1.7819999009143443
+        ],
+        [
+          -3.3802475005567533e-06,
+          0.9971360251561308,
+          0.07562901112936606,
+          0.850000065243076
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "focal_mm": 20.0,
+      "sensor_width_mm": 78.31163787841797
+    },
+    {
+      "name": "RGB_right_wrist",
+      "matrix_world": [
+        [
+          -2.7036205780448666e-06,
+          0.07562901112921894,
+          -0.9971360251582067,
+          0.7416501758732812
+        ],
+        [
+          -0.999999999990632,
+          3.1660834755940542e-06,
+          2.951521423168515e-06,
+          -2.0920000990875893
+        ],
+        [
+          3.3802365387493375e-06,
+          0.997136025156845,
+          0.07562901111995049,
+          0.850000065246775
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "focal_mm": 20.0,
+      "sensor_width_mm": 80.6990966796875
+    },
+    {
+      "name": "ReviewSetup",
+      "matrix_world": [
+        [
+          -0.9212495614113859,
+          -0.17344010917192085,
+          0.3481634302016246,
+          1.2499999999999998
+        ],
+        [
+          0.3889720370403629,
+          -0.41077920593349687,
+          0.8245975978459532,
+          -0.5999999999999999
+        ],
+        [
+          0.0,
+          0.8950860140249529,
+          0.44589351587225623,
+          1.5499999999999996
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "focal_mm": 24.0,
+      "sensor_width_mm": 36.0
+    }
+  ]
+}

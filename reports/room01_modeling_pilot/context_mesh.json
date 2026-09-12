@@ -1,0 +1,6 @@
+{
+  "background": "trimmed original textured scan mesh",
+  "removed_triangles": 65718,
+  "remaining_triangles": 363223,
+  "gaussians_active": false
+}

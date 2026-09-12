@@ -1,0 +1,12 @@
+{
+  "ssh_alias": "training-kai",
+  "root": "/mnt/data/dzq/umi_v2/data/task_v2_x2/20260908_170549_358037100_86862",
+  "files": [
+    "meta/e6_stream_session.json",
+    "meta/config_snapshot.json",
+    "extensions/customer_camera/cam0/stream.json",
+    "extensions/customer_camera/cam1/stream.json",
+    "extensions/customer_camera/derived/alignment_report.json"
+  ],
+  "images": "First original decoded frame; no crop/rotation/rectification."
+}

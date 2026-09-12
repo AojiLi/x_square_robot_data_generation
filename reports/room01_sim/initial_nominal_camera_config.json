@@ -1,0 +1,82 @@
+{
+  "head": {
+    "parent_link": "camera_head_front_color_optical_frame",
+    "convention": "ros",
+    "resolution": [
+      1280,
+      720
+    ],
+    "model": "pinhole",
+    "fx": 1099.5,
+    "fy": 1099.5,
+    "cx": 640.0,
+    "cy": 360.0,
+    "near": 0.015,
+    "far": 15.0,
+    "local_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "local_rotation_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "left_wrist": {
+    "parent_link": "left_in_hand_camera_link",
+    "convention": "world",
+    "resolution": [
+      1280,
+      720
+    ],
+    "model": "fisheye_equidistant",
+    "fx": 346.0,
+    "fy": 346.0,
+    "cx": 640.0,
+    "cy": 360.0,
+    "max_fov_deg": 180.0,
+    "near": 0.01,
+    "far": 8.0,
+    "local_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "local_rotation_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "right_wrist": {
+    "parent_link": "right_in_hand_camera_link",
+    "convention": "world",
+    "resolution": [
+      1280,
+      720
+    ],
+    "model": "fisheye_equidistant",
+    "fx": 346.0,
+    "fy": 346.0,
+    "cx": 640.0,
+    "cy": 360.0,
+    "max_fov_deg": 180.0,
+    "near": 0.01,
+    "far": 8.0,
+    "local_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "local_rotation_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  }
+}

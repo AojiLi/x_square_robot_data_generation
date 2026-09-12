@@ -1,0 +1,19 @@
+{
+  "result": "pass",
+  "checks": {
+    "RightArmCameraStub_sdk_ros_bytes_identical": true,
+    "RightArmCameraStub_PIL_OpenCV_same_pixels": true,
+    "RightArmCameraStub_screenshot_is_exact_180_rotation": true,
+    "RightArmCameraStub_jpeg_has_no_EXIF_orientation": true,
+    "LeftArmCameraStub_sdk_ros_bytes_identical": true,
+    "LeftArmCameraStub_PIL_OpenCV_same_pixels": true,
+    "LeftArmCameraStub_screenshot_is_exact_180_rotation": true,
+    "LeftArmCameraStub_jpeg_has_no_EXIF_orientation": true
+  },
+  "source": "Fresh same-timestamp SDK/ROS JPEGs; screenshot operation extracted from live capture_frames.py line108.",
+  "sdk_ros_matches_per_camera": {
+    "LeftArmCameraStub": 8,
+    "RightArmCameraStub": 8
+  },
+  "client_server_transport_source_identical": true
+}

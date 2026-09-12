@@ -1,0 +1,196 @@
+{
+  "result": "pass",
+  "read_only_camera_interfaces": true,
+  "opened_uvc_devices": false,
+  "created_publishers": false,
+  "robot_controls_used": false,
+  "duration_seconds": 3.542313863000004,
+  "ros_message_counts": {
+    "camera1": 35,
+    "camera3": 17
+  },
+  "matches": {
+    "LeftArmCameraStub": [
+      {
+        "source_timestamp_ns": 1789042209411297641,
+        "matched_topic": "/camera1/usb_cam1/image_raw/image_compressed",
+        "sdk_bytes": 15978,
+        "ros_bytes": 15978,
+        "byte_identical": true,
+        "sdk_sha256": "0eb5b13104d5160cc2d55bd77544cc1ecf9db83b9807b396f4d3f21d466f7423",
+        "ros_sha256": "0eb5b13104d5160cc2d55bd77544cc1ecf9db83b9807b396f4d3f21d466f7423",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 67.170637
+      },
+      {
+        "source_timestamp_ns": 1789042209479304641,
+        "matched_topic": "/camera1/usb_cam1/image_raw/image_compressed",
+        "sdk_bytes": 16034,
+        "ros_bytes": 16034,
+        "byte_identical": true,
+        "sdk_sha256": "b2ce676eab6489070a18fd3b14b14d45c2e7389d736dbc23ea1e073350557e64",
+        "ros_sha256": "b2ce676eab6489070a18fd3b14b14d45c2e7389d736dbc23ea1e073350557e64",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 65.778118
+      },
+      {
+        "source_timestamp_ns": 1789042209543299651,
+        "matched_topic": "/camera1/usb_cam1/image_raw/image_compressed",
+        "sdk_bytes": 16110,
+        "ros_bytes": 16110,
+        "byte_identical": true,
+        "sdk_sha256": "e73d0db6ab16e03b5adc3e73c311e0d939a446fb52a00fcfffa5a9b9bd7cd704",
+        "ros_sha256": "e73d0db6ab16e03b5adc3e73c311e0d939a446fb52a00fcfffa5a9b9bd7cd704",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 68.353949
+      },
+      {
+        "source_timestamp_ns": 1789042209611301641,
+        "matched_topic": "/camera1/usb_cam1/image_raw/image_compressed",
+        "sdk_bytes": 16045,
+        "ros_bytes": 16045,
+        "byte_identical": true,
+        "sdk_sha256": "278a2c8426d1ad0c177b9d53404962ad2632aacc1346609c029265a3e158353d",
+        "ros_sha256": "278a2c8426d1ad0c177b9d53404962ad2632aacc1346609c029265a3e158353d",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 66.78874
+      },
+      {
+        "source_timestamp_ns": 1789042209679298641,
+        "matched_topic": "/camera1/usb_cam1/image_raw/image_compressed",
+        "sdk_bytes": 16063,
+        "ros_bytes": 16063,
+        "byte_identical": true,
+        "sdk_sha256": "1aa2c326df2a7405028314627bc635a8d073957f71a53d628bf80e9d9cfb1d30",
+        "ros_sha256": "1aa2c326df2a7405028314627bc635a8d073957f71a53d628bf80e9d9cfb1d30",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 65.39974
+      },
+      {
+        "source_timestamp_ns": 1789042209743366641,
+        "matched_topic": "/camera1/usb_cam1/image_raw/image_compressed",
+        "sdk_bytes": 16094,
+        "ros_bytes": 16094,
+        "byte_identical": true,
+        "sdk_sha256": "2153cdbd2081edbf70cef87faa4d5a5adbc8337bfb9d53bbd24a70128c5e7ad3",
+        "ros_sha256": "2153cdbd2081edbf70cef87faa4d5a5adbc8337bfb9d53bbd24a70128c5e7ad3",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 68.340413
+      },
+      {
+        "source_timestamp_ns": 1789042209811326641,
+        "matched_topic": "/camera1/usb_cam1/image_raw/image_compressed",
+        "sdk_bytes": 16111,
+        "ros_bytes": 16111,
+        "byte_identical": true,
+        "sdk_sha256": "67409e715ee7b8525ca6aa257a97f5c6ec083992b2795704ca09d09e16b5aee0",
+        "ros_sha256": "67409e715ee7b8525ca6aa257a97f5c6ec083992b2795704ca09d09e16b5aee0",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 66.533017
+      },
+      {
+        "source_timestamp_ns": 1789042209879292641,
+        "matched_topic": "/camera1/usb_cam1/image_raw/image_compressed",
+        "sdk_bytes": 16111,
+        "ros_bytes": 16111,
+        "byte_identical": true,
+        "sdk_sha256": "9bb47bed9bcb247e7f5a3c21b5537bcad239ada195a0b1833e32d9a6ce73eab5",
+        "ros_sha256": "9bb47bed9bcb247e7f5a3c21b5537bcad239ada195a0b1833e32d9a6ce73eab5",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 65.805568
+      }
+    ],
+    "RightArmCameraStub": [
+      {
+        "source_timestamp_ns": 1789042209445437641,
+        "matched_topic": "/camera3/usb_cam3/image_raw/image_compressed",
+        "sdk_bytes": 35695,
+        "ros_bytes": 35695,
+        "byte_identical": true,
+        "sdk_sha256": "1dc802a3f010d79b3ac8e8c4592d509da41e47d06a520b205c445b8e3a309265",
+        "ros_sha256": "1dc802a3f010d79b3ac8e8c4592d509da41e47d06a520b205c445b8e3a309265",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 632.648353
+      },
+      {
+        "source_timestamp_ns": 1789042209513435646,
+        "matched_topic": "/camera3/usb_cam3/image_raw/image_compressed",
+        "sdk_bytes": 35679,
+        "ros_bytes": 35679,
+        "byte_identical": true,
+        "sdk_sha256": "90bb823676c9418f0d61e29162e653b0a6cf86200b17db46879df741092950eb",
+        "ros_sha256": "90bb823676c9418f0d61e29162e653b0a6cf86200b17db46879df741092950eb",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 631.192475
+      },
+      {
+        "source_timestamp_ns": 1789042209577434641,
+        "matched_topic": "/camera3/usb_cam3/image_raw/image_compressed",
+        "sdk_bytes": 35863,
+        "ros_bytes": 35863,
+        "byte_identical": true,
+        "sdk_sha256": "e32e9ebaccba0e0fdbf93bfbb8078292ff56bd288d849a15322601bc3058c8da",
+        "ros_sha256": "e32e9ebaccba0e0fdbf93bfbb8078292ff56bd288d849a15322601bc3058c8da",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 634.246927
+      },
+      {
+        "source_timestamp_ns": 1789042209645436641,
+        "matched_topic": "/camera3/usb_cam3/image_raw/image_compressed",
+        "sdk_bytes": 35842,
+        "ros_bytes": 35842,
+        "byte_identical": true,
+        "sdk_sha256": "84a664531785e93fcbdbb5d39877d5e72204add83a9269a936bc1605aa487295",
+        "ros_sha256": "84a664531785e93fcbdbb5d39877d5e72204add83a9269a936bc1605aa487295",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 632.561765
+      },
+      {
+        "source_timestamp_ns": 1789042209713430657,
+        "matched_topic": "/camera3/usb_cam3/image_raw/image_compressed",
+        "sdk_bytes": 35875,
+        "ros_bytes": 35875,
+        "byte_identical": true,
+        "sdk_sha256": "cd1207b427de291caa3a6abeccc36e0c5740866a44618555e46d2164316731de",
+        "ros_sha256": "cd1207b427de291caa3a6abeccc36e0c5740866a44618555e46d2164316731de",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 631.543772
+      },
+      {
+        "source_timestamp_ns": 1789042209777447641,
+        "matched_topic": "/camera3/usb_cam3/image_raw/image_compressed",
+        "sdk_bytes": 35812,
+        "ros_bytes": 35812,
+        "byte_identical": true,
+        "sdk_sha256": "40150e3aaf2b27354609b181b4a54d64f5a3aee02e45aa23a948513ab3871b85",
+        "ros_sha256": "40150e3aaf2b27354609b181b4a54d64f5a3aee02e45aa23a948513ab3871b85",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 634.096176
+      },
+      {
+        "source_timestamp_ns": 1789042209845433641,
+        "matched_topic": "/camera3/usb_cam3/image_raw/image_compressed",
+        "sdk_bytes": 35798,
+        "ros_bytes": 35798,
+        "byte_identical": true,
+        "sdk_sha256": "85c7e8d4876d62a2f39e3558dbc7c68ecfdd30379ed268225cccdd23f0d26ddd",
+        "ros_sha256": "85c7e8d4876d62a2f39e3558dbc7c68ecfdd30379ed268225cccdd23f0d26ddd",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 632.423208
+      },
+      {
+        "source_timestamp_ns": 1789042209913422651,
+        "matched_topic": "/camera3/usb_cam3/image_raw/image_compressed",
+        "sdk_bytes": 36040,
+        "ros_bytes": 36040,
+        "byte_identical": true,
+        "sdk_sha256": "bbe9dbb7fa2a27b2616452f091991dfbffaaf77d66ef736389414c6c7723c9c1",
+        "ros_sha256": "bbe9dbb7fa2a27b2616452f091991dfbffaaf77d66ef736389414c6c7723c9c1",
+        "sdk_source_format": "jpeg",
+        "age_when_pair_matched_ms": 631.15661
+      }
+    ]
+  },
+  "rpc_errors": [],
+  "timing_note": "Age measured when the SDK/ROS pair was matched, including probe buffering; not SDK RPC latency."
+}

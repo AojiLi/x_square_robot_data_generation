@@ -1,0 +1,31 @@
+{
+  "remote_job": "/home/user02/cosmos-deploy/jobs/grok_style_20260911",
+  "scope": "Read-only inspection of an existing user sample, not a new inference and not the current simulation episode.",
+  "frames": [
+    [
+      "input_000.png",
+      "/home/user02/cosmos-deploy/jobs/grok_style_20260911/assets/input1.mp4",
+      0
+    ],
+    [
+      "input_092.png",
+      "/home/user02/cosmos-deploy/jobs/grok_style_20260911/assets/input1.mp4",
+      92
+    ],
+    [
+      "output_000.png",
+      "/home/user02/cosmos-deploy/jobs/grok_style_20260911/batch_out/augmented_1.mp4",
+      0
+    ],
+    [
+      "output_046.png",
+      "/home/user02/cosmos-deploy/jobs/grok_style_20260911/batch_out/augmented_1.mp4",
+      46
+    ],
+    [
+      "output_092.png",
+      "/home/user02/cosmos-deploy/jobs/grok_style_20260911/batch_out/augmented_1.mp4",
+      92
+    ]
+  ]
+}

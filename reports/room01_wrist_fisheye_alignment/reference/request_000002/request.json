@@ -1,0 +1,306 @@
+{
+  "schema": "umi_policy_io_record_v2",
+  "session_id": "20260824T091633.664930Z-pid2632484-1c6fc5df",
+  "server_request_index": 2,
+  "status": "success",
+  "started_wall_time_ns": 1787563056294994821,
+  "started_utc": "2026-08-24T09:17:36.294995+00:00",
+  "completed_wall_time_ns": 1787563056399343208,
+  "completed_utc": "2026-08-24T09:17:36.399343+00:00",
+  "started_monotonic_ns": 245931487281216,
+  "infer_completed_monotonic_ns": 245931553691487,
+  "policy_wrapper_ms": 66.410271,
+  "prompt": "Put the object into the box, then take it out.",
+  "client_recording": {
+    "client_run_id": "xr-20260824T171729-pid744161-9f332a29",
+    "client_request_index": 2,
+    "client_request_role": "fresh_live_initial",
+    "action_output_basis": "v2_to_current",
+    "action_basis_config_sha256": "2ceae98be432a19c5b8cd6e634e34b0de4199f23bdd6e7d5bec7b522d0ee3676"
+  },
+  "source_context": {
+    "e6": {
+      "frame_sequence": 3758,
+      "frame_wall_time_ns": 1787563056173301352,
+      "frame_monotonic_ns": 245931365587697,
+      "alignment_wall_time_ns": 1787563056173301352,
+      "age_at_selection_ms": 121.435126,
+      "latest_stream_age_ms": 2.742285,
+      "signed_to_wrist_midpoint_ms": -10.474811,
+      "input_shape": [
+        1200,
+        3200,
+        3
+      ],
+      "selected_eye_shape": [
+        1200,
+        1600,
+        3
+      ],
+      "output_shape": [
+        480,
+        640,
+        3
+      ],
+      "layout": "stereo_side_by_side",
+      "eye": "right",
+      "endpoint": "tcp://127.0.0.1:18554",
+      "timestamp_offset_ms": 0.0,
+      "timestamp_semantics": "5090_decode_complete_plus_configured_offset"
+    },
+    "camera_sync": {
+      "schema": "umi_camera_sync_v3",
+      "clock_domain": "policy_server_unix_epoch_ns_estimated_v1",
+      "status": "aligned",
+      "observation_wall_time_ns": 1787563056183776163,
+      "state_first_observation_wall_time_ns": 1787563056084629714,
+      "state_observation_interval_ms": 99.146449,
+      "state_samples": {
+        "first": {
+          "left_eef": {
+            "source_wall_time_ns": 1787563056084433244,
+            "arrival_wall_time_ns": 1787563056084186181,
+            "arrival_monotonic_ns": 25540040906485,
+            "sequence": 2192,
+            "source": "/left_arm/state/end_pose",
+            "timestamp_semantics": "ros_header_stamp",
+            "signed_to_observation_ms": -0.19647
+          },
+          "right_eef": {
+            "source_wall_time_ns": 1787563056084436975,
+            "arrival_wall_time_ns": 1787563056084579862,
+            "arrival_monotonic_ns": 25540041300076,
+            "sequence": 2189,
+            "source": "/right_arm/state/end_pose",
+            "timestamp_semantics": "ros_header_stamp",
+            "signed_to_observation_ms": -0.192739
+          },
+          "left_hand": {
+            "source_wall_time_ns": 1787563056089587866,
+            "arrival_wall_time_ns": 1787563056089973324,
+            "arrival_monotonic_ns": 25540046693368,
+            "sequence": 159,
+            "source": "/revo2/state/left",
+            "timestamp_semantics": "revo2_payload_timestamp",
+            "signed_to_observation_ms": 4.958152
+          },
+          "right_hand": {
+            "source_wall_time_ns": 1787563056089781402,
+            "arrival_wall_time_ns": 1787563056090404665,
+            "arrival_monotonic_ns": 25540047124528,
+            "sequence": 159,
+            "source": "/revo2/state/right",
+            "timestamp_semantics": "revo2_payload_timestamp",
+            "signed_to_observation_ms": 5.151688
+          }
+        },
+        "second": {
+          "left_eef": {
+            "source_wall_time_ns": 1787563056183373488,
+            "arrival_wall_time_ns": 1787563056183051193,
+            "arrival_monotonic_ns": 25540139771407,
+            "sequence": 2291,
+            "source": "/left_arm/state/end_pose",
+            "timestamp_semantics": "ros_header_stamp",
+            "signed_to_observation_ms": -0.402675
+          },
+          "right_eef": {
+            "source_wall_time_ns": 1787563056183377200,
+            "arrival_wall_time_ns": 1787563056183309863,
+            "arrival_monotonic_ns": 25540140029897,
+            "sequence": 2288,
+            "source": "/right_arm/state/end_pose",
+            "timestamp_semantics": "ros_header_stamp",
+            "signed_to_observation_ms": -0.398963
+          },
+          "left_hand": {
+            "source_wall_time_ns": 1787563056190359194,
+            "arrival_wall_time_ns": 1787563056191691102,
+            "arrival_monotonic_ns": 25540148411486,
+            "sequence": 162,
+            "source": "/revo2/state/left",
+            "timestamp_semantics": "revo2_payload_timestamp",
+            "signed_to_observation_ms": 6.583031
+          },
+          "right_hand": {
+            "source_wall_time_ns": 1787563056190143898,
+            "arrival_wall_time_ns": 1787563056191787070,
+            "arrival_monotonic_ns": 25540148507054,
+            "sequence": 162,
+            "source": "/revo2/state/right",
+            "timestamp_semantics": "revo2_payload_timestamp",
+            "signed_to_observation_ms": 6.367735
+          }
+        },
+        "eef_intervals_ms": {
+          "left_eef": 98.940244,
+          "right_eef": 98.940225
+        }
+      },
+      "state_alignment": {
+        "max_allowed_state_skew_ms": 25.0,
+        "signed_skew_ms": {
+          "first": {
+            "left_eef": -0.19647,
+            "right_eef": -0.192739,
+            "left_hand": 4.958152,
+            "right_hand": 5.151688
+          },
+          "second": {
+            "left_eef": -0.402675,
+            "right_eef": -0.398963,
+            "left_hand": 6.583031,
+            "right_hand": 6.367735
+          }
+        },
+        "eef_intervals_ms": {
+          "left_eef": 98.940244,
+          "right_eef": 98.940225
+        }
+      },
+      "max_allowed_pairwise_skew_ms": 50.0,
+      "effective_timestamp_skew_limit_ms": 47.00916,
+      "clock_sync": {
+        "schema": "umi_min_rtt_clock_sync_v1",
+        "method": "ntp_four_timestamp_min_delay",
+        "server_minus_client_wall_time_ns": -12310630,
+        "best_round_trip_ns": 5984369,
+        "best_network_delay_ns": 5981681,
+        "uncertainty_ns": 2990840,
+        "sample_count": 5,
+        "measured_client_wall_time_ns": 1787563056121309213,
+        "measured_server_wall_time_ns": 1787563056108998583,
+        "translated_wall_time_field_count": 23
+      },
+      "clock_sync_age_ms": 184.011043,
+      "clock_uncertainty_ms": 2.99084,
+      "max_pairwise_skew_ms": 15.249149,
+      "signed_skew_ms": {
+        "cam_left_wrist": 4.774338,
+        "cam_right_wrist": -4.774337,
+        "cam_high": -10.474811
+      },
+      "server_receive_wall_time_ns": 1787563056293009626,
+      "observation_transport_age_ms": 109.233463,
+      "worst_observation_transport_age_ms": 112.224303,
+      "observation_transport_age_policy": "diagnostic_only",
+      "source_to_send_ms": 35.203597,
+      "send_to_receive_ms": 74.029866,
+      "client_send_wall_time_ns": 1787563056218979760,
+      "timestamp_quality": {
+        "cam_high": "5090_decode_complete_plus_configured_offset",
+        "cam_left_wrist": "ros_header_stamp",
+        "cam_right_wrist": "ros_header_stamp"
+      },
+      "cameras": {
+        "cam_left_wrist": {
+          "source_wall_time_ns": 1787563056188550501,
+          "arrival_wall_time_ns": 1787563056190578517,
+          "arrival_monotonic_ns": 25540147298690,
+          "sequence": 193,
+          "source": "/camera1/usb_cam1/image_raw/image_compressed",
+          "timestamp_semantics": "ros_header_stamp"
+        },
+        "cam_right_wrist": {
+          "source_wall_time_ns": 1787563056179001826,
+          "arrival_wall_time_ns": 1787563056180773735,
+          "arrival_monotonic_ns": 25540137494229,
+          "sequence": 193,
+          "source": "/camera3/usb_cam3/image_raw/image_compressed",
+          "timestamp_semantics": "ros_header_stamp"
+        },
+        "cam_high": {
+          "frame_sequence": 3758,
+          "frame_wall_time_ns": 1787563056173301352,
+          "frame_monotonic_ns": 245931365587697,
+          "alignment_wall_time_ns": 1787563056173301352,
+          "age_at_selection_ms": 121.435126,
+          "latest_stream_age_ms": 2.742285,
+          "signed_to_wrist_midpoint_ms": -10.474811,
+          "input_shape": [
+            1200,
+            3200,
+            3
+          ],
+          "selected_eye_shape": [
+            1200,
+            1600,
+            3
+          ],
+          "output_shape": [
+            480,
+            640,
+            3
+          ],
+          "layout": "stereo_side_by_side",
+          "eye": "right",
+          "endpoint": "tcp://127.0.0.1:18554",
+          "timestamp_offset_ms": 0.0,
+          "timestamp_semantics": "5090_decode_complete_plus_configured_offset"
+        }
+      },
+      "selection": {
+        "max_pairwise_skew_ns": 15249149,
+        "max_pairwise_skew_ms": 15.249149
+      }
+    }
+  },
+  "result_metadata": {
+    "policy_timing": {
+      "infer_ms": 49.92488998686895
+    }
+  },
+  "error": null,
+  "free_bytes_before_write": 910053777408,
+  "integrity": {
+    "cam_high": {
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "dtype": "uint8",
+      "raw_sha256": "753f97cf279dfce0c6b773a74516b698c39b5c50b1d76250e20d8a1f85e2058a",
+      "file": "cam_high.png"
+    },
+    "cam_left_wrist": {
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "dtype": "uint8",
+      "raw_sha256": "353b1d67abf10dc3b128bc3702831e5c2b8f0807b81af53d2f012be94dd14ff2",
+      "file": "cam_left_wrist.png"
+    },
+    "cam_right_wrist": {
+      "shape": [
+        480,
+        640,
+        3
+      ],
+      "dtype": "uint8",
+      "raw_sha256": "62155ca9128d2fb44f0cb4e1170608d80b94d9e9265436e3238640f3ac93d173",
+      "file": "cam_right_wrist.png"
+    },
+    "state30": {
+      "shape": [
+        30
+      ],
+      "dtype": "float32",
+      "raw_sha256": "200faa08c52bd00e1c444cf4a58b5b42beda2fd5161e4fc24f025ef7bcc2771c",
+      "npy": "state30.npy",
+      "csv": "state30.csv"
+    },
+    "actions": {
+      "shape": [
+        50,
+        30
+      ],
+      "dtype": "float32",
+      "raw_sha256": "ac59947b42e97efd6c233e24dd8577366b5b0f041abcb0698bcb4b2733a30915",
+      "npy": "actions_50x30.npy",
+      "csv": "actions_50x30.csv"
+    }
+  }
+}

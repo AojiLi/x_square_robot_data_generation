@@ -1,0 +1,14 @@
+{
+  "result": "pass",
+  "checks": {
+    "old_compressed_v1_rotates_exactly_180": true,
+    "new_compressed_v2_preserves_original": true,
+    "old_raw_array_path_does_not_rotate": true,
+    "new_raw_array_path_does_not_rotate": true,
+    "new_rejects_old_v1_payload": true,
+    "old_rejects_new_v2_payload": true
+  },
+  "old_schema": "umi_ros_compressed_wrist_v1",
+  "new_schema": "umi_ros_compressed_wrist_v2",
+  "scope": "Reproduced retained old and current decoder behavior with the same asymmetric PNG. Does not prove which path generated a historical request."
+}

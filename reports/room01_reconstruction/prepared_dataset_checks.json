@@ -1,0 +1,59 @@
+{
+  "status": "structural_checks_passed",
+  "frames": 488,
+  "train_frames": 439,
+  "evaluation_frames": 49,
+  "initial_points": 180000,
+  "max_camera_rotation_orthogonality_error": 1.1944883793191252e-07,
+  "image_pyramid_and_calibration_dimensions": "pass",
+  "six_source_crop_pixel_comparisons": "exact match",
+  "camera_world_units": "meters",
+  "ply_to_glb_internal_alignment": {
+    "rotation": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "median_m": 0.008491256991674353,
+    "p90_m": 0.01660108038911905
+  },
+  "projection_previews": [
+    {
+      "frame_index": 4,
+      "visible_point_pixels": 20430
+    },
+    {
+      "frame_index": 54,
+      "visible_point_pixels": 10781
+    },
+    {
+      "frame_index": 124,
+      "visible_point_pixels": 10635
+    },
+    {
+      "frame_index": 204,
+      "visible_point_pixels": 6599
+    },
+    {
+      "frame_index": 354,
+      "visible_point_pixels": 8683
+    },
+    {
+      "frame_index": 384,
+      "visible_point_pixels": 18549
+    }
+  ],
+  "limitation": "Internal alignment, pose structure and dimensions do not certify real-world geometric accuracy."
+}

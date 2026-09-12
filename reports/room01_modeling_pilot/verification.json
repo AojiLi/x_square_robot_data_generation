@@ -1,0 +1,26 @@
+{
+  "result": "pass",
+  "native_renderer": "Isaac Sim 6.0.1",
+  "modeled_meshes": 15,
+  "renders": [
+    {
+      "camera": "/World/ReviewTable",
+      "shape": [
+        552,
+        736,
+        3
+      ],
+      "std": 50.37966583611119
+    },
+    {
+      "camera": "/World/ReviewRoom",
+      "shape": [
+        552,
+        736,
+        3
+      ],
+      "std": 70.00458165661456
+    }
+  ],
+  "aa": 4
+}

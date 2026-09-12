@@ -1,0 +1,11 @@
+# Python 3.11. For torch/torchvision, use the official CUDA 12.8 wheel index.
+torch==2.7.0+cu128
+torchvision==0.22.0+cu128
+numpy==1.26.0
+scipy==1.15.3
+Pillow==11.3.0
+nerfstudio==1.1.5
+gsplat==1.4.0
+tyro>=0.9.8,<0.10
+imageio-ffmpeg
+plyfile<1.1.3

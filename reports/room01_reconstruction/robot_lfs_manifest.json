@@ -1,0 +1,870 @@
+[
+  {
+    "relative": "mesh/dummy_gripper_base.STL",
+    "oid": "ab68b1dd3846ef058fa832044059d277dbd315c5b2c195b45d6b19e9aa45f07f",
+    "size": 5591784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/ab/68/ab68b1dd3846ef058fa832044059d277dbd315c5b2c195b45d6b19e9aa45f07f"
+  },
+  {
+    "relative": "flange_adapter/x2_revo2_flange_collision.stl",
+    "oid": "534dc3bf30793f9ae8b3cc060a9dab8d8954fe07dd00e6d2f95aee7948a1b540",
+    "size": 2445284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/53/4d/534dc3bf30793f9ae8b3cc060a9dab8d8954fe07dd00e6d2f95aee7948a1b540"
+  },
+  {
+    "relative": "flange_adapter/x2_revo2_flange.stl",
+    "oid": "534dc3bf30793f9ae8b3cc060a9dab8d8954fe07dd00e6d2f95aee7948a1b540",
+    "size": 2445284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/53/4d/534dc3bf30793f9ae8b3cc060a9dab8d8954fe07dd00e6d2f95aee7948a1b540"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/Base_R.STL",
+    "oid": "f22c309ed8cacd2fc776e2f72a2fc5618d9da84315267377edd3205e91ebbcb5",
+    "size": 204584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/f2/2c/f22c309ed8cacd2fc776e2f72a2fc5618d9da84315267377edd3205e91ebbcb5"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link5_R.STL",
+    "oid": "82a9352af916d8a04735b6985504b02dbfbdd4c26e423e8d59457dccded894b1",
+    "size": 498884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/82/a9/82a9352af916d8a04735b6985504b02dbfbdd4c26e423e8d59457dccded894b1"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link4_R.STL",
+    "oid": "60b0cb62228c56de5b1a1e1e99db237c794d2c962618e7ab930d64e5c79e958e",
+    "size": 621584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/60/b0/60b0cb62228c56de5b1a1e1e99db237c794d2c962618e7ab930d64e5c79e958e"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link3_R.STL",
+    "oid": "2923d5ef76b6f4bfcff15d5ea62369fc8061f3b3209718316745c19cf0dafa92",
+    "size": 635484,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/29/23/2923d5ef76b6f4bfcff15d5ea62369fc8061f3b3209718316745c19cf0dafa92"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link6_R.STL",
+    "oid": "fc81d962de79a690135a3cc1e4199ebd1ec0160c3bd06c07f92f018dfb21e6e9",
+    "size": 559084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/fc/81/fc81d962de79a690135a3cc1e4199ebd1ec0160c3bd06c07f92f018dfb21e6e9"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link7_R.STL",
+    "oid": "897119c6102aaeb78a19f4f6f627c43a599f10bdff57ca70c805d468db0e770c",
+    "size": 3313784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/89/71/897119c6102aaeb78a19f4f6f627c43a599f10bdff57ca70c805d468db0e770c"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link2_R.STL",
+    "oid": "c47dbb215330d5c2ac59f01faeefae2cdbdbebb3a3f354c8a0f52ce4df796b0d",
+    "size": 1278784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/c4/7d/c47dbb215330d5c2ac59f01faeefae2cdbdbebb3a3f354c8a0f52ce4df796b0d"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link1_R.STL",
+    "oid": "cb937408a554e19e1ca1a2cb8734251f1216ad22a1ac88daa69c3be193c1d220",
+    "size": 563584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/cb/93/cb937408a554e19e1ca1a2cb8734251f1216ad22a1ac88daa69c3be193c1d220"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link2_L.STL",
+    "oid": "c47dbb215330d5c2ac59f01faeefae2cdbdbebb3a3f354c8a0f52ce4df796b0d",
+    "size": 1278784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/c4/7d/c47dbb215330d5c2ac59f01faeefae2cdbdbebb3a3f354c8a0f52ce4df796b0d"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/Base_L.STL",
+    "oid": "f22c309ed8cacd2fc776e2f72a2fc5618d9da84315267377edd3205e91ebbcb5",
+    "size": 204584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/f2/2c/f22c309ed8cacd2fc776e2f72a2fc5618d9da84315267377edd3205e91ebbcb5"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link7_L.STL",
+    "oid": "986a71e08ccb6a740d2d5596dd6a93314595f1d53ef01ccfb0e452346ed24c72",
+    "size": 3316284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/98/6a/986a71e08ccb6a740d2d5596dd6a93314595f1d53ef01ccfb0e452346ed24c72"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link6_L.STL",
+    "oid": "407ab248765ffb16d49dabf0c8d132512e3dcff0228556310725dab4d1fcbe11",
+    "size": 559084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/40/7a/407ab248765ffb16d49dabf0c8d132512e3dcff0228556310725dab4d1fcbe11"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link4_L.STL",
+    "oid": "b59f53b761139a0f8a879ff0ca803a81c492372f294f8f245440fd4aba2aab64",
+    "size": 621584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/b5/9f/b59f53b761139a0f8a879ff0ca803a81c492372f294f8f245440fd4aba2aab64"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link1_L.STL",
+    "oid": "cb937408a554e19e1ca1a2cb8734251f1216ad22a1ac88daa69c3be193c1d220",
+    "size": 563584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/cb/93/cb937408a554e19e1ca1a2cb8734251f1216ad22a1ac88daa69c3be193c1d220"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link5_L.STL",
+    "oid": "77f126494f89dbc0846050900e18aec437bfb171d826ddc4f5102e1cbb6062d2",
+    "size": 498884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/77/f1/77f126494f89dbc0846050900e18aec437bfb171d826ddc4f5102e1cbb6062d2"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link3_L.STL",
+    "oid": "fb8626d27ed2ef52edf0b12b07383a3c10d021000885c5277b9c9dd90c49b9cd",
+    "size": 635484,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/fb/86/fb8626d27ed2ef52edf0b12b07383a3c10d021000885c5277b9c9dd90c49b9cd"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/bow_pitch_link_02.STL",
+    "oid": "272507e564503e3a82d5f1b379dfe57c4673ea49dab650949f7b1013bb5c30e8",
+    "size": 1197934,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/27/25/272507e564503e3a82d5f1b379dfe57c4673ea49dab650949f7b1013bb5c30e8"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/bow_pitch_link_03.STL",
+    "oid": "7791b4a5ba96992ca876d00df2f3b4db5965378e89da554c7ff041c4d9a1c548",
+    "size": 572084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/77/91/7791b4a5ba96992ca876d00df2f3b4db5965378e89da554c7ff041c4d9a1c548"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/base_link.STL",
+    "oid": "1dca634f27794d626bec44776a48ed942329c3e2c8fbc8b8f3a9f9e419407464",
+    "size": 14131484,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/1d/ca/1dca634f27794d626bec44776a48ed942329c3e2c8fbc8b8f3a9f9e419407464"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/left_wheel_link.STL",
+    "oid": "831f0585cc7e50e8827a4d305a71ddb07bd879fae60f2245e6bc92b3db3c7407",
+    "size": 8344684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/83/1f/831f0585cc7e50e8827a4d305a71ddb07bd879fae60f2245e6bc92b3db3c7407"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/head_yaw_link.STL",
+    "oid": "383ed9925a58377b591ea6c15cba54eb727b48b6daffbedc94861868989aa87d",
+    "size": 896334,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/38/3e/383ed9925a58377b591ea6c15cba54eb727b48b6daffbedc94861868989aa87d"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/bow_pitch_link_01.STL",
+    "oid": "7049da07f3a2630fa11866a4a1b4c68dd7718fdb57f24c78ff0da7eeda3d2c08",
+    "size": 1357084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/70/49/7049da07f3a2630fa11866a4a1b4c68dd7718fdb57f24c78ff0da7eeda3d2c08"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/head_pitch_link.STL",
+    "oid": "d35adf9024402855bffcf94f18f59a635f232f98807aeccac8f37a30a6810206",
+    "size": 1140934,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/d3/5a/d35adf9024402855bffcf94f18f59a635f232f98807aeccac8f37a30a6810206"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/bow_yaw_link.STL",
+    "oid": "5eaf46f8ba301f0fef1adbca72adf934566955fba07ae57253cd9abc16a6264c",
+    "size": 5629434,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/5e/af/5eaf46f8ba301f0fef1adbca72adf934566955fba07ae57253cd9abc16a6264c"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/right_wheel_link.STL",
+    "oid": "0c1626aabf936514cfca153398169989ff1c61011f5a3226e30d352c1f43a672",
+    "size": 8344684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/0c/16/0c1626aabf936514cfca153398169989ff1c61011f5a3226e30d352c1f43a672"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Base_R.STL",
+    "oid": "198e9940df8832ba9832a555a6f966b0a7b5bce1ede514b16f510ce3956f72d3",
+    "size": 12684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/19/8e/198e9940df8832ba9832a555a6f966b0a7b5bce1ede514b16f510ce3956f72d3"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link5_R.STL",
+    "oid": "7e0ecc58d066ab53eea5d97fb352dae801708e1e51d55c4660d521dd4d987b01",
+    "size": 37684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/7e/0e/7e0ecc58d066ab53eea5d97fb352dae801708e1e51d55c4660d521dd4d987b01"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link4_R.STL",
+    "oid": "16d261dfe1d1f1f614c0414a5f1743c21db7f610e82d6ebfdb287651fca21d5d",
+    "size": 37584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/16/d2/16d261dfe1d1f1f614c0414a5f1743c21db7f610e82d6ebfdb287651fca21d5d"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link3_R.STL",
+    "oid": "03cb0d3a408d9aeb1b6bdb0d58b4f2192fc6db2ee6cc5dcc800968bb6e807d73",
+    "size": 25184,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/03/cb/03cb0d3a408d9aeb1b6bdb0d58b4f2192fc6db2ee6cc5dcc800968bb6e807d73"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link6_R.STL",
+    "oid": "f5779f8d45da2baaac520af9981905ec48dd8a9d8bcdfd7655b37431befdc18f",
+    "size": 37384,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/f5/77/f5779f8d45da2baaac520af9981905ec48dd8a9d8bcdfd7655b37431befdc18f"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link7_R.STL",
+    "oid": "6d7295fa89ac1f37e438116398dbc935d63e6b8ca3edc6aa6edbc5b192c7a9af",
+    "size": 50484,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/6d/72/6d7295fa89ac1f37e438116398dbc935d63e6b8ca3edc6aa6edbc5b192c7a9af"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link2_R.STL",
+    "oid": "e92565edd363a4bfa4bdf598bc9d9768977135f64e055221c4206f313fba528e",
+    "size": 37884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/e9/25/e92565edd363a4bfa4bdf598bc9d9768977135f64e055221c4206f313fba528e"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link1_R.STL",
+    "oid": "840132ef18609855975d412138b087a0d2ab984f2499b2d6b16da054fc675def",
+    "size": 25284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/84/01/840132ef18609855975d412138b087a0d2ab984f2499b2d6b16da054fc675def"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link2_L.STL",
+    "oid": "e92565edd363a4bfa4bdf598bc9d9768977135f64e055221c4206f313fba528e",
+    "size": 37884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/e9/25/e92565edd363a4bfa4bdf598bc9d9768977135f64e055221c4206f313fba528e"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Base_L.STL",
+    "oid": "198e9940df8832ba9832a555a6f966b0a7b5bce1ede514b16f510ce3956f72d3",
+    "size": 12684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/19/8e/198e9940df8832ba9832a555a6f966b0a7b5bce1ede514b16f510ce3956f72d3"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link7_L.STL",
+    "oid": "7dffb55bfc0f449f66f070e28afe67f0e22a9605c30167cc75bb358f15ab1366",
+    "size": 62784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/7d/ff/7dffb55bfc0f449f66f070e28afe67f0e22a9605c30167cc75bb358f15ab1366"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link6_L.STL",
+    "oid": "bd11ad5c19157e7e1d18864e2f5ab9c53fb6687f0fe5e54ff2612f2167412c2e",
+    "size": 37584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/bd/11/bd11ad5c19157e7e1d18864e2f5ab9c53fb6687f0fe5e54ff2612f2167412c2e"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link4_L.STL",
+    "oid": "16d261dfe1d1f1f614c0414a5f1743c21db7f610e82d6ebfdb287651fca21d5d",
+    "size": 37584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/16/d2/16d261dfe1d1f1f614c0414a5f1743c21db7f610e82d6ebfdb287651fca21d5d"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link1_L.STL",
+    "oid": "840132ef18609855975d412138b087a0d2ab984f2499b2d6b16da054fc675def",
+    "size": 25284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/84/01/840132ef18609855975d412138b087a0d2ab984f2499b2d6b16da054fc675def"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link5_L.STL",
+    "oid": "73cfeeaa2701aea177696aafbafeb27c959c5d123d6a3c4c021af294c4e4596d",
+    "size": 37684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/73/cf/73cfeeaa2701aea177696aafbafeb27c959c5d123d6a3c4c021af294c4e4596d"
+  },
+  {
+    "relative": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link3_L.STL",
+    "oid": "aa1b81a9111b07563528e0df65da65d23762a819dfc41987842d279bc90ff9a0",
+    "size": 25184,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/aa/1b/aa1b81a9111b07563528e0df65da65d23762a819dfc41987842d279bc90ff9a0"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/collision/bow_pitch_link_02.STL",
+    "oid": "f19f871fa0b4fd352805d42bea1dd006623e7bd86c95ace3c454030d5db41c4d",
+    "size": 35684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/f1/9f/f19f871fa0b4fd352805d42bea1dd006623e7bd86c95ace3c454030d5db41c4d"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/collision/bow_pitch_link_03.STL",
+    "oid": "76b5e7aeb775db298d1106cde7be6ebd77afa579149b837f431e466d48cc7647",
+    "size": 160484,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/76/b5/76b5e7aeb775db298d1106cde7be6ebd77afa579149b837f431e466d48cc7647"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/collision/base_link.STL",
+    "oid": "a931bbd711be0c416baa54ffa2a9411b386264093fa4b283d4a432aa303255aa",
+    "size": 297384,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/a9/31/a931bbd711be0c416baa54ffa2a9411b386264093fa4b283d4a432aa303255aa"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/collision/left_wheel_link.STL",
+    "oid": "6febbea49da919a691d15625a9052ec651626093903884f45276a1dbdefb6486",
+    "size": 229384,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/6f/eb/6febbea49da919a691d15625a9052ec651626093903884f45276a1dbdefb6486"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/collision/head_yaw_link.STL",
+    "oid": "2c025a559208ae20f4b1cbdbdc121fa0daf7f0bd574fd627564a29f8f6d5b81e",
+    "size": 171884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/2c/02/2c025a559208ae20f4b1cbdbdc121fa0daf7f0bd574fd627564a29f8f6d5b81e"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/collision/bow_pitch_link_01.STL",
+    "oid": "4b65096f58fef379687a6ab4bc68eacb476fde2a5af2a36129f28d7c1424fb38",
+    "size": 149484,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/4b/65/4b65096f58fef379687a6ab4bc68eacb476fde2a5af2a36129f28d7c1424fb38"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/collision/head_pitch_link.STL",
+    "oid": "e0c56a29ada9a73f2d998150cae2f69a9321465cabab26fa3469002ab0cfd926",
+    "size": 289084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/e0/c5/e0c56a29ada9a73f2d998150cae2f69a9321465cabab26fa3469002ab0cfd926"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/collision/bow_yaw_link.STL",
+    "oid": "211da51c8ea94102ec5750784f37df5c194404cd72e71fccf3e0ab788d6c3676",
+    "size": 188684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/21/1d/211da51c8ea94102ec5750784f37df5c194404cd72e71fccf3e0ab788d6c3676"
+  },
+  {
+    "relative": "mesh/rb001_base_dvt4/collision/right_wheel_link.STL",
+    "oid": "3d853fcb9b70eac7106e87054cecfc7d7e8a5085bd2b8b64a74af10a678cc19a",
+    "size": 295784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/3d/85/3d853fcb9b70eac7106e87054cecfc7d7e8a5085bd2b8b64a74af10a678cc19a"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_middle_distal_link.STL",
+    "oid": "8f11ee9addab1a1eab40fd765c21389e6f98397166ae5899dc83ddf66f871b3b",
+    "size": 408584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/8f/11/8f11ee9addab1a1eab40fd765c21389e6f98397166ae5899dc83ddf66f871b3b"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_middle_touch_link.STL",
+    "oid": "1fdd83c56c7eccb38b1af2d75742f1681d6a4dff93e9f15a37173e22117fecf0",
+    "size": 69884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/1f/dd/1fdd83c56c7eccb38b1af2d75742f1681d6a4dff93e9f15a37173e22117fecf0"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_distal_link.STL",
+    "oid": "f489da4e47935510ffba42016052318f123ef07360fdbbfaadcb0f7d8ddbe28f",
+    "size": 95834,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/f4/89/f489da4e47935510ffba42016052318f123ef07360fdbbfaadcb0f7d8ddbe28f"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_pinky_proximal_link.STL",
+    "oid": "1a4ba525880efd4da2bcdfd5d2d69a684a02f8c7c01f8e185adf23f47469d0f4",
+    "size": 343284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/1a/4b/1a4ba525880efd4da2bcdfd5d2d69a684a02f8c7c01f8e185adf23f47469d0f4"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_proximal_link.STL",
+    "oid": "17d6f8575ffdc49fd0c8a4525650180a6806ee3fc0a6485f0610040010aeed34",
+    "size": 620984,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/17/d6/17d6f8575ffdc49fd0c8a4525650180a6806ee3fc0a6485f0610040010aeed34"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_metacarpal_link.STL",
+    "oid": "15464fa122dddc49a56462898777e9e407f22b81abb03d10aba0d95f8fefc83a",
+    "size": 289584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/15/46/15464fa122dddc49a56462898777e9e407f22b81abb03d10aba0d95f8fefc83a"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_pinky_distal_link.STL",
+    "oid": "14c25fb57059978594ea518860522ae401e3a3602d6a39297c52807620e30bac",
+    "size": 554084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/14/c2/14c25fb57059978594ea518860522ae401e3a3602d6a39297c52807620e30bac"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_touch_link.STL",
+    "oid": "184c29c27b46ea21df210a13af795c49569fcc1b36cd8b8ebe5aa66b4a0f5612",
+    "size": 123084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/18/4c/184c29c27b46ea21df210a13af795c49569fcc1b36cd8b8ebe5aa66b4a0f5612"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_index_distal_link.STL",
+    "oid": "44d4b12f55e85baf77685443aa1f38ae521130a58f0b742920f2a99abc1a1efb",
+    "size": 411284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/44/d4/44d4b12f55e85baf77685443aa1f38ae521130a58f0b742920f2a99abc1a1efb"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_index_touch_link.STL",
+    "oid": "a7f7b054539a858173b3e002be2df5ebc60a3e3d8bdf38e32f490a1475809251",
+    "size": 99984,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/a7/f7/a7f7b054539a858173b3e002be2df5ebc60a3e3d8bdf38e32f490a1475809251"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_ring_distal_link.STL",
+    "oid": "40acf67de96d432bbbc0a3eda7bbb292cbd2ea0c5f0c78a9b299cf360f3a9f07",
+    "size": 529684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/40/ac/40acf67de96d432bbbc0a3eda7bbb292cbd2ea0c5f0c78a9b299cf360f3a9f07"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_ring_proximal_link.STL",
+    "oid": "89c64252e891bc91567241b74de18d986e20e4e57d74cd10289d7171f6c57dc6",
+    "size": 281484,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/89/c6/89c64252e891bc91567241b74de18d986e20e4e57d74cd10289d7171f6c57dc6"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_middle_proximal_link.STL",
+    "oid": "56d9f019bad093daf93a736596ab4e7d9b17fb3c79e2be4181d909958cf76a37",
+    "size": 333384,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/56/d9/56d9f019bad093daf93a736596ab4e7d9b17fb3c79e2be4181d909958cf76a37"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_ring_touch_link.STL",
+    "oid": "f9c0ac36994b014d25b7d5c292cbd39192e5146c8961ded1e8a9702e2d4e62c2",
+    "size": 71584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/f9/c0/f9c0ac36994b014d25b7d5c292cbd39192e5146c8961ded1e8a9702e2d4e62c2"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_index_proximal_link.STL",
+    "oid": "94fdff414f1c29940495d1f0264a50621340cfc30f9b5365b3490d39ae367f2f",
+    "size": 339884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/94/fd/94fdff414f1c29940495d1f0264a50621340cfc30f9b5365b3490d39ae367f2f"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_base_link.STL",
+    "oid": "2754b59a9132a04a28cf5725d5478599218c9f7dd4b2e13329147e824211ec44",
+    "size": 2364184,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/27/54/2754b59a9132a04a28cf5725d5478599218c9f7dd4b2e13329147e824211ec44"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/right/right_pinky_touch_link.STL",
+    "oid": "96ed796046634fead6ac789be979e3b013c3a6d32ba866a31ea92f7c3ebf19ee",
+    "size": 68584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/96/ed/96ed796046634fead6ac789be979e3b013c3a6d32ba866a31ea92f7c3ebf19ee"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_ring_distal_link.STL",
+    "oid": "c59b62ef04c9cb436f6a6bac5ae9be985eca0d538bc58380c40c00d16079d580",
+    "size": 529784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/c5/9b/c59b62ef04c9cb436f6a6bac5ae9be985eca0d538bc58380c40c00d16079d580"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_base_link.STL",
+    "oid": "340401f796bbac762cf85d53e6db4be02cce2f06b66fcf8d6ecb5ba883f06afd",
+    "size": 2368784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/34/04/340401f796bbac762cf85d53e6db4be02cce2f06b66fcf8d6ecb5ba883f06afd"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_proximal_link.STL",
+    "oid": "ccffe779ed683ec5c2f24e3776c11a127e341743142ddd8f275bfded76938da8",
+    "size": 620384,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/cc/ff/ccffe779ed683ec5c2f24e3776c11a127e341743142ddd8f275bfded76938da8"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_index_touch_link.STL",
+    "oid": "821249c18a0cf66c87aa4029de1f0ce532f03e7a173c951a5121f2df3b301b52",
+    "size": 99984,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/82/12/821249c18a0cf66c87aa4029de1f0ce532f03e7a173c951a5121f2df3b301b52"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_pinky_touch_link.STL",
+    "oid": "850ad4ad9daf4188aa17f96588fe5541fb0c70be10d714930b3cb816748258a0",
+    "size": 68584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/85/0a/850ad4ad9daf4188aa17f96588fe5541fb0c70be10d714930b3cb816748258a0"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_ring_touch_link.STL",
+    "oid": "c2fb7d2c4fb0df91209ab7158d5f17ab59a7aa56522a9e91a3c3884a35ac6ae0",
+    "size": 71584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/c2/fb/c2fb7d2c4fb0df91209ab7158d5f17ab59a7aa56522a9e91a3c3884a35ac6ae0"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_touch_link.STL",
+    "oid": "e31a6aa8faf2be8a6bfc3f222ebe7cf59fb5266487d1d98b86a55a7a2524fc20",
+    "size": 125084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/e3/1a/e31a6aa8faf2be8a6bfc3f222ebe7cf59fb5266487d1d98b86a55a7a2524fc20"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_middle_proximal_link.STL",
+    "oid": "50122ebf6e75698ba2c469efd58e07ad3f82b1a002728cd15802f1c435d54c0c",
+    "size": 334284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/50/12/50122ebf6e75698ba2c469efd58e07ad3f82b1a002728cd15802f1c435d54c0c"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_index_distal_link.STL",
+    "oid": "634d5c569628c3c2dbc92932065748ed830fb17ccf933959a5834b2759ab8acd",
+    "size": 408284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/63/4d/634d5c569628c3c2dbc92932065748ed830fb17ccf933959a5834b2759ab8acd"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_distal_link.STL",
+    "oid": "99300669452dc8e34d5f62caf31c9c769077af45e0127511cd0c56967fe691a6",
+    "size": 96284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/99/30/99300669452dc8e34d5f62caf31c9c769077af45e0127511cd0c56967fe691a6"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_metacarpal_link.STL",
+    "oid": "415a75193e7773572b0df8a80fa4e1d187a67901a5ff381a89ee5b7df64735ea",
+    "size": 290384,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/41/5a/415a75193e7773572b0df8a80fa4e1d187a67901a5ff381a89ee5b7df64735ea"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_ring_proximal_link.STL",
+    "oid": "77220c07d5bbc119cb828af89f35cb4cef755bbc98a1cae2dda846268ff59501",
+    "size": 281184,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/77/22/77220c07d5bbc119cb828af89f35cb4cef755bbc98a1cae2dda846268ff59501"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_pinky_proximal_link.STL",
+    "oid": "9f1408568638fbbec4cf32507d4b233fbd8cdb9c862e07cc7da6cd826497caa6",
+    "size": 346784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/9f/14/9f1408568638fbbec4cf32507d4b233fbd8cdb9c862e07cc7da6cd826497caa6"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_pinky_distal_link.STL",
+    "oid": "d52822897dcc0de60fff7f2652a7d12a342b47905eff7555eaabcc1bcfcaeac4",
+    "size": 554484,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/d5/28/d52822897dcc0de60fff7f2652a7d12a342b47905eff7555eaabcc1bcfcaeac4"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_middle_distal_link.STL",
+    "oid": "e0ff6f648bbb7712bbc7f06bacdd3a574cac2e1bc2398383b57da2d76c88932a",
+    "size": 406584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/e0/ff/e0ff6f648bbb7712bbc7f06bacdd3a574cac2e1bc2398383b57da2d76c88932a"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_middle_touch_link.STL",
+    "oid": "c91b30341a816ac079ec1268c8427ca3a010356002a30b6847b2853a0edf1e6b",
+    "size": 69884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/c9/1b/c91b30341a816ac079ec1268c8427ca3a010356002a30b6847b2853a0edf1e6b"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/collision/left/left_index_proximal_link.STL",
+    "oid": "1fed32c1a8451282b314579eed3903a288a62524dc7d8b08464fb559261bb580",
+    "size": 339884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/1f/ed/1fed32c1a8451282b314579eed3903a288a62524dc7d8b08464fb559261bb580"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_middle_distal_link.STL",
+    "oid": "8f11ee9addab1a1eab40fd765c21389e6f98397166ae5899dc83ddf66f871b3b",
+    "size": 408584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/8f/11/8f11ee9addab1a1eab40fd765c21389e6f98397166ae5899dc83ddf66f871b3b"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_base_visual_link.STL",
+    "oid": "7357830cda11d9749adc1e796aa0e493f8001ac2c21815d40fdc1406a3b3457c",
+    "size": 130584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/73/57/7357830cda11d9749adc1e796aa0e493f8001ac2c21815d40fdc1406a3b3457c"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_middle_touch_link.STL",
+    "oid": "1fdd83c56c7eccb38b1af2d75742f1681d6a4dff93e9f15a37173e22117fecf0",
+    "size": 69884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/1f/dd/1fdd83c56c7eccb38b1af2d75742f1681d6a4dff93e9f15a37173e22117fecf0"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_distal_link.STL",
+    "oid": "f489da4e47935510ffba42016052318f123ef07360fdbbfaadcb0f7d8ddbe28f",
+    "size": 95834,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/f4/89/f489da4e47935510ffba42016052318f123ef07360fdbbfaadcb0f7d8ddbe28f"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_pinky_proximal_link.STL",
+    "oid": "1a4ba525880efd4da2bcdfd5d2d69a684a02f8c7c01f8e185adf23f47469d0f4",
+    "size": 343284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/1a/4b/1a4ba525880efd4da2bcdfd5d2d69a684a02f8c7c01f8e185adf23f47469d0f4"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_metacarpal_link.STL",
+    "oid": "15464fa122dddc49a56462898777e9e407f22b81abb03d10aba0d95f8fefc83a",
+    "size": 289584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/15/46/15464fa122dddc49a56462898777e9e407f22b81abb03d10aba0d95f8fefc83a"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_pinky_distal_link.STL",
+    "oid": "14c25fb57059978594ea518860522ae401e3a3602d6a39297c52807620e30bac",
+    "size": 554084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/14/c2/14c25fb57059978594ea518860522ae401e3a3602d6a39297c52807620e30bac"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_touch_link.STL",
+    "oid": "184c29c27b46ea21df210a13af795c49569fcc1b36cd8b8ebe5aa66b4a0f5612",
+    "size": 123084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/18/4c/184c29c27b46ea21df210a13af795c49569fcc1b36cd8b8ebe5aa66b4a0f5612"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_index_distal_link.STL",
+    "oid": "44d4b12f55e85baf77685443aa1f38ae521130a58f0b742920f2a99abc1a1efb",
+    "size": 411284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/44/d4/44d4b12f55e85baf77685443aa1f38ae521130a58f0b742920f2a99abc1a1efb"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_index_touch_link.STL",
+    "oid": "a7f7b054539a858173b3e002be2df5ebc60a3e3d8bdf38e32f490a1475809251",
+    "size": 99984,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/a7/f7/a7f7b054539a858173b3e002be2df5ebc60a3e3d8bdf38e32f490a1475809251"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_ring_distal_link.STL",
+    "oid": "40acf67de96d432bbbc0a3eda7bbb292cbd2ea0c5f0c78a9b299cf360f3a9f07",
+    "size": 529684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/40/ac/40acf67de96d432bbbc0a3eda7bbb292cbd2ea0c5f0c78a9b299cf360f3a9f07"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_proximal_visual_link.STL",
+    "oid": "0c415499f0b28609062d1364cd2500cd801a5f4e6a8a2083ae82b8a870404495",
+    "size": 735284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/0c/41/0c415499f0b28609062d1364cd2500cd801a5f4e6a8a2083ae82b8a870404495"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_ring_proximal_link.STL",
+    "oid": "89c64252e891bc91567241b74de18d986e20e4e57d74cd10289d7171f6c57dc6",
+    "size": 281484,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/89/c6/89c64252e891bc91567241b74de18d986e20e4e57d74cd10289d7171f6c57dc6"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_middle_proximal_link.STL",
+    "oid": "56d9f019bad093daf93a736596ab4e7d9b17fb3c79e2be4181d909958cf76a37",
+    "size": 333384,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/56/d9/56d9f019bad093daf93a736596ab4e7d9b17fb3c79e2be4181d909958cf76a37"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_ring_touch_link.STL",
+    "oid": "f9c0ac36994b014d25b7d5c292cbd39192e5146c8961ded1e8a9702e2d4e62c2",
+    "size": 71584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/f9/c0/f9c0ac36994b014d25b7d5c292cbd39192e5146c8961ded1e8a9702e2d4e62c2"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_index_proximal_link.STL",
+    "oid": "94fdff414f1c29940495d1f0264a50621340cfc30f9b5365b3490d39ae367f2f",
+    "size": 339884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/94/fd/94fdff414f1c29940495d1f0264a50621340cfc30f9b5365b3490d39ae367f2f"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_base_link.STL",
+    "oid": "2754b59a9132a04a28cf5725d5478599218c9f7dd4b2e13329147e824211ec44",
+    "size": 2364184,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/27/54/2754b59a9132a04a28cf5725d5478599218c9f7dd4b2e13329147e824211ec44"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/right/right_pinky_touch_link.STL",
+    "oid": "96ed796046634fead6ac789be979e3b013c3a6d32ba866a31ea92f7c3ebf19ee",
+    "size": 68584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/96/ed/96ed796046634fead6ac789be979e3b013c3a6d32ba866a31ea92f7c3ebf19ee"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_proximal_visual_link.STL",
+    "oid": "bcd5279fb8a4d8ba4b06b3d302caa567fde9add81b057943cc6a445abb9e27b5",
+    "size": 771684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/bc/d5/bcd5279fb8a4d8ba4b06b3d302caa567fde9add81b057943cc6a445abb9e27b5"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_ring_distal_link.STL",
+    "oid": "c59b62ef04c9cb436f6a6bac5ae9be985eca0d538bc58380c40c00d16079d580",
+    "size": 529784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/c5/9b/c59b62ef04c9cb436f6a6bac5ae9be985eca0d538bc58380c40c00d16079d580"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_base_link.STL",
+    "oid": "340401f796bbac762cf85d53e6db4be02cce2f06b66fcf8d6ecb5ba883f06afd",
+    "size": 2368784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/34/04/340401f796bbac762cf85d53e6db4be02cce2f06b66fcf8d6ecb5ba883f06afd"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_proximal_link.STL",
+    "oid": "ccffe779ed683ec5c2f24e3776c11a127e341743142ddd8f275bfded76938da8",
+    "size": 620384,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/cc/ff/ccffe779ed683ec5c2f24e3776c11a127e341743142ddd8f275bfded76938da8"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_index_touch_link.STL",
+    "oid": "821249c18a0cf66c87aa4029de1f0ce532f03e7a173c951a5121f2df3b301b52",
+    "size": 99984,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/82/12/821249c18a0cf66c87aa4029de1f0ce532f03e7a173c951a5121f2df3b301b52"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_base_visual_link.STL",
+    "oid": "d9d2558da8369d2f0993e46eed3d1e2a11b4927ab2b8c1731d460b72fea04e9e",
+    "size": 252684,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/d9/d2/d9d2558da8369d2f0993e46eed3d1e2a11b4927ab2b8c1731d460b72fea04e9e"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_pinky_touch_link.STL",
+    "oid": "850ad4ad9daf4188aa17f96588fe5541fb0c70be10d714930b3cb816748258a0",
+    "size": 68584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/85/0a/850ad4ad9daf4188aa17f96588fe5541fb0c70be10d714930b3cb816748258a0"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_ring_touch_link.STL",
+    "oid": "c2fb7d2c4fb0df91209ab7158d5f17ab59a7aa56522a9e91a3c3884a35ac6ae0",
+    "size": 71584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/c2/fb/c2fb7d2c4fb0df91209ab7158d5f17ab59a7aa56522a9e91a3c3884a35ac6ae0"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_touch_link.STL",
+    "oid": "e31a6aa8faf2be8a6bfc3f222ebe7cf59fb5266487d1d98b86a55a7a2524fc20",
+    "size": 125084,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/e3/1a/e31a6aa8faf2be8a6bfc3f222ebe7cf59fb5266487d1d98b86a55a7a2524fc20"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_middle_proximal_link.STL",
+    "oid": "50122ebf6e75698ba2c469efd58e07ad3f82b1a002728cd15802f1c435d54c0c",
+    "size": 334284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/50/12/50122ebf6e75698ba2c469efd58e07ad3f82b1a002728cd15802f1c435d54c0c"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_index_distal_link.STL",
+    "oid": "634d5c569628c3c2dbc92932065748ed830fb17ccf933959a5834b2759ab8acd",
+    "size": 408284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/63/4d/634d5c569628c3c2dbc92932065748ed830fb17ccf933959a5834b2759ab8acd"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_distal_link.STL",
+    "oid": "99300669452dc8e34d5f62caf31c9c769077af45e0127511cd0c56967fe691a6",
+    "size": 96284,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/99/30/99300669452dc8e34d5f62caf31c9c769077af45e0127511cd0c56967fe691a6"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_metacarpal_link.STL",
+    "oid": "415a75193e7773572b0df8a80fa4e1d187a67901a5ff381a89ee5b7df64735ea",
+    "size": 290384,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/41/5a/415a75193e7773572b0df8a80fa4e1d187a67901a5ff381a89ee5b7df64735ea"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_ring_proximal_link.STL",
+    "oid": "77220c07d5bbc119cb828af89f35cb4cef755bbc98a1cae2dda846268ff59501",
+    "size": 281184,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/77/22/77220c07d5bbc119cb828af89f35cb4cef755bbc98a1cae2dda846268ff59501"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_pinky_proximal_link.STL",
+    "oid": "9f1408568638fbbec4cf32507d4b233fbd8cdb9c862e07cc7da6cd826497caa6",
+    "size": 346784,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/9f/14/9f1408568638fbbec4cf32507d4b233fbd8cdb9c862e07cc7da6cd826497caa6"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_pinky_distal_link.STL",
+    "oid": "d52822897dcc0de60fff7f2652a7d12a342b47905eff7555eaabcc1bcfcaeac4",
+    "size": 554484,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/d5/28/d52822897dcc0de60fff7f2652a7d12a342b47905eff7555eaabcc1bcfcaeac4"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_middle_distal_link.STL",
+    "oid": "e0ff6f648bbb7712bbc7f06bacdd3a574cac2e1bc2398383b57da2d76c88932a",
+    "size": 406584,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/e0/ff/e0ff6f648bbb7712bbc7f06bacdd3a574cac2e1bc2398383b57da2d76c88932a"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_middle_touch_link.STL",
+    "oid": "c91b30341a816ac079ec1268c8427ca3a010356002a30b6847b2853a0edf1e6b",
+    "size": 69884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/c9/1b/c91b30341a816ac079ec1268c8427ca3a010356002a30b6847b2853a0edf1e6b"
+  },
+  {
+    "relative": "revo2_external/revo2_system/meshes/hands/visual/left/left_index_proximal_link.STL",
+    "oid": "1fed32c1a8451282b314579eed3903a288a62524dc7d8b08464fb559261bb580",
+    "size": 339884,
+    "cached": false,
+    "cache_path": "/home/aoji/x_square_copy/isaac-sim-scenes/.git/lfs/objects/1f/ed/1fed32c1a8451282b314579eed3903a288a62524dc7d8b08464fb559261bb580"
+  }
+]

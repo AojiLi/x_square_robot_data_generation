@@ -1,0 +1,303 @@
+#usda 1.0
+(
+    customLayerData = {
+        string cameraCalibration = "Head user-supplied K with provisional KB4 interpretation; wrist roll and pitch follow the user-authoritative 20260824 request_000001 images. Circular fisheye K and real hand-eye remain image-based estimates."
+        dictionary cameraSettings = {
+            string boundCamera = "/World/ReviewSetup"
+        }
+        string physicsParameters = "Initial simulation values; physical and camera verification reports are stored alongside the task code."
+        dictionary renderSettings = {
+            bool "rtx-transient:dlssg:enabled" = 0
+            int "rtx:post:aa:op" = 4
+            bool "rtx:post:dof:enabled" = 0
+            bool "rtx:post:motionblur:enabled" = 0
+            string "rtx:rendermode" = "RealTimePathTracing"
+        }
+        string task = "fixed_base_white_table_manipulation"
+    }
+    defaultPrim = "World"
+    metersPerUnit = 1
+    timeCodesPerSecond = 30
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def "Room" (
+        prepend references = @room_environment.usdc@
+    )
+    {
+    }
+
+    def "Robot" (
+        prepend references = @quanta_x2_physics.usdc@
+    )
+    {
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (-0, 1, 0, 0), (0, 0, 1, 0), (0.22, -1.937, 0.002, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "base_link"
+        {
+            over "FixedFrames"
+            {
+                over "camera_head_front_color_optical_frame"
+                {
+                    def Camera "RGB_head" (
+                        delete apiSchemas = ["OmniLensDistortionOpenCvPinholeAPI", "OmniLensDistortionOpenCvFisheyeAPI"]
+                        prepend apiSchemas = ["OmniLensDistortionOpenCvFisheyeAPI"]
+                        customData = {
+                            string calibrationProvenanceJson = '{"device_serial_match": "unverified", "distortion_interpretation": "OpenCV fisheye / Kannala-Brandt k1,k2,k3,k4; final four source entries are zero padding. Vendor model still unconfirmed.", "distortion_status": "provisional_model_interpretation", "extrinsics_reason": "Unknown source reference frame, transform direction and quaternion order; source extrinsics are not known robot-link transforms.", "extrinsics_status": "source_saved_but_not_applied", "eye": "right", "group": "rgb", "intrinsics_status": "user_supplied", "mount_reference": "reports/room01_camera_calibration/real_reference/verified_all_20260909T115832_043061Z_83f7ad_e6_right.png", "native_calibration_resolution": [1600, 1200], "robot_mount_status": "provisional_external_E6_mount_estimate", "source": "calibration/user_camera_parameters_20260910.json", "stream_mapping_evidence": "x2-lower:/home/xr/pi05_umi_inference/runtime/umi_live_contract.py selects E6 right eye."}'
+                            string calibrationStatus = "User-supplied rgb.right K and resolution; KB4 distortion interpretation and robot-to-E6 mount remain provisional."
+                            int2 resolution = (1600, 1200)
+                            string role = "head RGB observation"
+                            string sourceMount = "camera_head_front_color_optical_frame"
+                        }
+                    )
+                    {
+                        float2 clippingRange = (0.015, 15)
+                        float focalLength = 20
+                        float fStop = 0
+                        float horizontalAperture = 65.58925
+                        float horizontalApertureOffset = -0.111425474
+                        custom token omni:lensdistortion:model = "opencvFisheye"
+                        custom float omni:lensdistortion:opencvFisheye:cx = 802.71814
+                        custom float omni:lensdistortion:opencvFisheye:cy = 597.72614
+                        custom float omni:lensdistortion:opencvFisheye:fx = 487.88483
+                        custom float omni:lensdistortion:opencvFisheye:fy = 487.88483
+                        custom int2 omni:lensdistortion:opencvFisheye:imageSize = (1600, 1200)
+                        custom float omni:lensdistortion:opencvFisheye:k1 = 0.015975
+                        custom float omni:lensdistortion:opencvFisheye:k2 = 0.004984
+                        custom float omni:lensdistortion:opencvFisheye:k3 = -0.00377
+                        custom float omni:lensdistortion:opencvFisheye:k4 = 0.000312
+                        token projection = "perspective"
+                        float verticalAperture = 49.191936
+                        float verticalApertureOffset = -0.093213186
+                        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, -1, 0, 0), (0, 0, -1, 0), (0.03310076556495656, -0.18369957186904204, -0.07104791773264332, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+                }
+            }
+        }
+
+        over "left_wrist_pitch_link"
+        {
+            over "FixedFrames"
+            {
+                over "left_in_hand_camera_link"
+                {
+                    def Camera "RGB_left_wrist" (
+                        delete apiSchemas = ["OmniLensDistortionOpenCvPinholeAPI", "OmniLensDistortionOpenCvFisheyeAPI"]
+                        prepend apiSchemas = ["OmniLensDistortionOpenCvFisheyeAPI"]
+                        customData = {
+                            string calibrationProvenanceJson = '{"active_reference_profile": "user_selected_20260824_request_000001", "distortion_status": "equidistant_zero_KB4_assumption", "estimated_optical_roll_adjustment_deg": -90.0, "extrinsics_status": "provisional_photo_guided", "historical_topic_mapping_note": "Full archive reviewed: 21 old mapping requests are excluded from this fit; 720 requests across 47 sessions match current physical left=camera3, right=camera1. Early image orientation differs; original files and names remain unchanged.", "image_rotation_degrees": 0, "intrinsics_definition": "fx=ellipse_radius_x/(pi/2), fy=ellipse_radius_y/(pi/2), principal point=image-circle center. Boundary is estimated in pixels; 180-degree angular FOV is an assumption.", "intrinsics_status": "estimated_from_image_boundary_with_assumed_180deg_fov", "lens_boundary_fit": {"arc_candidates": 468, "arc_inliers": 327, "ellipse_center_xy_px": [326.9935894834079, 244.8063268883286], "ellipse_radius_xy_px": [256.7459211129113, 256.069719155675], "equidistant_assumed_full_fov_deg": 180.0, "estimated_fx_fy_if_180deg": [163.44952985520658, 163.0190463191163], "median_boundary_residual_px": 2.705866375128992, "resolution_wh": [640, 480], "source_frames": 3, "status": "image_boundary_fit_only; field of view and distortion require calibration"}, "lens_boundary_reference": "reports/room01_wrist_fisheye_alignment/lens_boundary_fit.json", "nominal_resize_xy": null, "orientation_reference_priority": "User-specified reference is authoritative over aggregate archive statistics.", "physical_mapping_evidence": "x2-lower:/home/xr/pi05_umi_inference/runtime/robot_observation.py", "pitch_reference": "Image-guided downward optical pitch estimate, using the user-selected reference hand layout; not a measured hand-eye transform.", "reference_authority": "Explicit user correction: this reference angle is correct.", "reference_request_count": 3, "reference_reset_pose": "assets/room01/sim/calibration/wrist_reference_pose_estimate.json", "reference_session_count": 1, "resolution_status": "verified_current_robot_stream", "roll_reference": "User-selected 20260824 request_000001; later archive direction statistics must not override this view convention.", "rotation_evidence": "Orientation is authored in the 3D camera mount, without rotating saved RGB after capture.", "source_topic": "/camera3/usb_cam3/image_raw/image_compressed", "unapplied_reason": "No evidence tying the ctrl calibration to the two independent wrist UVC sensors.", "unapplied_user_group": "ctrl", "view_orientation_reference": "reports/room01_wrist_fisheye_alignment/reference/request_000001/cam_left_wrist.png", "virtual_optical_pitch_delta_deg": -17.5, "virtual_optical_roll_delta_deg": 180.0}'
+                            string calibrationStatus = "User-selected reference view orientation with image-guided roll and pitch; circular fisheye model and physical hand-eye calibration remain provisional."
+                            int2 resolution = (640, 480)
+                            string role = "left_wrist RGB observation"
+                            string sourceMount = "left_in_hand_camera_link"
+                        }
+                    )
+                    {
+                        float2 clippingRange = (0.01, 8)
+                        float focalLength = 20
+                        float fStop = 0
+                        float horizontalAperture = 78.31164
+                        float horizontalApertureOffset = -0.85574913
+                        custom token omni:lensdistortion:model = "opencvFisheye"
+                        custom float omni:lensdistortion:opencvFisheye:cx = 326.9936
+                        custom float omni:lensdistortion:opencvFisheye:cy = 244.80632
+                        custom float omni:lensdistortion:opencvFisheye:fx = 163.44952
+                        custom float omni:lensdistortion:opencvFisheye:fy = 163.01904
+                        custom int2 omni:lensdistortion:opencvFisheye:imageSize = (640, 480)
+                        custom float omni:lensdistortion:opencvFisheye:k1 = 0
+                        custom float omni:lensdistortion:opencvFisheye:k2 = 0
+                        custom float omni:lensdistortion:opencvFisheye:k3 = 0
+                        custom float omni:lensdistortion:opencvFisheye:k4 = 0
+                        token projection = "perspective"
+                        float verticalAperture = 58.888824
+                        float verticalApertureOffset = 0.58966446
+                        matrix4d xformOp:transform = ( (0.0000010181106536721884, -0.000004353508280777185, 0.9999999999900051, 0), (0.07563024762311366, 0.9971359313685795, 0.000004264039573473322, 0), (-0.9971359313771768, 0.07563024761801648, 0.0000013444516241412074, 0), (0.02, -0.01, 0.025, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+                }
+            }
+        }
+
+        over "right_wrist_pitch_link"
+        {
+            over "FixedFrames"
+            {
+                over "right_in_hand_camera_link"
+                {
+                    def Camera "RGB_right_wrist" (
+                        delete apiSchemas = ["OmniLensDistortionOpenCvPinholeAPI", "OmniLensDistortionOpenCvFisheyeAPI"]
+                        prepend apiSchemas = ["OmniLensDistortionOpenCvFisheyeAPI"]
+                        customData = {
+                            string calibrationProvenanceJson = '{"active_reference_profile": "user_selected_20260824_request_000001", "distortion_status": "equidistant_zero_KB4_assumption", "estimated_optical_roll_adjustment_deg": 90.0, "extrinsics_status": "provisional_photo_guided", "historical_topic_mapping_note": "Full archive reviewed: 21 old mapping requests are excluded from this fit; 720 requests across 47 sessions match current physical left=camera3, right=camera1. Early image orientation differs; original files and names remain unchanged.", "image_rotation_degrees": 0, "intrinsics_definition": "fx=ellipse_radius_x/(pi/2), fy=ellipse_radius_y/(pi/2), principal point=image-circle center. Boundary is estimated in pixels; 180-degree angular FOV is an assumption.", "intrinsics_status": "estimated_from_image_boundary_with_assumed_180deg_fov", "lens_boundary_fit": {"arc_candidates": 563, "arc_inliers": 415, "ellipse_center_xy_px": [321.6453722695721, 228.67474195985073], "ellipse_radius_xy_px": [249.15016386534305, 249.33083286142156], "equidistant_assumed_full_fov_deg": 180.0, "estimated_fx_fy_if_180deg": [158.61392060530028, 158.72893806045766], "median_boundary_residual_px": 1.3451654891125842, "resolution_wh": [640, 480], "source_frames": 3, "status": "image_boundary_fit_only; field of view and distortion require calibration"}, "lens_boundary_reference": "reports/room01_wrist_fisheye_alignment/lens_boundary_fit.json", "nominal_resize_xy": null, "orientation_reference_priority": "User-specified reference is authoritative over aggregate archive statistics.", "physical_mapping_evidence": "x2-lower:/home/xr/pi05_umi_inference/runtime/robot_observation.py", "pitch_reference": "Image-guided downward optical pitch estimate, using the user-selected reference hand layout; not a measured hand-eye transform.", "reference_authority": "Explicit user correction: this reference angle is correct.", "reference_request_count": 3, "reference_reset_pose": "assets/room01/sim/calibration/wrist_reference_pose_estimate.json", "reference_session_count": 1, "resolution_status": "verified_current_robot_stream", "roll_reference": "User-selected 20260824 request_000001; later archive direction statistics must not override this view convention.", "rotation_evidence": "Orientation is authored in the 3D camera mount, without rotating saved RGB after capture.", "source_topic": "/camera1/usb_cam1/image_raw/image_compressed", "unapplied_reason": "No evidence tying the ctrl calibration to the two independent wrist UVC sensors.", "unapplied_user_group": "ctrl", "view_orientation_reference": "reports/room01_wrist_fisheye_alignment/reference/request_000001/cam_right_wrist.png", "virtual_optical_pitch_delta_deg": -17.5, "virtual_optical_roll_delta_deg": 180.0}'
+                            string calibrationStatus = "User-selected reference view orientation with image-guided roll and pitch; circular fisheye model and physical hand-eye calibration remain provisional."
+                            int2 resolution = (640, 480)
+                            string role = "right_wrist RGB observation"
+                            string sourceMount = "right_in_hand_camera_link"
+                        }
+                    )
+                    {
+                        float2 clippingRange = (0.01, 8)
+                        float focalLength = 20
+                        float fStop = 0
+                        float horizontalAperture = 80.6991
+                        float horizontalApertureOffset = -0.20746884
+                        custom token omni:lensdistortion:model = "opencvFisheye"
+                        custom float omni:lensdistortion:opencvFisheye:cx = 321.6454
+                        custom float omni:lensdistortion:opencvFisheye:cy = 228.67474
+                        custom float omni:lensdistortion:opencvFisheye:fx = 158.61392
+                        custom float omni:lensdistortion:opencvFisheye:fy = 158.72894
+                        custom int2 omni:lensdistortion:opencvFisheye:imageSize = (640, 480)
+                        custom float omni:lensdistortion:opencvFisheye:k1 = 0
+                        custom float omni:lensdistortion:opencvFisheye:k2 = 0
+                        custom float omni:lensdistortion:opencvFisheye:k3 = 0
+                        custom float omni:lensdistortion:opencvFisheye:k4 = 0
+                        token projection = "perspective"
+                        float verticalAperture = 60.480465
+                        float verticalApertureOffset = -1.4269935
+                        matrix4d xformOp:transform = ( (-0.0000010181202712011839, -0.000004353549636619547, -0.9999999999900052, 0), (0.0756302476232115, -0.9971359313685721, 0.00000426408008350615, 0), (-0.9971359313771696, -0.07563024761811421, 0.00000134446434152391, 0), (0.02, 0.01, 0.025, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+                }
+            }
+        }
+    }
+
+    def PhysicsScene "PhysicsScene" (
+        prepend apiSchemas = ["PhysxSceneAPI"]
+    )
+    {
+        vector3f physics:gravityDirection = (0, 0, -1)
+        float physics:gravityMagnitude = 9.81
+        token physxScene:broadphaseType = "GPU"
+        bool physxScene:enableCCD = 1
+        bool physxScene:enableGPUDynamics = 1
+        token physxScene:solverType = "TGS"
+        uint physxScene:timeStepsPerSecond = 960
+    }
+
+    def "PhysicsMaterials"
+    {
+        def Material "TrainingProp" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            float physics:dynamicFriction = 0.6
+            float physics:restitution = 0
+            float physics:staticFriction = 0.75
+            token physxMaterial:frictionCombineMode = "average"
+            token physxMaterial:restitutionCombineMode = "min"
+        }
+    }
+
+    def "Task"
+    {
+        def Xform "RedCube" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI", "PhysxRigidBodyAPI"]
+        )
+        {
+            float3 physics:diagonalInertia = (0.000016, 0.000016, 0.000016)
+            float physics:mass = 0.06
+            bool physxRigidBody:enableCCD = 1
+            int physxRigidBody:solverPositionIterationCount = 16
+            int physxRigidBody:solverVelocityIterationCount = 4
+            double3 xformOp:translate = (0.95, -2.16, 0.747)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+
+            def Cube "Shape" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/RedCube>
+                rel material:binding:physics = </World/PhysicsMaterials/TrainingProp> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                bool physics:collisionEnabled = 1
+                float physxCollision:contactOffset = 0.001
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.04, 0.04, 0.04)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+    }
+
+    def "Looks"
+    {
+        def Material "RedCube"
+        {
+            token outputs:surface.connect = </World/Looks/RedCube/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.62, 0.025, 0.018)
+                float inputs:ior = 1.5
+                float inputs:metallic = 0
+                float inputs:opacity = 1
+                float inputs:roughness = 0.55
+                token outputs:surface
+            }
+        }
+    }
+
+    def "Lighting"
+    {
+        def DomeLight "Sky"
+        {
+            color3f inputs:color = (0.82, 0.9, 1)
+            float inputs:intensity = 1200
+        }
+
+        def DistantLight "Daylight"
+        {
+            float inputs:angle = 7
+            float inputs:intensity = 3000
+            float3 xformOp:rotateXYZ = (-55, 0, 20)
+            uniform token[] xformOpOrder = ["xformOp:rotateXYZ"]
+        }
+
+        def RectLight "CeilingFill"
+        {
+            float inputs:height = 3.2
+            float inputs:intensity = 1500
+            float inputs:width = 3.6
+            double3 xformOp:translate = (0, -0.4, 2.56)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+
+        def RectLight "DeskFill"
+        {
+            float inputs:height = 1.2
+            float inputs:intensity = 650
+            float inputs:width = 1.2
+            double3 xformOp:translate = (0.2, -1.9, 2.3)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+
+    def Camera "ReviewSetup"
+    {
+        float2 clippingRange = (0.01, 100)
+        float focalLength = 24
+        float horizontalAperture = 36
+        float verticalAperture = 24
+        matrix4d xformOp:transform = ( (-0.9212495614113859, 0.3889720370403629, 0, 0), (-0.17344010917192085, -0.41077920593349687, 0.8950860140249529, 0), (0.3481634302016246, 0.8245975978459532, 0.44589351587225623, -0), (1.2499999999999998, -0.5999999999999999, 1.5499999999999996, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+
+    def Camera "ReviewTable"
+    {
+        float2 clippingRange = (0.01, 100)
+        float focalLength = 24
+        float horizontalAperture = 36
+        float verticalAperture = 24
+        matrix4d xformOp:transform = ( (0.05989229072794677, -0.9982048454657787, -3.469446951953614e-18, 0), (0.5606109822347566, 0.03363665893408542, 0.8273958555452967, 0), (-0.8259105521236186, -0.04955463312741716, 0.5616191754440606, 0), (-1.3877787807814457e-17, -2, 1.4, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

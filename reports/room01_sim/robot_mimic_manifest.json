@@ -1,0 +1,52 @@
+[
+  {
+    "joint": "left_thumb_distal_joint",
+    "reference": "left_thumb_proximal_joint",
+    "multiplier": 1.0
+  },
+  {
+    "joint": "left_index_distal_joint",
+    "reference": "left_index_proximal_joint",
+    "multiplier": 1.155
+  },
+  {
+    "joint": "left_middle_distal_joint",
+    "reference": "left_middle_proximal_joint",
+    "multiplier": 1.155
+  },
+  {
+    "joint": "left_ring_distal_joint",
+    "reference": "left_ring_proximal_joint",
+    "multiplier": 1.155
+  },
+  {
+    "joint": "left_pinky_distal_joint",
+    "reference": "left_pinky_proximal_joint",
+    "multiplier": 1.155
+  },
+  {
+    "joint": "right_thumb_distal_joint",
+    "reference": "right_thumb_proximal_joint",
+    "multiplier": 1.0
+  },
+  {
+    "joint": "right_index_distal_joint",
+    "reference": "right_index_proximal_joint",
+    "multiplier": 1.155
+  },
+  {
+    "joint": "right_middle_distal_joint",
+    "reference": "right_middle_proximal_joint",
+    "multiplier": 1.155
+  },
+  {
+    "joint": "right_ring_distal_joint",
+    "reference": "right_ring_proximal_joint",
+    "multiplier": 1.155
+  },
+  {
+    "joint": "right_pinky_distal_joint",
+    "reference": "right_pinky_proximal_joint",
+    "multiplier": 1.155
+  }
+]

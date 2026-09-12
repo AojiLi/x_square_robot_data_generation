@@ -1,0 +1,58 @@
+{
+  "presets": {
+    "ReviewRoom": {
+      "path": "/World/ReviewRoom",
+      "source_frame_index": 4,
+      "resolution": [
+        736,
+        552
+      ],
+      "clockwise_rotation_degrees": 90,
+      "crop_top_after_rotation": 220,
+      "projection_error_pixels": 3.2820693149915314e-06
+    },
+    "ReviewTable": {
+      "path": "/World/ReviewTable",
+      "source_frame_index": 124,
+      "resolution": [
+        736,
+        552
+      ],
+      "clockwise_rotation_degrees": 90,
+      "crop_top_after_rotation": 220,
+      "projection_error_pixels": 3.2820693149915314e-06
+    },
+    "ReviewChair": {
+      "path": "/World/ReviewChair",
+      "source_frame_index": 254,
+      "resolution": [
+        736,
+        552
+      ],
+      "clockwise_rotation_degrees": 90,
+      "crop_top_after_rotation": 220,
+      "projection_error_pixels": 3.2820693149915314e-06
+    },
+    "ReviewFloor": {
+      "path": "/World/ReviewFloor",
+      "source_frame_index": 374,
+      "resolution": [
+        736,
+        552
+      ],
+      "clockwise_rotation_degrees": 90,
+      "crop_top_after_rotation": 220,
+      "projection_error_pixels": 3.2820693149915314e-06
+    }
+  },
+  "render_settings": {
+    "rtx:rendermode": "RealTimePathTracing",
+    "rtx:post:aa:op": 4,
+    "rtx:post:dlss:execMode": 2,
+    "rtx-transient:dlssg:enabled": false,
+    "rtx:post:dof:enabled": false,
+    "rtx:post:motionblur:enabled": false,
+    "rtx:rtpt:gaussian:skipTonemapping:enabled": true
+  },
+  "default_camera": "/World/ReviewRoom"
+}

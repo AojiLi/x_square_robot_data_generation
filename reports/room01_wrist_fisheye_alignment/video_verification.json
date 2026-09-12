@@ -1,0 +1,21 @@
+{
+  "result": "pass",
+  "source_episode": "episode_20260910T110359Z_e88cf45d",
+  "video": "reports/room01_sim/three_camera_grasp.mp4",
+  "probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "300"
+      }
+    ],
+    "format": {
+      "duration": "10.000000"
+    }
+  },
+  "note": "Native head1600x1200, wrist640x480 PNGs remain unchanged; review video uniformly scaled to720px high."
+}

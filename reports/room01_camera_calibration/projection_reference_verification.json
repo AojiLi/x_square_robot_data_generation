@@ -1,0 +1,62 @@
+{
+  "result": "pass",
+  "checks": {
+    "head_opencv_reference": true,
+    "head_usd_resolution": true,
+    "head_usd_model": true,
+    "head_usd_intrinsics": true,
+    "head_usd_distortion": true,
+    "head_one_lens_schema": true,
+    "head_provenance": true,
+    "left_wrist_opencv_reference": true,
+    "left_wrist_usd_resolution": true,
+    "left_wrist_usd_model": true,
+    "left_wrist_usd_intrinsics": true,
+    "left_wrist_usd_distortion": true,
+    "left_wrist_one_lens_schema": true,
+    "left_wrist_provenance": true,
+    "right_wrist_opencv_reference": true,
+    "right_wrist_usd_resolution": true,
+    "right_wrist_usd_model": true,
+    "right_wrist_usd_intrinsics": true,
+    "right_wrist_usd_distortion": true,
+    "right_wrist_one_lens_schema": true,
+    "right_wrist_provenance": true,
+    "layer_calibration_status": true
+  },
+  "cameras": {
+    "head": {
+      "max_projection_error_px": 3.410605131648481e-13,
+      "image_size_wh": [
+        1600,
+        1200
+      ],
+      "applied_schemas": [
+        "OmniLensDistortionOpenCvFisheyeAPI"
+      ]
+    },
+    "left_wrist": {
+      "max_projection_error_px": 1.1368683772161603e-13,
+      "image_size_wh": [
+        640,
+        480
+      ],
+      "applied_schemas": [
+        "OmniLensDistortionOpenCvFisheyeAPI"
+      ]
+    },
+    "right_wrist": {
+      "max_projection_error_px": 1.1368683772161603e-13,
+      "image_size_wh": [
+        640,
+        480
+      ],
+      "applied_schemas": [
+        "OmniLensDistortionOpenCvFisheyeAPI"
+      ]
+    }
+  },
+  "opencv_version": "4.13.0",
+  "tested_points_per_camera": 1000,
+  "scope": "Numerical implementation and USD persistence; does not validate physical sensor identity, source lens model or real hand-eye calibration."
+}

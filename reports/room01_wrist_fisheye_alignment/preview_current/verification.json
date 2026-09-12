@@ -1,0 +1,8 @@
+{
+  "result": "pass",
+  "camera_count": 3,
+  "same_physics_step": true,
+  "timestamp": 0.175,
+  "joint_positions_finite": true,
+  "calibration_status": "Partial: head rgb.right user intrinsics with provisional KB4 interpretation; circular wrist fisheye boundaries fitted across 720 requests using current physical-topic mapping and a 180-degree equidistant assumption. Real hand-eye and wrist optical calibration remain unresolved."
+}

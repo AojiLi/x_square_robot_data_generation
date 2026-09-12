@@ -1,0 +1,74 @@
+[
+  {
+    "cube_xy": [
+      0.88,
+      -2.28
+    ],
+    "kinematically_reachable": true,
+    "error": null
+  },
+  {
+    "cube_xy": [
+      0.88,
+      -2.16
+    ],
+    "kinematically_reachable": true,
+    "error": null
+  },
+  {
+    "cube_xy": [
+      0.88,
+      -2.04
+    ],
+    "kinematically_reachable": true,
+    "error": null
+  },
+  {
+    "cube_xy": [
+      0.95,
+      -2.28
+    ],
+    "kinematically_reachable": true,
+    "error": null
+  },
+  {
+    "cube_xy": [
+      0.95,
+      -2.16
+    ],
+    "kinematically_reachable": true,
+    "error": null
+  },
+  {
+    "cube_xy": [
+      0.95,
+      -2.04
+    ],
+    "kinematically_reachable": true,
+    "error": null
+  },
+  {
+    "cube_xy": [
+      1.02,
+      -2.28
+    ],
+    "kinematically_reachable": false,
+    "error": "IK did not reach target: right, position=0.0487m, angle=0.1141rad"
+  },
+  {
+    "cube_xy": [
+      1.02,
+      -2.16
+    ],
+    "kinematically_reachable": false,
+    "error": "IK did not reach target: right, position=0.0367m, angle=0.0851rad"
+  },
+  {
+    "cube_xy": [
+      1.02,
+      -2.04
+    ],
+    "kinematically_reachable": false,
+    "error": "IK did not reach target: right, position=0.0437m, angle=0.1020rad"
+  }
+]

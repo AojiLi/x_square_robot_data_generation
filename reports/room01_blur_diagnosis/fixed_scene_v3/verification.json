@@ -1,0 +1,39 @@
+{
+  "result": "pass",
+  "settings_loaded_from_usd": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 4,
+    "/rtx/post/dlss/execMode": 2,
+    "/rtx-transient/dlssg/enabled": false,
+    "/rtx/post/dof/enabled": false,
+    "/rtx/post/motionblur/enabled": false,
+    "/rtx/rtpt/gaussian/skipTonemapping/enabled": true
+  },
+  "viewport_camera_after_open": "/World/ReviewRoom",
+  "saved_default_camera": "/World/ReviewRoom",
+  "renders": [
+    {
+      "camera": "/World/ReviewRoom",
+      "shape": [
+        552,
+        736,
+        3
+      ],
+      "mean": 159.5572892052615,
+      "std": 67.46418281225458
+    },
+    {
+      "camera": "/World/ReviewTable",
+      "shape": [
+        552,
+        736,
+        3
+      ],
+      "mean": 181.2899190689981,
+      "std": 29.8388294442658
+    }
+  ],
+  "runtime": "Isaac Sim 6.0.1",
+  "gaussians": 3001853,
+  "gaussian_asset_sha256": "13c06527554f97487a9fabc6126c1a55a03afba1c14f3f86f972ac8c4ae717bb"
+}

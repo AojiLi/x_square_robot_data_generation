@@ -1,0 +1,4241 @@
+#usda 1.0
+(
+    customLayerData = {
+        string baseMode = "fixed"
+        int mimicCouplings = 10
+        string purpose = "Fixed-base manipulation robot with URDF hand couplings"
+    }
+    defaultPrim = "Robot"
+    metersPerUnit = 1
+    timeCodesPerSecond = 30
+    upAxis = "Z"
+)
+
+def Xform "Robot" (
+    prepend references = @../../robots/quanta_x2/quanta_x2_robot.usdc@
+)
+{
+    over "base_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "base_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+    }
+
+    over "left_wheel_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0.24, 0.086, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_wheel_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Tire> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_wheel_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, -0.24, 0.086, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_wheel_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Tire> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "bow_pitch_link_01" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9800665778412416, 0, -0.19866933079506122, 0), (0, 1, 0, 0), (0.19866933079506122, 0, 0.9800665778412416, 0), (-0.14715, 0, 0.327, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "bow_pitch_link_01_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+    }
+
+    over "a_d_laser_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0.235, 0, 0.219, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9396912015306434, 0, 0.342024042672289, 0), (0, 1, 0, 0), (-0.342024042672289, 0, 0.9396912015306434, 0), (0.273, 0, 0.158, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "bow_pitch_link_02" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9800665778412417, 0, 0.19866933079506124, 0), (0, 1, 0, 0), (-0.19866933079506122, 0, 0.9800665778412416, 0), (0.12661259965549437, 0, 0.5450788248085209, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "bow_pitch_link_02_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+    }
+
+    over "camera_chassis_front_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9396912015306434, 0, 0.342024042672289, 0), (0, 1, 0, 0), (-0.342024042672289, 0, 0.9396912015306434, 0), (0.273, 0, 0.158, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "bow_pitch_link_03" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1.0000000000000002, 0, 1.5447646354051187e-17, 0), (0, 1, 0, 0), (1.5447646354051187e-17, 0, 1, 0), (0.011797559317144962, 0, 0.7327393133192972, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "bow_pitch_link_03_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+    }
+
+    over "camera_chassis_front_bottom_screw_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9396912015306434, 0, 0.342024042672289, 0), (0, 1, 0, 0), (-0.342024042672289, 0, 0.9396912015306434, 0), (0.273, 0, 0.158, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "bow_yaw_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1.0000000000000002, 0, 1.5447646354051187e-17, 0), (0, 1, 0, 0), (1.5447646354051187e-17, 0, 1, 0), (0.011797559317144964, 0, 0.8972393133192972, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "bow_yaw_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+    }
+
+    over "camera_chassis_front_infra1_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9396912015306434, 0, 0.342024042672289, 0), (0, 1, 0, 0), (-0.342024042672289, 0, 0.9396912015306434, 0), (0.2986629677990024, 0.0315, 0.167340677000366, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_chassis_front_infra2_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9396912015306434, 0, 0.342024042672289, 0), (0, 1, 0, 0), (-0.342024042672289, 0, 0.9396912015306434, 0), (0.2986629677990024, -0.0315, 0.167340677000366, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_chassis_front_color_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9396912015306434, 0, 0.342024042672289, 0), (0, 1, 0, 0), (-0.342024042672289, 0, 0.9396912015306434, 0), (0.29555258883673546, -0.0135001323422, 0.16620857702413494, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_chassis_front_depth_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9396912015306434, 0, 0.342024042672289, 0), (0, 1, 0, 0), (-0.342024042672289, 0, 0.9396912015306434, 0), (0.2986629677990024, 0.0315, 0.167340677000366, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "head_yaw_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1.0000000000000002, 0, 1.5447646354051187e-17, 0), (0, 1, 0, 0), (1.5447646354051187e-17, 0, 1, 0), (0.01179755931714497, 0, 1.1837393133192973, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "head_yaw_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+    }
+
+    over "left_arm_base_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1.0000000000000002, 0, 1.5447646354051187e-17, 0), (0, 1, 0, 0), (1.5447646354051187e-17, 0, 1, 0), (0.011797559317144967, 0.0455, 1.110739313319297, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "right_arm_base_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1.0000000000000002, 0, 1.5447646354051187e-17, 0), (0, 1, 0, 0), (1.5447646354051187e-17, 0, 1, 0), (0.011797559317144967, -0.0455, 1.110739313319297, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_chassis_front_infra1_optical_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-3.3384537855263952e-15, -1, -1.2151134948804873e-15, 0), (0.34202404267228564, 1.262177448353619e-29, -0.9396912015306447, 0), (0.9396912015306447, -3.552713678800501e-15, 0.34202404267228564, 0), (0.2986629677990024, 0.0315, 0.167340677000366, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_chassis_front_infra2_optical_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-3.3384537855263952e-15, -1, -1.2151134948804873e-15, 0), (0.34202404267228564, 1.262177448353619e-29, -0.9396912015306447, 0), (0.9396912015306447, -3.552713678800501e-15, 0.34202404267228564, 0), (0.2986629677990024, -0.0315, 0.167340677000366, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_chassis_front_color_optical_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-3.3384537855263952e-15, -1, -1.2151134948804873e-15, 0), (0.34202404267228564, 1.262177448353619e-29, -0.9396912015306447, 0), (0.9396912015306447, -3.552713678800501e-15, 0.34202404267228564, 0), (0.29555258883673546, -0.0135001323422, 0.16620857702413494, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_chassis_front_depth_optical_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-3.3384537855263952e-15, -1, -1.2151134948804873e-15, 0), (0.34202404267228564, 1.262177448353619e-29, -0.9396912015306447, 0), (0.9396912015306447, -3.552713678800501e-15, 0.34202404267228564, 0), (0.2986629677990024, 0.0315, 0.167340677000366, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "head_pitch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9758974493306057, 0, -0.2182296230808693, 0), (0, 1, 0, 0), (0.2182296230808694, 0, 0.9758974493306055, 0), (0.011797559317144971, 0, 1.3337393133192972, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "head_pitch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+    }
+
+    over "left_base_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1.0000000000000002, 0, 1.5447646354051187e-17, 0), (-1.544764628238298e-17, 0.00009632679474769201, -0.9999999953605743, 0), (1.4880222596816216e-21, 0.9999999953605743, 0.00009632679474769201, 0), (0.011797559317144967, 0.0455, 1.110739313319297, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_base_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+    }
+
+    over "right_base_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (1.0000000000000002, 0, 1.5447646354051187e-17, 0), (1.544764628238298e-17, 0.00009632679474769201, 0.9999999953605743, 0), (1.4880222596816216e-21, -0.9999999953605743, 0.00009632679474769201, 0), (0.011797559317144967, -0.0455, 1.110739313319297, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_base_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+    }
+
+    over "head_camera_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.7058032065500789, -0.00003811603889363264, -0.7084079560329588, 0), (-0.0003512223367089784, 0.9999998568199944, -0.00040373612755427565, 0), (0.7084078699919258, 0.0005337669510890462, 0.7058030921059676, 0), (0.11383206713397014, -0.0075797, 1.3814790095853844, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "left_shoulder_pitch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.14773764704536085, 0.00009526976094138729, -0.9890265813258878, 0), (-0.9890265859144034, 0.000014231094003445442, -0.14773764635994302, 0), (1.4880222596816216e-21, 0.9999999953605743, 0.00009632679474769201, 0), (0.011797559317144967, 0.0455, 1.110739313319297, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_shoulder_pitch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_shoulder_pitch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.14772954523704762, -0.00009526987751496115, -0.9890277915143262, 0), (0.9890277961028474, 0.000014230313582218968, 0.1477295445516674, 0), (1.4880222596816216e-21, -0.9999999953605743, 0.00009632679474769201, 0), (0.011797559317144967, -0.0455, 1.110739313319297, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_shoulder_pitch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "camera_head_front_bottom_screw_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.7058032065500789, -0.00003811603889363264, -0.7084079560329588, 0), (-0.0003512223367089784, 0.9999998568199944, -0.00040373612755427565, 0), (0.7084078699919258, 0.0005337669510890462, 0.7058030921059676, 0), (0.11383206713397014, -0.0075797, 1.3814790095853844, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "left_shoulder_roll_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.01614012925682537, -0.9940275469558904, 0.10792929222610563, 0), (0.14685335745317685, -0.10912944411244477, -0.9831199600417226, 0), (0.9890265859077312, -0.00001790429908972394, 0.14773764600511827, 0), (0.011797559317144967, 0.21999999919042018, 1.1107561223449807, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_shoulder_roll_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_shoulder_roll_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.016132030941120958, 0.994027540438684, 0.10793056298905872, 0), (0.14684609673688162, 0.10912950443380523, -0.983121037886574, 0), (-0.9890277960961752, -0.000010557108495748463, -0.14772954490449886, 0), (0.011797559317144967, -0.21999999919042018, 1.1107561223449807, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_shoulder_roll_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "camera_head_front_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.7058032065500789, -0.00003811603889363264, -0.7084079560329588, 0), (-0.0003512223367089784, 0.9999998568199944, -0.00040373612755427565, 0), (0.7084078699919258, 0.0005337669510890462, 0.7058030921059676, 0), (0.11383206713397014, -0.0075797, 1.3814790095853844, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "left_shoulder_yaw_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9856654558904109, 0.09960060823483102, 0.13617388847940184, 0), (0.08305881929429582, -0.9890250165094284, 0.12219144510137477, 0), (0.14684972455468337, -0.1091294440459424, -0.9831205027057656, 0), (0.011797559317144967, 0.21999999919042018, 1.1107561223449807, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_shoulder_yaw_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_shoulder_yaw_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9856659985833037, -0.09959414583787417, 0.13617468689739368, 0), (-0.08305236987631681, -0.9890256606218836, -0.12219061538994792, 0), (0.14684972963783902, 0.10912950447184744, -0.9831204952390233, 0), (0.011797559317144967, -0.21999999919042018, 1.1107561223449807, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_shoulder_yaw_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "camera_head_front_infra2_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.7058032065500789, -0.00003811603889363264, -0.7084079560329588, 0), (-0.0003512223367089784, 0.9999998568199944, -0.00040373612755427565, 0), (0.7084078699919258, 0.0005337669510890462, 0.7058030921059676, 0), (0.131431512720005, -0.027573611302670775, 1.3812566902539443, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_head_front_infra1_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.7058032065500789, -0.00003811603889363264, -0.7084079560329588, 0), (-0.0003512223367089784, 0.9999998568199944, -0.00040373612755427565, 0), (0.7084078699919258, 0.0005337669510890462, 0.7058030921059676, 0), (0.13141746382653663, 0.012426382970129003, 1.3812405408088422, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_head_front_color_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.7058032065500789, -0.00003811603889363264, -0.7084079560329588, 0), (-0.0003512223367089784, 0.9999998568199944, -0.00040373612755427565, 0), (0.7084078699919258, 0.0005337669510890462, 0.7058030921059676, 0), (0.1327628204903934, 0.00009631231506457196, 1.3798995437588322, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_head_front_USB_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.7058032065500789, -0.00003811603889363264, -0.7084079560329588, 0), (-0.0003512223367089784, 0.9999998568199944, -0.00040373612755427565, 0), (0.7084078699919258, 0.0005337669510890462, 0.7058030921059676, 0), (0.12116549170192584, -0.03729805532187932, 1.3915679523480642, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_head_front_depth_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.7058032065500789, -0.00003811603889363264, -0.7084079560329588, 0), (-0.0003512223367089784, 0.9999998568199944, -0.00040373612755427565, 0), (0.7084078699919258, 0.0005337669510890462, 0.7058030921059676, 0), (0.13141746382653663, 0.012426382970129003, 1.3812405408088422, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "left_elbow_roll_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.15282138346709892, 0.10852007215569573, 0.9822774652278878, 0), (0.9847572125590482, 0.10026025014916565, 0.14213062496506762, 0), (-0.08305935870289315, 0.989025417357587, -0.12218783389730262, 0), (0.07168540847036649, 0.1904726596974617, 0.8310516680610551, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_elbow_roll_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_elbow_roll_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.15282200197755055, -0.10852743740616524, 0.9822765552743403, 0), (0.9847577515144139, -0.10025383227788136, 0.1421314178704852, 0), (0.08305183046658018, 0.9890252597601586, 0.12219422659234398, 0), (0.07168541969770423, -0.1904725260320817, 0.831051684575534, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_elbow_roll_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "camera_head_front_infra2_optical_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.00035122233670647086, -0.9999998568199944, 0.0004037361275567924, 0), (-0.7084078699919284, -0.0005337669510890461, -0.705803092105965, 0), (0.7058032065500763, -0.00003811603889718725, -0.7084079560329614, 0), (0.131431512720005, -0.027573611302670775, 1.3812566902539443, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_head_front_infra1_optical_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.00035122233670647086, -0.9999998568199944, 0.0004037361275567924, 0), (-0.7084078699919284, -0.0005337669510890461, -0.705803092105965, 0), (0.7058032065500763, -0.00003811603889718725, -0.7084079560329614, 0), (0.13141746382653663, 0.012426382970129003, 1.3812405408088422, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_head_front_color_optical_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.00035122233670647086, -0.9999998568199944, 0.0004037361275567924, 0), (-0.7084078699919284, -0.0005337669510890461, -0.705803092105965, 0), (0.7058032065500763, -0.00003811603889718725, -0.7084079560329614, 0), (0.1327628204903934, 0.00009631231506457196, 1.3798995437588322, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "camera_head_front_depth_optical_frame" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.00035122233670647086, -0.9999998568199944, 0.0004037361275567924, 0), (-0.7084078699919284, -0.0005337669510890461, -0.705803092105965, 0), (0.7058032065500763, -0.00003811603889718725, -0.7084079560329614, 0), (0.13141746382653663, 0.012426382970129003, 1.3812405408088422, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "left_elbow_yaw_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.14140059398373028, -0.014391461856567174, 0.9898478458059496, 0), (0.10128427054494034, -0.9948575257403239, 0.000004244977519059809, 0), (0.984757517646465, 0.10025661725527882, 0.14213107378508383, 0), (0.07443619337277427, 0.18851929839865916, 0.8133706736869531, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_elbow_yaw_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_elbow_yaw_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.14139983252312746, 0.014397906884995985, 0.9898478608552742, 0), (-0.1012860258906321, -0.99485734703778, 0.0000020572339609862834, 0), (0.984757446441363, -0.10025746516983658, 0.1421309690250696, 0), (0.07443621573330014, -0.18851903215877072, 0.8133707065805958, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_elbow_yaw_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_wrist_roll_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.000005266408643319738, 0.0000042555161463489124, 0.9999999999770778, 0), (0.9948571574679763, 0.10128788778337998, 0.0000048082920912490645, 0), (-0.1012878877605965, 0.9948571574704942, -0.000004767054104612546, 0), (0.3836500539137643, 0.21999987621681671, 0.8579998308554695, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_wrist_roll_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_wrist_roll_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.00000452233798644136, 0.000003053043062453728, 0.9999999999851136, 0), (0.9948577152903663, -0.10128240866069868, 0.0000048083023921651574, 0), (0.10128240867387091, 0.994857715297301, -0.0000025793101617487614, 0), (0.38365005391588813, -0.2199998762220994, 0.8579998308544677, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_wrist_roll_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_wrist_pitch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9999999999978108, 0.00000168551659498515, 0.0000012400414286938031, 0), (-0.0000016855153881037399, 0.9999999999981057, -9.732550347329251e-7, 0), (-0.000001240043069055505, 9.732529446185099e-7, 0.9999999999987574, 0), (0.3836500539137643, 0.21999987621681671, 0.8579998308554695, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_wrist_pitch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_wrist_pitch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9999999999978108, -0.0000016854961152271685, 0.0000012400509693743766, 0), (0.0000016854949082387538, 0.9999999999981056, 9.733065250686329e-7, 0), (-0.0000012400526098547087, -9.733044349665995e-7, 0.9999999999987572, 0), (0.38365005391588813, -0.2199998762220994, 0.8579998308544677, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_wrist_pitch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/WhiteShell> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_flange" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9999999999978108, 0.00000168551659498515, 0.0000012400414286938031, 0), (0.0000016855153881039963, -0.9999999999981057, 9.73254827909818e-7, 0), (0.0000012400430690551565, -9.732527377954027e-7, -0.9999999999987574, 0), (0.4766500539135607, 0.22000003296986004, 0.8579999461793224, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Adapter> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_flange" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9999999999978108, -0.0000016854961152271685, 0.0000012400509693743766, 0), (-0.0000016854949082384973, -0.9999999999981056, -9.7330673189174e-7, 0), (0.0000012400526098550572, 9.733046417897067e-7, -0.9999999999987572, 0), (0.47665005391568455, -0.2200000329732381, 0.8579999461792079, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Adapter> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_revo2_adapter" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9999999999978108, 0.00000168551659498515, 0.0000012400414286938031, 0), (0.0000012400430690634098, -9.732576344340528e-7, -0.9999999999987574, 0), (-0.0000016855153880979243, 0.9999999999981057, -9.73259724548468e-7, 0), (0.4766500539135607, 0.22000003296986004, 0.8579999461793224, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_revo2_adapter_collision_1"
+            {
+                over "cylinder" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Adapter> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_revo2_adapter" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9999999999978108, -0.0000016854961152271685, 0.0000012400509693743766, 0), (-0.0000012400526098633105, -9.733095384283568e-7, 0.9999999999987572, 0), (-0.0000016854949082324252, -0.9999999999981056, -9.733116285303901e-7, 0), (0.47665005391568455, -0.2200000329732381, 0.8579999461792079, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_revo2_adapter_collision_1"
+            {
+                over "cylinder" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Adapter> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_hand_base_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.0000016855202847365744, -0.9999999999981057, 9.7325972455454e-7, 0), (0.0000012400430690634098, -9.732576344340528e-7, -0.9999999999987574, 0), (0.9999999999978108, 0.0000016855214916238, 0.0000012400414286890375, 0), (0.5200000539134658, 0.22000010603700443, 0.8579999999351183, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_hand_base_link_collision_2"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_end_effector" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9999999999978108, 0.00000168551659498515, 0.0000012400414286938031, 0), (0.0000012400430690634098, -9.732576344340528e-7, -0.9999999999987574, 0), (-0.0000016855153880979243, 0.9999999999981057, -9.73259724548468e-7, 0), (0.6366500539132104, 0.22000030265251524, 0.858000144585951, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "left_in_hand_camera_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9999999999978108, 0.00000168551659498515, 0.0000012400414286938031, 0), (-0.0000012400430690630612, 9.732574276109457e-7, 0.9999999999987574, 0), (0.0000016855153880981808, -0.9999999999981057, 9.73259517725361e-7, 0), (0.5016501213341215, 0.18000007510785068, 0.858000016110747, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Adapter> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_hand_base_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.0000016854998048710753, 0.9999999999981056, 9.733116285364623e-7, 0), (-0.0000012400526098633105, -9.733095384283568e-7, 0.9999999999987572, 0), (0.9999999999978108, -0.0000016855010118658186, 0.0000012400509693696106, 0), (0.5200000539155897, -0.22000010603949471, 0.8579999999354174, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_hand_base_link_collision_2"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_end_effector" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI"]
+    )
+    {
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9999999999978108, -0.0000016854961152271685, 0.0000012400509693743766, 0), (-0.0000012400526098633105, -9.733095384283568e-7, 0.9999999999987572, 0), (-0.0000016854949082324252, -0.9999999999981056, -9.733116285303901e-7, 0), (0.6366500539153342, -0.22000030265261655, 0.8580001445873631, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+    }
+
+    over "right_in_hand_camera_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.9999999999978108, -0.0000016854961152271685, 0.0000012400509693743766, 0), (0.000001240052609863659, 9.73309745251464e-7, -0.9999999999987572, 0), (0.0000016854949082321687, 0.9999999999981056, 9.733118353534972e-7, 0), (0.5016501213354262, -0.18000007511071675, 0.8580000161129473, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Adapter> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_thumb_metacarpal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.000002089303083897597, -0.8371541588146635, -0.5469670139733729, 0), (1.1618118180951351e-7, 0.5469670139747662, -0.8371541588163522, 0), (0.9999999999978108, 0.0000016855214916238, 0.0000012400414286890375, 0), (0.5478250379374279, 0.21550017142854352, 0.8770000388189162, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_thumb_metacarpal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_index_proximal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.2145305672282449, -0.9604835755111301, -0.1773356616647726, 0), (0.11663682586569984, 0.1550708701860905, -0.9809938206083172, 0), (0.9697280477415833, -0.23113702947187809, 0.07876031380215698, 0), (0.6008760136368776, 0.22213517114225084, 0.88757809814686, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_index_proximal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_middle_proximal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.2158045881014715, -0.9746340617586792, -0.05930282804498384, 0), (0.03902580334517198, 0.05207613556079961, -0.9978802847928787, 0), (0.9756563772290008, -0.2176614843394023, 0.026797608243085736, 0), (0.604993033694769, 0.22459375908646892, 0.8680611008592785, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_middle_proximal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_ring_proximal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.21611973600963233, -0.974563586546387, 0.05931336683218735, 0), (-0.039023729721900755, -0.05207852963197394, -0.9978802409457579, 0), (0.9755866994920129, -0.21797624303858068, -0.02677590792236035, 0), (0.6039820584447403, 0.22468793783258043, 0.8479740995139404, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_ring_proximal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_pinky_proximal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.21344088842540404, -0.9607419458935695, 0.1772509535906976, 0), (-0.11663836749307512, -0.15507448210332345, -0.9809930663511014, 0), (0.9699682873046545, -0.23005829348455017, -0.07896013691890341, 0), (0.5986940863157526, 0.22237351010647707, 0.8286440952091377, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_pinky_proximal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_thumb_metacarpal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (0.0000020894097103259075, 0.8365904607857272, -0.547828806214093, 0), (-1.1404880466295235e-7, 0.5478288062154847, 0.8365904607874174, 0), (0.9999999999978108, -0.0000016855010118658186, 0.0000012400509693696106, 0), (0.5478250387502269, -0.21438117227531162, 0.877867039908849, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_thumb_metacarpal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_index_proximal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.21453056724622355, 0.9604835755159408, -0.17733566161696646, 0), (-0.11663682587823516, 0.1550708701327843, 0.9809938206152529, 0), (0.9697280477360981, 0.23113702948764997, 0.07876031382340584, 0), (0.60087601367948, -0.22211837113488697, 0.8875680981641715, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_index_proximal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_middle_proximal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.21718367933430077, 0.9743253749749923, -0.059340653102706406, 0), (-0.03902580335575909, 0.052076135508206424, 0.9978802847952093, 0), (0.975350314555367, 0.21903912844597193, 0.026713743773116406, 0), (0.6049930337376078, -0.2245769590780077, 0.8680511008765016, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_middle_proximal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_ring_proximal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.21474031169735133, 0.9748707704587459, 0.0592754539189302, 0), (0.03902372971344672, -0.05207852968296868, 0.997880240943427, 0), (0.9758912578004664, 0.2165982632691937, -0.02685973375506118, 0), (0.6039820584890129, -0.224671137822124, 0.8479630995311491, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_ring_proximal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_pinky_proximal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.21344088844677103, 0.9607419458799982, 0.1772509536385275, 0), (0.11663836748689153, -0.15507448215185213, 0.980993066344165, 0), (0.9699682873006962, 0.23005829350851326, -0.07896013689770821, 0), (0.5986940863587535, -0.22235681009609898, 0.8286340952263187, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_pinky_proximal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_thumb_proximal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.23513548549634228, -0.8910708754360376, -0.38820612876415667, 0), (-0.6983443026273374, 0.43268310103317187, -0.5701759106348283, 0), (0.6760373794756745, 0.13703294870202393, -0.7240134201254084, 0), (0.5478250362845182, 0.20771847172072452, 0.8889102310363964, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_thumb_proximal_link_collision_2"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_index_distal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.291348779620349, -0.93893756739447, -0.1830631944140829, 0), (0.11663682586569984, 0.1550708701860905, -0.9809938206083172, 0), (0.9494797204078179, -0.30716326237863084, 0.06433498876356963, 0), (0.6319073111646083, 0.21473878619915074, 0.890098428188529, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_index_distal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_middle_distal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.41130882326026375, -0.9092788164145534, -0.06353806676320593, 0), (0.03902580334517198, 0.05207613556079961, -0.9978802847928787, 0), (0.9106602212579185, -0.412916589791209, 0.014065962237870702, 0), (0.641092319652242, 0.21654028416591103, 0.8690526123642727, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_middle_distal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_ring_distal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.4130891875155371, -0.9084693655642141, 0.06356677582753176, 0), (-0.039023729721900755, -0.05207852963197394, -0.9978802409457579, 0), (0.909854093619601, -0.4146941506492776, -0.013938785489728546, 0), (0.6381275929269608, 0.2170587693262301, 0.8470369427366579, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_ring_distal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_pinky_distal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.2918322906244729, -0.9387802468589962, 0.18309986962375277, 0), (-0.11663836749307512, -0.15507448210332345, -0.9809930663511014, 0), (0.9493310304511402, -0.30764192352107683, -0.0642420540987626, 0), (0.6268231666475876, 0.21570181959542511, 0.8263542512384895, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_pinky_distal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_thumb_proximal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.2351354850478684, 0.8906706374526224, -0.3891235269821682, 0), (0.6983443041551993, 0.43327002488235666, 0.5697300399245524, 0), (0.6760373780533839, -0.13777844939677825, -0.7238719240007344, 0), (0.5478250371276546, -0.2065872118492839, 0.8897692123944716, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_thumb_proximal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_index_distal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.29134877963783173, 0.9389375673980047, -0.18306319436812796, 0), (-0.11663682587823516, 0.1550708701327843, 0.9809938206152529, 0), (0.9494797204009134, 0.3071632623947368, 0.06433498878857137, 0), (0.6319073112070351, -0.21472198619128216, 0.8900884282065205, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_index_distal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_middle_distal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.2960015270552061, 0.9532170604946651, -0.06132154240473179, 0), (-0.03902580335575909, 0.052076135508206424, 0.9978802847952093, 0), (0.9543899007499104, 0.29776721057302474, 0.021785445924656595, 0), (0.6410809953761564, -0.21647251132550674, 0.869039509396107, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_middle_distal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_ring_distal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.29205044124944707, 0.9544407329167166, 0.061232565807777105, 0), (0.03902372971344672, -0.05207852968296868, 0.997880240943427, 0), (0.955606450525139, 0.29382088777937587, -0.022036279615312487, 0), (0.6381382525120292, -0.21709019860770223, 0.847023008849722, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_ring_distal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_pinky_distal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.2918322906454459, 0.9387802468435158, 0.18309986966969488, 0), (0.11663836748689153, -0.15507448215185213, 0.980993066344165, 0), (0.9493310304454525, 0.30764192354385334, -0.0642420540737374, 0), (0.6268231666904738, -0.2156851195843521, 0.8263442512562852, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_pinky_distal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_thumb_distal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.23513548549634228, -0.8910708754360376, -0.38820612876415667, 0), (-0.9621216888000104, 0.27007533811617873, -0.03716406439085628, 0), (0.13796071687627398, 0.3647629458855234, -0.9208229112635605, 0), (0.5841389400211398, 0.1852189504669996, 0.9185593783894075, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_thumb_distal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_index_tip_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.7019728650049167, -0.6858686151944334, -0.1918810555736529, 0), (0.11663682586569984, 0.1550708701860905, -0.9809938206083172, 0), (0.702588035514955, -0.7110114400704103, -0.028858004786153607, 0), (0.6626076694848163, 0.1933416881796244, 0.8903662440835372, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_index_touch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6937544775485021, -0.6940911081272046, -0.19220369013146987, 0), (0.11663682586569984, 0.1550708701860905, -0.9809938206083172, 0), (0.710704281493632, -0.702986883831041, -0.026624526815379353, 0), (0.6498093538311155, 0.1939691827814239, 0.8889437593022655, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_index_touch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_middle_tip_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6979709727050667, -0.7132139021961086, -0.06451705956832353, 0), (0.03902580334517198, 0.05207613556079961, -0.9978802847928787, 0), (0.7150618909817575, -0.6990093030992166, -0.008513885501944112, 0), (0.676045064558399, 0.19263413277322547, 0.869171984367342, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_middle_touch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6979709727050667, -0.7132139021961086, -0.06451705956832353, 0), (0.03902580334517198, 0.05207613556079961, -0.9978802847928787, 0), (0.7150618909817575, -0.6990093030992166, -0.008513885501944112, 0), (0.6618102141854276, 0.1934567231785022, 0.8686582061620198, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_middle_touch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_ring_tip_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6993682502974995, -0.7118452998032005, 0.06450053971794117, 0), (-0.039023729721900755, -0.05207852963197394, -0.9978802409457579, 0), (0.7136954525527022, -0.7004028097455514, 0.008643211563454633, 0), (0.67222261779605, 0.19364162742245403, 0.8469257222592229, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_ring_touch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6993682502974995, -0.7118452998032005, 0.06450053971794117, 0), (-0.039023729721900755, -0.05207852963197394, -0.9978802409457579, 0), (0.7136954525527022, -0.7004028097455514, 0.008643211563454633, 0), (0.6584492605657744, 0.1946048611857764, 0.8474140814348389, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_ring_touch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_pinky_tip_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6941162466520113, -0.6937320818083497, 0.19219374288352203, 0), (-0.11663836749307512, -0.15507448210332345, -0.9809930663511014, 0), (0.7103507073004677, -0.7033403896195918, 0.026723939969365076, 0), (0.6550904276655055, 0.1959795898538125, 0.8261109950690908, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_pinky_touch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6941162466520113, -0.6937320818083497, 0.19219374288352203, 0), (-0.11663836749307512, -0.15507448210332345, -0.9809930663511014, 0), (0.7103507073004677, -0.7033403896195918, 0.026723939969365076, 0), (0.6427882649431886, 0.19605088034447135, 0.827562431261136, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_pinky_touch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_thumb_distal_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.2351354850478684, 0.8906706374526224, -0.3891235269821682, 0), (0.9621216892032928, 0.2701134644125495, 0.03688592560384788, 0), (0.13796071482819297, -0.3657109950805265, -0.9204467987022957, 0), (0.584138940943725, -0.18405717055540138, 0.9193951744705483, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_thumb_distal_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_index_tip_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6937544775608833, 0.6940911081229726, -0.1922036901020627, 0), (-0.11663682587823516, 0.1550708701327843, 0.9809938206152529, 0), (0.7107042814794889, 0.7029868838469779, -0.02662452677211088, 0), (0.6626076695268024, -0.19332488817114102, 0.8903562441029321, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_index_touch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6937544775608833, 0.6940911081229726, -0.1922036901020627, 0), (0.7200821260291788, 0.6735331298076069, -0.1668378099378775, 0), (0.013654912578422322, -0.2541469194702008, -0.9670692253847614, 0), (0.649809353873128, -0.19395238277312873, 0.8889337593215058, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_index_touch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_middle_tip_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.7001390883062355, 0.7110880252603203, -0.06449090910423798, 0), (-0.03902580335575909, 0.052076135508206424, 0.9978802847952093, 0), (0.7129391584827917, 0.7011718023722204, -0.008709756594783298, 0), (0.675961244565525, -0.19245970994982048, 0.8691504804706733, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_middle_touch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.7001406718624783, 0.7110864678378764, -0.06449088975824228, 0), (-0.03902580335575909, 0.052076135508206424, 0.9978802847952093, 0), (0.7129376033541751, 0.701173381816782, -0.008709899839934816, 0), (0.661728793359628, -0.1933265781049534, 0.8686391068056228, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_middle_touch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_ring_tip_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6971835252853784, 0.7139828027387837, 0.06452665700253696, 0), (0.03902372971344672, -0.05207852968296868, 0.997880240943427, 0), (0.7158297846484902, 0.6982237350157404, 0.008446021001923898, 0), (0.672303372201857, -0.19377680968957267, 0.8469036324208358, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_ring_touch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6971851152623335, 0.7139812518643529, 0.06452663824234073, 0), (0.03902372971344672, -0.05207852968296868, 0.997880240943427, 0), (0.715828236084536, 0.6982253208902347, 0.00844616432649056, 0), (0.6585285990466504, -0.1946985386036159, 0.8473942130714761, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_ring_touch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_pinky_tip_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6941162466680525, 0.6937320817841586, 0.19219374291290706, 0), (0.11663836748689153, -0.15507448215185213, 0.980993066344165, 0), (0.7103507072858083, 0.7033403896327525, 0.026723940012648544, 0), (0.6550904277079901, -0.19596288984214796, 0.8261009950881798, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_pinky_touch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.6941162466680525, 0.6937320817841586, 0.19219374291290706, 0), (0.11663836748689153, -0.15507448215185213, 0.980993066344165, 0), (0.7103507072858083, 0.7033403896327525, 0.026723940012648544, 0), (0.6427882649856608, -0.19603418033313408, 0.827552431280104, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_pinky_touch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_thumb_tip_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.23513548549634228, -0.8910708754360376, -0.38820612876415667, 0), (-0.9507770469401264, 0.2938037427536465, -0.09850059774316906, 0), (0.20182742745279192, 0.34593649083842337, -0.9162934212544501, 0), (0.6094184067680068, 0.1774072512138821, 0.9211782912044673, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "left_thumb_touch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.23513548549634228, -0.8910708754360376, -0.38820612876415667, 0), (-0.923443074507736, 0.3294210874133036, -0.19681116663222264, 0), (0.30325598362455997, 0.31220897187154967, -0.9003118161386144, 0), (0.5985088212608141, 0.18427940921564187, 0.9120121578070036, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "left_thumb_touch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_thumb_tip_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.2351354850478684, 0.8906706374526224, -0.3891235269821682, 0), (0.9507769565115857, 0.2939051757910001, 0.09819840431405878, 0), (0.20182785396934136, -0.346879753261847, -0.9159366539991343, 0), (0.6094181912511367, -0.17624282203277394, 0.9220060728788895, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions"
+        {
+            token visibility = "invisible"
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "right_thumb_touch_link" (
+        prepend apiSchemas = ["PhysxRigidBodyAPI", "MaterialBindingAPI"]
+    )
+    {
+        rel material:binding:physics = </Robot/TrainingMaterials/FingerContact> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        bool physxRigidBody:enableCCD = 1
+        float physxRigidBody:maxDepenetrationVelocity = 1
+        matrix4d xformOp:transform = ( (-0.2351354850478684, 0.8906706374526224, -0.3891235269821682, 0), (0.9507769565115857, 0.2939051757910001, 0.09819840431405878, 0), (0.20182785396934136, -0.346879753261847, -0.9159366539991343, 0), (0.5984683162024534, -0.18313897926155884, 0.9128380315583934, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+
+        over "collisions" (
+            instanceable = false
+        )
+        {
+            token visibility = "invisible"
+
+            over "right_thumb_touch_link_collision_1"
+            {
+                over "node_STL_BINARY_" (
+                    delete apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    over "mesh" (
+                        prepend apiSchemas = ["PhysicsCollisionAPI", "PhysicsMeshCollisionAPI", "PhysxCollisionAPI"]
+                    )
+                    {
+                        uniform token physics:approximation = "convexHull"
+                        float physxCollision:contactOffset = 0.001
+                        float physxCollision:restOffset = 0
+                    }
+                }
+            }
+        }
+
+        over "visuals" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </Robot/TrainingLooks/Revo2> (
+                bindMaterialAs = "strongerThanDescendants"
+            )
+        }
+    }
+
+    over "root_joint" (
+        prepend apiSchemas = ["PhysxArticulationAPI"]
+    )
+    {
+        bool physxArticulation:enabledSelfCollisions = 1
+        int physxArticulation:solverPositionIterationCount = 16
+        int physxArticulation:solverVelocityIterationCount = 4
+    }
+
+    def "TrainingMaterials"
+    {
+        def Material "FingerContact" (
+            prepend apiSchemas = ["PhysicsMaterialAPI", "PhysxMaterialAPI"]
+        )
+        {
+            float physics:dynamicFriction = 0.75
+            float physics:restitution = 0
+            float physics:staticFriction = 0.9
+            token physxMaterial:frictionCombineMode = "average"
+            token physxMaterial:restitutionCombineMode = "min"
+        }
+    }
+
+    def "TrainingLooks"
+    {
+        def Material "Revo2"
+        {
+            token outputs:surface.connect = </Robot/TrainingLooks/Revo2/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.017, 0.02, 0.024)
+                float inputs:ior = 1.5
+                float inputs:metallic = 0.12
+                float inputs:opacity = 1
+                float inputs:roughness = 0.48
+                token outputs:surface
+            }
+        }
+
+        def Material "WhiteShell"
+        {
+            token outputs:surface.connect = </Robot/TrainingLooks/WhiteShell/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.72, 0.745, 0.73)
+                float inputs:ior = 1.5
+                float inputs:metallic = 0.08
+                float inputs:opacity = 1
+                float inputs:roughness = 0.3
+                token outputs:surface
+            }
+        }
+
+        def Material "Adapter"
+        {
+            token outputs:surface.connect = </Robot/TrainingLooks/Adapter/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.045, 0.065, 0.11)
+                float inputs:ior = 1.5
+                float inputs:metallic = 0.45
+                float inputs:opacity = 1
+                float inputs:roughness = 0.45
+                token outputs:surface
+            }
+        }
+
+        def Material "Tire"
+        {
+            token outputs:surface.connect = </Robot/TrainingLooks/Tire/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.012, 0.013, 0.016)
+                float inputs:ior = 1.5
+                float inputs:metallic = 0
+                float inputs:opacity = 1
+                float inputs:roughness = 0.8
+                token outputs:surface
+            }
+        }
+    }
+
+    over "joints"
+    {
+        over "left_wheel_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.08726646
+            float drive:angular:physics:maxForce = 22
+            float drive:angular:physics:stiffness = 0.87266463
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.01
+            float physxJoint:maxJointVelocity = 899.54376
+            float state:angular:physics:position = 0
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_wheel_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.08726646
+            float drive:angular:physics:maxForce = 22
+            float drive:angular:physics:stiffness = 0.87266463
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.01
+            float physxJoint:maxJointVelocity = 899.54376
+            float state:angular:physics:position = 0
+            float state:angular:physics:velocity = 0
+        }
+
+        over "bow_pitch_joint_01" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 267
+            float drive:angular:physics:stiffness = 20.94395
+            float drive:angular:physics:targetPosition = 11.459156
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.03
+            float physxJoint:maxJointVelocity = 71.99788
+            float state:angular:physics:position = 11.459156
+            float state:angular:physics:velocity = 0
+        }
+
+        over "bow_pitch_joint_02" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 133
+            float drive:angular:physics:stiffness = 20.94395
+            float drive:angular:physics:targetPosition = -22.918312
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.03
+            float physxJoint:maxJointVelocity = 101.99795
+            float state:angular:physics:position = -22.918312
+            float state:angular:physics:velocity = 0
+        }
+
+        over "bow_pitch_joint_03" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 133
+            float drive:angular:physics:stiffness = 20.94395
+            float drive:angular:physics:targetPosition = 11.459156
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.03
+            float physxJoint:maxJointVelocity = 101.99795
+            float state:angular:physics:position = 11.459156
+            float state:angular:physics:velocity = 0
+        }
+
+        over "bow_yaw_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 1.3962634
+            float drive:angular:physics:maxForce = 61
+            float drive:angular:physics:stiffness = 20.94395
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.03
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = 0
+            float state:angular:physics:velocity = 0
+        }
+
+        over "head_yaw_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.034906585
+            float drive:angular:physics:maxForce = 1.3
+            float drive:angular:physics:stiffness = 0.43633232
+            float drive:angular:physics:targetPosition = 0
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.003
+            float physxJoint:maxJointVelocity = 660.0015
+            float state:angular:physics:position = 0
+            float state:angular:physics:velocity = 0
+        }
+
+        over "head_pitch_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.034906585
+            float drive:angular:physics:maxForce = 1.3
+            float drive:angular:physics:stiffness = 0.43633232
+            float drive:angular:physics:targetPosition = 12.605071
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.003
+            float physxJoint:maxJointVelocity = 660.0015
+            float state:angular:physics:position = 12.605071
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_shoulder_pitch_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.5235988
+            float drive:angular:physics:maxForce = 108
+            float drive:angular:physics:stiffness = 6.981317
+            float drive:angular:physics:targetPosition = 81.50416
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.03
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = 81.50416
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_shoulder_roll_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.5235988
+            float drive:angular:physics:maxForce = 108
+            float drive:angular:physics:stiffness = 6.981317
+            float drive:angular:physics:targetPosition = -96.27059
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.03
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = -96.27059
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_shoulder_yaw_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.5235988
+            float drive:angular:physics:maxForce = 66
+            float drive:angular:physics:stiffness = 6.981317
+            float drive:angular:physics:targetPosition = -95.751686
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.03
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = -95.751686
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_elbow_roll_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.17453292
+            float drive:angular:physics:maxForce = 66
+            float drive:angular:physics:stiffness = 5.2359877
+            float drive:angular:physics:targetPosition = -90.347305
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.01
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = -90.347305
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_elbow_yaw_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.17453292
+            float drive:angular:physics:maxForce = 18
+            float drive:angular:physics:stiffness = 5.2359877
+            float drive:angular:physics:targetPosition = 7.09046
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.01
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = 7.09046
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_wrist_roll_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.05235988
+            float drive:angular:physics:maxForce = 18
+            float drive:angular:physics:stiffness = 2.6179938
+            float drive:angular:physics:targetPosition = 8.170906
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.003
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = 8.170906
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_wrist_pitch_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.05235988
+            float drive:angular:physics:maxForce = 18
+            float drive:angular:physics:stiffness = 2.6179938
+            float drive:angular:physics:targetPosition = -5.813241
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.003
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = -5.813241
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_shoulder_pitch_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.5235988
+            float drive:angular:physics:maxForce = 108
+            float drive:angular:physics:stiffness = 6.981317
+            float drive:angular:physics:targetPosition = -81.50462
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.03
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = -81.50462
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_shoulder_roll_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.5235988
+            float drive:angular:physics:maxForce = 108
+            float drive:angular:physics:stiffness = 6.981317
+            float drive:angular:physics:targetPosition = -96.2706
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.03
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = -96.2706
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_shoulder_yaw_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.5235988
+            float drive:angular:physics:maxForce = 66
+            float drive:angular:physics:stiffness = 6.981317
+            float drive:angular:physics:targetPosition = 95.75085
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.03
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = 95.75085
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_elbow_roll_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.17453292
+            float drive:angular:physics:maxForce = 66
+            float drive:angular:physics:stiffness = 5.2359877
+            float drive:angular:physics:targetPosition = -90.347305
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.01
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = -90.347305
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_elbow_yaw_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.17453292
+            float drive:angular:physics:maxForce = 18
+            float drive:angular:physics:stiffness = 5.2359877
+            float drive:angular:physics:targetPosition = -7.091258
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.01
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = -7.091258
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_wrist_roll_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.05235988
+            float drive:angular:physics:maxForce = 18
+            float drive:angular:physics:stiffness = 2.6179938
+            float drive:angular:physics:targetPosition = 8.170899
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.003
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = 8.170899
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_wrist_pitch_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysicsDriveAPI:angular", "PhysxJointAPI"]
+        )
+        {
+            float drive:angular:physics:damping = 0.05235988
+            float drive:angular:physics:maxForce = 18
+            float drive:angular:physics:stiffness = 2.6179938
+            float drive:angular:physics:targetPosition = 5.8129253
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.003
+            float physxJoint:maxJointVelocity = 180.00043
+            float state:angular:physics:position = 5.8129253
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_thumb_metacarpal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 23.540998
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 149.97171
+            float state:angular:physics:position = 23.540998
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_thumb_proximal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 1.1
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 35.91
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 144.97551
+            float state:angular:physics:position = 35.91
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_thumb_distal_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysxMimicJointAPI:rotX"]
+        )
+        {
+            float drive:angular:physics:damping = None
+            float drive:angular:physics:maxForce = None
+            float drive:angular:physics:stiffness = None
+            float drive:angular:physics:targetPosition = None
+            uniform token drive:angular:physics:type = None
+            float physxJoint:armature = 0.0001
+            float physxMimicJoint:rotX:dampingRatio = 1
+            float physxMimicJoint:rotX:gearing = -1
+            float physxMimicJoint:rotX:naturalFrequency = 500
+            float physxMimicJoint:rotX:offset = -0
+            rel physxMimicJoint:rotX:referenceJoint = </Robot/joints/left_thumb_proximal_joint>
+            float state:angular:physics:position = 35.91
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_index_proximal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 2
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 3.9689999
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 129.97548
+            float state:angular:physics:position = 3.9689999
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_index_distal_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysxMimicJointAPI:rotY"]
+        )
+        {
+            float drive:angular:physics:damping = None
+            float drive:angular:physics:maxForce = None
+            float drive:angular:physics:stiffness = None
+            float drive:angular:physics:targetPosition = None
+            uniform token drive:angular:physics:type = None
+            float physxJoint:armature = 0.0001
+            float physxMimicJoint:rotY:dampingRatio = 1
+            float physxMimicJoint:rotY:gearing = -1.155
+            float physxMimicJoint:rotY:naturalFrequency = 500
+            float physxMimicJoint:rotY:offset = -0
+            rel physxMimicJoint:rotY:referenceJoint = </Robot/joints/left_index_proximal_joint>
+            float state:angular:physics:position = 4.5841947
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_middle_proximal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 2
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 3.9689999
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 129.97548
+            float state:angular:physics:position = 3.9689999
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_middle_distal_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysxMimicJointAPI:rotY"]
+        )
+        {
+            float drive:angular:physics:damping = None
+            float drive:angular:physics:maxForce = None
+            float drive:angular:physics:stiffness = None
+            float drive:angular:physics:targetPosition = None
+            uniform token drive:angular:physics:type = None
+            float physxJoint:armature = 0.0001
+            float physxMimicJoint:rotY:dampingRatio = 1
+            float physxMimicJoint:rotY:gearing = -1.155
+            float physxMimicJoint:rotY:naturalFrequency = 500
+            float physxMimicJoint:rotY:offset = -0
+            rel physxMimicJoint:rotY:referenceJoint = </Robot/joints/left_middle_proximal_joint>
+            float state:angular:physics:position = 4.5841947
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_ring_proximal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 2
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 4.05
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 129.97548
+            float state:angular:physics:position = 4.05
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_ring_distal_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysxMimicJointAPI:rotY"]
+        )
+        {
+            float drive:angular:physics:damping = None
+            float drive:angular:physics:maxForce = None
+            float drive:angular:physics:stiffness = None
+            float drive:angular:physics:targetPosition = None
+            uniform token drive:angular:physics:type = None
+            float physxJoint:armature = 0.0001
+            float physxMimicJoint:rotY:dampingRatio = 1
+            float physxMimicJoint:rotY:gearing = -1.155
+            float physxMimicJoint:rotY:naturalFrequency = 500
+            float physxMimicJoint:rotY:offset = -0
+            rel physxMimicJoint:rotY:referenceJoint = </Robot/joints/left_ring_proximal_joint>
+            float state:angular:physics:position = 4.67775
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_pinky_proximal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 2
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 4.05
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 129.97548
+            float state:angular:physics:position = 4.05
+            float state:angular:physics:velocity = 0
+        }
+
+        over "left_pinky_distal_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysxMimicJointAPI:rotY"]
+        )
+        {
+            float drive:angular:physics:damping = None
+            float drive:angular:physics:maxForce = None
+            float drive:angular:physics:stiffness = None
+            float drive:angular:physics:targetPosition = None
+            uniform token drive:angular:physics:type = None
+            float physxJoint:armature = 0.0001
+            float physxMimicJoint:rotY:dampingRatio = 1
+            float physxMimicJoint:rotY:gearing = -1.155
+            float physxMimicJoint:rotY:naturalFrequency = 500
+            float physxMimicJoint:rotY:offset = -0
+            rel physxMimicJoint:rotY:referenceJoint = </Robot/joints/left_pinky_proximal_joint>
+            float state:angular:physics:position = 4.67775
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_thumb_metacarpal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 0.5
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 23.6
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 149.97171
+            float state:angular:physics:position = 23.6
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_thumb_proximal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 1.1
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 35.91
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 144.97551
+            float state:angular:physics:position = 35.91
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_thumb_distal_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysxMimicJointAPI:rotX"]
+        )
+        {
+            float drive:angular:physics:damping = None
+            float drive:angular:physics:maxForce = None
+            float drive:angular:physics:stiffness = None
+            float drive:angular:physics:targetPosition = None
+            uniform token drive:angular:physics:type = None
+            float physxJoint:armature = 0.0001
+            float physxMimicJoint:rotX:dampingRatio = 1
+            float physxMimicJoint:rotX:gearing = -1
+            float physxMimicJoint:rotX:naturalFrequency = 500
+            float physxMimicJoint:rotX:offset = -0
+            rel physxMimicJoint:rotX:referenceJoint = </Robot/joints/right_thumb_proximal_joint>
+            float state:angular:physics:position = 35.91
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_index_proximal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 2
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 3.9689999
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 129.97548
+            float state:angular:physics:position = 3.9689999
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_index_distal_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysxMimicJointAPI:rotY"]
+        )
+        {
+            float drive:angular:physics:damping = None
+            float drive:angular:physics:maxForce = None
+            float drive:angular:physics:stiffness = None
+            float drive:angular:physics:targetPosition = None
+            uniform token drive:angular:physics:type = None
+            float physxJoint:armature = 0.0001
+            float physxMimicJoint:rotY:dampingRatio = 1
+            float physxMimicJoint:rotY:gearing = -1.155
+            float physxMimicJoint:rotY:naturalFrequency = 500
+            float physxMimicJoint:rotY:offset = -0
+            rel physxMimicJoint:rotY:referenceJoint = </Robot/joints/right_index_proximal_joint>
+            float state:angular:physics:position = 4.5841947
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_middle_proximal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 2
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 4.05
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 129.97548
+            float state:angular:physics:position = 4.05
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_middle_distal_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysxMimicJointAPI:rotY"]
+        )
+        {
+            float drive:angular:physics:damping = None
+            float drive:angular:physics:maxForce = None
+            float drive:angular:physics:stiffness = None
+            float drive:angular:physics:targetPosition = None
+            uniform token drive:angular:physics:type = None
+            float physxJoint:armature = 0.0001
+            float physxMimicJoint:rotY:dampingRatio = 1
+            float physxMimicJoint:rotY:gearing = -1.155
+            float physxMimicJoint:rotY:naturalFrequency = 500
+            float physxMimicJoint:rotY:offset = -0
+            rel physxMimicJoint:rotY:referenceJoint = </Robot/joints/right_middle_proximal_joint>
+            float state:angular:physics:position = 4.67775
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_ring_proximal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 2
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 3.9689999
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 129.97548
+            float state:angular:physics:position = 3.9689999
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_ring_distal_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysxMimicJointAPI:rotY"]
+        )
+        {
+            float drive:angular:physics:damping = None
+            float drive:angular:physics:maxForce = None
+            float drive:angular:physics:stiffness = None
+            float drive:angular:physics:targetPosition = None
+            uniform token drive:angular:physics:type = None
+            float physxJoint:armature = 0.0001
+            float physxMimicJoint:rotY:dampingRatio = 1
+            float physxMimicJoint:rotY:gearing = -1.155
+            float physxMimicJoint:rotY:naturalFrequency = 500
+            float physxMimicJoint:rotY:offset = -0
+            rel physxMimicJoint:rotY:referenceJoint = </Robot/joints/right_ring_proximal_joint>
+            float state:angular:physics:position = 4.5841947
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_pinky_proximal_joint" (
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysicsDriveAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.0006981317
+            float drive:angular:physics:maxForce = 2
+            float drive:angular:physics:stiffness = 0.06981317
+            float drive:angular:physics:targetPosition = 4.05
+            uniform token drive:angular:physics:type = "force"
+            float physxJoint:armature = 0.0001
+            float physxJoint:maxJointVelocity = 129.97548
+            float state:angular:physics:position = 4.05
+            float state:angular:physics:velocity = 0
+        }
+
+        over "right_pinky_distal_joint" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular"]
+            prepend apiSchemas = ["PhysicsJointStateAPI:angular", "PhysxJointAPI", "PhysxMimicJointAPI:rotY"]
+        )
+        {
+            float drive:angular:physics:damping = None
+            float drive:angular:physics:maxForce = None
+            float drive:angular:physics:stiffness = None
+            float drive:angular:physics:targetPosition = None
+            uniform token drive:angular:physics:type = None
+            float physxJoint:armature = 0.0001
+            float physxMimicJoint:rotY:dampingRatio = 1
+            float physxMimicJoint:rotY:gearing = -1.155
+            float physxMimicJoint:rotY:naturalFrequency = 500
+            float physxMimicJoint:rotY:offset = -0
+            rel physxMimicJoint:rotY:referenceJoint = </Robot/joints/right_pinky_proximal_joint>
+            float state:angular:physics:position = 4.67775
+            float state:angular:physics:velocity = 0
+        }
+    }
+}
+

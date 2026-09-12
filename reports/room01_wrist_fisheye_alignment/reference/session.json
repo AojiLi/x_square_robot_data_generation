@@ -1,0 +1,53 @@
+{
+  "schema": "umi_policy_io_record_v2",
+  "session_id": "20260824T091633.664930Z-pid2632484-1c6fc5df",
+  "created_wall_time_ns": 1787562993664929937,
+  "created_utc": "2026-08-24T09:16:33.664930+00:00",
+  "hostname": "slzl-System-Product-Name",
+  "pid": 2632484,
+  "record_root": "/home/dzq/pi05_inference_records",
+  "image_encoding": "lossless_png_rgb_uint8",
+  "min_free_bytes": 21474836480,
+  "metadata": {
+    "checkpoint": "/mnt/dzq/checkpoint/umi_v3/6000",
+    "asset_id": "umi_taskumi3_hand_pose_v2_10hz_h50_v1",
+    "checkpoint_family": "umi_v3",
+    "action_horizon": 50,
+    "action_dim": 30,
+    "policy_host": "0.0.0.0",
+    "policy_port": 8000,
+    "e6": {
+      "endpoint": "tcp://127.0.0.1:18554",
+      "transport": "tcp_raw_annexb_hevc",
+      "eye": "right",
+      "ready": true,
+      "frame_sequence": 7,
+      "frame_wall_time_ns": 1787562993654277409,
+      "frame_monotonic_ns": 245868846563894,
+      "age_ms": 10.53910597693175,
+      "input_shape": [
+        1200,
+        3200,
+        3
+      ],
+      "selected_eye_shape": [
+        1200,
+        1600,
+        3
+      ],
+      "output_shape": [
+        480,
+        640,
+        3
+      ],
+      "layout": "stereo_side_by_side",
+      "history_frames": 7,
+      "history_seconds": 8.0,
+      "history_oldest_alignment_wall_time_ns": 1787562993615453941,
+      "history_newest_alignment_wall_time_ns": 1787562993654277409,
+      "timestamp_offset_ms": 0.0,
+      "timestamp_semantics": "5090_decode_complete_plus_configured_offset",
+      "error": ""
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "cam_left_wrist": {
+    "source_frames": 3,
+    "resolution_wh": [
+      640,
+      480
+    ],
+    "ellipse_center_xy_px": [
+      326.9935894834079,
+      244.8063268883286
+    ],
+    "ellipse_radius_xy_px": [
+      256.7459211129113,
+      256.069719155675
+    ],
+    "arc_candidates": 468,
+    "arc_inliers": 327,
+    "median_boundary_residual_px": 2.705866375128992,
+    "equidistant_assumed_full_fov_deg": 180.0,
+    "estimated_fx_fy_if_180deg": [
+      163.44952985520658,
+      163.0190463191163
+    ],
+    "status": "image_boundary_fit_only; field of view and distortion require calibration"
+  },
+  "cam_right_wrist": {
+    "source_frames": 3,
+    "resolution_wh": [
+      640,
+      480
+    ],
+    "ellipse_center_xy_px": [
+      321.6453722695721,
+      228.67474195985073
+    ],
+    "ellipse_radius_xy_px": [
+      249.15016386534305,
+      249.33083286142156
+    ],
+    "arc_candidates": 563,
+    "arc_inliers": 415,
+    "median_boundary_residual_px": 1.3451654891125842,
+    "equidistant_assumed_full_fov_deg": 180.0,
+    "estimated_fx_fy_if_180deg": [
+      158.61392060530028,
+      158.72893806045766
+    ],
+    "status": "image_boundary_fit_only; field of view and distortion require calibration"
+  }
+}

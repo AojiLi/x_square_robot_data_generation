@@ -1,0 +1,104 @@
+{
+  "associations": {
+    "cam0": {
+      "eligible_e6_rows": 897,
+      "matched": 897,
+      "missing": 0,
+      "reused": 242,
+      "signed_delta": {
+        "max_ns": 9316321,
+        "mean_ns": 5239090.078,
+        "min_ns": -7499008,
+        "p50_ns": 7169521,
+        "p95_ns": 9181628,
+        "p99_ns": 9218890
+      }
+    },
+    "cam1": {
+      "eligible_e6_rows": 897,
+      "matched": 897,
+      "missing": 0,
+      "reused": 300,
+      "signed_delta": {
+        "max_ns": 10000008,
+        "mean_ns": -617485.173,
+        "min_ns": -10027376,
+        "p50_ns": -6034362,
+        "p95_ns": 9955501,
+        "p99_ns": 9961285
+      }
+    }
+  },
+  "capture_boundary_delays": {
+    "cam0": {
+      "first_valid_frame_delay_ns": 56758017,
+      "last_valid_frame_before_stop_ns": -542802,
+      "start_observation_delay_ns": 68215000,
+      "stop_observation_delay_ns": 32753583
+    },
+    "cam1": {
+      "first_valid_frame_delay_ns": 56214017,
+      "last_valid_frame_before_stop_ns": -3993802,
+      "start_observation_delay_ns": 68101250,
+      "stop_observation_delay_ns": 32835542
+    }
+  },
+  "clock_id": "rock5b.clock_monotonic.ns",
+  "common_interval": {
+    "duration_ns": 14958150243,
+    "eligible_e6_rows": 897,
+    "end_5b_monotonic_ns": 8986310846243,
+    "session_ratio": 0.995859815,
+    "start_5b_monotonic_ns": 8971352696000
+  },
+  "inputs": {
+    "cam0": {
+      "alignment_time_source": "v4l2_monotonic",
+      "first_valid_time_ns": 8971352696000,
+      "last_valid_time_ns": 8986316818000,
+      "rows": 899,
+      "sequence_gap_count": 0,
+      "status_counts": {
+        "ok": 899
+      },
+      "valid_rows": 899
+    },
+    "cam1": {
+      "alignment_time_source": "v4l2_monotonic",
+      "first_valid_time_ns": 8971352152000,
+      "last_valid_time_ns": 8986320269000,
+      "rows": 899,
+      "sequence_gap_count": 0,
+      "status_counts": {
+        "ok": 899
+      },
+      "valid_rows": 899
+    },
+    "e6": {
+      "first_valid_time_ns": 8971294193438,
+      "last_valid_time_ns": 8986310846243,
+      "rows": 902,
+      "status_counts": {
+        "ok": 902
+      },
+      "valid_rows": 902
+    }
+  },
+  "problem_codes": [],
+  "schema_version": 1,
+  "session_id": "20260908_170549_358037100_86862",
+  "session_interval": {
+    "duration_ns": 15020337215,
+    "start_5b_monotonic_ns": 8971295937983,
+    "start_source_event": "BEGIN_PAIR_COMPLETED",
+    "stop_5b_monotonic_ns": 8986316275198,
+    "stop_reason": "stm32_end",
+    "stop_source_event": "END_PAIR_COMPLETED"
+  },
+  "status": "ok",
+  "tolerance_ns": 20000000,
+  "tool": {
+    "name": "align_customer_camera",
+    "version": 1
+  }
+}

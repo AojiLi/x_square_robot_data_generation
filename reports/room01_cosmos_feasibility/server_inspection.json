@@ -1,0 +1,71 @@
+{
+  "checked_at_utc": "2026-09-11T11:00:34.796717+00:00",
+  "status": "deployment_verified_existing_outputs_inspected",
+  "server": "192.168.110.11",
+  "account": "user02",
+  "deployment_dir": "/home/user02/cosmos-deploy",
+  "source_repo": "https://github.com/nvidia-cosmos/cosmos-transfer2.5",
+  "source_revision": "2ff49d0717af02057ae79bc75c00fbff9da1b4e7",
+  "source_format": "official source archive, not a Git checkout",
+  "model": "Cosmos-Transfer2.5-2B base Edge",
+  "sampling_steps": 35,
+  "guidance_default": 3,
+  "seed_default": 1,
+  "installed_control_branches": [
+    "edge"
+  ],
+  "base_edge_checkpoint_bytes": 5526488249,
+  "checkpoint_revision": "b67b64abda3801a9aceddbff2bdb86126c06db74",
+  "entrypoint": "/home/user02/cosmos-deploy/run-video.sh",
+  "image_reference_supported": true,
+  "default_chunk_frames": 93,
+  "native_fps_preserved_in_reader": true,
+  "native_size_restored_at_output": true,
+  "internal_720_4_3_resolution_wh": [
+    960,
+    704
+  ],
+  "true_robot_joint_multiview_available": false,
+  "multiview_status": "The installed robot multiview docs mark weights internal-only; current multi-file batch loops through samples independently.",
+  "hardware": "8 x A100-SXM4-80GB, driver 580.173.02",
+  "active_existing_job": "/home/user02/cosmos-deploy/jobs/grok_style_20260911/run_batch.sh",
+  "active_job_gpu_count": 8,
+  "successful_official_example": {
+    "input_output_wh": [
+      640,
+      480
+    ],
+    "input_output_frames": 121,
+    "fps": 30,
+    "duration_seconds": 4.033333,
+    "deployment_log_elapsed_seconds": 293,
+    "timing_scope": "Existing 8-GPU deployment example including startup/loading/generation/checks, not a new benchmark."
+  },
+  "existing_reference_sample_findings": {
+    "sample_1_input_camera": "head",
+    "sample_1_reference_camera": "left wrist",
+    "prompt_mentions_absent_scene_objects": [
+      "large black block",
+      "blue cube"
+    ],
+    "inputs_nearly_static": true,
+    "sampled_temporal_mad_8bit_max_per_input": [
+      0.056123046875,
+      0.027752821180555557,
+      0.018241102430555555
+    ],
+    "red_cube_visible_region_centroid_input_xy": [
+      356.07894736842104,
+      281.13157894736844
+    ],
+    "red_cube_visible_region_centroid_output_xy": [
+      327.5655737704918,
+      303.08196721311475
+    ],
+    "red_cube_image_shift_px_approx": 35.98377438446529,
+    "measurement_scope": "Simple red-region segmentation in the same 640x480 frame, visually checked; image-space change, not a 3D displacement estimate."
+  },
+  "new_inference_started_by_this_task": false,
+  "remote_files_modified": false,
+  "our_dynamic_three_camera_episode_processed_and_validated": false
+}

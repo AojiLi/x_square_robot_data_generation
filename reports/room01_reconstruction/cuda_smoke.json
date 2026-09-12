@@ -1,0 +1,16 @@
+{
+  "torch": "2.7.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+  "capability": [
+    12,
+    0
+  ],
+  "rgb_shape": [
+    1,
+    32,
+    32,
+    3
+  ],
+  "forward_backward": "pass",
+  "first_call_seconds": 246.11351656913757
+}

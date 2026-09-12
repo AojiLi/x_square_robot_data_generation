@@ -1,0 +1,117 @@
+{
+  "result": "pass",
+  "checks": {
+    "observation_space": true,
+    "camera_count": true,
+    "no_simulator_object_pose_in_policy_input": true,
+    "same_timestamp": true,
+    "step_timing": true,
+    "finite_action_response": true,
+    "observation_space_after_step": true,
+    "reject_invalid_action": true,
+    "seeded_reset": true,
+    "actual_reset_uses_configured_home": true,
+    "camera_projection_head": true,
+    "camera_projection_left_wrist": true,
+    "actual_reset_table_horizontal_left_wrist": true,
+    "camera_projection_right_wrist": true,
+    "actual_reset_table_horizontal_right_wrist": true
+  },
+  "action_dimension": 26,
+  "fps": 30,
+  "physics_hz": 960,
+  "image_shapes": {
+    "head": [
+      1200,
+      1600,
+      3
+    ],
+    "left_wrist": [
+      480,
+      640,
+      3
+    ],
+    "right_wrist": [
+      480,
+      640,
+      3
+    ]
+  },
+  "projection_checks": {
+    "head": {
+      "projected_target_pixel": [
+        898.0898161270527,
+        704.003850830186
+      ],
+      "distance_to_red_target_pixel": 3.6785289460793926
+    },
+    "left_wrist": {
+      "projected_target_pixel": [
+        496.07799952559566,
+        285.37558695380073
+      ],
+      "distance_to_red_target_pixel": 0.38360068542491266
+    },
+    "right_wrist": {
+      "projected_target_pixel": [
+        367.64559408482984,
+        290.23636317786554
+      ],
+      "distance_to_red_target_pixel": 0.4259942541376557
+    }
+  },
+  "reset_position_difference_m": 0.0,
+  "reset_joint_max_error_rad": 1.4270050734399575e-06,
+  "wrist_reset_views": {
+    "left_wrist": {
+      "table_line_tilt_deg": 0.00016439037908340187,
+      "table_line_pixels": [
+        [
+          382.5909229293671,
+          280.20312669132613
+        ],
+        [
+          271.39747358352304,
+          280.20344572238645
+        ]
+      ],
+      "position_world": [
+        0.7416501641273499,
+        -1.781999945640564,
+        0.8500000834465027
+      ],
+      "orientation_ros_xyzw": [
+        -0.5185626745223999,
+        0.5185627937316895,
+        -0.48071950674057007,
+        0.4807226061820984
+      ]
+    },
+    "right_wrist": {
+      "table_line_tilt_deg": 0.0001725137999151047,
+      "table_line_pixels": [
+        [
+          375.5967067466328,
+          263.14036275120463
+        ],
+        [
+          267.6928835316729,
+          263.1400378599347
+        ]
+      ],
+      "position_world": [
+        0.7416501641273499,
+        -2.0920000076293945,
+        0.8500000834465027
+      ],
+      "orientation_ros_xyzw": [
+        -0.5185627937316895,
+        0.5185625553131104,
+        -0.4807226359844208,
+        0.48071953654289246
+      ]
+    }
+  },
+  "config_sha256": "26546f8e625dbd8c02cf6f053037d657b1b273b56039b50219a0eb36ba3e5c91",
+  "calibration_status": "Head user-supplied K with provisional KB4 interpretation; wrist roll and pitch follow the user-authoritative 20260824 request_000001 images. Circular fisheye K and real hand-eye remain image-based estimates."
+}

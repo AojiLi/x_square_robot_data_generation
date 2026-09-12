@@ -1,0 +1,8 @@
+{
+  "result": "pass",
+  "physics_configuration_unchanged": false,
+  "existing_physics_report_reused": false,
+  "fresh_physics_report": "reports/room01_sim/physics_verification.json",
+  "config_sha256": "26546f8e625dbd8c02cf6f053037d657b1b273b56039b50219a0eb36ba3e5c91",
+  "reason": "Default reset pose and two internal wrist-housing collision filters changed. Re-ran fixed-base, table/floor contact, mimic, URDF FK, reset tracking and at-rest velocity checks. Camera and grasp checks are recorded separately."
+}

@@ -1,0 +1,53 @@
+{
+  "links_compared": 102,
+  "missing_links": [
+    "2d_laser_link"
+  ],
+  "max_translation_error_m": 1.6798676434041418e-07,
+  "max_rotation_matrix_error": 9.999999983332231e-05,
+  "largest_errors": [
+    {
+      "link": "left_wrist_roll_link",
+      "translation_error_m": 3.015428056264831e-08,
+      "rotation_matrix_error": 9.999999983332228e-05
+    },
+    {
+      "link": "left_elbow_roll_link",
+      "translation_error_m": 2.946465615646482e-08,
+      "rotation_matrix_error": 9.99999998333223e-05
+    },
+    {
+      "link": "left_shoulder_roll_link",
+      "translation_error_m": 2.3810017852462483e-08,
+      "rotation_matrix_error": 9.999999983332231e-05
+    },
+    {
+      "link": "right_index_distal_link",
+      "translation_error_m": 1.3786640641423208e-07,
+      "rotation_matrix_error": 2.2756064133044873e-07
+    },
+    {
+      "link": "right_index_touch_link",
+      "translation_error_m": 1.56683632754413e-07,
+      "rotation_matrix_error": 1.499879764832457e-07
+    },
+    {
+      "link": "right_index_proximal_link",
+      "translation_error_m": 7.414772306533187e-08,
+      "rotation_matrix_error": 2.2756064133044873e-07
+    },
+    {
+      "link": "right_middle_tip_link",
+      "translation_error_m": 1.6798676434041418e-07,
+      "rotation_matrix_error": 1.198471663022005e-07
+    },
+    {
+      "link": "right_thumb_touch_link",
+      "translation_error_m": 5.598038106984591e-08,
+      "rotation_matrix_error": 2.2811469554961938e-07
+    }
+  ],
+  "world_fixed_joints": [
+    "/quanta_x2_dual_revo2/root_joint"
+  ]
+}

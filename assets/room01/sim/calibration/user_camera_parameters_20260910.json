@@ -1,0 +1,84 @@
+{
+  "schema_version": "user_camera_groups_v1",
+  "source": "Parameters supplied by the user on 2026-09-10; values preserved without coordinate conversion.",
+  "extrinsics_reference_frame": null,
+  "extrinsics_transform_direction": null,
+  "quaternion_order": null,
+  "distortion_model": null,
+  "groups": [
+    {
+      "group": "rgb",
+      "cameras": [
+        {
+          "eye": "left",
+          "width": 1600,
+          "height": 1200,
+          "intrinsics": {
+            "focalX": 486.315002,
+            "focalY": 486.315002,
+            "centerX": 803.288574,
+            "centerY": 599.121033,
+            "radialDistortion": [0.016450, 0.004504, -0.003452, 0.000250, 0.000000, 0.000000, 0.000000, 0.000000]
+          },
+          "extrinsics": {
+            "position": [-0.053940, 0.015118, -0.022226],
+            "rotation": [-0.689382, -0.692549, 0.153518, -0.146834]
+          }
+        },
+        {
+          "eye": "right",
+          "width": 1600,
+          "height": 1200,
+          "intrinsics": {
+            "focalX": 487.884827,
+            "focalY": 487.884827,
+            "centerX": 802.718140,
+            "centerY": 597.726135,
+            "radialDistortion": [0.015975, 0.004984, -0.003770, 0.000312, 0.000000, 0.000000, 0.000000, 0.000000]
+          },
+          "extrinsics": {
+            "position": [0.011933, 0.016109, -0.023641],
+            "rotation": [-0.690530, -0.692283, 0.147520, -0.148830]
+          }
+        }
+      ]
+    },
+    {
+      "group": "ctrl",
+      "cameras": [
+        {
+          "eye": "left",
+          "width": 640,
+          "height": 480,
+          "intrinsics": {
+            "focalX": 235.068817,
+            "focalY": 235.068817,
+            "centerX": 316.664093,
+            "centerY": 242.925690,
+            "radialDistortion": [0.206779, -0.156714, 0.055442, -0.008658, 0.000000, 0.000000, 0.000000, 0.000000]
+          },
+          "extrinsics": {
+            "position": [-0.085840, 0.041047, 0.001864],
+            "rotation": [-0.509883, -0.790243, 0.000682, 0.339905]
+          }
+        },
+        {
+          "eye": "right",
+          "width": 640,
+          "height": 480,
+          "intrinsics": {
+            "focalX": 237.361206,
+            "focalY": 237.361206,
+            "centerX": 317.310272,
+            "centerY": 243.979492,
+            "radialDistortion": [0.184239, -0.115271, 0.017439, 0.003431, 0.000000, 0.000000, 0.000000, 0.000000]
+          },
+          "extrinsics": {
+            "position": [0.043175, 0.040954, -0.000373],
+            "rotation": [0.790181, 0.509760, 0.340221, -0.002920]
+          }
+        }
+      ]
+    }
+  ]
+}

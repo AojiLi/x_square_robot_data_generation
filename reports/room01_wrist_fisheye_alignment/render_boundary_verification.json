@@ -1,0 +1,18 @@
+{
+  "result": "pass",
+  "checks": {
+    "left_wrist": {
+      "image_circle_iou_against_fitted_boundary": 0.9935866878314159,
+      "outside_circle_black_fraction": 1.0,
+      "source_image": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/left_wrist/000000.png"
+    },
+    "right_wrist": {
+      "image_circle_iou_against_fitted_boundary": 0.9921977601522186,
+      "outside_circle_black_fraction": 1.0,
+      "source_image": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/right_wrist/000000.png"
+    }
+  },
+  "reference_profile": "user_selected_20260824_request_000001",
+  "scope": "Native first-frame image-circle verification; physical camera calibration still provisional.",
+  "config_sha256": "26546f8e625dbd8c02cf6f053037d657b1b273b56039b50219a0eb36ba3e5c91"
+}

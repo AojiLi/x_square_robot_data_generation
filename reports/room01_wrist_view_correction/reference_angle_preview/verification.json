@@ -1,0 +1,9 @@
+{
+  "result": "pass",
+  "camera_count": 3,
+  "same_physics_step": true,
+  "timestamp": 0.175,
+  "joint_positions_finite": true,
+  "review_joint_pose": "reports/room01_wrist_view_correction/reference_pose_estimate.json",
+  "calibration_status": "Head user-supplied K with provisional KB4 interpretation; wrist orientation pinned to user-selected 20260824 request_000001, circular fisheye boundaries fitted under a 180-degree FOV assumption. Real hand-eye remains provisional."
+}

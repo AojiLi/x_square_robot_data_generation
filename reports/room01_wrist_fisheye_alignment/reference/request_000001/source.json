@@ -1,0 +1,24 @@
+{
+  "host": "192.168.110.11",
+  "ssh_alias": "training-kai",
+  "path": "/mnt/data/dzq/inference_records/pi05_inference_records/20260824T091633.664930Z-pid2632484-1c6fc5df/requests/request_000001",
+  "files": {
+    "request.json": {
+      "bytes": 10322,
+      "sha256": "cbff4fe2b84e9d822c6ef6ba92f8c4bc0bcfceb6336c982647e640809f3b28ff"
+    },
+    "cam_high.png": {
+      "bytes": 380414,
+      "sha256": "0e6f2eab779b579e61ec99cd05e373ed9a7cd1ae513afb9b047cd7ce10714555"
+    },
+    "cam_left_wrist.png": {
+      "bytes": 217319,
+      "sha256": "da203b1bf62cb6977a8ca0e952f321dbe7f000c89722b916143632437dbc966d"
+    },
+    "cam_right_wrist.png": {
+      "bytes": 180311,
+      "sha256": "00698c9b526be4081cae5deb63bb7b524a87162fded349d274fb611230996de5"
+    }
+  },
+  "source_read_only": true
+}

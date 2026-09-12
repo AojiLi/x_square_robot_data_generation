@@ -1,0 +1,17 @@
+{
+  "result": "pass",
+  "checks": {
+    "left_wrist": {
+      "image_circle_iou_against_fitted_boundary": 0.9927905879577755,
+      "outside_circle_black_fraction": 1.0,
+      "no_image_post_warp_or_mask": true
+    },
+    "right_wrist": {
+      "image_circle_iou_against_fitted_boundary": 0.9928155349842097,
+      "outside_circle_black_fraction": 1.0,
+      "no_image_post_warp_or_mask": true
+    }
+  },
+  "reference_profile": "user_selected_20260824_request_000001",
+  "scope": "Native image-circle verification; physical calibration still provisional."
+}

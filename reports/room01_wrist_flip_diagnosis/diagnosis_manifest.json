@@ -1,0 +1,126 @@
+{
+  "created_utc": "2026-09-10T11:51:41.180666+00:00",
+  "remote_source_modified": false,
+  "model_or_robot_started": false,
+  "hosts": {
+    "192.168.110.157": "requested path not found on host and checked robot containers",
+    "192.168.110.199": "current server /home/dzq/pi05_inference; retained old copy /home/dzq/umi-deployment/server",
+    "192.168.110.155": "Online after user boot; current sources and live SDK/ROS frames inspected."
+  },
+  "finding": "Old compressed-v1 server decoder rotates 180; current compressed-v2 decoder does not. Historical use of the old branch is not proven.",
+  "tests": {
+    "image_pipeline_test.json": "pass",
+    "old_current_comparison_test.json": "pass"
+  },
+  "source_files": {
+    "source_199/openpi__config.py.txt": {
+      "sha256": "c34231f888dba5dc981d808765b3d98775ab845b04313bf53fcecd567c520b0d",
+      "bytes": 44594
+    },
+    "source_199/camera_transport.py.txt": {
+      "sha256": "5eca3201878fd133e3969afafd79ab2cde2717ec144b6deaf7f45290d9eec293",
+      "bytes": 4063
+    },
+    "source_199/openpi__policy_config.py.txt": {
+      "sha256": "aaf42ab04a33b6c91d2447926211646c33ebd8ebfa427f026d7b6c4f7c45ec52",
+      "bytes": 4107
+    },
+    "source_199/start_umi_server.sh.txt": {
+      "sha256": "5f0196e7e922bf5b3acc511c72379f4cf02db8b5b78dab6cd4c54dd4445e90df",
+      "bytes": 210
+    },
+    "source_199/README.md.txt": {
+      "sha256": "1a6d57451821753376fa89f40cf70f0181a782433d21bfdbbf82aef92cedaab5",
+      "bytes": 2258
+    },
+    "source_199/openpi__image_tools.py.txt": {
+      "sha256": "d48b4bd7f44e79fe6db8a8e07c9161144fa250be686e1245014a8b47e6171977",
+      "bytes": 2426
+    },
+    "source_199/openpi__model.py.txt": {
+      "sha256": "0d74bc1d8f4623ac3d8e543710b8bf75f9b95e588a3ebf6127c659e001385cff",
+      "bytes": 12270
+    },
+    "source_199/cam_high_roi.py.txt": {
+      "sha256": "8074cf6a97d92d581af0b92e780bd6b8f6f308a0525090822e89bee94981f9de",
+      "bytes": 9504
+    },
+    "source_199/openpi__policy.py.txt": {
+      "sha256": "a2ac5236e23b11d0f5a840d4a8fef148d89dba921d5452ec5dfcd5a6ffa46f20",
+      "bytes": 5344
+    },
+    "source_199/serve_umi_v2_policy.py.txt": {
+      "sha256": "e6c6b3c692838ffca0d1c88c5f37c34b4106074ff85ec176f1cf54fe08414c16",
+      "bytes": 16156
+    },
+    "source_199/inference_recorder.py.txt": {
+      "sha256": "98a7681938d99d2abc52332b141e721933a672a1bdb0d5f963071cf7ba0101a4",
+      "bytes": 19604
+    },
+    "source_199/umi_policy_common.py.txt": {
+      "sha256": "d7b56a073746d58db35787c5c1d0931f01cdc2130b4bcc12244c52cbd62dbd0b",
+      "bytes": 8832
+    },
+    "source_199/start_umi_v2_server.sh.txt": {
+      "sha256": "0fdcc8cf2c548f8f887210aa3cf911c152a584c64bb66b13b1221fcd1aa90033",
+      "bytes": 7276
+    },
+    "source_199/server_camera_sync.py.txt": {
+      "sha256": "50e0e3f558a71f862a11eef8a729852037f073ee2e22db4808c0f49e225ffc6c",
+      "bytes": 14154
+    },
+    "source_199/e6_tcp_cam_h.py.txt": {
+      "sha256": "01fb5ac7f181b73c2bec25e147fc7630aa29d25a4f3a40d58b2ff4edbfee2442",
+      "bytes": 56575
+    },
+    "source_199/openpi__pi0.py.txt": {
+      "sha256": "24b32d7c6ed5e409459afa8ca5af96a4dae09c2dcdf48e828907e411f4f12342",
+      "bytes": 12887
+    },
+    "source_199/openpi__transforms.py.txt": {
+      "sha256": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4",
+      "bytes": 15752
+    },
+    "source_199_old/camera_transport.py.txt": {
+      "sha256": "e06f2ec924cff03bbf802cd41d32b32019a15e34321686d395a8ad233f9a8e46",
+      "bytes": 4118
+    },
+    "source_199_old/start_umi_server.sh.txt": {
+      "sha256": "5f0196e7e922bf5b3acc511c72379f4cf02db8b5b78dab6cd4c54dd4445e90df",
+      "bytes": 210
+    },
+    "source_199_old/README.md.txt": {
+      "sha256": "312235b476a88fe86c141a3d54653b578d5fcedf970b177a000651315fb821e1",
+      "bytes": 2930
+    },
+    "source_199_old/serve_umi_v2_policy.py.txt": {
+      "sha256": "8159b9726e334be44a1e5acefc7d8ee0fe71524cd8e06234d31e5e6cb7ae6602",
+      "bytes": 9567
+    },
+    "source_199_old/start_umi_v2_server.sh.txt": {
+      "sha256": "26ba5a831453860d023202b8dfa36bf05a4d2feb953cab54840a34e8c6ef5b57",
+      "bytes": 3368
+    },
+    "source_199_old/e6_tcp_cam_h.py.txt": {
+      "sha256": "4b79427d6192a82cd38a18d97070d4b4363d8a7241fb0ea4807529cb5d09761b",
+      "bytes": 28458
+    },
+    "source_199_old/umi_live_contract.py.txt": {
+      "sha256": "26b7929d02e25321f0986ced3199d088d2656e411f64ce87025d12574b2812b0",
+      "bytes": 25256
+    }
+  },
+  "updated_utc": "2026-09-10T12:15:21.335922+00:00",
+  "live_verification": {
+    "same_timestamp_frames_per_camera": 8,
+    "sdk_ros_bytes_identical": true,
+    "current_inference_no_rotation": true,
+    "capture_script_adds_180_degrees": true,
+    "reports": [
+      "live_sdk_ros_comparison.json",
+      "live_rotation_verification.json"
+    ],
+    "robot_commands_sent": false,
+    "remote_code_or_config_modified": false
+  }
+}

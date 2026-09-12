@@ -1,0 +1,554 @@
+[
+  {
+    "a": "/World/Robot/left_shoulder_pitch_link",
+    "b": "/World/Robot/base_link",
+    "shape_a": "/World/Robot/left_shoulder_pitch_link/collisions/left_shoulder_pitch_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/base_link/FixedFrames/bow_yaw_link/collisions/bow_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.09711213256142875,
+      0.0230244062081717,
+      0.11748396851926501
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_shoulder_pitch_link",
+    "b": "/World/Robot/base_link",
+    "shape_a": "/World/Robot/left_shoulder_pitch_link/collisions/left_shoulder_pitch_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/base_link/FixedFrames/left_base_link/collisions/left_base_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.09711213256142875,
+      0.005199051740196081,
+      0.11272484384333348
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_shoulder_roll_link",
+    "b": "/World/Robot/left_shoulder_pitch_link",
+    "shape_a": "/World/Robot/left_shoulder_roll_link/collisions/left_shoulder_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_shoulder_pitch_link/collisions/left_shoulder_pitch_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.09711213256142875,
+      0.11805961277801047,
+      0.11748396851926501
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_shoulder_yaw_link",
+    "b": "/World/Robot/left_shoulder_roll_link",
+    "shape_a": "/World/Robot/left_shoulder_yaw_link/collisions/left_shoulder_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_shoulder_roll_link/collisions/left_shoulder_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.09123371089316534,
+      0.09126493925397217,
+      0.018821255122454472
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_elbow_roll_link",
+    "b": "/World/Robot/base_link",
+    "shape_a": "/World/Robot/left_elbow_roll_link/collisions/left_elbow_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/base_link/FixedFrames/bow_yaw_link/collisions/bow_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.11124199424502193,
+      0.017951868002789917,
+      0.06695566363363337
+    ],
+    "filtered": false
+  },
+  {
+    "a": "/World/Robot/left_elbow_roll_link",
+    "b": "/World/Robot/left_shoulder_yaw_link",
+    "shape_a": "/World/Robot/left_elbow_roll_link/collisions/left_elbow_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_shoulder_yaw_link/collisions/left_shoulder_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.10535196526517968,
+      0.09620996948563332,
+      0.10829963089770589
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_elbow_yaw_link",
+    "b": "/World/Robot/left_elbow_roll_link",
+    "shape_a": "/World/Robot/left_elbow_yaw_link/collisions/left_elbow_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_elbow_roll_link/collisions/left_elbow_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.02000220207012071,
+      0.09607524172032966,
+      0.0979382229309661
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_wrist_roll_link",
+    "b": "/World/Robot/left_elbow_yaw_link",
+    "shape_a": "/World/Robot/left_wrist_roll_link/collisions/left_wrist_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_elbow_yaw_link/collisions/left_elbow_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.062462710960244694,
+      0.09690903004335572,
+      0.06318974725075277
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_wrist_pitch_link",
+    "b": "/World/Robot/left_elbow_yaw_link",
+    "shape_a": "/World/Robot/left_wrist_pitch_link/collisions/left_wrist_pitch_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_elbow_yaw_link/collisions/left_elbow_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.06211031318410698,
+      0.07851468916212023,
+      0.08202110027484988
+    ],
+    "filtered": false
+  },
+  {
+    "a": "/World/Robot/left_wrist_pitch_link",
+    "b": "/World/Robot/left_wrist_roll_link",
+    "shape_a": "/World/Robot/left_wrist_pitch_link/collisions/left_wrist_pitch_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_wrist_roll_link/collisions/left_wrist_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.07742043019969558,
+      0.07851468916212023,
+      0.06318974725075277
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_index_proximal_link",
+    "b": "/World/Robot/left_wrist_pitch_link",
+    "shape_a": "/World/Robot/left_index_proximal_link/collisions/left_index_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_wrist_pitch_link/FixedFrames/left_hand_base_link/collisions/left_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.018695675922364208,
+      0.022128901638186038,
+      0.01601447544036494
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_index_distal_link",
+    "b": "/World/Robot/left_index_proximal_link",
+    "shape_a": "/World/Robot/left_index_distal_link/collisions/left_index_distal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_index_proximal_link/collisions/left_index_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.013758006048993687,
+      0.012985999845910756,
+      0.012772491823187071
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_middle_proximal_link",
+    "b": "/World/Robot/left_wrist_pitch_link",
+    "shape_a": "/World/Robot/left_middle_proximal_link/collisions/left_middle_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_wrist_pitch_link/FixedFrames/left_hand_base_link/collisions/left_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.014022826004392863,
+      0.022777394825985953,
+      0.01589566666623099
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_middle_distal_link",
+    "b": "/World/Robot/left_middle_proximal_link",
+    "shape_a": "/World/Robot/left_middle_distal_link/collisions/left_middle_distal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_middle_proximal_link/collisions/left_middle_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.013667247616392708,
+      0.012818874221083298,
+      0.012944055928643117
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_pinky_proximal_link",
+    "b": "/World/Robot/left_wrist_pitch_link",
+    "shape_a": "/World/Robot/left_pinky_proximal_link/collisions/left_pinky_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_wrist_pitch_link/FixedFrames/left_hand_base_link/collisions/left_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.020877423560399566,
+      0.02118081710615982,
+      0.01601462871476267
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_pinky_distal_link",
+    "b": "/World/Robot/left_pinky_proximal_link",
+    "shape_a": "/World/Robot/left_pinky_distal_link/collisions/left_pinky_distal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_pinky_proximal_link/collisions/left_pinky_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.01345079909175817,
+      0.01281553687027226,
+      0.012891992665177043
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_ring_proximal_link",
+    "b": "/World/Robot/left_wrist_pitch_link",
+    "shape_a": "/World/Robot/left_ring_proximal_link/collisions/left_ring_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_wrist_pitch_link/FixedFrames/left_hand_base_link/collisions/left_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.015034906574095785,
+      0.02202813119521796,
+      0.01588473294787962
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_ring_distal_link",
+    "b": "/World/Robot/left_ring_proximal_link",
+    "shape_a": "/World/Robot/left_ring_distal_link/collisions/left_ring_distal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_ring_proximal_link/collisions/left_ring_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.013541032028955957,
+      0.012544964183049956,
+      0.012843382780365897
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_thumb_metacarpal_link",
+    "b": "/World/Robot/left_wrist_pitch_link",
+    "shape_a": "/World/Robot/left_thumb_metacarpal_link/collisions/left_thumb_metacarpal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_wrist_pitch_link/FixedFrames/left_hand_base_link/collisions/left_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.03320001673696171,
+      0.019375409744880612,
+      0.022351786288047015
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_thumb_proximal_link",
+    "b": "/World/Robot/left_wrist_pitch_link",
+    "shape_a": "/World/Robot/left_thumb_proximal_link/collisions/left_thumb_proximal_link_collision_2/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_wrist_pitch_link/FixedFrames/left_hand_base_link/collisions/left_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.048748566115726644,
+      0.01942371740799187,
+      0.0143092611409249
+    ],
+    "filtered": false
+  },
+  {
+    "a": "/World/Robot/left_thumb_proximal_link",
+    "b": "/World/Robot/left_thumb_metacarpal_link",
+    "shape_a": "/World/Robot/left_thumb_proximal_link/collisions/left_thumb_proximal_link_collision_2/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_thumb_metacarpal_link/collisions/left_thumb_metacarpal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.018364697280756737,
+      0.020843200022193642,
+      0.01437557395533784
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_thumb_distal_link",
+    "b": "/World/Robot/left_thumb_proximal_link",
+    "shape_a": "/World/Robot/left_thumb_distal_link/collisions/left_thumb_distal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_thumb_proximal_link/collisions/left_thumb_proximal_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.010298541676903139,
+      0.018368726480047393,
+      0.016538189862321806
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/left_thumb_distal_link",
+    "b": "/World/Robot/left_thumb_proximal_link",
+    "shape_a": "/World/Robot/left_thumb_distal_link/FixedFrames/left_thumb_touch_link/collisions/left_thumb_touch_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/left_thumb_proximal_link/collisions/left_thumb_proximal_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.0023673229632465986,
+      0.017868023729582294,
+      0.015517667156205062
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_shoulder_pitch_link",
+    "b": "/World/Robot/base_link",
+    "shape_a": "/World/Robot/right_shoulder_pitch_link/collisions/right_shoulder_pitch_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/base_link/FixedFrames/bow_yaw_link/collisions/bow_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.0969406638375459,
+      0.023016776835205643,
+      0.11746251834446775
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_shoulder_pitch_link",
+    "b": "/World/Robot/base_link",
+    "shape_a": "/World/Robot/right_shoulder_pitch_link/collisions/right_shoulder_pitch_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/base_link/FixedFrames/right_base_link/collisions/right_base_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.0969406638375459,
+      0.005199051131987709,
+      0.11272484384333348
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_shoulder_roll_link",
+    "b": "/World/Robot/right_shoulder_pitch_link",
+    "shape_a": "/World/Robot/right_shoulder_roll_link/collisions/right_shoulder_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_shoulder_pitch_link/collisions/right_shoulder_pitch_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.0969406638375459,
+      0.11805962140261261,
+      0.11746251834446775
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_shoulder_yaw_link",
+    "b": "/World/Robot/right_shoulder_roll_link",
+    "shape_a": "/World/Robot/right_shoulder_yaw_link/collisions/right_shoulder_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_shoulder_roll_link/collisions/right_shoulder_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.09115427906361936,
+      0.0915391601642015,
+      0.018540223996121652
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_elbow_roll_link",
+    "b": "/World/Robot/base_link",
+    "shape_a": "/World/Robot/right_elbow_roll_link/collisions/right_elbow_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/base_link/FixedFrames/bow_yaw_link/collisions/bow_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.1115023047154991,
+      0.018045032556212703,
+      0.06671415451234974
+    ],
+    "filtered": false
+  },
+  {
+    "a": "/World/Robot/right_elbow_roll_link",
+    "b": "/World/Robot/right_shoulder_yaw_link",
+    "shape_a": "/World/Robot/right_elbow_roll_link/collisions/right_elbow_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_shoulder_yaw_link/collisions/right_shoulder_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.10543261658493897,
+      0.09619902945452319,
+      0.10789197033135112
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_elbow_yaw_link",
+    "b": "/World/Robot/right_elbow_roll_link",
+    "shape_a": "/World/Robot/right_elbow_yaw_link/collisions/right_elbow_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_elbow_roll_link/collisions/right_elbow_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.01999853055064449,
+      0.09620832489224052,
+      0.09749995824165558
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_wrist_roll_link",
+    "b": "/World/Robot/right_elbow_yaw_link",
+    "shape_a": "/World/Robot/right_wrist_roll_link/collisions/right_wrist_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_elbow_yaw_link/collisions/right_elbow_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.06180813856371137,
+      0.09697459842059208,
+      0.06315408938571243
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_wrist_pitch_link",
+    "b": "/World/Robot/right_elbow_yaw_link",
+    "shape_a": "/World/Robot/right_wrist_pitch_link/collisions/right_wrist_pitch_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_elbow_yaw_link/collisions/right_elbow_yaw_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.0615677798863008,
+      0.078418857212875,
+      0.0820694694700177
+    ],
+    "filtered": false
+  },
+  {
+    "a": "/World/Robot/right_wrist_pitch_link",
+    "b": "/World/Robot/right_wrist_roll_link",
+    "shape_a": "/World/Robot/right_wrist_pitch_link/collisions/right_wrist_pitch_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_wrist_roll_link/collisions/right_wrist_roll_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.07760938730263134,
+      0.078418857212875,
+      0.06315408938571243
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_index_proximal_link",
+    "b": "/World/Robot/right_wrist_pitch_link",
+    "shape_a": "/World/Robot/right_index_proximal_link/collisions/right_index_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_wrist_pitch_link/FixedFrames/right_hand_base_link/collisions/right_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.018695675922981714,
+      0.022128901638343468,
+      0.016015710604063704
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_index_distal_link",
+    "b": "/World/Robot/right_index_proximal_link",
+    "shape_a": "/World/Robot/right_index_distal_link/collisions/right_index_distal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_index_proximal_link/collisions/right_index_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.013760209701196069,
+      0.012985999845626761,
+      0.012772491822782839
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_middle_proximal_link",
+    "b": "/World/Robot/right_wrist_pitch_link",
+    "shape_a": "/World/Robot/right_middle_proximal_link/collisions/right_middle_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_wrist_pitch_link/FixedFrames/right_hand_base_link/collisions/right_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.01402298202075103,
+      0.02281922359091837,
+      0.01589283865188673
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_middle_distal_link",
+    "b": "/World/Robot/right_middle_proximal_link",
+    "shape_a": "/World/Robot/right_middle_distal_link/collisions/right_middle_distal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_middle_proximal_link/collisions/right_middle_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.013657345189541537,
+      0.012818279911014141,
+      0.012944004500472062
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_pinky_proximal_link",
+    "b": "/World/Robot/right_wrist_pitch_link",
+    "shape_a": "/World/Robot/right_pinky_proximal_link/collisions/right_pinky_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_wrist_pitch_link/FixedFrames/right_hand_base_link/collisions/right_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.020877423560487496,
+      0.02118081710690234,
+      0.01601488443906851
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_pinky_distal_link",
+    "b": "/World/Robot/right_pinky_proximal_link",
+    "shape_a": "/World/Robot/right_pinky_distal_link/collisions/right_pinky_distal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_pinky_proximal_link/collisions/right_pinky_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.013449141183532354,
+      0.01281553687054604,
+      0.01289198913599321
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_ring_proximal_link",
+    "b": "/World/Robot/right_wrist_pitch_link",
+    "shape_a": "/World/Robot/right_ring_proximal_link/collisions/right_ring_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_wrist_pitch_link/FixedFrames/right_hand_base_link/collisions/right_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.015035007713379733,
+      0.02198795950393606,
+      0.015887439529989833
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_ring_distal_link",
+    "b": "/World/Robot/right_ring_proximal_link",
+    "shape_a": "/World/Robot/right_ring_distal_link/collisions/right_ring_distal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_ring_proximal_link/collisions/right_ring_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.013541232497054856,
+      0.01254458212072418,
+      0.012843040211744872
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_thumb_metacarpal_link",
+    "b": "/World/Robot/right_wrist_pitch_link",
+    "shape_a": "/World/Robot/right_thumb_metacarpal_link/collisions/right_thumb_metacarpal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_wrist_pitch_link/FixedFrames/right_hand_base_link/collisions/right_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.03320001673435846,
+      0.018273052201689843,
+      0.02147609615120738
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_thumb_proximal_link",
+    "b": "/World/Robot/right_wrist_pitch_link",
+    "shape_a": "/World/Robot/right_thumb_proximal_link/collisions/right_thumb_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_wrist_pitch_link/FixedFrames/right_hand_base_link/collisions/right_hand_base_link_collision_2/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.04874856619061785,
+      0.01830692676279444,
+      0.013449199186962635
+    ],
+    "filtered": false
+  },
+  {
+    "a": "/World/Robot/right_thumb_proximal_link",
+    "b": "/World/Robot/right_thumb_metacarpal_link",
+    "shape_a": "/World/Robot/right_thumb_proximal_link/collisions/right_thumb_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_thumb_metacarpal_link/collisions/right_thumb_metacarpal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.01836469724806722,
+      0.02085446958142656,
+      0.01438995059895043
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_thumb_distal_link",
+    "b": "/World/Robot/right_thumb_proximal_link",
+    "shape_a": "/World/Robot/right_thumb_distal_link/collisions/right_thumb_distal_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_thumb_proximal_link/collisions/right_thumb_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.01029892619239825,
+      0.01836715483035567,
+      0.01654463597149136
+    ],
+    "filtered": true
+  },
+  {
+    "a": "/World/Robot/right_thumb_distal_link",
+    "b": "/World/Robot/right_thumb_proximal_link",
+    "shape_a": "/World/Robot/right_thumb_distal_link/FixedFrames/right_thumb_touch_link/collisions/right_thumb_touch_link_collision_1/node_STL_BINARY_/mesh",
+    "shape_b": "/World/Robot/right_thumb_proximal_link/collisions/right_thumb_proximal_link_collision_1/node_STL_BINARY_/mesh",
+    "aabb_overlap_m": [
+      0.002366721451532272,
+      0.01786579468026206,
+      0.015523867699589022
+    ],
+    "filtered": true
+  }
+]

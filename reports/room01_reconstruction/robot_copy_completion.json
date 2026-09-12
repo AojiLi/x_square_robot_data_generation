@@ -1,0 +1,639 @@
+{
+  "copied_original_files": 126,
+  "copied_asset_bytes": 99203853,
+  "all_expected_hashes_match": true,
+  "source_checkout_modified": false,
+  "urdf": "/home/aoji/x_square_robot_data_generation/assets/robots/quanta_x2/quanta_x2_dual_revo2_bridge.urdf",
+  "files": [
+    {
+      "path": "flange_adapter/x2_revo2_flange.json",
+      "bytes": 1533,
+      "sha256": "432ff5ea93929a2bbddb762a76b759013e225e349aa86969b32d6d87d59ad759"
+    },
+    {
+      "path": "flange_adapter/x2_revo2_flange.stl",
+      "bytes": 2445284,
+      "sha256": "534dc3bf30793f9ae8b3cc060a9dab8d8954fe07dd00e6d2f95aee7948a1b540"
+    },
+    {
+      "path": "flange_adapter/x2_revo2_flange_collision.stl",
+      "bytes": 2445284,
+      "sha256": "534dc3bf30793f9ae8b3cc060a9dab8d8954fe07dd00e6d2f95aee7948a1b540"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/Base_L.STL",
+      "bytes": 204584,
+      "sha256": "f22c309ed8cacd2fc776e2f72a2fc5618d9da84315267377edd3205e91ebbcb5"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link1_L.STL",
+      "bytes": 563584,
+      "sha256": "cb937408a554e19e1ca1a2cb8734251f1216ad22a1ac88daa69c3be193c1d220"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link2_L.STL",
+      "bytes": 1278784,
+      "sha256": "c47dbb215330d5c2ac59f01faeefae2cdbdbebb3a3f354c8a0f52ce4df796b0d"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link3_L.STL",
+      "bytes": 635484,
+      "sha256": "fb8626d27ed2ef52edf0b12b07383a3c10d021000885c5277b9c9dd90c49b9cd"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link4_L.STL",
+      "bytes": 621584,
+      "sha256": "b59f53b761139a0f8a879ff0ca803a81c492372f294f8f245440fd4aba2aab64"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link5_L.STL",
+      "bytes": 498884,
+      "sha256": "77f126494f89dbc0846050900e18aec437bfb171d826ddc4f5102e1cbb6062d2"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link6_L.STL",
+      "bytes": 559084,
+      "sha256": "407ab248765ffb16d49dabf0c8d132512e3dcff0228556310725dab4d1fcbe11"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/Link7_L.STL",
+      "bytes": 3316284,
+      "sha256": "986a71e08ccb6a740d2d5596dd6a93314595f1d53ef01ccfb0e452346ed24c72"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Base_L.STL",
+      "bytes": 12684,
+      "sha256": "198e9940df8832ba9832a555a6f966b0a7b5bce1ede514b16f510ce3956f72d3"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link1_L.STL",
+      "bytes": 25284,
+      "sha256": "840132ef18609855975d412138b087a0d2ab984f2499b2d6b16da054fc675def"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link2_L.STL",
+      "bytes": 37884,
+      "sha256": "e92565edd363a4bfa4bdf598bc9d9768977135f64e055221c4206f313fba528e"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link3_L.STL",
+      "bytes": 25184,
+      "sha256": "aa1b81a9111b07563528e0df65da65d23762a819dfc41987842d279bc90ff9a0"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link4_L.STL",
+      "bytes": 37584,
+      "sha256": "16d261dfe1d1f1f614c0414a5f1743c21db7f610e82d6ebfdb287651fca21d5d"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link5_L.STL",
+      "bytes": 37684,
+      "sha256": "73cfeeaa2701aea177696aafbafeb27c959c5d123d6a3c4c021af294c4e4596d"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link6_L.STL",
+      "bytes": 37584,
+      "sha256": "bd11ad5c19157e7e1d18864e2f5ab9c53fb6687f0fe5e54ff2612f2167412c2e"
+    },
+    {
+      "path": "mesh/Marvin M6-S-L-CCS-689 V3.0/collision/Link7_L.STL",
+      "bytes": 62784,
+      "sha256": "7dffb55bfc0f449f66f070e28afe67f0e22a9605c30167cc75bb358f15ab1366"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/Base_R.STL",
+      "bytes": 204584,
+      "sha256": "f22c309ed8cacd2fc776e2f72a2fc5618d9da84315267377edd3205e91ebbcb5"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link1_R.STL",
+      "bytes": 563584,
+      "sha256": "cb937408a554e19e1ca1a2cb8734251f1216ad22a1ac88daa69c3be193c1d220"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link2_R.STL",
+      "bytes": 1278784,
+      "sha256": "c47dbb215330d5c2ac59f01faeefae2cdbdbebb3a3f354c8a0f52ce4df796b0d"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link3_R.STL",
+      "bytes": 635484,
+      "sha256": "2923d5ef76b6f4bfcff15d5ea62369fc8061f3b3209718316745c19cf0dafa92"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link4_R.STL",
+      "bytes": 621584,
+      "sha256": "60b0cb62228c56de5b1a1e1e99db237c794d2c962618e7ab930d64e5c79e958e"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link5_R.STL",
+      "bytes": 498884,
+      "sha256": "82a9352af916d8a04735b6985504b02dbfbdd4c26e423e8d59457dccded894b1"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link6_R.STL",
+      "bytes": 559084,
+      "sha256": "fc81d962de79a690135a3cc1e4199ebd1ec0160c3bd06c07f92f018dfb21e6e9"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/Link7_R.STL",
+      "bytes": 3313784,
+      "sha256": "897119c6102aaeb78a19f4f6f627c43a599f10bdff57ca70c805d468db0e770c"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Base_R.STL",
+      "bytes": 12684,
+      "sha256": "198e9940df8832ba9832a555a6f966b0a7b5bce1ede514b16f510ce3956f72d3"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link1_R.STL",
+      "bytes": 25284,
+      "sha256": "840132ef18609855975d412138b087a0d2ab984f2499b2d6b16da054fc675def"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link2_R.STL",
+      "bytes": 37884,
+      "sha256": "e92565edd363a4bfa4bdf598bc9d9768977135f64e055221c4206f313fba528e"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link3_R.STL",
+      "bytes": 25184,
+      "sha256": "03cb0d3a408d9aeb1b6bdb0d58b4f2192fc6db2ee6cc5dcc800968bb6e807d73"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link4_R.STL",
+      "bytes": 37584,
+      "sha256": "16d261dfe1d1f1f614c0414a5f1743c21db7f610e82d6ebfdb287651fca21d5d"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link5_R.STL",
+      "bytes": 37684,
+      "sha256": "7e0ecc58d066ab53eea5d97fb352dae801708e1e51d55c4660d521dd4d987b01"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link6_R.STL",
+      "bytes": 37384,
+      "sha256": "f5779f8d45da2baaac520af9981905ec48dd8a9d8bcdfd7655b37431befdc18f"
+    },
+    {
+      "path": "mesh/Marvin M6-S-R-CCS-689 V3.0/collision/Link7_R.STL",
+      "bytes": 50484,
+      "sha256": "6d7295fa89ac1f37e438116398dbc935d63e6b8ca3edc6aa6edbc5b192c7a9af"
+    },
+    {
+      "path": "mesh/dummy_gripper_base.STL",
+      "bytes": 5591784,
+      "sha256": "ab68b1dd3846ef058fa832044059d277dbd315c5b2c195b45d6b19e9aa45f07f"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/base_link.STL",
+      "bytes": 14131484,
+      "sha256": "1dca634f27794d626bec44776a48ed942329c3e2c8fbc8b8f3a9f9e419407464"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/bow_pitch_link_01.STL",
+      "bytes": 1357084,
+      "sha256": "7049da07f3a2630fa11866a4a1b4c68dd7718fdb57f24c78ff0da7eeda3d2c08"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/bow_pitch_link_02.STL",
+      "bytes": 1197934,
+      "sha256": "272507e564503e3a82d5f1b379dfe57c4673ea49dab650949f7b1013bb5c30e8"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/bow_pitch_link_03.STL",
+      "bytes": 572084,
+      "sha256": "7791b4a5ba96992ca876d00df2f3b4db5965378e89da554c7ff041c4d9a1c548"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/bow_yaw_link.STL",
+      "bytes": 5629434,
+      "sha256": "5eaf46f8ba301f0fef1adbca72adf934566955fba07ae57253cd9abc16a6264c"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/collision/base_link.STL",
+      "bytes": 297384,
+      "sha256": "a931bbd711be0c416baa54ffa2a9411b386264093fa4b283d4a432aa303255aa"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/collision/bow_pitch_link_01.STL",
+      "bytes": 149484,
+      "sha256": "4b65096f58fef379687a6ab4bc68eacb476fde2a5af2a36129f28d7c1424fb38"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/collision/bow_pitch_link_02.STL",
+      "bytes": 35684,
+      "sha256": "f19f871fa0b4fd352805d42bea1dd006623e7bd86c95ace3c454030d5db41c4d"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/collision/bow_pitch_link_03.STL",
+      "bytes": 160484,
+      "sha256": "76b5e7aeb775db298d1106cde7be6ebd77afa579149b837f431e466d48cc7647"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/collision/bow_yaw_link.STL",
+      "bytes": 188684,
+      "sha256": "211da51c8ea94102ec5750784f37df5c194404cd72e71fccf3e0ab788d6c3676"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/collision/head_pitch_link.STL",
+      "bytes": 289084,
+      "sha256": "e0c56a29ada9a73f2d998150cae2f69a9321465cabab26fa3469002ab0cfd926"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/collision/head_yaw_link.STL",
+      "bytes": 171884,
+      "sha256": "2c025a559208ae20f4b1cbdbdc121fa0daf7f0bd574fd627564a29f8f6d5b81e"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/collision/left_wheel_link.STL",
+      "bytes": 229384,
+      "sha256": "6febbea49da919a691d15625a9052ec651626093903884f45276a1dbdefb6486"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/collision/right_wheel_link.STL",
+      "bytes": 295784,
+      "sha256": "3d853fcb9b70eac7106e87054cecfc7d7e8a5085bd2b8b64a74af10a678cc19a"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/head_pitch_link.STL",
+      "bytes": 1140934,
+      "sha256": "d35adf9024402855bffcf94f18f59a635f232f98807aeccac8f37a30a6810206"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/head_yaw_link.STL",
+      "bytes": 896334,
+      "sha256": "383ed9925a58377b591ea6c15cba54eb727b48b6daffbedc94861868989aa87d"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/left_wheel_link.STL",
+      "bytes": 8344684,
+      "sha256": "831f0585cc7e50e8827a4d305a71ddb07bd879fae60f2245e6bc92b3db3c7407"
+    },
+    {
+      "path": "mesh/rb001_base_dvt4/right_wheel_link.STL",
+      "bytes": 8344684,
+      "sha256": "0c1626aabf936514cfca153398169989ff1c61011f5a3226e30d352c1f43a672"
+    },
+    {
+      "path": "quanta_x2_dual_revo2_bridge.urdf",
+      "bytes": 88104,
+      "sha256": "9f57ade374229fc51f1dc84283679c36f2d45a7bdd88a590fa3d3c9e58548e94"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_base_link.STL",
+      "bytes": 2368784,
+      "sha256": "340401f796bbac762cf85d53e6db4be02cce2f06b66fcf8d6ecb5ba883f06afd"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_index_distal_link.STL",
+      "bytes": 408284,
+      "sha256": "634d5c569628c3c2dbc92932065748ed830fb17ccf933959a5834b2759ab8acd"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_index_proximal_link.STL",
+      "bytes": 339884,
+      "sha256": "1fed32c1a8451282b314579eed3903a288a62524dc7d8b08464fb559261bb580"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_index_touch_link.STL",
+      "bytes": 99984,
+      "sha256": "821249c18a0cf66c87aa4029de1f0ce532f03e7a173c951a5121f2df3b301b52"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_middle_distal_link.STL",
+      "bytes": 406584,
+      "sha256": "e0ff6f648bbb7712bbc7f06bacdd3a574cac2e1bc2398383b57da2d76c88932a"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_middle_proximal_link.STL",
+      "bytes": 334284,
+      "sha256": "50122ebf6e75698ba2c469efd58e07ad3f82b1a002728cd15802f1c435d54c0c"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_middle_touch_link.STL",
+      "bytes": 69884,
+      "sha256": "c91b30341a816ac079ec1268c8427ca3a010356002a30b6847b2853a0edf1e6b"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_pinky_distal_link.STL",
+      "bytes": 554484,
+      "sha256": "d52822897dcc0de60fff7f2652a7d12a342b47905eff7555eaabcc1bcfcaeac4"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_pinky_proximal_link.STL",
+      "bytes": 346784,
+      "sha256": "9f1408568638fbbec4cf32507d4b233fbd8cdb9c862e07cc7da6cd826497caa6"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_pinky_touch_link.STL",
+      "bytes": 68584,
+      "sha256": "850ad4ad9daf4188aa17f96588fe5541fb0c70be10d714930b3cb816748258a0"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_ring_distal_link.STL",
+      "bytes": 529784,
+      "sha256": "c59b62ef04c9cb436f6a6bac5ae9be985eca0d538bc58380c40c00d16079d580"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_ring_proximal_link.STL",
+      "bytes": 281184,
+      "sha256": "77220c07d5bbc119cb828af89f35cb4cef755bbc98a1cae2dda846268ff59501"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_ring_touch_link.STL",
+      "bytes": 71584,
+      "sha256": "c2fb7d2c4fb0df91209ab7158d5f17ab59a7aa56522a9e91a3c3884a35ac6ae0"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_distal_link.STL",
+      "bytes": 96284,
+      "sha256": "99300669452dc8e34d5f62caf31c9c769077af45e0127511cd0c56967fe691a6"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_metacarpal_link.STL",
+      "bytes": 290384,
+      "sha256": "415a75193e7773572b0df8a80fa4e1d187a67901a5ff381a89ee5b7df64735ea"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_proximal_link.STL",
+      "bytes": 620384,
+      "sha256": "ccffe779ed683ec5c2f24e3776c11a127e341743142ddd8f275bfded76938da8"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/left/left_thumb_touch_link.STL",
+      "bytes": 125084,
+      "sha256": "e31a6aa8faf2be8a6bfc3f222ebe7cf59fb5266487d1d98b86a55a7a2524fc20"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_base_link.STL",
+      "bytes": 2364184,
+      "sha256": "2754b59a9132a04a28cf5725d5478599218c9f7dd4b2e13329147e824211ec44"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_index_distal_link.STL",
+      "bytes": 411284,
+      "sha256": "44d4b12f55e85baf77685443aa1f38ae521130a58f0b742920f2a99abc1a1efb"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_index_proximal_link.STL",
+      "bytes": 339884,
+      "sha256": "94fdff414f1c29940495d1f0264a50621340cfc30f9b5365b3490d39ae367f2f"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_index_touch_link.STL",
+      "bytes": 99984,
+      "sha256": "a7f7b054539a858173b3e002be2df5ebc60a3e3d8bdf38e32f490a1475809251"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_middle_distal_link.STL",
+      "bytes": 408584,
+      "sha256": "8f11ee9addab1a1eab40fd765c21389e6f98397166ae5899dc83ddf66f871b3b"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_middle_proximal_link.STL",
+      "bytes": 333384,
+      "sha256": "56d9f019bad093daf93a736596ab4e7d9b17fb3c79e2be4181d909958cf76a37"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_middle_touch_link.STL",
+      "bytes": 69884,
+      "sha256": "1fdd83c56c7eccb38b1af2d75742f1681d6a4dff93e9f15a37173e22117fecf0"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_pinky_distal_link.STL",
+      "bytes": 554084,
+      "sha256": "14c25fb57059978594ea518860522ae401e3a3602d6a39297c52807620e30bac"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_pinky_proximal_link.STL",
+      "bytes": 343284,
+      "sha256": "1a4ba525880efd4da2bcdfd5d2d69a684a02f8c7c01f8e185adf23f47469d0f4"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_pinky_touch_link.STL",
+      "bytes": 68584,
+      "sha256": "96ed796046634fead6ac789be979e3b013c3a6d32ba866a31ea92f7c3ebf19ee"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_ring_distal_link.STL",
+      "bytes": 529684,
+      "sha256": "40acf67de96d432bbbc0a3eda7bbb292cbd2ea0c5f0c78a9b299cf360f3a9f07"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_ring_proximal_link.STL",
+      "bytes": 281484,
+      "sha256": "89c64252e891bc91567241b74de18d986e20e4e57d74cd10289d7171f6c57dc6"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_ring_touch_link.STL",
+      "bytes": 71584,
+      "sha256": "f9c0ac36994b014d25b7d5c292cbd39192e5146c8961ded1e8a9702e2d4e62c2"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_distal_link.STL",
+      "bytes": 95834,
+      "sha256": "f489da4e47935510ffba42016052318f123ef07360fdbbfaadcb0f7d8ddbe28f"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_metacarpal_link.STL",
+      "bytes": 289584,
+      "sha256": "15464fa122dddc49a56462898777e9e407f22b81abb03d10aba0d95f8fefc83a"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_proximal_link.STL",
+      "bytes": 620984,
+      "sha256": "17d6f8575ffdc49fd0c8a4525650180a6806ee3fc0a6485f0610040010aeed34"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/collision/right/right_thumb_touch_link.STL",
+      "bytes": 123084,
+      "sha256": "184c29c27b46ea21df210a13af795c49569fcc1b36cd8b8ebe5aa66b4a0f5612"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_base_link.STL",
+      "bytes": 2368784,
+      "sha256": "340401f796bbac762cf85d53e6db4be02cce2f06b66fcf8d6ecb5ba883f06afd"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_base_visual_link.STL",
+      "bytes": 252684,
+      "sha256": "d9d2558da8369d2f0993e46eed3d1e2a11b4927ab2b8c1731d460b72fea04e9e"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_index_distal_link.STL",
+      "bytes": 408284,
+      "sha256": "634d5c569628c3c2dbc92932065748ed830fb17ccf933959a5834b2759ab8acd"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_index_proximal_link.STL",
+      "bytes": 339884,
+      "sha256": "1fed32c1a8451282b314579eed3903a288a62524dc7d8b08464fb559261bb580"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_index_touch_link.STL",
+      "bytes": 99984,
+      "sha256": "821249c18a0cf66c87aa4029de1f0ce532f03e7a173c951a5121f2df3b301b52"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_middle_distal_link.STL",
+      "bytes": 406584,
+      "sha256": "e0ff6f648bbb7712bbc7f06bacdd3a574cac2e1bc2398383b57da2d76c88932a"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_middle_proximal_link.STL",
+      "bytes": 334284,
+      "sha256": "50122ebf6e75698ba2c469efd58e07ad3f82b1a002728cd15802f1c435d54c0c"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_middle_touch_link.STL",
+      "bytes": 69884,
+      "sha256": "c91b30341a816ac079ec1268c8427ca3a010356002a30b6847b2853a0edf1e6b"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_pinky_distal_link.STL",
+      "bytes": 554484,
+      "sha256": "d52822897dcc0de60fff7f2652a7d12a342b47905eff7555eaabcc1bcfcaeac4"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_pinky_proximal_link.STL",
+      "bytes": 346784,
+      "sha256": "9f1408568638fbbec4cf32507d4b233fbd8cdb9c862e07cc7da6cd826497caa6"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_pinky_touch_link.STL",
+      "bytes": 68584,
+      "sha256": "850ad4ad9daf4188aa17f96588fe5541fb0c70be10d714930b3cb816748258a0"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_ring_distal_link.STL",
+      "bytes": 529784,
+      "sha256": "c59b62ef04c9cb436f6a6bac5ae9be985eca0d538bc58380c40c00d16079d580"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_ring_proximal_link.STL",
+      "bytes": 281184,
+      "sha256": "77220c07d5bbc119cb828af89f35cb4cef755bbc98a1cae2dda846268ff59501"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_ring_touch_link.STL",
+      "bytes": 71584,
+      "sha256": "c2fb7d2c4fb0df91209ab7158d5f17ab59a7aa56522a9e91a3c3884a35ac6ae0"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_distal_link.STL",
+      "bytes": 96284,
+      "sha256": "99300669452dc8e34d5f62caf31c9c769077af45e0127511cd0c56967fe691a6"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_metacarpal_link.STL",
+      "bytes": 290384,
+      "sha256": "415a75193e7773572b0df8a80fa4e1d187a67901a5ff381a89ee5b7df64735ea"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_proximal_link.STL",
+      "bytes": 620384,
+      "sha256": "ccffe779ed683ec5c2f24e3776c11a127e341743142ddd8f275bfded76938da8"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_proximal_visual_link.STL",
+      "bytes": 771684,
+      "sha256": "bcd5279fb8a4d8ba4b06b3d302caa567fde9add81b057943cc6a445abb9e27b5"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/left/left_thumb_touch_link.STL",
+      "bytes": 125084,
+      "sha256": "e31a6aa8faf2be8a6bfc3f222ebe7cf59fb5266487d1d98b86a55a7a2524fc20"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_base_link.STL",
+      "bytes": 2364184,
+      "sha256": "2754b59a9132a04a28cf5725d5478599218c9f7dd4b2e13329147e824211ec44"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_base_visual_link.STL",
+      "bytes": 130584,
+      "sha256": "7357830cda11d9749adc1e796aa0e493f8001ac2c21815d40fdc1406a3b3457c"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_index_distal_link.STL",
+      "bytes": 411284,
+      "sha256": "44d4b12f55e85baf77685443aa1f38ae521130a58f0b742920f2a99abc1a1efb"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_index_proximal_link.STL",
+      "bytes": 339884,
+      "sha256": "94fdff414f1c29940495d1f0264a50621340cfc30f9b5365b3490d39ae367f2f"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_index_touch_link.STL",
+      "bytes": 99984,
+      "sha256": "a7f7b054539a858173b3e002be2df5ebc60a3e3d8bdf38e32f490a1475809251"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_middle_distal_link.STL",
+      "bytes": 408584,
+      "sha256": "8f11ee9addab1a1eab40fd765c21389e6f98397166ae5899dc83ddf66f871b3b"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_middle_proximal_link.STL",
+      "bytes": 333384,
+      "sha256": "56d9f019bad093daf93a736596ab4e7d9b17fb3c79e2be4181d909958cf76a37"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_middle_touch_link.STL",
+      "bytes": 69884,
+      "sha256": "1fdd83c56c7eccb38b1af2d75742f1681d6a4dff93e9f15a37173e22117fecf0"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_pinky_distal_link.STL",
+      "bytes": 554084,
+      "sha256": "14c25fb57059978594ea518860522ae401e3a3602d6a39297c52807620e30bac"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_pinky_proximal_link.STL",
+      "bytes": 343284,
+      "sha256": "1a4ba525880efd4da2bcdfd5d2d69a684a02f8c7c01f8e185adf23f47469d0f4"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_pinky_touch_link.STL",
+      "bytes": 68584,
+      "sha256": "96ed796046634fead6ac789be979e3b013c3a6d32ba866a31ea92f7c3ebf19ee"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_ring_distal_link.STL",
+      "bytes": 529684,
+      "sha256": "40acf67de96d432bbbc0a3eda7bbb292cbd2ea0c5f0c78a9b299cf360f3a9f07"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_ring_proximal_link.STL",
+      "bytes": 281484,
+      "sha256": "89c64252e891bc91567241b74de18d986e20e4e57d74cd10289d7171f6c57dc6"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_ring_touch_link.STL",
+      "bytes": 71584,
+      "sha256": "f9c0ac36994b014d25b7d5c292cbd39192e5146c8961ded1e8a9702e2d4e62c2"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_distal_link.STL",
+      "bytes": 95834,
+      "sha256": "f489da4e47935510ffba42016052318f123ef07360fdbbfaadcb0f7d8ddbe28f"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_metacarpal_link.STL",
+      "bytes": 289584,
+      "sha256": "15464fa122dddc49a56462898777e9e407f22b81abb03d10aba0d95f8fefc83a"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_proximal_visual_link.STL",
+      "bytes": 735284,
+      "sha256": "0c415499f0b28609062d1364cd2500cd801a5f4e6a8a2083ae82b8a870404495"
+    },
+    {
+      "path": "revo2_external/revo2_system/meshes/hands/visual/right/right_thumb_touch_link.STL",
+      "bytes": 123084,
+      "sha256": "184c29c27b46ea21df210a13af795c49569fcc1b36cd8b8ebe5aa66b4a0f5612"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "result": "pass",
+  "only_camera_optics_changed": true,
+  "camera_mounts_and_robot_pose_unchanged": true,
+  "asset_hashes_unchanged": {
+    "assets/room01/sim/room_environment.usdc": "a862c95dc0ecdbbbeb107d93510400ab05e281893ab839d82dba1ae17e24c478",
+    "assets/room01/sim/quanta_x2_physics.usdc": "ec744aa70e420c8cc31eb075fe2e37e48de4ec245981df637b691f4fcde41705",
+    "assets/room01/sim/robot_frames.json": "ef05bc4a59b33d1008fe23e75d27a8837b584049a9d85282b04b2015bfa0228e"
+  }
+}

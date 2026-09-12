@@ -1,0 +1,12 @@
+{
+  "previous_pid": 800553,
+  "arguments": [
+    "python",
+    "/home/aoji/x_square_robot_data_generation/scripts/preview_room01_sim.py",
+    "--output",
+    "/tmp/side_isaac_view_x2ebou7x"
+  ],
+  "reason": "Temporarily close the old read-only task preview to capture the corrected cameras, then reopen with the current scene.",
+  "restored_pid": 811368,
+  "restored_ready": true
+}

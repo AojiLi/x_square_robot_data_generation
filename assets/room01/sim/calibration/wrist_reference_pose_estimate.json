@@ -1,0 +1,78 @@
+{
+  "joint_positions_rad": {
+    "left_wheel_joint": 0.0,
+    "right_wheel_joint": 0.0,
+    "bow_pitch_joint_01": 0.2,
+    "bow_pitch_joint_02": -0.4,
+    "bow_pitch_joint_03": 0.2,
+    "bow_yaw_joint": 0.0,
+    "head_yaw_joint": 0.0,
+    "head_pitch_joint": 0.22,
+    "left_shoulder_pitch_joint": 1.4225159010873538,
+    "left_shoulder_roll_joint": -1.6802388178615588,
+    "left_shoulder_yaw_joint": -1.671182210137679,
+    "left_elbow_roll_joint": -1.5768579153215747,
+    "left_elbow_yaw_joint": 0.12375186814471628,
+    "left_wrist_roll_joint": 0.1426092060617239,
+    "left_wrist_pitch_joint": -0.10146019611768826,
+    "right_shoulder_pitch_joint": -1.4225240927815628,
+    "right_shoulder_roll_joint": -1.6802388786504354,
+    "right_shoulder_yaw_joint": 1.6711674788414226,
+    "right_elbow_roll_joint": -1.576857915309968,
+    "right_elbow_yaw_joint": -0.12376580413209697,
+    "right_wrist_roll_joint": 0.14260910022392637,
+    "right_wrist_pitch_joint": 0.10145468872008481,
+    "left_thumb_metacarpal_joint": 0.4108679330320464,
+    "left_thumb_proximal_joint": 0.6267477309005052,
+    "left_thumb_distal_joint": 0.6267477309005052,
+    "left_index_proximal_joint": 0.06927211556819399,
+    "left_index_distal_joint": 0.08000929348126405,
+    "left_middle_proximal_joint": 0.06927211556819399,
+    "left_middle_distal_joint": 0.08000929348126405,
+    "left_ring_proximal_joint": 0.07068583802189593,
+    "left_ring_distal_joint": 0.0816421429152898,
+    "left_pinky_proximal_joint": 0.07068583802189593,
+    "left_pinky_distal_joint": 0.0816421429152898,
+    "right_thumb_metacarpal_joint": 0.41189771045197876,
+    "right_thumb_proximal_joint": 0.6267477309005052,
+    "right_thumb_distal_joint": 0.6267477309005052,
+    "right_index_proximal_joint": 0.06927211556819399,
+    "right_index_distal_joint": 0.08000929348126405,
+    "right_middle_proximal_joint": 0.07068583802189593,
+    "right_middle_distal_joint": 0.0816421429152898,
+    "right_ring_proximal_joint": 0.06927211556819399,
+    "right_ring_distal_joint": 0.08000929348126405,
+    "right_pinky_proximal_joint": 0.07068583802189593,
+    "right_pinky_distal_joint": 0.0816421429152898
+  },
+  "status": "Approximate side-facing palms used by default reset; arm EEF positions preserved, palm roll estimated from reference head image. Finger motor angles taken from recorded degree fields under current simulation motor order; not a measured full-arm pose.",
+  "ik": {
+    "left": {
+      "position_error_m": 1.5218037571055163e-07,
+      "rotation_error_rad": 4.37278428152385e-06,
+      "joint_positions_rad": {
+        "left_shoulder_pitch_joint": 1.4225159010873538,
+        "left_shoulder_roll_joint": -1.6802388178615588,
+        "left_shoulder_yaw_joint": -1.671182210137679,
+        "left_elbow_roll_joint": -1.5768579153215747,
+        "left_elbow_yaw_joint": 0.12375186814471628,
+        "left_wrist_roll_joint": 0.1426092060617239,
+        "left_wrist_pitch_joint": -0.10146019611768826
+      }
+    },
+    "right": {
+      "position_error_m": 1.5218049238498522e-07,
+      "rotation_error_rad": 4.372764786083172e-06,
+      "joint_positions_rad": {
+        "right_shoulder_pitch_joint": -1.4225240927815628,
+        "right_shoulder_roll_joint": -1.6802388786504354,
+        "right_shoulder_yaw_joint": 1.6711674788414226,
+        "right_elbow_roll_joint": -1.576857915309968,
+        "right_elbow_yaw_joint": -0.12376580413209697,
+        "right_wrist_roll_joint": 0.14260910022392637,
+        "right_wrist_pitch_joint": 0.10145468872008481
+      }
+    }
+  },
+  "usage": "Default task reset and saved USD startup pose, adopted 2026-09-11 from the image-guided reference pose."
+}

@@ -1,0 +1,31 @@
+{
+  "result": "pass",
+  "checks": {
+    "png_cam_left_wrist_encoded_bytes_preserved": true,
+    "png_cam_left_wrist_decoder_pixel_identity": true,
+    "png_cam_left_wrist_recorder_pixel_identity": true,
+    "png_cam_right_wrist_encoded_bytes_preserved": true,
+    "png_cam_right_wrist_decoder_pixel_identity": true,
+    "png_cam_right_wrist_recorder_pixel_identity": true,
+    "png_cam_left_wrist_model_adapter_identity": true,
+    "png_cam_right_wrist_model_adapter_identity": true,
+    "jpg_cam_left_wrist_encoded_bytes_preserved": true,
+    "jpg_cam_left_wrist_decoder_pixel_identity": true,
+    "jpg_cam_left_wrist_recorder_pixel_identity": true,
+    "jpg_cam_right_wrist_encoded_bytes_preserved": true,
+    "jpg_cam_right_wrist_decoder_pixel_identity": true,
+    "jpg_cam_right_wrist_recorder_pixel_identity": true,
+    "jpg_cam_left_wrist_model_adapter_identity": true,
+    "jpg_cam_right_wrist_model_adapter_identity": true,
+    "chw_to_hwc_preserves_orientation": true,
+    "legacy_raw_rgb_transport_identity": true,
+    "resize_keeps_four_corner_colors": true,
+    "resize_only_adds_letterbox_padding": true,
+    "record_0_cam_left_wrist_png_identity": true,
+    "record_0_cam_right_wrist_png_identity": true,
+    "record_21_cam_left_wrist_png_identity": true,
+    "record_21_cam_right_wrist_png_identity": true
+  },
+  "scope": "Copied current .199 image decode/model-input/recorder/resize functions only; no inference or robot I/O. Does not test historical client, SDK or camera-driver output.",
+  "opencv_version": "4.13.0"
+}

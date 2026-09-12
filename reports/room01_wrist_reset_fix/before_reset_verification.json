@@ -1,0 +1,121 @@
+{
+  "result": "fail",
+  "checks": {
+    "actual_reset_matches_reference_pose": false,
+    "default_config_matches_active_config": true,
+    "saved_usd_pose_matches_actual_reset": true,
+    "left_wrist_palm_side": true,
+    "left_wrist_thumb_above_fingers": true,
+    "left_wrist_user_reference_pinned": true,
+    "left_wrist_correct_wrist_mount": true,
+    "left_wrist_table_horizontal_at_actual_reset": false,
+    "right_wrist_palm_side": true,
+    "right_wrist_thumb_above_fingers": true,
+    "right_wrist_user_reference_pinned": true,
+    "right_wrist_correct_wrist_mount": true,
+    "right_wrist_table_horizontal_at_actual_reset": false
+  },
+  "cameras": {
+    "left_wrist": {
+      "palm_reference_pixel": [
+        174.9608243742525,
+        213.01530802260655
+      ],
+      "tip_reference_pixels": {
+        "thumb": [
+          251.59577672226516,
+          47.514504494243596
+        ],
+        "index": [
+          285.32771451923077,
+          186.19918542698048
+        ],
+        "middle": [
+          289.00895942861257,
+          210.86687245931668
+        ],
+        "ring": [
+          286.7785765775265,
+          233.78113301767004
+        ],
+        "pinky": [
+          279.58488746441463,
+          258.44654198776175
+        ]
+      },
+      "local_rotation_xyzw": [
+        -0.026756972411177173,
+        -0.7065998812634879,
+        -0.026760021358320236,
+        0.7066007171541182
+      ],
+      "native_camera_roll_correction_deg": 180,
+      "native_downward_pitch_estimate_deg": 17.5,
+      "table_line_pixels": [
+        [
+          354.63179907062573,
+          175.72009835850886
+        ],
+        [
+          354.1444566878062,
+          289.4448806924004
+        ]
+      ],
+      "table_line_tilt_deg": 89.754473121672
+    },
+    "right_wrist": {
+      "palm_reference_pixel": [
+        469.18028996354997,
+        197.72035486602795
+      ],
+      "tip_reference_pixels": {
+        "thumb": [
+          392.8845299904993,
+          35.62982360179521
+        ],
+        "index": [
+          362.06156962923467,
+          171.619062665738
+        ],
+        "middle": [
+          358.4894402499172,
+          195.63791953303144
+        ],
+        "ring": [
+          360.65405922840694,
+          217.95087645554753
+        ],
+        "pinky": [
+          367.63300074936456,
+          241.96760351960893
+        ]
+      },
+      "local_rotation_xyzw": [
+        0.7065998812595357,
+        0.026756972396729473,
+        -0.7066007171580682,
+        0.026760021372837242
+      ],
+      "native_camera_roll_correction_deg": 180,
+      "native_downward_pitch_estimate_deg": 17.5,
+      "table_line_pixels": [
+        [
+          295.29775598275177,
+          272.1385604627127
+        ],
+        [
+          294.82483149006737,
+          161.4066285889508
+        ]
+      ],
+      "table_line_tilt_deg": 89.75529720966358
+    }
+  },
+  "reference": "20260824T091633.664930Z-pid2632484-1c6fc5df/requests/request_000001",
+  "scope": "Actual configured reset, saved USD link poses and nominal wrist-view direction; runtime reset and native renders checked separately. Not measured full-pose calibration.",
+  "reference_pose_max_joint_difference_rad": 0.9772358660064737,
+  "saved_usd_transform_max_abs_error": 4.440892098500626e-16,
+  "config_sha256": "351734b28420f73896a4a8631a4c9078f75e1a6435ca76107b74d30712e6cfe5",
+  "pose_source": "task_config.json joint_home_rad",
+  "image_post_rotation": false
+}

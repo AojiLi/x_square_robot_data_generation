@@ -1,0 +1,46 @@
+{
+  "profile": "current_physical_topic_mapping",
+  "requests": 720,
+  "sessions": 47,
+  "excluded_old_mapping_requests": 21,
+  "cameras": {
+    "cam_left_wrist": {
+      "status": "fit",
+      "center_xy_at_640x480": [
+        313.99618529473196,
+        237.41447422807875
+      ],
+      "radius_xy_at_640x480": [
+        259.28909982977973,
+        259.048702834692
+      ],
+      "arc_candidates": 243,
+      "arc_inliers": 241,
+      "median_residual_px": 0.9449565247775281,
+      "equidistant_assumed_full_fov_deg": 180,
+      "estimated_fx_fy_if_180deg": [
+        165.06856771102946,
+        164.91552623073883
+      ]
+    },
+    "cam_right_wrist": {
+      "status": "fit",
+      "center_xy_at_640x480": [
+        314.4184209150353,
+        252.32219977776174
+      ],
+      "radius_xy_at_640x480": [
+        253.57693825057308,
+        252.13156192619385
+      ],
+      "arc_candidates": 218,
+      "arc_inliers": 210,
+      "median_residual_px": 0.5317696913487314,
+      "equidistant_assumed_full_fov_deg": 180,
+      "estimated_fx_fy_if_180deg": [
+        161.43209270674808,
+        160.5119375601363
+      ]
+    }
+  }
+}

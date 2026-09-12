@@ -1,0 +1,79 @@
+{
+  "result": "pass",
+  "source_root": "192.168.110.11:/mnt/data/dzq/inference_records",
+  "read_only_source": true,
+  "sessions": 52,
+  "requests": 741,
+  "discovered_images": 2223,
+  "decoded_images": 2223,
+  "image_bytes": 594405204,
+  "size_counts": {
+    "[640, 480]": 2223
+  },
+  "failures": [],
+  "missing_hash": [],
+  "source_mapping_counts": {
+    "{\"cam_high\": null, \"cam_left_wrist\": \"/camera1/usb_cam1/image_raw/image_compressed\", \"cam_right_wrist\": \"/camera3/usb_cam3/image_raw/image_compressed\"}": 21,
+    "{\"cam_high\": null, \"cam_left_wrist\": \"/camera3/usb_cam3/image_raw/image_compressed\", \"cam_right_wrist\": \"/camera1/usb_cam1/image_raw/image_compressed\"}": 720
+  },
+  "wrist_boundaries": {
+    "cam_left_wrist": {
+      "fit_count": 733,
+      "all_images": 741,
+      "parameter_order": [
+        "cx",
+        "cy",
+        "rx",
+        "ry"
+      ],
+      "median": [
+        313.3289399775372,
+        232.25585621804933,
+        256.67207520968697,
+        252.91242854649525
+      ],
+      "p05": [
+        312.02176419477206,
+        222.55669488597738,
+        254.38126590418966,
+        241.4921508763162
+      ],
+      "p95": [
+        314.3743146380176,
+        237.0280039375095,
+        257.99771891727954,
+        259.7639909277664
+      ]
+    },
+    "cam_right_wrist": {
+      "fit_count": 706,
+      "all_images": 741,
+      "parameter_order": [
+        "cx",
+        "cy",
+        "rx",
+        "ry"
+      ],
+      "median": [
+        316.1721699414876,
+        251.1762045607348,
+        250.7305646307792,
+        250.18991850621813
+      ],
+      "p05": [
+        314.64008935376114,
+        229.34364340290054,
+        240.77836222239472,
+        229.0263639484936
+      ],
+      "p95": [
+        322.0241782538005,
+        252.91170025888405,
+        252.8445323945817,
+        252.23874055721814
+      ]
+    }
+  },
+  "contact_sheet_pages": 21,
+  "scope": "Every copied PNG decoded and checked, every image included in the contact sheets; boundary estimates are not an angular or hand-eye calibration."
+}

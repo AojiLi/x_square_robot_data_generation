@@ -1,0 +1,28 @@
+{
+  "left": {
+    "position_error_m": 2.452568871139564e-07,
+    "rotation_error_rad": 5.7983888853978044e-06,
+    "joint_positions_rad": {
+      "left_shoulder_pitch_joint": 1.330551736156701,
+      "left_shoulder_roll_joint": -1.137464176110204,
+      "left_shoulder_yaw_joint": -1.1347893142217305,
+      "left_elbow_roll_joint": -1.5768579303953183,
+      "left_elbow_yaw_joint": 1.10098773415119,
+      "left_wrist_roll_joint": 0.39610786337689696,
+      "left_wrist_pitch_joint": -0.05285577672778355
+    }
+  },
+  "right": {
+    "position_error_m": 2.4525968024085505e-07,
+    "rotation_error_rad": 5.79841443856697e-06,
+    "joint_positions_rad": {
+      "right_shoulder_pitch_joint": -1.330555545910682,
+      "right_shoulder_roll_joint": -1.1374624504279192,
+      "right_shoulder_yaw_joint": 1.1347759191453726,
+      "right_elbow_roll_joint": -1.576857930381803,
+      "right_elbow_yaw_joint": -1.1009979382394985,
+      "right_wrist_roll_joint": 0.3961087085346154,
+      "right_wrist_pitch_joint": 0.052850421014447875
+    }
+  }
+}

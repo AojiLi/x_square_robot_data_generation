@@ -1,0 +1,21 @@
+{
+  "host": "192.168.110.155",
+  "sdk_file": "/home/xr/robocontrol_ws/.venv/lib/python3.12/site-packages/x2robot/sdk/__init__.py",
+  "files": {
+    "/home/xr/pi05_umi_inference/runtime/camera_transport.py": {
+      "sha256": "5eca3201878fd133e3969afafd79ab2cde2717ec144b6deaf7f45290d9eec293"
+    },
+    "/home/xr/pi05_umi_inference/runtime/robot_observation.py": {
+      "sha256": "7d6e51f2c03c713e4aa1ac347d95a6fb6db909e27ad92bb3797863cd1ce6868d"
+    },
+    "/home/xr/pi05_umi_inference/runtime/wrist_camera_publisher.py": {
+      "sha256": "c3c30af936f3f92fe16c2b8977cfa1957be5762f8907a902506752f674b4885d"
+    },
+    "/home/xr/camera_capture/capture_frames.py": {
+      "sha256": "4783e4cf435305560ab2e98707cd28818f63483775aa7ccb82ee1ecd042f0010"
+    },
+    "/home/xr/pi05_umi_inference/runtime/v4l2_capture.c": {
+      "sha256": "8b35fe195b6a3617a9330a5ae0ccf13868acd599c5d72593e7bfdd789ef192f9"
+    }
+  }
+}

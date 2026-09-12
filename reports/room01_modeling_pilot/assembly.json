@@ -1,0 +1,10 @@
+{
+  "scene": "/home/aoji/x_square_robot_data_generation/assets/room01/modeling_pilot/room01_modeling_pilot.usda",
+  "source_scene_modified": false,
+  "units": "meters",
+  "up_axis": "Z",
+  "default_camera": "ReviewTable",
+  "modeled_meshes": 15,
+  "background": "trimmed source scan mesh",
+  "approximate_geometry": true
+}

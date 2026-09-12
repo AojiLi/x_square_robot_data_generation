@@ -1,0 +1,4 @@
+{
+  "result": "fail",
+  "error": "Nonfinite robot joint state at physics step 98"
+}

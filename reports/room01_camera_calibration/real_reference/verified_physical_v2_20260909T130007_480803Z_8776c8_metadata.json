@@ -1,0 +1,63 @@
+{
+  "started_at_utc": "2026-09-09T13:00:07.480803+00:00",
+  "selected_cameras": [
+    "left",
+    "right"
+  ],
+  "capture_mode": "sequential independent snapshots; not hardware synchronized",
+  "format": "png",
+  "results": [
+    {
+      "camera": "left",
+      "status": "saved",
+      "path": "/home/xr/camera_capture/test_output/verified_physical_v2_20260909T130007_480803Z_8776c8_left_wrist.png",
+      "width": 640,
+      "height": 480,
+      "captured_at_utc": "2026-09-09T13:00:07.778253+00:00",
+      "source": {
+        "source": "x2robot_camera_grpc",
+        "server": "localhost:50051",
+        "physical_side": "left",
+        "sdk_side": "right",
+        "mapping_version": "xr-physical-v2",
+        "service": "RightArmCameraStub",
+        "rpc": "GetRawImage",
+        "source_timestamp_ns": 1788958807696940256,
+        "received_timestamp_ns": 1788958807698926345,
+        "frame_age_seconds": 0.001986089,
+        "source_frame_id": "camera_frame",
+        "source_format": "jpeg",
+        "source_width": 640,
+        "source_height": 480,
+        "freshness": "source timestamp advanced after first read"
+      }
+    },
+    {
+      "camera": "right",
+      "status": "saved",
+      "path": "/home/xr/camera_capture/test_output/verified_physical_v2_20260909T130007_480803Z_8776c8_right_wrist.png",
+      "width": 640,
+      "height": 480,
+      "captured_at_utc": "2026-09-09T13:00:07.877080+00:00",
+      "source": {
+        "source": "x2robot_camera_grpc",
+        "server": "localhost:50051",
+        "physical_side": "right",
+        "sdk_side": "left",
+        "mapping_version": "xr-physical-v2",
+        "service": "LeftArmCameraStub",
+        "rpc": "GetRawImage",
+        "source_timestamp_ns": 1788958807835140038,
+        "received_timestamp_ns": 1788958807838051235,
+        "frame_age_seconds": 0.002911197,
+        "source_frame_id": "camera_frame",
+        "source_format": "jpeg",
+        "source_width": 640,
+        "source_height": 480,
+        "freshness": "source timestamp advanced after first read"
+      }
+    }
+  ],
+  "finished_at_utc": "2026-09-09T13:00:07.877506+00:00",
+  "exit_code": 0
+}

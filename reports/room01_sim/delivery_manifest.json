@@ -1,0 +1,100 @@
+{
+  "status": "validated_fixed_workcell",
+  "created_utc": "2026-09-11T03:21:43.757520+00:00",
+  "scene": "assets/room01/sim/room01_manipulation.usda",
+  "blender_review": "assets/room01/sim/room01_sim_review.blend",
+  "video": "reports/room01_sim/three_camera_grasp.mp4",
+  "episode": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1",
+  "checks": {
+    "assets": "pass",
+    "physics": "pass",
+    "vla_io": "pass",
+    "episode": "pass",
+    "grasp": "pass",
+    "blender_review": "pass",
+    "video": "pass",
+    "actual_reset_first_frame": "pass",
+    "camera_optics": "pass",
+    "fisheye_boundary": "pass",
+    "wrist_reference_orientation": "pass"
+  },
+  "files": {
+    "assets/room01/sim/room01_manipulation.usda": {
+      "bytes": 20700,
+      "sha256": "8b3a8dcdf5d7c2eff47a0c50a8cda7572352e4c10c077ab9ca2297b55b4c5517"
+    },
+    "assets/room01/sim/room_environment.usdc": {
+      "bytes": 13211217,
+      "sha256": "a862c95dc0ecdbbbeb107d93510400ab05e281893ab839d82dba1ae17e24c478"
+    },
+    "assets/room01/sim/quanta_x2_physics.usdc": {
+      "bytes": 108387766,
+      "sha256": "f5a044b193b4a7e8140f81e5b79eaee4c8abe63693ce562e972f6ff1346ebc0b"
+    },
+    "assets/room01/sim/task_config.json": {
+      "bytes": 18691,
+      "sha256": "26546f8e625dbd8c02cf6f053037d657b1b273b56039b50219a0eb36ba3e5c91"
+    },
+    "assets/room01/sim/robot_frames.json": {
+      "bytes": 61233,
+      "sha256": "783d0c8011400c37433d779f8e03d1bb683faba7b7c142a331e0c25a6fd7efbd"
+    },
+    "assets/room01/sim/camera_manifest.json": {
+      "bytes": 12226,
+      "sha256": "7d0aada2ddf170046b5a3e4b767eced8ca8f7ae8d29a73633e2eee8408141c44"
+    },
+    "assets/room01/sim/room01_sim_review.blend": {
+      "bytes": 226259796,
+      "sha256": "2f6b91f4442c688eefdfed8be7851bd8ff8805328e50600ead3076f2f05dd3c9"
+    },
+    "reports/room01_sim/three_camera_grasp.mp4": {
+      "bytes": 2256893,
+      "sha256": "299883e72241bb378128b27d83c474684c2aea5923b8568405750a1f0f8e7455"
+    },
+    "assets/room01/sim/calibration/user_camera_parameters_20260910.json": {
+      "bytes": 2636,
+      "sha256": "b836e96279a8c66f965a81c653d9f97f22220a422679008fea1e264007e2cbb0"
+    },
+    "assets/room01/sim/calibration/wrist_reference_pose_estimate.json": {
+      "bytes": 3662,
+      "sha256": "7027d104ab5b969ab4ff4221f260dfd91df0710097a0ab6f301912f6e202fbd1"
+    }
+  },
+  "source_code_sha256": {
+    "room01_sim/__init__.py": "55b743237eeb54715da57781e35944c77bdc67033da19dfcc35e80a7a1bff6e7",
+    "room01_sim/bootstrap.py": "67b6cd46e468faf5407ea0f6890caaf036ec6bc30fd53f4de4cfcfcadcf31d9c",
+    "room01_sim/build_review_blend.py": "59c1a0c39b5c23145524ae30ea2dd8404be259bd1b7385f2eb98d617a448b582",
+    "room01_sim/build_scene.py": "37ac7ec07c2cb26a2c5768888ece5c2e47bbd53183e2a0ccf0249aedfefc30d2",
+    "room01_sim/calibration.py": "6b181d8122028bda26142fb89bf73f0923dce29762d0f565c8472eecb4766b34",
+    "room01_sim/camera_assets.py": "2f8f1d0b7faa2607bacc98f62f07d763f4330b3ae3b281d3662a2d0179b03ccd",
+    "room01_sim/compact_robot.py": "1b02c7871553b70e083c6019c74ac8e3e1c2cc1b85bf8043f18d6d91b1ea8d2c",
+    "room01_sim/control.py": "78a20a4f73a8c51482dd7b268a271ef55db109603a0bea740a54f43251dea910",
+    "room01_sim/episodes.py": "74853ba911d395905d5824b8945985d0b6dea0bdb7c96cf5b503fbc4fc6bdac0",
+    "room01_sim/export_blender.py": "82dbbe3e0f77f1dd1ac357666e93aa39eb5f3b628dcd2fd50ac8a37b960820d6",
+    "room01_sim/export_review_geometry.py": "276e137788c8d4d77e9aa0d8dde10093bbf00cd57c5ba0a7937a1de2d1d252ae",
+    "room01_sim/kinematics.py": "af71ac3d86714b1eb12d4c4fe6c489c2a9e451d6011932d5ee8143fe80e3a65c",
+    "room01_sim/oracle.py": "39af31dfdfbaba07c07a662edcbb0d741370b9186b36ce88230f88843772e506",
+    "room01_sim/runtime.py": "149adc9d93420998d58e2725746a9f62ee6a3c74bbca40d52587057ac1183f8d",
+    "room01_sim/sensors.py": "4f9288838e1308e88fa5f7f200a163cd9808f45b0cdee6ef289c00612c5dcc21",
+    "room01_sim/vla_env.py": "7e0a0e51c967276b14cd464b6df75427fa52b0466dd010b0c63979bd30ab3100"
+  },
+  "camera_calibration_status": "Head user-supplied K with provisional KB4 interpretation; wrist roll and pitch follow the user-authoritative 20260824 request_000001 images. Circular fisheye K and real hand-eye remain image-based estimates.",
+  "vla_model_trained": false,
+  "real_camera_calibration_complete": false,
+  "example_frames": 300,
+  "example_images": 900,
+  "example_first_frames": {
+    "head": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/head/000000.png",
+    "left_wrist": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/left_wrist/000000.png",
+    "right_wrist": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/right_wrist/000000.png"
+  },
+  "grasp_stable_hold_seconds": 1.8666666666666667,
+  "physics_validation_reuse": {
+    "result": "pass",
+    "physics_configuration_unchanged": false,
+    "existing_physics_report_reused": false,
+    "fresh_physics_report": "reports/room01_sim/physics_verification.json",
+    "config_sha256": "26546f8e625dbd8c02cf6f053037d657b1b273b56039b50219a0eb36ba3e5c91",
+    "reason": "Default reset pose and two internal wrist-housing collision filters changed. Re-ran fixed-base, table/floor contact, mimic, URDF FK, reset tracking and at-rest velocity checks. Camera and grasp checks are recorded separately."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "result": "pass",
+  "video": "/home/aoji/x_square_robot_data_generation/reports/room01_sim/three_camera_grasp.mp4",
+  "probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 2880,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "nb_read_frames": "300"
+      }
+    ],
+    "format": {
+      "duration": "10.000000"
+    }
+  },
+  "source_episode": "episode_20260910T070829Z_75b9e72e",
+  "display_scaling": "Each native stream scaled proportionally to 720px high; original PNGs preserved."
+}

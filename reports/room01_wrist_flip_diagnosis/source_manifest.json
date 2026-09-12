@@ -1,0 +1,30 @@
+{
+  "host": "192.168.110.199",
+  "path": "/home/dzq/pi05_inference",
+  "files": {
+    "README.md": {
+      "sha256": "1a6d57451821753376fa89f40cf70f0181a782433d21bfdbbf82aef92cedaab5"
+    },
+    "serve_umi_v2_policy.py": {
+      "sha256": "e6c6b3c692838ffca0d1c88c5f37c34b4106074ff85ec176f1cf54fe08414c16"
+    },
+    "camera_transport.py": {
+      "sha256": "5eca3201878fd133e3969afafd79ab2cde2717ec144b6deaf7f45290d9eec293"
+    },
+    "umi_policy_common.py": {
+      "sha256": "d7b56a073746d58db35787c5c1d0931f01cdc2130b4bcc12244c52cbd62dbd0b"
+    },
+    "inference_recorder.py": {
+      "sha256": "98a7681938d99d2abc52332b141e721933a672a1bdb0d5f963071cf7ba0101a4"
+    },
+    "start_umi_server.sh": {
+      "sha256": "5f0196e7e922bf5b3acc511c72379f4cf02db8b5b78dab6cd4c54dd4445e90df"
+    },
+    "start_umi_v2_server.sh": {
+      "sha256": "0fdcc8cf2c548f8f887210aa3cf911c152a584c64bb66b13b1221fcd1aa90033"
+    },
+    "cam_high_roi.py": {
+      "sha256": "8074cf6a97d92d581af0b92e780bd6b8f6f308a0525090822e89bee94981f9de"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "result": "pass",
+  "camera_count": 3,
+  "same_physics_step": true,
+  "timestamp": 0.175,
+  "joint_positions_finite": true,
+  "calibration_status": "Partial: head rgb.right user-supplied intrinsics; KB4 interpretation provisional. Wrist intrinsics and all robot-to-camera poses remain estimates; ctrl sensor mapping unresolved."
+}

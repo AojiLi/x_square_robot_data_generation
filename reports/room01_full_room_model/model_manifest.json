@@ -1,0 +1,77 @@
+{
+  "blender_version": "4.0.2",
+  "objects": 1157,
+  "mesh_objects": 1016,
+  "curve_objects": 46,
+  "collections": [
+    "01 Floor and carpet tiles",
+    "02 West wall",
+    "03 East wall and inset",
+    "04 Entry door and glazed partition",
+    "05 Windows and hardware",
+    "06 Ceiling tiles and services",
+    "07 Wall fixtures and sockets",
+    "08 White writing table",
+    "09 Optical workstation",
+    "10 Seating - three chairs and stool",
+    "11 Large equipment flightcase",
+    "12 Items on flightcase",
+    "13 Cartons toolcase and floor cables",
+    "14 Labels from supplied photographs",
+    "15 Exterior photographic context - unmeasured",
+    "16 Review cameras",
+    "17 Lighting",
+    "99 Original scan reference - hidden",
+    "Collection"
+  ],
+  "footprint": [
+    [
+      -2.426,
+      -2.53
+    ],
+    [
+      1.346,
+      -2.53
+    ],
+    [
+      1.346,
+      -1.463
+    ],
+    [
+      2.339,
+      -1.463
+    ],
+    [
+      2.339,
+      1.57
+    ],
+    [
+      -2.426,
+      1.57
+    ]
+  ],
+  "floor_z": -1.466,
+  "ceiling_z": 1.19,
+  "three_chair_centers": [
+    [
+      -0.565,
+      0.395
+    ],
+    [
+      -0.02,
+      0.68
+    ],
+    [
+      0.8,
+      0.44
+    ]
+  ],
+  "stool_center": [
+    0.345,
+    0.43
+  ],
+  "source_photo_count": 488,
+  "reference_scan_hidden": true,
+  "dimensions_status": "Approximate fits to source scan and photographed landmarks",
+  "blend_file": "/home/aoji/x_square_robot_data_generation/assets/room01/full_room_model/room01_full.blend"
+}

@@ -1,0 +1,228 @@
+#!/usr/bin/env python3
+"""Save a fresh frame from XR's E6 and/or wrist cameras. No robot commands."""
+from __future__ import annotations
+
+import argparse
+from datetime import datetime, timezone
+import io
+import json
+import math
+from pathlib import Path
+import re
+import sys
+import tempfile
+import time
+import uuid
+
+
+CAMERAS = ("e6", "left", "right")
+# Physical wrist sides on this XR are opposite the vendor SDK labels.
+# Matches pi05_umi_inference/runtime/robot_observation.py: physical left is
+# camera3 (RightArmCamera), physical right is camera1 (LeftArmCamera).
+WRIST_SDK_SIDES = {"left": "right", "right": "left"}
+WRIST_MAPPING_VERSION = "xr-physical-v2"
+
+
+def positive_seconds(value):
+    number = float(value)
+    if not math.isfinite(number) or number <= 0:
+        raise argparse.ArgumentTypeError("必须为大于 0 的有限秒数")
+    return number
+
+
+def filename_label(value):
+    if not re.fullmatch(r"[\w-]{1,64}", value):
+        raise argparse.ArgumentTypeError("名称只能包含 1–64 个汉字、字母、数字、下划线或短横线")
+    return value
+
+
+def build_parser():
+    parser = argparse.ArgumentParser(description="XR 三相机截图：头部 E6、左腕、右腕。只取图，不控制机器人。")
+    parser.add_argument("--camera", nargs="+", choices=(*CAMERAS, "all"), default=["all"],
+                        help="e6=头部 E6，left=左腕，right=右腕，all=三路；允许多选，默认 all")
+    parser.add_argument("--save-dir", type=Path, required=True, help="图片和取帧记录的保存目录，自动创建")
+    parser.add_argument("--name", type=filename_label, default="capture", help="可选文件名前缀，例如 049")
+    parser.add_argument("--format", choices=("png", "jpg"), default="png", help="默认无损 PNG")
+    parser.add_argument("--timeout", type=positive_seconds, default=20.0, help="每路取帧超时秒数，默认 20")
+    parser.add_argument("--server", default="localhost:50051", help="腕部相机 SDK 服务地址")
+    parser.add_argument("--e6-eye", choices=("right", "left", "stereo"), default="right",
+                        help="E6 右目、左目或双目全图，默认 right")
+    parser.add_argument("--e6-no-prepare", action="store_true", help="要求已有 E6 应用和 ADB 转发，不准备相机")
+    return parser
+
+
+def select_cameras(values):
+    requested = set(values)
+    return list(CAMERAS) if "all" in requested else [name for name in CAMERAS if name in requested]
+
+
+def image_stamp_ns(message):
+    stamp = message.header.stamp
+    return int(stamp.sec) * 1_000_000_000 + int(stamp.nanosec)
+
+
+def capture_wrist(side: str, *, server: str, timeout: float):
+    """Use camera-only RPC stubs: no Robot() instance, modes or heartbeat."""
+    import grpc
+    import numpy as np
+    from PIL import Image
+    from x2robot.sdk import LeftArmCameraStub, RightArmCameraStub
+
+    sdk_side = WRIST_SDK_SIDES[side]
+    stub_class = {"left": LeftArmCameraStub, "right": RightArmCameraStub}[sdk_side]
+    print(f"腕部来源：实际 {side} ← SDK {sdk_side} ({stub_class.__name__})；保存前旋转180°", flush=True)
+    deadline = time.monotonic() + timeout
+    initial_stamp = None
+    last_error = "尚未收到新帧"
+    options = [("grpc.max_receive_message_length", 16 * 1024 * 1024)]
+    with grpc.insecure_channel(server, options=options) as channel:
+        camera = stub_class(channel)
+        while time.monotonic() < deadline:
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                break
+            try:
+                message = camera.get_raw_image(timeout=min(remaining, 1.0))
+            except grpc.RpcError as error:
+                last_error = f"{error.code().name}: {error.details()}"
+                if error.code() not in (grpc.StatusCode.DEADLINE_EXCEEDED, grpc.StatusCode.UNAVAILABLE):
+                    raise RuntimeError(f"{side} 腕部相机服务失败：{last_error}") from error
+                time.sleep(min(0.05, max(0.0, deadline - time.monotonic())))
+                continue
+            received_ns = time.time_ns()
+            stamp = image_stamp_ns(message)
+            if initial_stamp is None:
+                initial_stamp = stamp
+            # Require the service to advance its source frame after this request.
+            # Also reject a stream replaying old frames or using a wrong clock.
+            age_seconds = (received_ns - stamp) / 1e9
+            if not message.data or stamp <= initial_stamp or not -1.0 <= age_seconds <= 2.0:
+                last_error = f"画面未更新或时间戳异常（帧龄 {age_seconds:.3f} 秒）"
+                time.sleep(min(0.03, max(0.0, deadline - time.monotonic())))
+                continue
+            with Image.open(io.BytesIO(message.data)) as decoded:
+                decoded.load()
+                rgb = np.array(decoded.convert("RGB"))
+            # Correct wrist mounting orientation; lossless pixel reordering.
+            # Keep the E6 branch and physical-side selection independent.
+            bgr = np.rot90(rgb, 2)[:, :, ::-1].copy()
+            return bgr, {
+                "source": "x2robot_camera_grpc", "server": server,
+                "physical_side": side, "sdk_side": sdk_side,
+                "mapping_version": WRIST_MAPPING_VERSION,
+                "rotation_degrees": 180,
+                "service": stub_class.__name__, "rpc": "GetRawImage",
+                "source_timestamp_ns": stamp, "received_timestamp_ns": received_ns,
+                "frame_age_seconds": age_seconds, "source_frame_id": message.header.frame_id,
+                "source_format": message.format, "source_width": rgb.shape[1],
+                "source_height": rgb.shape[0], "freshness": "source timestamp advanced after first read",
+            }
+    raise RuntimeError(f"{side} 腕部取帧超时：{last_error}；检查 {server} 的相机服务。")
+
+
+def capture_one(camera, args):
+    if camera == "e6":
+        from e6_capture import capture_e6
+        return capture_e6(timeout=args.timeout, eye=args.e6_eye, prepare=not args.e6_no_prepare)
+    return capture_wrist(camera, server=args.server, timeout=args.timeout)
+
+
+def atomic_json(path, data):
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent,
+                                         prefix=".capture_", suffix=".json", delete=False) as handle:
+            temporary = Path(handle.name)
+            json.dump(data, handle, ensure_ascii=False, indent=2, allow_nan=False)
+            handle.write("\n")
+        temporary.replace(path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def save_frame(path, bgr, image_format):
+    import numpy as np
+    from PIL import Image
+    if not isinstance(bgr, np.ndarray) or bgr.dtype != np.uint8 or bgr.ndim != 3 or bgr.shape[2] != 3:
+        raise RuntimeError("取帧结果不是 uint8 BGR 三通道图片")
+    if min(bgr.shape[:2]) < 1:
+        raise RuntimeError("相机返回空图片")
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(dir=path.parent, prefix=".capture_", suffix=".tmp", delete=False) as handle:
+            temporary = Path(handle.name)
+        rgb = Image.fromarray(bgr[:, :, ::-1])
+        options = {"quality": 95, "subsampling": 0} if image_format == "jpg" else {}
+        rgb.save(temporary, format="JPEG" if image_format == "jpg" else "PNG", **options)
+        temporary.replace(path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def run(args):
+    destination = args.save_dir.expanduser().resolve()
+    destination.mkdir(parents=True, exist_ok=True)
+    # Fail on unwritable storage before connecting to any camera.
+    with tempfile.TemporaryFile(dir=destination) as handle:
+        handle.write(b"capture storage check")
+        handle.flush()
+    started = datetime.now(timezone.utc)
+    batch = f"{args.name}_{started:%Y%m%dT%H%M%S_%fZ}_{uuid.uuid4().hex[:6]}"
+    manifest_path = destination / f"{batch}_metadata.json"
+    manifest = {
+        "started_at_utc": started.isoformat(), "selected_cameras": select_cameras(args.camera),
+        "capture_mode": "sequential independent snapshots; not hardware synchronized",
+        "format": args.format, "results": [],
+    }
+    print(f"保存目录：{destination}", flush=True)
+    if len(manifest["selected_cameras"]) > 1:
+        print("按顺序读取所选相机；各路为独立截图，不保证曝光同步。", flush=True)
+    exit_code = 0
+    try:
+        for camera in manifest["selected_cameras"]:
+            print(f"正在读取 {camera} …", flush=True)
+            entry = {"camera": camera, "status": "failed"}
+            try:
+                bgr, metadata = capture_one(camera, args)
+                label = f"e6_{args.e6_eye}" if camera == "e6" else f"{camera}_wrist"
+                image_path = destination / f"{batch}_{label}.{args.format}"
+                save_frame(image_path, bgr, args.format)
+                entry.update(status="saved", path=str(image_path), width=bgr.shape[1], height=bgr.shape[0],
+                             captured_at_utc=datetime.now(timezone.utc).isoformat(), source=metadata)
+                print(f"已保存 {camera}：{image_path} ({bgr.shape[1]}×{bgr.shape[0]})", flush=True)
+            except KeyboardInterrupt:
+                entry.update(status="interrupted", error="用户按 Ctrl+C 停止")
+                manifest["results"].append(entry)
+                raise
+            except Exception as error:
+                entry["error"] = f"{type(error).__name__}: {error}"
+                exit_code = 1
+                print(f"{camera} 失败：{entry['error']}", file=sys.stderr, flush=True)
+                if isinstance(error, ModuleNotFoundError):
+                    print("请用同目录的 ./capture_frames.sh 运行，以使用 XR 已安装依赖的 Python 环境。", file=sys.stderr)
+            manifest["results"].append(entry)
+            atomic_json(manifest_path, manifest)
+    except KeyboardInterrupt:
+        exit_code = 130
+        print("\n已停止截图，已保存的图片保留。", file=sys.stderr)
+    finally:
+        manifest["finished_at_utc"] = datetime.now(timezone.utc).isoformat()
+        manifest["exit_code"] = exit_code
+        atomic_json(manifest_path, manifest)
+        print(f"取帧记录：{manifest_path}", flush=True)
+    return exit_code
+
+
+def main(argv=None):
+    args = build_parser().parse_args(argv)
+    try:
+        return run(args)
+    except OSError as error:
+        print(f"文件或设备操作失败：{error}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

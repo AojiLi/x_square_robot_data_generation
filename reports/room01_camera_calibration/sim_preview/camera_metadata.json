@@ -1,0 +1,208 @@
+{
+  "head": {
+    "timestamp": 0.175,
+    "physics_step": 168,
+    "frame_counter": 1,
+    "position_world": [
+      0.3527628183364868,
+      -1.936903715133667,
+      1.3818995952606201
+    ],
+    "orientation_opengl_xyzw": [
+      0.2699117362499237,
+      -0.2700808048248291,
+      -0.6533611416816711,
+      0.6536996364593506
+    ],
+    "orientation_ros_xyzw": [
+      -0.6536996364593506,
+      0.6533610820770264,
+      -0.2700808048248291,
+      0.2699117362499237
+    ],
+    "optics": {
+      "parent_link": "camera_head_front_color_optical_frame",
+      "convention": "ros",
+      "resolution": [
+        1600,
+        1200
+      ],
+      "model": "opencv_fisheye",
+      "fx": 487.884827,
+      "fy": 487.884827,
+      "cx": 802.71814,
+      "cy": 597.726135,
+      "near": 0.015,
+      "far": 15.0,
+      "local_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "distortion_coefficients": [
+        0.015975,
+        0.004984,
+        -0.00377,
+        0.000312
+      ],
+      "calibration_status": "User-supplied rgb.right K and resolution; KB4 distortion interpretation and robot-to-E6 mount remain provisional.",
+      "calibration": {
+        "source": "calibration/user_camera_parameters_20260910.json",
+        "group": "rgb",
+        "eye": "right",
+        "intrinsics_status": "user_supplied",
+        "distortion_status": "provisional_model_interpretation",
+        "distortion_interpretation": "OpenCV fisheye / Kannala-Brandt k1,k2,k3,k4; final four source entries are zero padding. Vendor model still unconfirmed.",
+        "extrinsics_status": "source_saved_but_not_applied",
+        "extrinsics_reason": "Unknown source reference frame, transform direction and quaternion order; source extrinsics are not known robot-link transforms.",
+        "robot_mount_status": "provisional_URDF_optical_mount_estimate",
+        "device_serial_match": "unverified",
+        "native_calibration_resolution": [
+          1600,
+          1200
+        ],
+        "stream_mapping_evidence": "x2-lower:/home/xr/pi05_umi_inference/runtime/umi_live_contract.py selects E6 right eye."
+      }
+    }
+  },
+  "left_wrist": {
+    "timestamp": 0.175,
+    "physics_step": 168,
+    "frame_counter": 1,
+    "position_world": [
+      0.7416501045227051,
+      -1.7070001363754272,
+      0.7949998378753662
+    ],
+    "orientation_opengl_xyzw": [
+      -0.4393983781337738,
+      0.554012656211853,
+      0.5540116429328918,
+      -0.4393976032733917
+    ],
+    "orientation_ros_xyzw": [
+      0.4393976032733917,
+      -0.5540116429328918,
+      0.5540125966072083,
+      -0.4393983781337738
+    ],
+    "optics": {
+      "parent_link": "left_in_hand_camera_link",
+      "convention": "opengl",
+      "resolution": [
+        640,
+        480
+      ],
+      "model": "fisheye_equidistant",
+      "fx": 275.0,
+      "fy": 366.66666666666663,
+      "cx": 320.0,
+      "cy": 240.0,
+      "max_fov_deg": 180.0,
+      "near": 0.01,
+      "far": 8.0,
+      "local_position": [
+        0.02,
+        -0.01,
+        0.025
+      ],
+      "local_rotation_xyzw": [
+        -0.4393975814040976,
+        -0.5540124235554581,
+        0.5540104590186805,
+        0.43940005837544904
+      ],
+      "mount_estimate": "Initial optical-center and roll estimate from the supplied mounting photographs; replace with hand-eye calibration.",
+      "view_target_note": "Nominal optical axis aimed at the grasp volume; not a measured hand-eye transform.",
+      "calibration_status": "Resolution matches current real wrist stream; optics and robot-to-camera transform remain provisional. User ctrl group is not mapped to this USB camera.",
+      "calibration": {
+        "intrinsics_status": "provisional_nominal_rescaled",
+        "extrinsics_status": "provisional_photo_guided",
+        "resolution_status": "verified_current_robot_stream",
+        "nominal_resize_xy": [
+          0.5,
+          0.6666666666666666
+        ],
+        "source_topic": "/camera3/usb_cam3/image_raw/image_compressed",
+        "physical_mapping_evidence": "x2-lower:/home/xr/pi05_umi_inference/runtime/robot_observation.py",
+        "image_rotation_degrees": 0,
+        "rotation_evidence": "VLA runtime uses decoded RGB without rotation; standalone screenshot tool has a different 180-degree review convention.",
+        "unapplied_user_group": "ctrl",
+        "unapplied_reason": "No evidence tying the ctrl calibration to the two independent wrist UVC sensors."
+      }
+    }
+  },
+  "right_wrist": {
+    "timestamp": 0.175,
+    "physics_step": 168,
+    "frame_counter": 1,
+    "position_world": [
+      0.7416501045227051,
+      -2.1669998168945312,
+      0.7949998378753662
+    ],
+    "orientation_opengl_xyzw": [
+      0.554012656211853,
+      -0.4393983483314514,
+      -0.43939754366874695,
+      0.5540116429328918
+    ],
+    "orientation_ros_xyzw": [
+      -0.5540116429328918,
+      0.43939757347106934,
+      -0.43939831852912903,
+      0.554012656211853
+    ],
+    "optics": {
+      "parent_link": "right_in_hand_camera_link",
+      "convention": "opengl",
+      "resolution": [
+        640,
+        480
+      ],
+      "model": "fisheye_equidistant",
+      "fx": 275.0,
+      "fy": 366.66666666666663,
+      "cx": 320.0,
+      "cy": 240.0,
+      "max_fov_deg": 180.0,
+      "near": 0.01,
+      "far": 8.0,
+      "local_position": [
+        0.02,
+        0.01,
+        0.025
+      ],
+      "local_rotation_xyzw": [
+        -0.5540124235647794,
+        -0.43939758139237506,
+        0.43940005838722607,
+        0.5540104590093159
+      ],
+      "mount_estimate": "Initial optical-center and roll estimate from the supplied mounting photographs; replace with hand-eye calibration.",
+      "view_target_note": "Nominal optical axis aimed at the grasp volume; not a measured hand-eye transform.",
+      "calibration_status": "Resolution matches current real wrist stream; optics and robot-to-camera transform remain provisional. User ctrl group is not mapped to this USB camera.",
+      "calibration": {
+        "intrinsics_status": "provisional_nominal_rescaled",
+        "extrinsics_status": "provisional_photo_guided",
+        "resolution_status": "verified_current_robot_stream",
+        "nominal_resize_xy": [
+          0.5,
+          0.6666666666666666
+        ],
+        "source_topic": "/camera1/usb_cam1/image_raw/image_compressed",
+        "physical_mapping_evidence": "x2-lower:/home/xr/pi05_umi_inference/runtime/robot_observation.py",
+        "image_rotation_degrees": 0,
+        "rotation_evidence": "VLA runtime uses decoded RGB without rotation; standalone screenshot tool has a different 180-degree review convention.",
+        "unapplied_user_group": "ctrl",
+        "unapplied_reason": "No evidence tying the ctrl calibration to the two independent wrist UVC sensors."
+      }
+    }
+  }
+}

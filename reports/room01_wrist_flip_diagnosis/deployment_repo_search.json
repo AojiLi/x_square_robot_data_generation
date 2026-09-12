@@ -1,0 +1,7 @@
+{
+  "top": [
+    "server"
+  ],
+  "files": "/home/dzq/umi-deployment/server/start_umi_server.sh\n/home/dzq/umi-deployment/server/inference_recorder.py\n/home/dzq/umi-deployment/server/umi_live_contract.py\n/home/dzq/umi-deployment/server/camera_transport.py\n/home/dzq/umi-deployment/server/camera_sync.py\n/home/dzq/umi-deployment/server/serve_umi_v2_policy.py\n/home/dzq/umi-deployment/server/start_umi_v2_server.sh\n/home/dzq/umi-deployment/server/server_camera_sync.py\n/home/dzq/umi-deployment/server/umi_policy_common.py\n/home/dzq/umi-deployment/server/README.md\n/home/dzq/umi-deployment/server/e6_tcp_cam_h.py\n",
+  "search": "/home/dzq/umi-deployment/server/camera_transport.py:50:    rotated = cv2.rotate(image_bgr, cv2.ROTATE_180)\n/home/dzq/umi-deployment/server/umi_live_contract.py:76:        \"camera_profile\": \"e6_right_camera1_camera3_rotate180_v1\",\n"
+}

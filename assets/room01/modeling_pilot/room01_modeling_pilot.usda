@@ -1,0 +1,206 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            string boundCamera = "/World/ReviewTable"
+        }
+        string pilotNote = "Blender geometry study with trimmed original scan mesh context. Plain window infill; exterior and remaining furniture not remodeled. Approximate materials; no physics."
+        string previewProfile = "Isaac RTX Real-Time 2.0 / native DLAA / measured upright camera presets"
+        dictionary renderSettings = {
+            bool "rtx-transient:dlssg:enabled" = 0
+            int "rtx:post:aa:op" = 4
+            int "rtx:post:dlss:execMode" = 2
+            bool "rtx:post:dof:enabled" = 0
+            bool "rtx:post:motionblur:enabled" = 0
+            string "rtx:rendermode" = "RealTimePathTracing"
+            bool "rtx:rtpt:gaussian:skipTonemapping:enabled" = 1
+        }
+    }
+    defaultPrim = "World"
+    metersPerUnit = 1
+    renderSettingsPrimPath = "/Render/Settings"
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def "ModeledParts" (
+        prepend references = @modeled_parts.usdc@
+    )
+    {
+    }
+
+    def DomeLight "PilotAmbient"
+    {
+        color3f inputs:color = (0.93, 0.96, 1)
+        float inputs:intensity = 0.7
+    }
+
+    def DistantLight "PilotDaylight"
+    {
+        float inputs:angle = 18
+        float inputs:intensity = 1.2
+        float3 xformOp:rotateXYZ = (-30, 20, 25)
+        uniform token[] xformOpOrder = ["xformOp:rotateXYZ"]
+    }
+
+    def RectLight "DeskSoftbox"
+    {
+        float inputs:height = 1.2
+        float inputs:intensity = 12
+        float inputs:width = 1.2
+        float3 xformOp:rotateXYZ = (0, 0, 0)
+        double3 xformOp:translate = (0.85, -1.95, 0.6)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+    }
+
+    def RectLight "RoomSoftbox"
+    {
+        float inputs:height = 2
+        float inputs:intensity = 5
+        float inputs:width = 2
+        float3 xformOp:rotateXYZ = (0, 0, 0)
+        double3 xformOp:translate = (0, 0, 0.8)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+    }
+
+    def RectLight "WindowFill"
+    {
+        float inputs:height = 3
+        float inputs:intensity = 3
+        float inputs:width = 3
+        float3 xformOp:rotateXYZ = (90, 0, 0)
+        double3 xformOp:translate = (0.8, 0.25, 0.25)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+    }
+
+    def Camera "ReviewRoom" (
+        customData = {
+            string previewNote = "Upright 4:3 crop of the measured capture view"
+            string sourceFrameId = "357755788663"
+            int sourceFrameIndex = 4
+        }
+    )
+    {
+        float2 clippingRange = (0.05, 100)
+        float exposure = 0
+        float exposure:fStop = 1
+        float exposure:iso = 0
+        float exposure:responsivity = 1
+        float exposure:time = 1
+        float focalLength = 20
+        float fStop = 0
+        float horizontalAperture = 20.35334
+        float horizontalApertureOffset = 0.010397096
+        custom bool omni:rtx:autoExposure:enabled = 0
+        token projection = "perspective"
+        double shutter:close = 0
+        double shutter:open = 0
+        float verticalAperture = 15.265005
+        float verticalApertureOffset = 0.06532216
+        matrix4d xformOp:transform = ( (0.7980709977887646, -0.6024922007418123, -0.009262198582291603, 0), (0.07027259675233899, 0.07779579908372747, 0.9944896101951599, 0), (-0.5984516592096973, -0.7943241892072841, 0.10442526638507843, 0), (-0.390539073970972, -0.7837412193627156, 0.029131688177585602, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+
+    def Camera "ReviewTable" (
+        customData = {
+            string previewNote = "Upright 4:3 crop of the measured capture view"
+            string sourceFrameId = "357971838221"
+            int sourceFrameIndex = 124
+        }
+    )
+    {
+        float2 clippingRange = (0.05, 100)
+        float exposure = 0
+        float exposure:fStop = 1
+        float exposure:iso = 0
+        float exposure:responsivity = 1
+        float exposure:time = 1
+        float focalLength = 20
+        float fStop = 0
+        float horizontalAperture = 20.35334
+        float horizontalApertureOffset = 0.010397096
+        custom bool omni:rtx:autoExposure:enabled = 0
+        token projection = "perspective"
+        double shutter:close = 0
+        double shutter:open = 0
+        float verticalAperture = 15.265005
+        float verticalApertureOffset = 0.06532216
+        matrix4d xformOp:transform = ( (-0.11637803820259052, -0.9919776267873317, 0.049361277371644974, 0), (0.46481508950527406, -0.010476519586335442, 0.8853458166122437, 0), (-0.8777260478025752, 0.12597868624408903, 0.4623053967952728, 0), (0.2657792457474457, -1.6434689031701524, -0.24279913306236267, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+
+    def Camera "ReviewChair" (
+        customData = {
+            string previewNote = "Upright 4:3 crop of the measured capture view"
+            string sourceFrameId = "358090783290"
+            int sourceFrameIndex = 254
+        }
+    )
+    {
+        float2 clippingRange = (0.05, 100)
+        float exposure = 0
+        float exposure:fStop = 1
+        float exposure:iso = 0
+        float exposure:responsivity = 1
+        float exposure:time = 1
+        float focalLength = 20
+        float fStop = 0
+        float horizontalAperture = 20.35334
+        float horizontalApertureOffset = 0.010397096
+        custom bool omni:rtx:autoExposure:enabled = 0
+        token projection = "perspective"
+        double shutter:close = 0
+        double shutter:open = 0
+        float verticalAperture = 15.265005
+        float verticalApertureOffset = 0.06532216
+        matrix4d xformOp:transform = ( (0.8899290452646866, -0.4440027551879453, 0.10434465110301971, 0), (0.1960774267070171, 0.5789916847389556, 0.7914052605628967, 0), (-0.41180080381463036, -0.6838348983780147, 0.6023204326629639, 0), (0.07047560099730532, 0.14760015566118767, -0.8388375639915466, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+
+    def Camera "ReviewFloor" (
+        customData = {
+            string previewNote = "Upright 4:3 crop of the measured capture view"
+            string sourceFrameId = "358186469231"
+            int sourceFrameIndex = 374
+        }
+    )
+    {
+        float2 clippingRange = (0.05, 100)
+        float exposure = 0
+        float exposure:fStop = 1
+        float exposure:iso = 0
+        float exposure:responsivity = 1
+        float exposure:time = 1
+        float focalLength = 20
+        float fStop = 0
+        float horizontalAperture = 20.35334
+        float horizontalApertureOffset = 0.010397096
+        custom bool omni:rtx:autoExposure:enabled = 0
+        token projection = "perspective"
+        double shutter:close = 0
+        double shutter:open = 0
+        float verticalAperture = 15.265005
+        float verticalApertureOffset = 0.06532216
+        matrix4d xformOp:transform = ( (0.9053212210358801, -0.4137957028154666, -0.09574220329523087, 0), (0.33202609388708204, 0.5489358712548817, 0.7670906782150269, 0), (-0.26486250604737727, -0.7262523666690104, 0.634354293346405, 0), (-1.092655561738077, -0.017266791270422743, -1.1296707391738892, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+
+    def "ScanContext" (
+        prepend references = @context_scan_mesh.usdc@
+    )
+    {
+    }
+}
+
+def "Render"
+{
+    def RenderSettings "Settings"
+    {
+        uniform token aspectRatioConformPolicy = "cropAperture"
+        rel camera = </World/ReviewTable>
+        uniform float pixelAspectRatio = 1
+        uniform int2 resolution = (736, 552)
+    }
+}
+

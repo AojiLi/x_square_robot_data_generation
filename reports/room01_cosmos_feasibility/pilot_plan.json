@@ -1,0 +1,73 @@
+{
+  "status": "proposed_dynamic_pilot_not_run",
+  "source_episode": "/home/aoji/x_square_robot_data_generation/outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1",
+  "source_fps": 30,
+  "model": "edge",
+  "parameters": {
+    "num_steps": 35,
+    "guidance": 3,
+    "seed": 1,
+    "edge": {
+      "control_weight": 1.0
+    },
+    "keep_input_resolution": true
+  },
+  "camera_pairs": {
+    "head": {
+      "simulation_frames": "/home/aoji/x_square_robot_data_generation/outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/head",
+      "real_reference": "/home/aoji/x_square_robot_data_generation/reports/room01_wrist_fisheye_alignment/reference/request_000001/cam_high.png",
+      "resolution_wh": [
+        1600,
+        1200
+      ]
+    },
+    "left_wrist": {
+      "simulation_frames": "/home/aoji/x_square_robot_data_generation/outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/left_wrist",
+      "real_reference": "/home/aoji/x_square_robot_data_generation/reports/room01_wrist_fisheye_alignment/reference/request_000001/cam_left_wrist.png",
+      "resolution_wh": [
+        640,
+        480
+      ]
+    },
+    "right_wrist": {
+      "simulation_frames": "/home/aoji/x_square_robot_data_generation/outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/right_wrist",
+      "real_reference": "/home/aoji/x_square_robot_data_generation/reports/room01_wrist_fisheye_alignment/reference/request_000001/cam_right_wrist.png",
+      "resolution_wh": [
+        640,
+        480
+      ]
+    }
+  },
+  "clips": [
+    {
+      "name": "reset_and_wrist_rotation",
+      "source_frame_start": 0,
+      "source_frame_stop_exclusive": 93,
+      "frames": 93,
+      "fps": 30,
+      "first_sim_timestamp": 0.05,
+      "last_sim_timestamp": 3.1166666666666667,
+      "video_duration_seconds": 3.1
+    },
+    {
+      "name": "contact_and_lift",
+      "source_frame_start": 180,
+      "source_frame_stop_exclusive": 273,
+      "frames": 93,
+      "fps": 30,
+      "first_sim_timestamp": 6.05,
+      "last_sim_timestamp": 9.116666666666667,
+      "video_duration_seconds": 3.1
+    }
+  ],
+  "input_note": "Encode independent native camera frames without titles; do not use the side-by-side preview video.",
+  "prompt_note": "Describe only the actual dual-arm robot, white table, existing red cube and room. Do not introduce extra blocks, cups, gloves or change viewpoint.",
+  "acceptance": [
+    "preserved source-frame/timestamp mapping",
+    "hand/finger and cube image position consistency",
+    "contact and occlusion consistency",
+    "unchanged fisheye framing",
+    "cross-camera object identity and appearance consistency",
+    "no flicker or chunk-boundary discontinuity"
+  ]
+}

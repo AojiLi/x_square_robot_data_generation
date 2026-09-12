@@ -1,0 +1,61 @@
+{
+  "mode": "quality",
+  "factor": 2,
+  "spp": 64,
+  "settings": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 4,
+    "/rtx/post/dlss/execMode": 2,
+    "/rtx-transient/dlssg/enabled": false,
+    "/rtx/post/motionblur/enabled": false,
+    "/rtx/post/dof/enabled": false,
+    "/rtx/rtpt/gaussian/skipTonemapping/enabled": true,
+    "/rtx/rtpt/gaussian/maxGaussiansToAccumulate": null,
+    "/rtx/rtpt/gaussian/accumulatedDepth/enabled": true,
+    "/rtx/rtpt/gaussian/accumulatedAlbedo/enabled": false,
+    "/rtx/post/tonemap/op": 6,
+    "/rtx/pathtracing/optixDenoiser/enabled": false
+  },
+  "settings_after_render": {
+    "/rtx/rendermode": "RealTimePathTracing",
+    "/rtx/post/aa/op": 4,
+    "/rtx/post/dlss/execMode": 2,
+    "/rtx-transient/dlssg/enabled": false,
+    "/rtx/post/motionblur/enabled": false,
+    "/rtx/post/dof/enabled": false,
+    "/rtx/rtpt/gaussian/skipTonemapping/enabled": true,
+    "/rtx/rtpt/gaussian/maxGaussiansToAccumulate": null,
+    "/rtx/rtpt/gaussian/accumulatedDepth/enabled": true,
+    "/rtx/rtpt/gaussian/accumulatedAlbedo/enabled": false,
+    "/rtx/post/tonemap/op": 6,
+    "/rtx/pathtracing/optixDenoiser/enabled": false
+  },
+  "frames": [
+    {
+      "frame_index": 4,
+      "frame_id": "357755788663",
+      "shape": [
+        368,
+        496,
+        3
+      ],
+      "mean": 144.69015712657784,
+      "std": 69.22944491088336,
+      "render_seconds": 1.6977949909924064
+    },
+    {
+      "frame_index": 124,
+      "frame_id": "357971838221",
+      "shape": [
+        368,
+        496,
+        3
+      ],
+      "mean": 157.47383415147266,
+      "std": 57.60057942454504,
+      "render_seconds": 1.799821739012259
+    }
+  ],
+  "stage": "/home/aoji/x_square_robot_data_generation/assets/room01/room01_scene.usda",
+  "scene_mutations_saved": false
+}

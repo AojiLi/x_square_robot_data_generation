@@ -1,0 +1,12 @@
+{
+  "environment_colliders": 383,
+  "visual_meshes": 1119,
+  "triangle_count": 370337,
+  "floor_z": 0.0,
+  "tabletop_z": 0.723,
+  "task": "fixed_base_white_table_manipulation",
+  "source_blend_sha256": "dc74ad3a238cfff6af27c56f824f590ca10931dc75e2610cb851f2b98fb92e75",
+  "runtime_validation": "pass",
+  "delivery_manifest": "reports/room01_sim/delivery_manifest.json",
+  "reset_pose_profile": "user_selected_20260824_request_000001_side_facing_palms"
+}

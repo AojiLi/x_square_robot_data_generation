@@ -1,0 +1,65 @@
+{
+  "started_at_utc": "2026-09-09T13:03:46.534233+00:00",
+  "selected_cameras": [
+    "left",
+    "right"
+  ],
+  "capture_mode": "sequential independent snapshots; not hardware synchronized",
+  "format": "png",
+  "results": [
+    {
+      "camera": "left",
+      "status": "saved",
+      "path": "/home/xr/camera_capture/test_output/verified_rot180_20260909T130346_534233Z_f49d02_left_wrist.png",
+      "width": 640,
+      "height": 480,
+      "captured_at_utc": "2026-09-09T13:03:46.864183+00:00",
+      "source": {
+        "source": "x2robot_camera_grpc",
+        "server": "localhost:50051",
+        "physical_side": "left",
+        "sdk_side": "right",
+        "mapping_version": "xr-physical-v2",
+        "rotation_degrees": 180,
+        "service": "RightArmCameraStub",
+        "rpc": "GetRawImage",
+        "source_timestamp_ns": 1788959026783909380,
+        "received_timestamp_ns": 1788959026785581064,
+        "frame_age_seconds": 0.001671684,
+        "source_frame_id": "camera_frame",
+        "source_format": "jpeg",
+        "source_width": 640,
+        "source_height": 480,
+        "freshness": "source timestamp advanced after first read"
+      }
+    },
+    {
+      "camera": "right",
+      "status": "saved",
+      "path": "/home/xr/camera_capture/test_output/verified_rot180_20260909T130346_534233Z_f49d02_right_wrist.png",
+      "width": 640,
+      "height": 480,
+      "captured_at_utc": "2026-09-09T13:03:46.962796+00:00",
+      "source": {
+        "source": "x2robot_camera_grpc",
+        "server": "localhost:50051",
+        "physical_side": "right",
+        "sdk_side": "left",
+        "mapping_version": "xr-physical-v2",
+        "rotation_degrees": 180,
+        "service": "LeftArmCameraStub",
+        "rpc": "GetRawImage",
+        "source_timestamp_ns": 1788959026923101297,
+        "received_timestamp_ns": 1788959026925632808,
+        "frame_age_seconds": 0.002531511,
+        "source_frame_id": "camera_frame",
+        "source_format": "jpeg",
+        "source_width": 640,
+        "source_height": 480,
+        "freshness": "source timestamp advanced after first read"
+      }
+    }
+  ],
+  "finished_at_utc": "2026-09-09T13:03:46.963217+00:00",
+  "exit_code": 0
+}

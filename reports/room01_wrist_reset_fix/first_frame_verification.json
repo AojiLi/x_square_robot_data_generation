@@ -1,0 +1,95 @@
+{
+  "result": "pass",
+  "frame_index": 0,
+  "source_episode": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1",
+  "config_sha256": "26546f8e625dbd8c02cf6f053037d657b1b273b56039b50219a0eb36ba3e5c91",
+  "frames": {
+    "head": {
+      "source": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/head/000000.png",
+      "resolution_wh": [
+        1600,
+        1200
+      ],
+      "sha256": "0f5820bff782f4f746e574f0505c7b50ae3f47b12a14d9bc7a29665552ade499"
+    },
+    "left_wrist": {
+      "source": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/left_wrist/000000.png",
+      "resolution_wh": [
+        640,
+        480
+      ],
+      "sha256": "465afd24fc7aab78a219bedcbaca880df23fef996fb6514039de4a822fb4eb8f"
+    },
+    "right_wrist": {
+      "source": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/right_wrist/000000.png",
+      "resolution_wh": [
+        640,
+        480
+      ],
+      "sha256": "8454fec935dd8e567a6b43bfe54494698130a1d33ec3f89870bc1562ee6fe96d"
+    }
+  },
+  "native_fisheye_boundary": {
+    "left_wrist": {
+      "image_circle_iou_against_fitted_boundary": 0.9935866878314159,
+      "outside_circle_black_fraction": 1.0,
+      "source_image": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/left_wrist/000000.png"
+    },
+    "right_wrist": {
+      "image_circle_iou_against_fitted_boundary": 0.9921977601522186,
+      "outside_circle_black_fraction": 1.0,
+      "source_image": "outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1/images/right_wrist/000000.png"
+    }
+  },
+  "rgb_source": "Native Isaac RTX camera output via room01_sim.sensors.capture_frames; source PNGs unmodified.",
+  "episode_status": "complete",
+  "timestamp": 0.05,
+  "state_matches_default_reset_max_error_rad": 1.4270050734399575e-06,
+  "camera_names": [
+    "head",
+    "left_wrist",
+    "right_wrist"
+  ],
+  "camera_position_world": [
+    [
+      0.43276283144950867,
+      -1.9699037075042725,
+      1.5618995428085327
+    ],
+    [
+      0.7416501641273499,
+      -1.781999945640564,
+      0.8500000834465027
+    ],
+    [
+      0.7416501641273499,
+      -2.0920000076293945,
+      0.8500000834465027
+    ]
+  ],
+  "camera_orientation_opengl_xyzw": [
+    [
+      0.2699117362499237,
+      -0.2700808048248291,
+      -0.6533611416816711,
+      0.6536996364593506
+    ],
+    [
+      0.4807226061820984,
+      -0.48071950674057007,
+      -0.5185627937316895,
+      0.5185626745223999
+    ],
+    [
+      0.48071953654289246,
+      -0.4807226359844208,
+      -0.5185625553131104,
+      0.5185627937316895
+    ]
+  ],
+  "camera_frame_counters": [
+    1,
+    1,
+    1
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "mode": "path",
+  "factor": 2,
+  "spp": 512,
+  "settings": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/post/aa/op": 3,
+    "/rtx/post/dlss/execMode": 0,
+    "/rtx-transient/dlssg/enabled": false,
+    "/rtx/post/motionblur/enabled": false,
+    "/rtx/post/dof/enabled": false,
+    "/rtx/rtpt/gaussian/skipTonemapping/enabled": true,
+    "/rtx/rtpt/gaussian/maxGaussiansToAccumulate": null,
+    "/rtx/rtpt/gaussian/accumulatedDepth/enabled": true,
+    "/rtx/rtpt/gaussian/accumulatedAlbedo/enabled": false,
+    "/rtx/post/tonemap/op": 6,
+    "/rtx/pathtracing/optixDenoiser/enabled": false
+  },
+  "settings_after_render": {
+    "/rtx/rendermode": "PathTracing",
+    "/rtx/post/aa/op": 3,
+    "/rtx/post/dlss/execMode": 0,
+    "/rtx-transient/dlssg/enabled": false,
+    "/rtx/post/motionblur/enabled": false,
+    "/rtx/post/dof/enabled": false,
+    "/rtx/rtpt/gaussian/skipTonemapping/enabled": true,
+    "/rtx/rtpt/gaussian/maxGaussiansToAccumulate": null,
+    "/rtx/rtpt/gaussian/accumulatedDepth/enabled": true,
+    "/rtx/rtpt/gaussian/accumulatedAlbedo/enabled": false,
+    "/rtx/post/tonemap/op": 6,
+    "/rtx/pathtracing/optixDenoiser/enabled": false
+  },
+  "frames": [
+    {
+      "frame_index": 4,
+      "frame_id": "357755788663",
+      "shape": [
+        368,
+        496,
+        3
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "render_seconds": 0.938834835003945
+    },
+    {
+      "frame_index": 124,
+      "frame_id": "357971838221",
+      "shape": [
+        368,
+        496,
+        3
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "render_seconds": 0.7347590470017167
+    }
+  ],
+  "stage": "/home/aoji/x_square_robot_data_generation/assets/room01/room01_scene.usda",
+  "scene_mutations_saved": false,
+  "result": "empty_render",
+  "note": "Actual frames were entirely black; this renderer mode is not recommended for this asset/runtime."
+}

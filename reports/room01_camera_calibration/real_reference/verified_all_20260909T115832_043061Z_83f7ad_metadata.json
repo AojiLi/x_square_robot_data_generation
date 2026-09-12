@@ -1,0 +1,101 @@
+{
+  "started_at_utc": "2026-09-09T11:58:32.043061+00:00",
+  "selected_cameras": [
+    "e6",
+    "left",
+    "right"
+  ],
+  "capture_mode": "sequential independent snapshots; not hardware synchronized",
+  "format": "png",
+  "results": [
+    {
+      "camera": "e6",
+      "status": "saved",
+      "path": "/home/xr/camera_capture/test_output/verified_all_20260909T115832_043061Z_83f7ad_e6_right.png",
+      "width": 1600,
+      "height": 1200,
+      "captured_at_utc": "2026-09-09T11:58:32.836027+00:00",
+      "source": {
+        "session_id": 4989499796587456768,
+        "source_width": 3200,
+        "source_height": 1200,
+        "source_fps": 60,
+        "clock_offset_ns": 1788954339494313050,
+        "clock_uncertainty_ns": 234,
+        "frame_id": 13311,
+        "sequence_number": 3,
+        "device_timestamp_ns": 772709261640,
+        "source_timestamp_ns": 1788955112203574690,
+        "timestamp_semantics": "e6_boottime_mapped_to_xr_at_session_start",
+        "received_timestamp_ns": 1788955112271138868,
+        "camera": "head_e6",
+        "source_device": "E6",
+        "eye": "right",
+        "source": "adb_forward_tcp_e6_stage4_v3",
+        "source_package": "com.ssnwt.e6stream.debug",
+        "encoded_layout": "side_by_side_stereo",
+        "color_order": "BGR",
+        "width": 1600,
+        "height": 1200,
+        "crop_xywh": [
+          1600,
+          0,
+          1600,
+          1200
+        ],
+        "host": "127.0.0.1",
+        "port": 18554,
+        "remote_port": 8554,
+        "device_serial": "1150063709226052500032",
+        "created_adb_forward": false,
+        "started_camera_app": false
+      }
+    },
+    {
+      "camera": "left",
+      "status": "saved",
+      "path": "/home/xr/camera_capture/test_output/verified_all_20260909T115832_043061Z_83f7ad_left_wrist.png",
+      "width": 640,
+      "height": 480,
+      "captured_at_utc": "2026-09-09T11:58:33.024886+00:00",
+      "source": {
+        "source": "x2robot_camera_grpc",
+        "server": "localhost:50051",
+        "service": "LeftArmCameraStub",
+        "rpc": "GetRawImage",
+        "source_timestamp_ns": 1788955112987164164,
+        "received_timestamp_ns": 1788955112989016925,
+        "frame_age_seconds": 0.001852761,
+        "source_frame_id": "camera_frame",
+        "source_format": "jpeg",
+        "source_width": 640,
+        "source_height": 480,
+        "freshness": "source timestamp advanced after first read"
+      }
+    },
+    {
+      "camera": "right",
+      "status": "saved",
+      "path": "/home/xr/camera_capture/test_output/verified_all_20260909T115832_043061Z_83f7ad_right_wrist.png",
+      "width": 640,
+      "height": 480,
+      "captured_at_utc": "2026-09-09T11:58:33.157821+00:00",
+      "source": {
+        "source": "x2robot_camera_grpc",
+        "server": "localhost:50051",
+        "service": "RightArmCameraStub",
+        "rpc": "GetRawImage",
+        "source_timestamp_ns": 1788955113081098186,
+        "received_timestamp_ns": 1788955113083441237,
+        "frame_age_seconds": 0.002343051,
+        "source_frame_id": "camera_frame",
+        "source_format": "jpeg",
+        "source_width": 640,
+        "source_height": 480,
+        "freshness": "source timestamp advanced after first read"
+      }
+    }
+  ],
+  "finished_at_utc": "2026-09-09T11:58:33.158232+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,210 @@
+{
+  "head": {
+    "parent_link": "camera_head_front_color_optical_frame",
+    "convention": "ros",
+    "resolution": [
+      1600,
+      1200
+    ],
+    "model": "opencv_fisheye",
+    "fx": 487.884827,
+    "fy": 487.884827,
+    "cx": 802.71814,
+    "cy": 597.726135,
+    "near": 0.015,
+    "far": 15.0,
+    "local_position": [
+      0.03310076556495656,
+      -0.18369957186904204,
+      -0.07104791773264332
+    ],
+    "local_rotation_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "distortion_coefficients": [
+      0.015975,
+      0.004984,
+      -0.00377,
+      0.000312
+    ],
+    "calibration_status": "User-supplied rgb.right K and resolution; KB4 distortion interpretation and robot-to-E6 mount remain provisional.",
+    "calibration": {
+      "source": "calibration/user_camera_parameters_20260910.json",
+      "group": "rgb",
+      "eye": "right",
+      "intrinsics_status": "user_supplied",
+      "distortion_status": "provisional_model_interpretation",
+      "distortion_interpretation": "OpenCV fisheye / Kannala-Brandt k1,k2,k3,k4; final four source entries are zero padding. Vendor model still unconfirmed.",
+      "extrinsics_status": "source_saved_but_not_applied",
+      "extrinsics_reason": "Unknown source reference frame, transform direction and quaternion order; source extrinsics are not known robot-link transforms.",
+      "robot_mount_status": "provisional_external_E6_mount_estimate",
+      "device_serial_match": "unverified",
+      "native_calibration_resolution": [
+        1600,
+        1200
+      ],
+      "stream_mapping_evidence": "x2-lower:/home/xr/pi05_umi_inference/runtime/umi_live_contract.py selects E6 right eye.",
+      "mount_reference": "reports/room01_camera_calibration/real_reference/verified_all_20260909T115832_043061Z_83f7ad_e6_right.png"
+    },
+    "mount_estimate": "Provisional external E6 right-eye location above/in front of the CAD head, inferred from stored real E6 imagery. Relative to the previous built-in optical frame: world displacement [+0.08,-0.033,+0.18] m at the fixed workcell pose. Not a measured hand-eye transform."
+  },
+  "left_wrist": {
+    "parent_link": "left_in_hand_camera_link",
+    "convention": "opengl",
+    "resolution": [
+      640,
+      480
+    ],
+    "model": "opencv_fisheye",
+    "fx": 163.44952985520658,
+    "fy": 163.0190463191163,
+    "cx": 326.9935894834079,
+    "cy": 244.8063268883286,
+    "max_fov_deg": 180.0,
+    "near": 0.01,
+    "far": 8.0,
+    "local_position": [
+      0.02,
+      -0.01,
+      0.025
+    ],
+    "local_rotation_xyzw": [
+      0.7024469510054636,
+      0.08104493210985275,
+      -0.7024473133514257,
+      0.08104179148933598
+    ],
+    "mount_estimate": "Optical center, aim and roll are provisional. Roll follows physical-side raw snapshot convention, not the 180-degree standalone review screenshots.",
+    "view_target_note": "Nominal optical axis aimed at the grasp volume; not a measured hand-eye transform.",
+    "calibration_status": "Circular fisheye appearance estimated from user-selected real inference frames; image-circle boundary fitted, 180-degree equidistant FOV assumed. Not a measured optical or hand-eye calibration.",
+    "calibration": {
+      "intrinsics_status": "estimated_from_image_boundary_with_assumed_180deg_fov",
+      "extrinsics_status": "provisional_photo_guided",
+      "resolution_status": "verified_current_robot_stream",
+      "nominal_resize_xy": null,
+      "source_topic": "/camera3/usb_cam3/image_raw/image_compressed",
+      "physical_mapping_evidence": "x2-lower:/home/xr/pi05_umi_inference/runtime/robot_observation.py",
+      "image_rotation_degrees": 0,
+      "rotation_evidence": "VLA runtime uses decoded RGB without rotation; standalone screenshot tool has a different 180-degree review convention.",
+      "unapplied_user_group": "ctrl",
+      "unapplied_reason": "No evidence tying the ctrl calibration to the two independent wrist UVC sensors.",
+      "estimated_optical_roll_adjustment_deg": 90.0,
+      "roll_reference": "Stored physical-v2 raw wrist snapshots: left palm on the right, right palm on the left; optical roll estimate, not post-capture pixel rotation.",
+      "distortion_status": "equidistant_zero_KB4_assumption",
+      "lens_boundary_reference": "reports/room01_wrist_fisheye_alignment/reference/request_000001/cam_left_wrist.png",
+      "lens_boundary_fit": {
+        "source_frames": 3,
+        "resolution_wh": [
+          640,
+          480
+        ],
+        "ellipse_center_xy_px": [
+          326.9935894834079,
+          244.8063268883286
+        ],
+        "ellipse_radius_xy_px": [
+          256.7459211129113,
+          256.069719155675
+        ],
+        "arc_candidates": 468,
+        "arc_inliers": 327,
+        "median_boundary_residual_px": 2.705866375128992,
+        "equidistant_assumed_full_fov_deg": 180.0,
+        "estimated_fx_fy_if_180deg": [
+          163.44952985520658,
+          163.0190463191163
+        ],
+        "status": "image_boundary_fit_only; field of view and distortion require calibration"
+      },
+      "historical_topic_mapping_note": "The 2026-08-24 record names cam_left_wrist=camera1 and cam_right_wrist=camera3, unlike the current physical-side mapping. Image-boundary estimates follow user-provided filenames; this does not reassign robot hands or live topics.",
+      "intrinsics_definition": "fx=ellipse_radius_x/(pi/2), fy=ellipse_radius_y/(pi/2), principal point=image-circle center. Boundary is estimated in pixels; 180-degree angular FOV is an assumption."
+    },
+    "distortion_coefficients": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "right_wrist": {
+    "parent_link": "right_in_hand_camera_link",
+    "convention": "opengl",
+    "resolution": [
+      640,
+      480
+    ],
+    "model": "opencv_fisheye",
+    "fx": 158.61392060530028,
+    "fy": 158.72893806045766,
+    "cx": 321.6453722695721,
+    "cy": 228.67474195985073,
+    "max_fov_deg": 180.0,
+    "near": 0.01,
+    "far": 8.0,
+    "local_position": [
+      0.02,
+      0.01,
+      0.025
+    ],
+    "local_rotation_xyzw": [
+      -0.08104493212473299,
+      -0.7024469510037656,
+      -0.08104179147438663,
+      0.7024473133531316
+    ],
+    "mount_estimate": "Optical center, aim and roll are provisional. Roll follows physical-side raw snapshot convention, not the 180-degree standalone review screenshots.",
+    "view_target_note": "Nominal optical axis aimed at the grasp volume; not a measured hand-eye transform.",
+    "calibration_status": "Circular fisheye appearance estimated from user-selected real inference frames; image-circle boundary fitted, 180-degree equidistant FOV assumed. Not a measured optical or hand-eye calibration.",
+    "calibration": {
+      "intrinsics_status": "estimated_from_image_boundary_with_assumed_180deg_fov",
+      "extrinsics_status": "provisional_photo_guided",
+      "resolution_status": "verified_current_robot_stream",
+      "nominal_resize_xy": null,
+      "source_topic": "/camera1/usb_cam1/image_raw/image_compressed",
+      "physical_mapping_evidence": "x2-lower:/home/xr/pi05_umi_inference/runtime/robot_observation.py",
+      "image_rotation_degrees": 0,
+      "rotation_evidence": "VLA runtime uses decoded RGB without rotation; standalone screenshot tool has a different 180-degree review convention.",
+      "unapplied_user_group": "ctrl",
+      "unapplied_reason": "No evidence tying the ctrl calibration to the two independent wrist UVC sensors.",
+      "estimated_optical_roll_adjustment_deg": -90.0,
+      "roll_reference": "Stored physical-v2 raw wrist snapshots: left palm on the right, right palm on the left; optical roll estimate, not post-capture pixel rotation.",
+      "distortion_status": "equidistant_zero_KB4_assumption",
+      "lens_boundary_reference": "reports/room01_wrist_fisheye_alignment/reference/request_000001/cam_right_wrist.png",
+      "lens_boundary_fit": {
+        "source_frames": 3,
+        "resolution_wh": [
+          640,
+          480
+        ],
+        "ellipse_center_xy_px": [
+          321.6453722695721,
+          228.67474195985073
+        ],
+        "ellipse_radius_xy_px": [
+          249.15016386534305,
+          249.33083286142156
+        ],
+        "arc_candidates": 563,
+        "arc_inliers": 415,
+        "median_boundary_residual_px": 1.3451654891125842,
+        "equidistant_assumed_full_fov_deg": 180.0,
+        "estimated_fx_fy_if_180deg": [
+          158.61392060530028,
+          158.72893806045766
+        ],
+        "status": "image_boundary_fit_only; field of view and distortion require calibration"
+      },
+      "historical_topic_mapping_note": "The 2026-08-24 record names cam_left_wrist=camera1 and cam_right_wrist=camera3, unlike the current physical-side mapping. Image-boundary estimates follow user-provided filenames; this does not reassign robot hands or live topics.",
+      "intrinsics_definition": "fx=ellipse_radius_x/(pi/2), fy=ellipse_radius_y/(pi/2), principal point=image-circle center. Boundary is estimated in pixels; 180-degree angular FOV is an assumption."
+    },
+    "distortion_coefficients": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

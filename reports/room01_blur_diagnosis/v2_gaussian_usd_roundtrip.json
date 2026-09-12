@@ -1,0 +1,10 @@
+{
+  "positions_max_abs_error": 0.0,
+  "scales_max_abs_error": 1.1920928955078125e-07,
+  "opacities_max_abs_error": 1.1920928955078125e-07,
+  "dc_max_abs_error": 0.0,
+  "remaining_sh_max_abs_error": 0.0,
+  "sh_degree": 3,
+  "gaussians": 1839569,
+  "result": "pass"
+}

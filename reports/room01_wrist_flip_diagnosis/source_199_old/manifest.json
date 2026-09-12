@@ -1,0 +1,30 @@
+{
+  "camera_transport.py": {
+    "mtime": 1787732358.8534467,
+    "sha256": "e06f2ec924cff03bbf802cd41d32b32019a15e34321686d395a8ad233f9a8e46"
+  },
+  "umi_live_contract.py": {
+    "mtime": 1787732358.8534596,
+    "sha256": "26b7929d02e25321f0986ced3199d088d2656e411f64ce87025d12574b2812b0"
+  },
+  "start_umi_server.sh": {
+    "mtime": 1787732358.8533468,
+    "sha256": "5f0196e7e922bf5b3acc511c72379f4cf02db8b5b78dab6cd4c54dd4445e90df"
+  },
+  "start_umi_v2_server.sh": {
+    "mtime": 1787732358.8533638,
+    "sha256": "26ba5a831453860d023202b8dfa36bf05a4d2feb953cab54840a34e8c6ef5b57"
+  },
+  "serve_umi_v2_policy.py": {
+    "mtime": 1787732358.8533742,
+    "sha256": "8159b9726e334be44a1e5acefc7d8ee0fe71524cd8e06234d31e5e6cb7ae6602"
+  },
+  "e6_tcp_cam_h.py": {
+    "mtime": 1787732358.85339,
+    "sha256": "4b79427d6192a82cd38a18d97070d4b4363d8a7241fb0ea4807529cb5d09761b"
+  },
+  "README.md": {
+    "mtime": 1787732358.8533225,
+    "sha256": "312235b476a88fe86c141a3d54653b578d5fcedf970b177a000651315fb821e1"
+  }
+}

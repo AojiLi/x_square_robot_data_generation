@@ -1,0 +1,8 @@
+{
+  "result": "pass",
+  "camera_count": 3,
+  "same_physics_step": true,
+  "timestamp": 0.7,
+  "joint_positions_finite": true,
+  "calibration_status": "Provisional: URDF mount frames, photograph-guided optical-center/roll estimates and nominal optics; not measured camera calibration."
+}

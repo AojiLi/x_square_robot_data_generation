@@ -1,0 +1,24 @@
+[
+  {
+    "camera": "ReviewRoom",
+    "Isaac Sim v2 + DLAA": {
+      "psnr_vs_photo": 17.623745968537783,
+      "ssim_vs_photo": 0.5184118151664734
+    },
+    "Isaac Sim v3 + DLAA": {
+      "psnr_vs_photo": 17.272882985839495,
+      "ssim_vs_photo": 0.5260086059570312
+    }
+  },
+  {
+    "camera": "ReviewTable",
+    "Isaac Sim v2 + DLAA": {
+      "psnr_vs_photo": 21.736799728314967,
+      "ssim_vs_photo": 0.9197278022766113
+    },
+    "Isaac Sim v3 + DLAA": {
+      "psnr_vs_photo": 21.994858641380578,
+      "ssim_vs_photo": 0.9229505062103271
+    }
+  }
+]

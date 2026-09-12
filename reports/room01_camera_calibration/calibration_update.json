@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-09-10T06:53:45.942321+00:00",
+  "status": "partial_camera_alignment_pending_source_clarification",
+  "applied_head_group": "rgb.right",
+  "unapplied_groups": [
+    "rgb.left",
+    "ctrl.left",
+    "ctrl.right"
+  ],
+  "unapplied_extrinsics": "All user source extrinsics saved but not applied; head external mount and wrist optical roll were estimated from stored real imagery.",
+  "cameras": {
+    "head": {
+      "resolution": [
+        1600,
+        1200
+      ],
+      "model": "opencv_fisheye",
+      "fx": 487.884827,
+      "fy": 487.884827,
+      "cx": 802.71814,
+      "cy": 597.726135,
+      "calibration_status": "User-supplied rgb.right K and resolution; KB4 distortion interpretation and robot-to-E6 mount remain provisional."
+    },
+    "left_wrist": {
+      "resolution": [
+        640,
+        480
+      ],
+      "model": "opencv_fisheye",
+      "fx": 163.44952985520658,
+      "fy": 163.0190463191163,
+      "cx": 326.9935894834079,
+      "cy": 244.8063268883286,
+      "calibration_status": "User-selected reference view orientation with image-guided roll and pitch; circular fisheye model and physical hand-eye calibration remain provisional."
+    },
+    "right_wrist": {
+      "resolution": [
+        640,
+        480
+      ],
+      "model": "opencv_fisheye",
+      "fx": 158.61392060530028,
+      "fy": 158.72893806045766,
+      "cx": 321.6453722695721,
+      "cy": 228.67474195985073,
+      "calibration_status": "User-selected reference view orientation with image-guided roll and pitch; circular fisheye model and physical hand-eye calibration remain provisional."
+    }
+  },
+  "questions_remaining": [
+    "Do ctrl.left/right belong to E6 tracking cameras or the separate wrist UVC cameras?",
+    "What lens polynomial and coefficient order does radialDistortion encode?",
+    "What parent frame, transform direction and quaternion ordering do source extrinsics use?",
+    "Does the calibration serial/mode match the current robot E6 rather than the UMI recording E6?"
+  ],
+  "source_parameter_sha256": "b836e96279a8c66f965a81c653d9f97f22220a422679008fea1e264007e2cbb0",
+  "wrist_K_changed_only_by_image_resize": false,
+  "read_only_remote_audit": true,
+  "estimated_mount_changes": {
+    "head_world_displacement_from_old_builtin_optical_frame_m": [
+      0.08,
+      -0.033,
+      0.18
+    ],
+    "left_wrist_optical_roll_deg": 90,
+    "right_wrist_optical_roll_deg": -90
+  },
+  "runtime_validation": "pass",
+  "example_episode": "outputs/room01/vla_episodes/episode_20260910T130747Z_13edd758",
+  "example_frames": 300,
+  "example_images": 900,
+  "physical_calibration_complete": false,
+  "validation_reports": {
+    "camera_optics": "projection_reference_verification.json",
+    "raw_stream_audit": "raw_stream_audit.json",
+    "vla_io": "../room01_sim/vla_io_verification.json",
+    "episode": "../room01_sim/episode_verification.json",
+    "video": "video_verification.json",
+    "physics_scope": "physics_regression_scope.json",
+    "delivery": "../room01_sim/delivery_manifest.json"
+  },
+  "latest_wrist_update": "reports/room01_wrist_view_correction/README.md",
+  "camera_calibration_status": "Head user-supplied K with provisional KB4 interpretation; wrist roll and pitch follow the user-authoritative 20260824 request_000001 images. Circular fisheye K and real hand-eye remain image-based estimates.",
+  "full_reference_archive": {
+    "sessions": 52,
+    "requests": 741,
+    "images": 2223,
+    "current_mapping_fit_requests": 720,
+    "report": "reports/room01_wrist_fisheye_alignment/ARCHIVE_REVIEW.md"
+  },
+  "active_wrist_reference": "user_selected_20260824_request_000001",
+  "reference_priority": "explicit user selection overrides archive majority"
+}

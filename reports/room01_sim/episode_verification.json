@@ -1,0 +1,25 @@
+{
+  "result": "pass",
+  "episode": "/home/aoji/x_square_robot_data_generation/outputs/room01/vla_episodes/episode_20260911T031354Z_674c7db1",
+  "frames": 300,
+  "decoded_images": 900,
+  "fps": 30,
+  "duration_seconds": 10.0,
+  "success_label": true,
+  "checks": {
+    "complete": true,
+    "three_cameras": true,
+    "state_action_shapes": true,
+    "finite_values": true,
+    "action_interval": true,
+    "observation_spacing": true,
+    "next_state_alignment": true,
+    "camera_quaternions": true,
+    "action_limits": true,
+    "head_image_count": true,
+    "left_wrist_image_count": true,
+    "right_wrist_image_count": true,
+    "fixed_head_camera": true
+  },
+  "calibration_status": "Head user-supplied K with provisional KB4 interpretation; wrist roll and pitch follow the user-authoritative 20260824 request_000001 images. Circular fisheye K and real hand-eye remain image-based estimates."
+}

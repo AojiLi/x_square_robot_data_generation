@@ -1,0 +1,35 @@
+{
+  "result": "pass",
+  "checks": {
+    "meter_units": true,
+    "z_up": true,
+    "environment_colliders": true,
+    "positive_mass_and_inertia": true,
+    "36_joints_26_drives_10_mimics": true,
+    "no_missing_file_dependencies": true,
+    "collision_geometry_hidden_from_rgb": true,
+    "three_native_cameras": true,
+    "valid_mimic_targets": true,
+    "wrist_internal_assembly_pairs_filtered": true,
+    "remaining_self_collision_enabled": true,
+    "all_robot_colliders_enabled": true,
+    "original_urdf_unchanged": true
+  },
+  "environment_colliders": 383,
+  "robot_colliders": 59,
+  "rigid_bodies_including_object": 38,
+  "joints": 36,
+  "mimic_constraints": 10,
+  "missing_dependencies": [],
+  "builtin_mdl_dependencies": [
+    "OmniPBR.mdl"
+  ],
+  "sha256": {
+    "room01_manipulation.usda": "8b3a8dcdf5d7c2eff47a0c50a8cda7572352e4c10c077ab9ca2297b55b4c5517",
+    "room_environment.usdc": "a862c95dc0ecdbbbeb107d93510400ab05e281893ab839d82dba1ae17e24c478",
+    "quanta_x2_physics.usdc": "f5a044b193b4a7e8140f81e5b79eaee4c8abe63693ce562e972f6ff1346ebc0b",
+    "task_config.json": "26546f8e625dbd8c02cf6f053037d657b1b273b56039b50219a0eb36ba3e5c91",
+    "robot_frames.json": "783d0c8011400c37433d779f8e03d1bb683faba7b7c142a331e0c25a6fd7efbd",
+    "camera_manifest.json": "7d0aada2ddf170046b5a3e4b767eced8ca8f7ae8d29a73633e2eee8408141c44"
+  }
+}
