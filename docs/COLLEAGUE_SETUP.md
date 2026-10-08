@@ -6,7 +6,7 @@
 
 ```bash
 git lfs install
-git clone https://github.com/Squirrel-Robotics/x_square_robot_data_generation.git
+git clone https://github.com/AojiLi/x_square_robot_data_generation.git
 cd x_square_robot_data_generation
 git lfs pull
 ```
