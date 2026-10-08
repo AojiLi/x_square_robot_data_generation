@@ -1,0 +1,22 @@
+{
+  "user_request": "Remove the white background packaging box with decorative barcode-like stripes beside the robot.",
+  "purpose_verified": "Background decoration and static obstacle only; no task/control/recognition references. Stripes are geometry without encoded data.",
+  "disabled_prims": [
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_001",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_002",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_003",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_004",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_005",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_006",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_007",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_008",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_009",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_010",
+    "/World/Room/Visual/_09_Optical_workstation/White_retail_box",
+    "/World/Room/Collisions/White_retail_box"
+  ],
+  "active_matching_prims_after_build": 0,
+  "scene_spec_sha256": "1584a05eb59e1a787e6d0c246a2fde2d14e056f2021fcce9ab2c90c944eaedf4",
+  "prior_physics_validation_scope": "Task geometry, battery dynamics and robot placement unchanged; this edit removes a background obstacle."
+}

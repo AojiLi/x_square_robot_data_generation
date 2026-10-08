@@ -1,0 +1,12 @@
+{
+  "result": "pass",
+  "success": true,
+  "longest_stable_lift_s": 1.8666666666666667,
+  "success_definition": "Cube lifted >8cm above tabletop for >=0.5s, within 18cm of a hand, speed below 0.3m/s; no object attachment or gravity disabling.",
+  "offset": [
+    0.087,
+    0.036,
+    -0.05
+  ],
+  "closure": 0.8
+}

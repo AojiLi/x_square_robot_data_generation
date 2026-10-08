@@ -1,0 +1,289 @@
+[
+  {
+    "source_episode_index": 0,
+    "source_audit": {
+      "state_pose_max_abs_error": 2.966837042706061e-08,
+      "action_max_abs_error": 2.9800576450966787e-08,
+      "raw_local_origin_offset_m": [
+        -0.042,
+        0.0,
+        0.0
+      ],
+      "frames": 123,
+      "first_state_predecessor_raw_row": 6
+    },
+    "events": [
+      {
+        "side": "right",
+        "side_index": 1,
+        "onset_index": 21,
+        "closed_index": 23,
+        "release_index": 44,
+        "onset_s": 2.0999999046325684,
+        "closed_s": 2.299999952316284,
+        "release_s": 4.400000095367432,
+        "candidate_indices": [
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "curl_range_deg": [
+          0.12500000186264515,
+          16.72500009648502
+        ],
+        "asset": "Blue"
+      },
+      {
+        "side": "left",
+        "side_index": 0,
+        "onset_index": 85,
+        "closed_index": 86,
+        "release_index": 106,
+        "onset_s": 8.5,
+        "closed_s": 8.600000381469727,
+        "release_s": 10.600000381469727,
+        "candidate_indices": [
+          84,
+          85,
+          86,
+          87
+        ],
+        "curl_range_deg": [
+          0.02500000037252903,
+          9.324999714270234
+        ],
+        "asset": "RedBig"
+      }
+    ],
+    "identity": {
+      "objects_by_side": {
+        "left": "RedBig",
+        "right": "Blue"
+      },
+      "components": [
+        {
+          "color": "Red",
+          "area": 421,
+          "center": [
+            282.28028503562945,
+            345.9477434679335
+          ],
+          "red_area_ratio": 0.946067415730337,
+          "asset": "RedBig"
+        },
+        {
+          "color": "Blue",
+          "area": 445,
+          "center": [
+            338.6314606741573,
+            346.5280898876405
+          ],
+          "asset": "Blue"
+        }
+      ],
+      "box_pixel_bounds": [
+        269,
+        265,
+        334,
+        321
+      ],
+      "method": "color/relative-scale heuristic; screen-left/right assignment, no position reconstruction"
+    },
+    "trajectory_sha256": "25079751607b6fcdbdc7125b57e3ea1a021d4000efc1133b4c84c89a16f98510",
+    "limit_rounding_max_deg": 0.0
+  },
+  {
+    "source_episode_index": 20,
+    "source_audit": {
+      "state_pose_max_abs_error": 2.979589852625253e-08,
+      "action_max_abs_error": 2.9800293233073205e-08,
+      "raw_local_origin_offset_m": [
+        -0.042,
+        0.0,
+        0.0
+      ],
+      "frames": 126,
+      "first_state_predecessor_raw_row": 0
+    },
+    "events": [
+      {
+        "side": "right",
+        "side_index": 1,
+        "onset_index": 28,
+        "closed_index": 31,
+        "release_index": 50,
+        "onset_s": 2.799999952316284,
+        "closed_s": 3.0999999046325684,
+        "release_s": 5.0,
+        "candidate_indices": [
+          27,
+          28,
+          30,
+          31,
+          32
+        ],
+        "curl_range_deg": [
+          0.1250000037252903,
+          19.97500000335276
+        ],
+        "asset": "Blue"
+      },
+      {
+        "side": "left",
+        "side_index": 0,
+        "onset_index": 83,
+        "closed_index": 85,
+        "release_index": 103,
+        "onset_s": 8.300000190734863,
+        "closed_s": 8.5,
+        "release_s": 10.300000190734863,
+        "candidate_indices": [
+          82,
+          83,
+          84,
+          85,
+          86
+        ],
+        "curl_range_deg": [
+          0.02500000037252903,
+          16.724999809637666
+        ],
+        "asset": "RedBig"
+      }
+    ],
+    "identity": {
+      "objects_by_side": {
+        "left": "RedBig",
+        "right": "Blue"
+      },
+      "components": [
+        {
+          "color": "Red",
+          "area": 393,
+          "center": [
+            267.4173027989822,
+            369.53435114503816
+          ],
+          "red_area_ratio": 0.9312796208530806,
+          "asset": "RedBig"
+        },
+        {
+          "color": "Blue",
+          "area": 422,
+          "center": [
+            336.12085308056874,
+            369.5308056872038
+          ],
+          "asset": "Blue"
+        }
+      ],
+      "box_pixel_bounds": [
+        271,
+        286,
+        337,
+        342
+      ],
+      "method": "color/relative-scale heuristic; screen-left/right assignment, no position reconstruction"
+    },
+    "trajectory_sha256": "dd0ef63bb0ea0989fef7e0c327204326a85cb9c62b532e21c60d838c32b7f892",
+    "limit_rounding_max_deg": 0.0
+  },
+  {
+    "source_episode_index": 84,
+    "source_audit": {
+      "state_pose_max_abs_error": 2.9590602301787783e-08,
+      "action_max_abs_error": 2.9801779710680876e-08,
+      "raw_local_origin_offset_m": [
+        -0.042,
+        0.0,
+        0.0
+      ],
+      "frames": 96,
+      "first_state_predecessor_raw_row": 6
+    },
+    "events": [
+      {
+        "side": "right",
+        "side_index": 1,
+        "onset_index": 26,
+        "closed_index": 28,
+        "release_index": 39,
+        "onset_s": 2.5999999046325684,
+        "closed_s": 2.799999952316284,
+        "release_s": 3.9000000953674316,
+        "candidate_indices": [
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "curl_range_deg": [
+          0.05000000074505806,
+          20.099999809637666
+        ],
+        "asset": "RedBig"
+      },
+      {
+        "side": "left",
+        "side_index": 0,
+        "onset_index": 68,
+        "closed_index": 70,
+        "release_index": 84,
+        "onset_s": 6.800000190734863,
+        "closed_s": 7.0,
+        "release_s": 8.399999618530273,
+        "candidate_indices": [
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "curl_range_deg": [
+          0.07500000111758709,
+          17.825000191107392
+        ],
+        "asset": "Green"
+      }
+    ],
+    "identity": {
+      "objects_by_side": {
+        "left": "Green",
+        "right": "RedBig"
+      },
+      "components": [
+        {
+          "color": "Green",
+          "area": 365,
+          "center": [
+            285.84657534246577,
+            310.5561643835616
+          ],
+          "asset": "Green"
+        },
+        {
+          "color": "Red",
+          "area": 301,
+          "center": [
+            355.936877076412,
+            299.30564784053155
+          ],
+          "red_area_ratio": 0.8246575342465754,
+          "asset": "RedBig"
+        }
+      ],
+      "box_pixel_bounds": [
+        292,
+        231,
+        350,
+        290
+      ],
+      "method": "color/relative-scale heuristic; screen-left/right assignment, no position reconstruction"
+    },
+    "trajectory_sha256": "d2cd76bb9ddb89b96909fa0f41b8b962d15a4fed880d55e823a6d74ddefaaefc",
+    "limit_rounding_max_deg": 0.0
+  }
+]

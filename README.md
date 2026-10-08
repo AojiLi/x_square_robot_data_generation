@@ -1,6 +1,14 @@
 # 房间重建与量子 2 固定工位仿真
 
-当前工作入口是固定白色桌面工位：完整房间碰撞、Quanta X2 双臂/双 Revo2 手、独立动态物体，以及头部和左右腕部三路 RGB。已提供物理控制、Gymnasium/VLA 接口和同步数据录制。机器人来源为用户指定的本机 `x_square_copy/isaac-sim-scenes` URDF。
+当前默认入口是 2026-09-16 更新的[电池与三孔海绵工位](assets/room01/battery_task/README.md)：按用户实测修正白桌和开孔，添加两块黄海绵、两节动态电池及三盲孔红海绵，保留 Quanta X2 双臂/双 Revo2 手和头部、双腕三路 RGB。机器人来源为用户指定的本机 `x_square_copy/isaac-sim-scenes` URDF。海绵暂为刚性近似，尚未完成电池抓取插入控制验证。
+
+同事首次使用请按[克隆与运行说明](docs/COLLEAGUE_SETUP.md)配置运行环境。
+
+原方块工位的物理控制、Gymnasium/VLA 接口和同步录制仍保留，可用 `bash scripts/open_room01_sim.sh --legacy` 打开；旧抬升奖励不能用来判断电池插孔成功。
+
+UMI v2 第 0 条演示已接入双臂回放、四木块/薄壁木盒和 LeRobot 导出。三轮物理试验尚未成功完成双块入盒，当前数据为失败诊断记录；见 [回放结果与视频](reports/room01_umi_replay/README.md) 和 [运行说明](assets/room01/umi_replay/README.md)。
+
+2026-09-13 新增 [固定轨迹自动初始化与批量筛选](assets/room01/umi_auto/README.md)：自动识别抓放阶段，从手部几何生成初态，并通过物理探测、共同盒子位置筛选及复验决定是否接收。已验证自动抓取候选和拒收流程，完整双块入盒仍未通过；见 [自动初始化实测](reports/room01_umi_auto/README.md)。
 
 ## 固定桌面 VLA 工位
 
@@ -8,9 +16,11 @@
 bash scripts/open_room01_sim.sh
 ```
 
-运行说明与数据格式见 [固定工位说明](assets/room01/sim/README.md)，验收与演示见 [仿真检查](reports/room01_sim/README.md)。
+当前电池场景见[运行说明](assets/room01/battery_task/README.md)和[场景检查](reports/room01_battery_task/README.md)。以下三路相机示例和抓取视频属于此前的方块工位，见 [原固定工位说明](assets/room01/sim/README.md)和[原仿真检查](reports/room01_sim/README.md)。
 
-![当前默认起始三路相机](reports/room01_sim/final_preview/three_views.jpg)
+![当前电池工位](reports/room01_battery_task/ReviewSetup.png)
+
+![原方块工位三路相机](reports/room01_sim/final_preview/three_views.jpg)
 
 [三路相机抓取演示](reports/room01_sim/three_camera_grasp.mp4)
 
@@ -34,9 +44,9 @@ bash scripts/open_room01_sim.sh
 
 该目录需要包含 `scripts/runtime_env.sh`。已验证版本、资产范围和本地依赖见 [仓库说明](docs/REPOSITORY.md)。Cosmos 的部署检查与接入限制见 [Cosmos 可行性记录](reports/room01_cosmos_feasibility/assessment.md)。
 
-- Isaac 场景：`assets/room01/sim/room01_manipulation.usda`。
+- 当前 Isaac 场景：`assets/room01/battery_task/room01_battery_task.usda`；原方块场景：`assets/room01/sim/room01_manipulation.usda`。
 - Blender 审查副本：`assets/room01/sim/room01_sim_review.blend`，可打开 `90 Simulation collision proxies` 查看碰撞体。
-- 参数入口：`assets/room01/sim/task_config.json`。
+- 当前建模参数：`assets/room01/battery_task/scene_spec.json`；原工位参数：`assets/room01/sim/task_config.json`。
 
 已接入用户提供的头部 E6 右眼内参（1600×1200），腕部输出为 640×480 圆形鱼眼。双腕朝向以用户指定的 2026-08-24 request_000001 为固定参考，见 [修正后的双腕视角](reports/room01_wrist_view_correction/README.md)。腕部光学模型与安装外参仍是估计，`ctrl` 参数归属仍待确认。旧 UMI 头部码流的尺寸问题另见 [相机接入与实机数据核对](reports/room01_camera_calibration/README.md)。具体 VLA 模型尚未训练。
 

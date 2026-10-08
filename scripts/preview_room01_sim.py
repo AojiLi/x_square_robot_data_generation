@@ -14,6 +14,9 @@ parser.add_argument("--capture", action="store_true", help="Capture three camera
 parser.add_argument("--output", type=Path, default=ROOT / "reports/room01_sim/latest_preview")
 parser.add_argument("--hold-steps", type=int, default=120)
 parser.add_argument("--joint-pose", type=Path, help="Optional review-only joint pose JSON; does not change the saved task reset pose.")
+parser.add_argument("--config", type=Path, help="Task configuration; defaults to the original cube workcell.")
+parser.add_argument("--scene", type=Path, help="USD scene paired with --config.")
+parser.add_argument("--view", default="/World/ReviewSetup", help="Viewport camera path.")
 AppLauncher.add_app_launcher_args(parser)
 args = parser.parse_args()
 args.capture = args.capture or args.headless
@@ -26,7 +29,8 @@ try:
     import numpy as np
     from PIL import Image, ImageDraw
     from room01_sim.runtime import RoomTaskSim, tensor
-    runtime = RoomTaskSim(app, device=args.device, cameras=args.capture, review_camera=args.capture)
+    runtime = RoomTaskSim(app, device=args.device, cameras=args.capture, review_camera=args.capture,
+                          config_path=args.config, scene_path=args.scene)
     if args.joint_pose:
         import torch
         requested = json.loads(args.joint_pose.read_text())["joint_positions_rad"]
@@ -46,7 +50,7 @@ try:
     from omni.kit.viewport.utility import get_active_viewport
     viewport = get_active_viewport()
     if viewport:
-        viewport.camera_path = "/World/ReviewSetup"
+        viewport.camera_path = args.view
     runtime.advance_physics(args.hold_steps)
     if args.capture:
         obs = runtime.observe(images=True)
@@ -83,14 +87,14 @@ try:
         report = {"result": "pass", "camera_count": len(frames), "same_physics_step": len({v["physics_step"] for v in obs["camera_metadata"].values()}) == 1,
                   "timestamp": obs["timestamp"], "joint_positions_finite": bool(np.isfinite(obs["state"]).all()),
                   "review_joint_pose": str(args.joint_pose) if args.joint_pose else None,
-                  "config_sha256": hashlib.sha256((ROOT / "assets/room01/sim/task_config.json").read_bytes()).hexdigest(),
+                  "config_sha256": hashlib.sha256((args.config or ROOT / "assets/room01/sim/task_config.json").read_bytes()).hexdigest(),
                   "calibration_status": runtime.config["camera_calibration_status"]}
         (args.output / "verification.json").write_text(json.dumps(report, indent=2))
         print("THREE_CAMERAS_READY", json.dumps(report), flush=True)
     else:
         for _ in range(16):
             runtime.advance_physics(runtime.substeps, render=True)
-        print("ROOM01_VIEW_READY", str(ROOT / "assets/room01/sim/room01_manipulation.usda"), flush=True)
+        print("ROOM01_VIEW_READY", str(args.scene or ROOT / "assets/room01/sim/room01_manipulation.usda"), flush=True)
     if not args.capture:
         while app.is_running():
             if runtime.sim.is_playing():

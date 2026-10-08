@@ -1,0 +1,5 @@
+2026-09-16
+Command: .venv-usd/bin/python -m unittest discover -s tests -p test_battery*.py -v
+Result: 13 tests passed (9 battery asset tests, 4 measured-table tests).
+Coverage: dimensions, blind-hole depth and open mouths, manifold winding and removed volume, parameter changes, invalid dimensions, USD collision APIs, dynamic batteries, local pose composition, and through-table slot.
+Actual PhysX/camera checks are reported separately in validation.json.

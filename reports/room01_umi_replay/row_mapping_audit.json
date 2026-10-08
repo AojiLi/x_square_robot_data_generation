@@ -1,0 +1,889 @@
+{
+  "schema_version": "umi_ep0_row_mapping_audit_v1",
+  "dataset_row_count": 123,
+  "source_rows_count": 749,
+  "mapping": "parquet source.e6_source_row_index indexes source CSV zero-based data rows; source.e6_frame_id and source.hand_pose_timestamp_ns exactly match all 123 rows across hand_pose, absolute, controller, and E6 timing",
+  "source_rows": {
+    "first": 12,
+    "last": 744,
+    "stride": 6
+  },
+  "first_row": {
+    "parquet_row": 0,
+    "source_row": 12,
+    "frame_id": 100550,
+    "source_timestamp_ns": 1788435362888367003
+  },
+  "last_row": {
+    "parquet_row": 122,
+    "source_row": 744,
+    "frame_id": 101282,
+    "source_timestamp_ns": 1788435375088367003
+  },
+  "parquet_columns": [
+    "observation.state",
+    "action",
+    "action_is_pad",
+    "sample_valid_action_horizon",
+    "source.e6_source_row_index",
+    "source.e6_frame_id",
+    "source.cam0_frame_index",
+    "source.cam1_frame_index",
+    "source.cam0_signed_delta_ns",
+    "source.cam1_signed_delta_ns",
+    "source.hand_pose_timestamp_ns",
+    "timestamp",
+    "frame_index",
+    "episode_index",
+    "index",
+    "task_index"
+  ],
+  "state_shape": [
+    123,
+    30
+  ],
+  "action_shape": [
+    123,
+    50,
+    30
+  ],
+  "state_finger_min_deg": [
+    0.5,
+    39.79999923706055,
+    0.0,
+    0.0,
+    0.10000000149011612,
+    0.0,
+    0.30000001192092896,
+    17.899999618530273,
+    0.0,
+    0.0,
+    0.20000000298023224,
+    0.10000000149011612
+  ],
+  "state_finger_max_deg": [
+    38.099998474121094,
+    88.69999694824219,
+    17.799999237060547,
+    19.399999618530273,
+    0.10000000149011612,
+    0.0,
+    31.200000762939453,
+    88.9000015258789,
+    31.399999618530273,
+    35.20000076293945,
+    0.20000000298023224,
+    0.10000000149011612
+  ],
+  "action_padding_slots": 1275,
+  "target_origin_shift_from_test_true_absolute_local_m": [
+    -0.042,
+    0,
+    0
+  ],
+  "residuals": {
+    "left": {
+      "state_eef_max_abs_error": 2.9540681678597025e-08,
+      "action_eef_max_abs_error": 2.9800576895055997e-08,
+      "first_training_target_world_T": [
+        [
+          -0.9318815078334863,
+          0.3507084393907226,
+          0.09273858904529353,
+          -21.78400152030804
+        ],
+        [
+          0.1269984153444852,
+          0.07593122218981796,
+          0.9889923417280592,
+          0.27635118140952597
+        ],
+        [
+          0.3398062063264555,
+          0.9334013284953501,
+          -0.11529831787644618,
+          7.631103580690667
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "right": {
+      "state_eef_max_abs_error": 2.96683699829714e-08,
+      "action_eef_max_abs_error": 2.9798258971425184e-08,
+      "first_training_target_world_T": [
+        [
+          -0.956135148595143,
+          0.2741055652774618,
+          0.1033040013981387,
+          -21.885515007555018
+        ],
+        [
+          0.08801072280265321,
+          -0.06755098740303445,
+          0.9938264319148638,
+          0.27270045060705195
+        ],
+        [
+          0.27939164320483545,
+          0.9593242429881557,
+          0.04046364445404993,
+          7.225997297655248
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "remote_files_hash_verified": 14,
+  "tcp_physical_location_verified": false,
+  "robot_frame_alignment_verified": false,
+  "rows": [
+    {
+      "parquet_row": 0,
+      "source_row": 12,
+      "frame_id": 100550,
+      "source_timestamp_ns": 1788435362888367003
+    },
+    {
+      "parquet_row": 1,
+      "source_row": 18,
+      "frame_id": 100556,
+      "source_timestamp_ns": 1788435362988367003
+    },
+    {
+      "parquet_row": 2,
+      "source_row": 24,
+      "frame_id": 100562,
+      "source_timestamp_ns": 1788435363088367003
+    },
+    {
+      "parquet_row": 3,
+      "source_row": 30,
+      "frame_id": 100568,
+      "source_timestamp_ns": 1788435363188367003
+    },
+    {
+      "parquet_row": 4,
+      "source_row": 36,
+      "frame_id": 100574,
+      "source_timestamp_ns": 1788435363288367003
+    },
+    {
+      "parquet_row": 5,
+      "source_row": 42,
+      "frame_id": 100580,
+      "source_timestamp_ns": 1788435363388367003
+    },
+    {
+      "parquet_row": 6,
+      "source_row": 48,
+      "frame_id": 100586,
+      "source_timestamp_ns": 1788435363488367003
+    },
+    {
+      "parquet_row": 7,
+      "source_row": 54,
+      "frame_id": 100592,
+      "source_timestamp_ns": 1788435363588367003
+    },
+    {
+      "parquet_row": 8,
+      "source_row": 60,
+      "frame_id": 100598,
+      "source_timestamp_ns": 1788435363688367003
+    },
+    {
+      "parquet_row": 9,
+      "source_row": 66,
+      "frame_id": 100604,
+      "source_timestamp_ns": 1788435363788367003
+    },
+    {
+      "parquet_row": 10,
+      "source_row": 72,
+      "frame_id": 100610,
+      "source_timestamp_ns": 1788435363888367003
+    },
+    {
+      "parquet_row": 11,
+      "source_row": 78,
+      "frame_id": 100616,
+      "source_timestamp_ns": 1788435363988367003
+    },
+    {
+      "parquet_row": 12,
+      "source_row": 84,
+      "frame_id": 100622,
+      "source_timestamp_ns": 1788435364088367003
+    },
+    {
+      "parquet_row": 13,
+      "source_row": 90,
+      "frame_id": 100628,
+      "source_timestamp_ns": 1788435364188367003
+    },
+    {
+      "parquet_row": 14,
+      "source_row": 96,
+      "frame_id": 100634,
+      "source_timestamp_ns": 1788435364288367003
+    },
+    {
+      "parquet_row": 15,
+      "source_row": 102,
+      "frame_id": 100640,
+      "source_timestamp_ns": 1788435364388367003
+    },
+    {
+      "parquet_row": 16,
+      "source_row": 108,
+      "frame_id": 100646,
+      "source_timestamp_ns": 1788435364488367003
+    },
+    {
+      "parquet_row": 17,
+      "source_row": 114,
+      "frame_id": 100652,
+      "source_timestamp_ns": 1788435364588367003
+    },
+    {
+      "parquet_row": 18,
+      "source_row": 120,
+      "frame_id": 100658,
+      "source_timestamp_ns": 1788435364688367003
+    },
+    {
+      "parquet_row": 19,
+      "source_row": 126,
+      "frame_id": 100664,
+      "source_timestamp_ns": 1788435364788367003
+    },
+    {
+      "parquet_row": 20,
+      "source_row": 132,
+      "frame_id": 100670,
+      "source_timestamp_ns": 1788435364888367003
+    },
+    {
+      "parquet_row": 21,
+      "source_row": 138,
+      "frame_id": 100676,
+      "source_timestamp_ns": 1788435364988367003
+    },
+    {
+      "parquet_row": 22,
+      "source_row": 144,
+      "frame_id": 100682,
+      "source_timestamp_ns": 1788435365088367003
+    },
+    {
+      "parquet_row": 23,
+      "source_row": 150,
+      "frame_id": 100688,
+      "source_timestamp_ns": 1788435365188367003
+    },
+    {
+      "parquet_row": 24,
+      "source_row": 156,
+      "frame_id": 100694,
+      "source_timestamp_ns": 1788435365288367003
+    },
+    {
+      "parquet_row": 25,
+      "source_row": 162,
+      "frame_id": 100700,
+      "source_timestamp_ns": 1788435365388367003
+    },
+    {
+      "parquet_row": 26,
+      "source_row": 168,
+      "frame_id": 100706,
+      "source_timestamp_ns": 1788435365488367003
+    },
+    {
+      "parquet_row": 27,
+      "source_row": 174,
+      "frame_id": 100712,
+      "source_timestamp_ns": 1788435365588367003
+    },
+    {
+      "parquet_row": 28,
+      "source_row": 180,
+      "frame_id": 100718,
+      "source_timestamp_ns": 1788435365688367003
+    },
+    {
+      "parquet_row": 29,
+      "source_row": 186,
+      "frame_id": 100724,
+      "source_timestamp_ns": 1788435365788367003
+    },
+    {
+      "parquet_row": 30,
+      "source_row": 192,
+      "frame_id": 100730,
+      "source_timestamp_ns": 1788435365888367003
+    },
+    {
+      "parquet_row": 31,
+      "source_row": 198,
+      "frame_id": 100736,
+      "source_timestamp_ns": 1788435365988367003
+    },
+    {
+      "parquet_row": 32,
+      "source_row": 204,
+      "frame_id": 100742,
+      "source_timestamp_ns": 1788435366088367003
+    },
+    {
+      "parquet_row": 33,
+      "source_row": 210,
+      "frame_id": 100748,
+      "source_timestamp_ns": 1788435366188367003
+    },
+    {
+      "parquet_row": 34,
+      "source_row": 216,
+      "frame_id": 100754,
+      "source_timestamp_ns": 1788435366288367003
+    },
+    {
+      "parquet_row": 35,
+      "source_row": 222,
+      "frame_id": 100760,
+      "source_timestamp_ns": 1788435366388367003
+    },
+    {
+      "parquet_row": 36,
+      "source_row": 228,
+      "frame_id": 100766,
+      "source_timestamp_ns": 1788435366488367003
+    },
+    {
+      "parquet_row": 37,
+      "source_row": 234,
+      "frame_id": 100772,
+      "source_timestamp_ns": 1788435366588367003
+    },
+    {
+      "parquet_row": 38,
+      "source_row": 240,
+      "frame_id": 100778,
+      "source_timestamp_ns": 1788435366688367003
+    },
+    {
+      "parquet_row": 39,
+      "source_row": 246,
+      "frame_id": 100784,
+      "source_timestamp_ns": 1788435366788367003
+    },
+    {
+      "parquet_row": 40,
+      "source_row": 252,
+      "frame_id": 100790,
+      "source_timestamp_ns": 1788435366888367003
+    },
+    {
+      "parquet_row": 41,
+      "source_row": 258,
+      "frame_id": 100796,
+      "source_timestamp_ns": 1788435366988367003
+    },
+    {
+      "parquet_row": 42,
+      "source_row": 264,
+      "frame_id": 100802,
+      "source_timestamp_ns": 1788435367088367003
+    },
+    {
+      "parquet_row": 43,
+      "source_row": 270,
+      "frame_id": 100808,
+      "source_timestamp_ns": 1788435367188367003
+    },
+    {
+      "parquet_row": 44,
+      "source_row": 276,
+      "frame_id": 100814,
+      "source_timestamp_ns": 1788435367288367003
+    },
+    {
+      "parquet_row": 45,
+      "source_row": 282,
+      "frame_id": 100820,
+      "source_timestamp_ns": 1788435367388367003
+    },
+    {
+      "parquet_row": 46,
+      "source_row": 288,
+      "frame_id": 100826,
+      "source_timestamp_ns": 1788435367488367003
+    },
+    {
+      "parquet_row": 47,
+      "source_row": 294,
+      "frame_id": 100832,
+      "source_timestamp_ns": 1788435367588367003
+    },
+    {
+      "parquet_row": 48,
+      "source_row": 300,
+      "frame_id": 100838,
+      "source_timestamp_ns": 1788435367688367003
+    },
+    {
+      "parquet_row": 49,
+      "source_row": 306,
+      "frame_id": 100844,
+      "source_timestamp_ns": 1788435367788367003
+    },
+    {
+      "parquet_row": 50,
+      "source_row": 312,
+      "frame_id": 100850,
+      "source_timestamp_ns": 1788435367888367003
+    },
+    {
+      "parquet_row": 51,
+      "source_row": 318,
+      "frame_id": 100856,
+      "source_timestamp_ns": 1788435367988367003
+    },
+    {
+      "parquet_row": 52,
+      "source_row": 324,
+      "frame_id": 100862,
+      "source_timestamp_ns": 1788435368088367003
+    },
+    {
+      "parquet_row": 53,
+      "source_row": 330,
+      "frame_id": 100868,
+      "source_timestamp_ns": 1788435368188367003
+    },
+    {
+      "parquet_row": 54,
+      "source_row": 336,
+      "frame_id": 100874,
+      "source_timestamp_ns": 1788435368288367003
+    },
+    {
+      "parquet_row": 55,
+      "source_row": 342,
+      "frame_id": 100880,
+      "source_timestamp_ns": 1788435368388367003
+    },
+    {
+      "parquet_row": 56,
+      "source_row": 348,
+      "frame_id": 100886,
+      "source_timestamp_ns": 1788435368488367003
+    },
+    {
+      "parquet_row": 57,
+      "source_row": 354,
+      "frame_id": 100892,
+      "source_timestamp_ns": 1788435368588367003
+    },
+    {
+      "parquet_row": 58,
+      "source_row": 360,
+      "frame_id": 100898,
+      "source_timestamp_ns": 1788435368688367003
+    },
+    {
+      "parquet_row": 59,
+      "source_row": 366,
+      "frame_id": 100904,
+      "source_timestamp_ns": 1788435368788367003
+    },
+    {
+      "parquet_row": 60,
+      "source_row": 372,
+      "frame_id": 100910,
+      "source_timestamp_ns": 1788435368888367003
+    },
+    {
+      "parquet_row": 61,
+      "source_row": 378,
+      "frame_id": 100916,
+      "source_timestamp_ns": 1788435368988367003
+    },
+    {
+      "parquet_row": 62,
+      "source_row": 384,
+      "frame_id": 100922,
+      "source_timestamp_ns": 1788435369088367003
+    },
+    {
+      "parquet_row": 63,
+      "source_row": 390,
+      "frame_id": 100928,
+      "source_timestamp_ns": 1788435369188367003
+    },
+    {
+      "parquet_row": 64,
+      "source_row": 396,
+      "frame_id": 100934,
+      "source_timestamp_ns": 1788435369288367003
+    },
+    {
+      "parquet_row": 65,
+      "source_row": 402,
+      "frame_id": 100940,
+      "source_timestamp_ns": 1788435369388367003
+    },
+    {
+      "parquet_row": 66,
+      "source_row": 408,
+      "frame_id": 100946,
+      "source_timestamp_ns": 1788435369488367003
+    },
+    {
+      "parquet_row": 67,
+      "source_row": 414,
+      "frame_id": 100952,
+      "source_timestamp_ns": 1788435369588367003
+    },
+    {
+      "parquet_row": 68,
+      "source_row": 420,
+      "frame_id": 100958,
+      "source_timestamp_ns": 1788435369688367003
+    },
+    {
+      "parquet_row": 69,
+      "source_row": 426,
+      "frame_id": 100964,
+      "source_timestamp_ns": 1788435369788367003
+    },
+    {
+      "parquet_row": 70,
+      "source_row": 432,
+      "frame_id": 100970,
+      "source_timestamp_ns": 1788435369888367003
+    },
+    {
+      "parquet_row": 71,
+      "source_row": 438,
+      "frame_id": 100976,
+      "source_timestamp_ns": 1788435369988367003
+    },
+    {
+      "parquet_row": 72,
+      "source_row": 444,
+      "frame_id": 100982,
+      "source_timestamp_ns": 1788435370088367003
+    },
+    {
+      "parquet_row": 73,
+      "source_row": 450,
+      "frame_id": 100988,
+      "source_timestamp_ns": 1788435370188367003
+    },
+    {
+      "parquet_row": 74,
+      "source_row": 456,
+      "frame_id": 100994,
+      "source_timestamp_ns": 1788435370288367003
+    },
+    {
+      "parquet_row": 75,
+      "source_row": 462,
+      "frame_id": 101000,
+      "source_timestamp_ns": 1788435370388367003
+    },
+    {
+      "parquet_row": 76,
+      "source_row": 468,
+      "frame_id": 101006,
+      "source_timestamp_ns": 1788435370488367003
+    },
+    {
+      "parquet_row": 77,
+      "source_row": 474,
+      "frame_id": 101012,
+      "source_timestamp_ns": 1788435370588367003
+    },
+    {
+      "parquet_row": 78,
+      "source_row": 480,
+      "frame_id": 101018,
+      "source_timestamp_ns": 1788435370688367003
+    },
+    {
+      "parquet_row": 79,
+      "source_row": 486,
+      "frame_id": 101024,
+      "source_timestamp_ns": 1788435370788367003
+    },
+    {
+      "parquet_row": 80,
+      "source_row": 492,
+      "frame_id": 101030,
+      "source_timestamp_ns": 1788435370888367003
+    },
+    {
+      "parquet_row": 81,
+      "source_row": 498,
+      "frame_id": 101036,
+      "source_timestamp_ns": 1788435370988367003
+    },
+    {
+      "parquet_row": 82,
+      "source_row": 504,
+      "frame_id": 101042,
+      "source_timestamp_ns": 1788435371088367003
+    },
+    {
+      "parquet_row": 83,
+      "source_row": 510,
+      "frame_id": 101048,
+      "source_timestamp_ns": 1788435371188367003
+    },
+    {
+      "parquet_row": 84,
+      "source_row": 516,
+      "frame_id": 101054,
+      "source_timestamp_ns": 1788435371288367003
+    },
+    {
+      "parquet_row": 85,
+      "source_row": 522,
+      "frame_id": 101060,
+      "source_timestamp_ns": 1788435371388367003
+    },
+    {
+      "parquet_row": 86,
+      "source_row": 528,
+      "frame_id": 101066,
+      "source_timestamp_ns": 1788435371488367003
+    },
+    {
+      "parquet_row": 87,
+      "source_row": 534,
+      "frame_id": 101072,
+      "source_timestamp_ns": 1788435371588367003
+    },
+    {
+      "parquet_row": 88,
+      "source_row": 540,
+      "frame_id": 101078,
+      "source_timestamp_ns": 1788435371688367003
+    },
+    {
+      "parquet_row": 89,
+      "source_row": 546,
+      "frame_id": 101084,
+      "source_timestamp_ns": 1788435371788367003
+    },
+    {
+      "parquet_row": 90,
+      "source_row": 552,
+      "frame_id": 101090,
+      "source_timestamp_ns": 1788435371888367003
+    },
+    {
+      "parquet_row": 91,
+      "source_row": 558,
+      "frame_id": 101096,
+      "source_timestamp_ns": 1788435371988367003
+    },
+    {
+      "parquet_row": 92,
+      "source_row": 564,
+      "frame_id": 101102,
+      "source_timestamp_ns": 1788435372088367003
+    },
+    {
+      "parquet_row": 93,
+      "source_row": 570,
+      "frame_id": 101108,
+      "source_timestamp_ns": 1788435372188367003
+    },
+    {
+      "parquet_row": 94,
+      "source_row": 576,
+      "frame_id": 101114,
+      "source_timestamp_ns": 1788435372288367003
+    },
+    {
+      "parquet_row": 95,
+      "source_row": 582,
+      "frame_id": 101120,
+      "source_timestamp_ns": 1788435372388367003
+    },
+    {
+      "parquet_row": 96,
+      "source_row": 588,
+      "frame_id": 101126,
+      "source_timestamp_ns": 1788435372488367003
+    },
+    {
+      "parquet_row": 97,
+      "source_row": 594,
+      "frame_id": 101132,
+      "source_timestamp_ns": 1788435372588367003
+    },
+    {
+      "parquet_row": 98,
+      "source_row": 600,
+      "frame_id": 101138,
+      "source_timestamp_ns": 1788435372688367003
+    },
+    {
+      "parquet_row": 99,
+      "source_row": 606,
+      "frame_id": 101144,
+      "source_timestamp_ns": 1788435372788367003
+    },
+    {
+      "parquet_row": 100,
+      "source_row": 612,
+      "frame_id": 101150,
+      "source_timestamp_ns": 1788435372888367003
+    },
+    {
+      "parquet_row": 101,
+      "source_row": 618,
+      "frame_id": 101156,
+      "source_timestamp_ns": 1788435372988367003
+    },
+    {
+      "parquet_row": 102,
+      "source_row": 624,
+      "frame_id": 101162,
+      "source_timestamp_ns": 1788435373088367003
+    },
+    {
+      "parquet_row": 103,
+      "source_row": 630,
+      "frame_id": 101168,
+      "source_timestamp_ns": 1788435373188367003
+    },
+    {
+      "parquet_row": 104,
+      "source_row": 636,
+      "frame_id": 101174,
+      "source_timestamp_ns": 1788435373288367003
+    },
+    {
+      "parquet_row": 105,
+      "source_row": 642,
+      "frame_id": 101180,
+      "source_timestamp_ns": 1788435373388367003
+    },
+    {
+      "parquet_row": 106,
+      "source_row": 648,
+      "frame_id": 101186,
+      "source_timestamp_ns": 1788435373488367003
+    },
+    {
+      "parquet_row": 107,
+      "source_row": 654,
+      "frame_id": 101192,
+      "source_timestamp_ns": 1788435373588367003
+    },
+    {
+      "parquet_row": 108,
+      "source_row": 660,
+      "frame_id": 101198,
+      "source_timestamp_ns": 1788435373688367003
+    },
+    {
+      "parquet_row": 109,
+      "source_row": 666,
+      "frame_id": 101204,
+      "source_timestamp_ns": 1788435373788367003
+    },
+    {
+      "parquet_row": 110,
+      "source_row": 672,
+      "frame_id": 101210,
+      "source_timestamp_ns": 1788435373888367003
+    },
+    {
+      "parquet_row": 111,
+      "source_row": 678,
+      "frame_id": 101216,
+      "source_timestamp_ns": 1788435373988367003
+    },
+    {
+      "parquet_row": 112,
+      "source_row": 684,
+      "frame_id": 101222,
+      "source_timestamp_ns": 1788435374088367003
+    },
+    {
+      "parquet_row": 113,
+      "source_row": 690,
+      "frame_id": 101228,
+      "source_timestamp_ns": 1788435374188367003
+    },
+    {
+      "parquet_row": 114,
+      "source_row": 696,
+      "frame_id": 101234,
+      "source_timestamp_ns": 1788435374288367003
+    },
+    {
+      "parquet_row": 115,
+      "source_row": 702,
+      "frame_id": 101240,
+      "source_timestamp_ns": 1788435374388367003
+    },
+    {
+      "parquet_row": 116,
+      "source_row": 708,
+      "frame_id": 101246,
+      "source_timestamp_ns": 1788435374488367003
+    },
+    {
+      "parquet_row": 117,
+      "source_row": 714,
+      "frame_id": 101252,
+      "source_timestamp_ns": 1788435374588367003
+    },
+    {
+      "parquet_row": 118,
+      "source_row": 720,
+      "frame_id": 101258,
+      "source_timestamp_ns": 1788435374688367003
+    },
+    {
+      "parquet_row": 119,
+      "source_row": 726,
+      "frame_id": 101264,
+      "source_timestamp_ns": 1788435374788367003
+    },
+    {
+      "parquet_row": 120,
+      "source_row": 732,
+      "frame_id": 101270,
+      "source_timestamp_ns": 1788435374888367003
+    },
+    {
+      "parquet_row": 121,
+      "source_row": 738,
+      "frame_id": 101276,
+      "source_timestamp_ns": 1788435374988367003
+    },
+    {
+      "parquet_row": 122,
+      "source_row": 744,
+      "frame_id": 101282,
+      "source_timestamp_ns": 1788435375088367003
+    }
+  ]
+}

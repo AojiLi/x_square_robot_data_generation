@@ -1,0 +1,178 @@
+{
+  "status": "rejected",
+  "settings": {
+    "grasp_trials": 1,
+    "layout_trials": 1,
+    "robustness_trials": 2,
+    "wall_seconds": 120.0,
+    "time_scale": 2.0,
+    "seed": 0,
+    "record_best": true
+  },
+  "trials": [
+    {
+      "path": "/home/aoji/x_square_robot_data_generation/outputs/room01/umi_auto/episode_000000/search_20260913_091529/trial_002_grasp_probe",
+      "phase": "grasp_probe",
+      "reason": "both_grasps_verified",
+      "task_success": false,
+      "grasps": {
+        "Blue": {
+          "max_lift_m": 0.06948161125183105,
+          "held_frames": 84,
+          "passed": true,
+          "evaluated": true
+        },
+        "RedBig": {
+          "max_lift_m": 0.06627678871154785,
+          "held_frames": 67,
+          "passed": true,
+          "evaluated": true
+        }
+      },
+      "trajectory_sha256": "25079751607b6fcdbdc7125b57e3ea1a021d4000efc1133b4c84c89a16f98510",
+      "reference_hash_verified": true,
+      "reused_physics_result": true
+    },
+    {
+      "path": "/home/aoji/x_square_robot_data_generation/outputs/room01/umi_auto/episode_000000/search_20260913_093849/trial_001_record_probe",
+      "phase": "record_probe",
+      "reason": "task_not_completed",
+      "task_success": false,
+      "grasps": {
+        "Blue": {
+          "max_lift_m": 0.07065379619598389,
+          "held_frames": 85,
+          "passed": true,
+          "evaluated": true
+        },
+        "RedBig": {
+          "max_lift_m": 0.010459423065185547,
+          "held_frames": 0,
+          "passed": false,
+          "evaluated": true
+        }
+      },
+      "trajectory_sha256": "25079751607b6fcdbdc7125b57e3ea1a021d4000efc1133b4c84c89a16f98510",
+      "reference_hash_verified": true,
+      "reused_physics_result": false
+    }
+  ],
+  "accepted": false,
+  "training_eligible": false,
+  "source_episode_index": 0,
+  "trajectory_sha256": "25079751607b6fcdbdc7125b57e3ea1a021d4000efc1133b4c84c89a16f98510",
+  "source_directory": "/home/aoji/x_square_robot_data_generation/data/umi_replay/episode_000000",
+  "events": [
+    {
+      "side": "right",
+      "side_index": 1,
+      "onset_index": 21,
+      "closed_index": 23,
+      "release_index": 44,
+      "onset_s": 2.0999999046325684,
+      "closed_s": 2.299999952316284,
+      "release_s": 4.400000095367432,
+      "candidate_indices": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "curl_range_deg": [
+        0.12500000186264515,
+        16.72500009648502
+      ],
+      "asset": "Blue"
+    },
+    {
+      "side": "left",
+      "side_index": 0,
+      "onset_index": 85,
+      "closed_index": 86,
+      "release_index": 106,
+      "onset_s": 8.5,
+      "closed_s": 8.600000381469727,
+      "release_s": 10.600000381469727,
+      "candidate_indices": [
+        84,
+        85,
+        86,
+        87
+      ],
+      "curl_range_deg": [
+        0.02500000037252903,
+        9.324999714270234
+      ],
+      "asset": "RedBig"
+    }
+  ],
+  "identity": {
+    "objects_by_side": {
+      "left": "RedBig",
+      "right": "Blue"
+    },
+    "components": [
+      {
+        "color": "Red",
+        "area": 421,
+        "center": [
+          282.28028503562945,
+          345.9477434679335
+        ],
+        "red_area_ratio": 0.946067415730337,
+        "asset": "RedBig"
+      },
+      {
+        "color": "Blue",
+        "area": 445,
+        "center": [
+          338.6314606741573,
+          346.5280898876405
+        ],
+        "asset": "Blue"
+      }
+    ],
+    "box_pixel_bounds": [
+      269,
+      265,
+      334,
+      321
+    ],
+    "method": "color/relative-scale heuristic; screen-left/right assignment, no position reconstruction"
+  },
+  "algorithm_sha256": "e049415660f062331de567199744a72c143e84a25d9e6f0adac9ddbab513aa48",
+  "free_motion_cache": {
+    "path": "/home/aoji/x_square_robot_data_generation/outputs/room01/umi_auto/episode_000000/search_20260913_085437/trial_000_free_motion",
+    "sha256": "f4b30ead71441257138f539e7dc1079c3d46cb89b407d18709c2156890f813a6"
+  },
+  "elapsed_seconds": 484.80797865600107,
+  "warmstarts": [
+    "/home/aoji/x_square_robot_data_generation/outputs/room01/umi_auto/episode_000000/search_20260913_091529/trial_002_grasp_probe/replay.json"
+  ],
+  "box_screening": {
+    "containment_candidates": 900,
+    "swept_wall_rejections": 900,
+    "feasible_geometric_candidates": 0,
+    "reason": "insufficient_sampled_swept_clearance",
+    "collision_screen": "30 Hz measured cube OBB vs 4 walls; proposal filter only, final physics required"
+  },
+  "box_screening_attempts": [
+    {
+      "probe": "/home/aoji/x_square_robot_data_generation/outputs/room01/umi_auto/episode_000000/search_20260913_091529/trial_002_grasp_probe",
+      "containment_candidates": 900,
+      "swept_wall_rejections": 900,
+      "feasible_geometric_candidates": 0,
+      "reason": "insufficient_sampled_swept_clearance",
+      "collision_screen": "30 Hz measured cube OBB vs 4 walls; proposal filter only, final physics required"
+    }
+  ],
+  "grasp_verified": true,
+  "reason": "insufficient_sampled_swept_clearance",
+  "recorded_replay": "/home/aoji/x_square_robot_data_generation/outputs/room01/umi_auto/episode_000000/search_20260913_093849/trial_001_record_probe",
+  "trajectory_unchanged": true,
+  "recorded_grasps_passed": false,
+  "additional_rejection_reasons": [
+    "grasp_not_reproducible"
+  ]
+}

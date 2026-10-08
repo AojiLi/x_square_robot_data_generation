@@ -1,0 +1,12 @@
+{
+  "engineering_checks_pass": true,
+  "accepted": false,
+  "training_eligible": false,
+  "trial_count": 2,
+  "max_reference_command_error_rad": 0.0,
+  "reference_trajectory_sha256": "25079751607b6fcdbdc7125b57e3ea1a021d4000efc1133b4c84c89a16f98510",
+  "same_time_scale_all_trials": true,
+  "no_local_trajectory_edits": true,
+  "probe_not_mislabeled_as_full_success": true,
+  "search": "/home/aoji/x_square_robot_data_generation/outputs/room01/umi_auto/episode_000000/search_20260913_093849"
+}

@@ -1,0 +1,10 @@
+{
+  "result": "pass",
+  "camera_count": 3,
+  "same_physics_step": true,
+  "timestamp": 0.8,
+  "joint_positions_finite": true,
+  "review_joint_pose": null,
+  "config_sha256": "d200de071b37b022f5133f39933612a61c9860b26850883688510d3a3cba1f22",
+  "calibration_status": "Head user-supplied K with provisional KB4 interpretation; wrist roll and pitch follow the user-authoritative 20260824 request_000001 images. Circular fisheye K and real hand-eye remain image-based estimates."
+}

@@ -1,0 +1,26 @@
+{
+  "result": "pass",
+  "method": "Independent read-only USD transform comparison plus actual runtime robot base verification",
+  "stationary_computer_visual_transforms_checked": 255,
+  "stationary_computer_max_world_transform_error": 0.0,
+  "stationary_computer_collision_transform_counts": {
+    "desk": 10,
+    "monitor": 4,
+    "pc_tower": 1
+  },
+  "translation_world_m": [
+    0.7255,
+    1.027,
+    0.0
+  ],
+  "robot_minus_table_center_world_m": [
+    -0.8145,
+    0,
+    0.002
+  ],
+  "dynamic_pose_config_max_position_error": 0.0,
+  "dynamic_pose_config_max_rotation_error": 1e-15,
+  "runtime_robot_position_error_m": 3.109786290718876e-08,
+  "estimated_absolute_placement": true,
+  "scope": "Desk, monitor and PC main objects stay fixed; separately documented loose accessories adjusted for clearance"
+}

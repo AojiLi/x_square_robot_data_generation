@@ -1,0 +1,6 @@
+# Offline UMI decoding, numerical checks and LeRobot export (Python 3.12).
+# Scene preparation also uses the existing OpenUSD/pxr environment.
+# Physics execution uses scripts/isaac_env.sh and its pinned Isaac runtime.
+numpy==2.3.1
+scipy==1.17.0
+pyarrow==21.0.0

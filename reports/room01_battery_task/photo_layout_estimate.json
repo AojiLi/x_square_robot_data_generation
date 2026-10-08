@@ -1,0 +1,148 @@
+{
+  "status": "visual_estimate_not_calibration",
+  "date": "2026-09-16",
+  "units": "metres_radians_unless_suffixed",
+  "frame": "tabletop centre; x right, y rear wall, z up",
+  "table": {
+    "size_xy_m": [
+      1.1,
+      0.57
+    ],
+    "top_floor_z_m": 0.74
+  },
+  "yellow_left": {
+    "centre_xy_m": [
+      -0.27,
+      -0.068
+    ],
+    "size_xyz_m": [
+      0.08,
+      0.098,
+      0.052
+    ]
+  },
+  "yellow_right": {
+    "centre_xy_m": [
+      0.215,
+      -0.067
+    ],
+    "size_xyz_m": [
+      0.08,
+      0.098,
+      0.052
+    ]
+  },
+  "red_receiver": {
+    "centre_xy_m": [
+      -0.049,
+      -0.083
+    ],
+    "size_xyz_m": [
+      0.072,
+      0.048,
+      0.048
+    ],
+    "hole_count": 3,
+    "hole_pitch_visual_estimate_m": 0.02,
+    "hole_diameter_visual_estimate_m": 0.012,
+    "hole_diameter_visual_range_m": [
+      0.01,
+      0.014
+    ],
+    "hole_diameter_m": 0.0125,
+    "hole_depth_m": 0.013,
+    "hole_diameter_depth_source": "latest user confirmation; supersedes photo-only estimates",
+    "holes_through": false,
+    "hole_bottom_above_table_m": 0.035,
+    "hole_bottom_source": "derived from 0.048 m block height minus confirmed 0.013 m bore depth",
+    "nominal_diametral_clearance_m": 0.0,
+    "front_white_strips_interpretation": "surface tape continuing onto table, not slots"
+  },
+  "battery_left": {
+    "centre_xy_m": [
+      -0.273,
+      -0.059
+    ],
+    "axis_yaw_deg": 60,
+    "diameter_m": 0.0125,
+    "length_m": 0.049
+  },
+  "battery_right": {
+    "centre_xy_m": [
+      0.203,
+      -0.064
+    ],
+    "axis_yaw_deg": 20,
+    "diameter_m": 0.0125,
+    "length_m": 0.049
+  },
+  "battery_axis_height_over_table_if_no_foam_deformation_m": 0.05825,
+  "battery_axis_polarity_resolved": false,
+  "battery_diameter_source": "latest user confirmation: 1.25 cm is cylindrical diameter",
+  "table_opening": {
+    "centre_xy_m": [
+      0.0,
+      0.1545
+    ],
+    "overall_length_m": 0.23,
+    "straight_length_m": 0.153,
+    "width_derived_if_capsule_m": 0.077,
+    "semicircle_radius_derived_m": 0.0385,
+    "rear_margin_m": 0.092,
+    "rim_outer_vs_inner_measurement_unknown": true
+  },
+  "placement_uncertainty_m": [
+    0.01,
+    0.02
+  ],
+  "battery_yaw_uncertainty_deg": [
+    5,
+    10
+  ],
+  "numeric_fit_images": [
+    7,
+    10,
+    11
+  ],
+  "visual_hole_check_images": [
+    9,
+    10,
+    11
+  ],
+  "method": "Manual table edge intersections; pinhole pose fit with centred principal point; raised object ray-plane intersection; three-image cross-check",
+  "robot_pose_observable": false,
+  "physical_contact_parameters_measured": false,
+  "details": "photo_layout_estimate.md",
+  "workcell_relocation_user_correction": {
+    "user_correction": "Robot and white table moved beside the computer; computer workstation remained fixed.",
+    "original_table_center_world_m": [
+      1.0345,
+      -1.937,
+      0.0
+    ],
+    "translation_from_original_world_m": [
+      0.7255,
+      1.027,
+      0.0
+    ],
+    "computer_workstation_moved": false,
+    "robot_table_relative_transform": "preserved from original workcell",
+    "placement_basis": "White table to photo-right of stationary optical/computer desk, rear edges aligned; approximately 14mm lateral gap from modeled desk. Absolute placement remains estimated.",
+    "powerstrip_translation_world_m": [
+      0.97,
+      0.32,
+      0.586
+    ],
+    "loose_accessories": "Old headset intersecting new tabletop hidden; powerstrip moved from new robot footprint to under desk. These accessory positions are photo-based estimates."
+  },
+  "white_table_center_world_m": [
+    1.76,
+    -0.91,
+    0
+  ],
+  "robot_base_position_world_m": [
+    0.9455,
+    -0.91,
+    0.002
+  ]
+}

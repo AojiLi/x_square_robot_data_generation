@@ -1,0 +1,319 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    subLayers = [
+        @../sim/room01_manipulation.usda@
+    ]
+)
+
+over "World"
+{
+    over "Task"
+    {
+        over "RedCube" (
+            active = false
+        )
+        {
+        }
+
+        def Xform "RedBig" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0, 0, 0)
+            float3 physics:diagonalInertia = (0.00003, 0.00003, 0.00003)
+            float physics:mass = 0.072
+            bool physxRigidBody:enableCCD = 1
+            int physxRigidBody:solverPositionIterationCount = 32
+            int physxRigidBody:solverVelocityIterationCount = 8
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.773105726402287, -1.8540779958582403, 0.7482)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+
+            def Cube "Shape0" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/UmiRedBig>
+                rel material:binding:physics = </World/PhysicsMaterials/UmiWood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                float physxCollision:contactOffset = 0.0005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.05, 0.05, 0.05)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "Blue" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0, 0, 0)
+            float3 physics:diagonalInertia = (0.00003, 0.00003, 0.00003)
+            float physics:mass = 0.072
+            bool physxRigidBody:enableCCD = 1
+            int physxRigidBody:solverPositionIterationCount = 32
+            int physxRigidBody:solverVelocityIterationCount = 8
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.8042167961524157, -2.058284609156838, 0.7482)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+
+            def Cube "Shape0" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/UmiBlue>
+                rel material:binding:physics = </World/PhysicsMaterials/UmiWood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                float physxCollision:contactOffset = 0.0005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.05, 0.05, 0.05)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "Green" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0, 0, 0)
+            float3 physics:diagonalInertia = (0.00003, 0.00003, 0.00003)
+            float physics:mass = 0.072
+            bool physxRigidBody:enableCCD = 1
+            int physxRigidBody:solverPositionIterationCount = 32
+            int physxRigidBody:solverVelocityIterationCount = 8
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.9123891338683686, -1.9623099405899447, 0.7502)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+
+            def Cube "Shape0" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/UmiGreen>
+                rel material:binding:physics = </World/PhysicsMaterials/UmiWood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                float physxCollision:contactOffset = 0.0005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.05, 0.05, 0.05)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "RedSmall" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0, 0, 0)
+            float3 physics:diagonalInertia = (0.0000112, 0.0000112, 0.0000112)
+            float physics:mass = 0.042
+            bool physxRigidBody:enableCCD = 1
+            int physxRigidBody:solverPositionIterationCount = 32
+            int physxRigidBody:solverVelocityIterationCount = 8
+            quatf xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:translate = (0.9153891338683686, -1.9023099405899448, 0.7452)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+
+            def Cube "Shape0" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/UmiRedSmall>
+                rel material:binding:physics = </World/PhysicsMaterials/UmiWood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                float physxCollision:contactOffset = 0.0005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.04, 0.04, 0.04)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "BlackBox" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (0, 0, -0.013544892)
+            float3 physics:diagonalInertia = (0.00045498772, 0.0005722365, 0.0007795037)
+            float physics:mass = 0.11
+            bool physxRigidBody:enableCCD = 1
+            int physxRigidBody:solverPositionIterationCount = 32
+            int physxRigidBody:solverVelocityIterationCount = 8
+            quatf xformOp:orient = (0.70710677, 0, 0, 0.70710677)
+            double3 xformOp:translate = (0.9373891338683686, -1.9273099405899448, 0.774)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient"]
+
+            def Cube "Shape0" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/UmiBlackBox>
+                rel material:binding:physics = </World/PhysicsMaterials/UmiWood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                float physxCollision:contactOffset = 0.0005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.174, 0.144, 0.002)
+                double3 xformOp:translate = (0, 0, -0.049999999999999996)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Shape1" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/UmiBlackBox>
+                rel material:binding:physics = </World/PhysicsMaterials/UmiWood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                float physxCollision:contactOffset = 0.0005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.144, 0.1)
+                double3 xformOp:translate = (-0.086, 0, 0.001)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Shape2" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/UmiBlackBox>
+                rel material:binding:physics = </World/PhysicsMaterials/UmiWood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                float physxCollision:contactOffset = 0.0005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.002, 0.144, 0.1)
+                double3 xformOp:translate = (0.086, 0, 0.001)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Shape3" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/UmiBlackBox>
+                rel material:binding:physics = </World/PhysicsMaterials/UmiWood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                float physxCollision:contactOffset = 0.0005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.17, 0.002, 0.1)
+                double3 xformOp:translate = (0, -0.071, 0.001)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Shape4" (
+                prepend apiSchemas = ["PhysicsCollisionAPI", "PhysxCollisionAPI", "MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </World/Looks/UmiBlackBox>
+                rel material:binding:physics = </World/PhysicsMaterials/UmiWood> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                float physxCollision:contactOffset = 0.0005
+                float physxCollision:restOffset = 0
+                double size = 1
+                float3 xformOp:scale = (0.17, 0.002, 0.1)
+                double3 xformOp:translate = (0, 0.071, 0.001)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+    }
+
+    over "PhysicsMaterials"
+    {
+        def Material "UmiWood" (
+            prepend apiSchemas = ["PhysicsMaterialAPI"]
+        )
+        {
+            float physics:dynamicFriction = 0.6
+            float physics:restitution = 0
+            float physics:staticFriction = 0.75
+        }
+    }
+
+    over "Looks"
+    {
+        def Material "UmiRedBig"
+        {
+            token outputs:surface.connect = </World/Looks/UmiRedBig/Shader.outputs:surface>
+
+            def Shader "Shader"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.62, 0.025, 0.018)
+                float inputs:roughness = 0.55
+                token outputs:surface
+            }
+        }
+
+        def Material "UmiBlue"
+        {
+            token outputs:surface.connect = </World/Looks/UmiBlue/Shader.outputs:surface>
+
+            def Shader "Shader"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.015, 0.32, 0.65)
+                float inputs:roughness = 0.55
+                token outputs:surface
+            }
+        }
+
+        def Material "UmiGreen"
+        {
+            token outputs:surface.connect = </World/Looks/UmiGreen/Shader.outputs:surface>
+
+            def Shader "Shader"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.015, 0.42, 0.18)
+                float inputs:roughness = 0.55
+                token outputs:surface
+            }
+        }
+
+        def Material "UmiRedSmall"
+        {
+            token outputs:surface.connect = </World/Looks/UmiRedSmall/Shader.outputs:surface>
+
+            def Shader "Shader"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.62, 0.025, 0.018)
+                float inputs:roughness = 0.55
+                token outputs:surface
+            }
+        }
+
+        def Material "UmiBlackBox"
+        {
+            token outputs:surface.connect = </World/Looks/UmiBlackBox/Shader.outputs:surface>
+
+            def Shader "Shader"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.018, 0.018, 0.018)
+                float inputs:roughness = 0.55
+                token outputs:surface
+            }
+        }
+    }
+}
+

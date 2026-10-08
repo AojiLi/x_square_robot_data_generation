@@ -1,0 +1,190 @@
+{
+  "scope": "CPU mesh tests plus cooked PhysX rays and uncommanded reset stability; not a grasp/insertion trial",
+  "robotic_insertion_tested": false,
+  "foam_compliance_validated": false,
+  "geometry_source": "scene_spec.json",
+  "asset_checks_pass": true,
+  "scene_spec_sha256": "a59505a663060ed26f832ee5a77112f18a4ecee08bab660177e3d0dc9f772425",
+  "relocation": {
+    "user_correction": "Robot and white table moved beside the computer; computer workstation remained fixed.",
+    "original_table_center_world_m": [
+      1.0345,
+      -1.937,
+      0.0
+    ],
+    "translation_from_original_world_m": [
+      0.7255,
+      1.027,
+      0.0
+    ],
+    "computer_workstation_moved": false,
+    "robot_table_relative_transform": "preserved from original workcell",
+    "placement_basis": "White table to photo-right of stationary optical/computer desk, rear edges aligned; approximately 14mm lateral gap from modeled desk. Absolute placement remains estimated.",
+    "powerstrip_translation_world_m": [
+      0.97,
+      0.32,
+      0.586
+    ],
+    "loose_accessories": "Old headset intersecting new tabletop hidden; powerstrip moved from new robot footprint to under desk. These accessory positions are photo-based estimates."
+  },
+  "robot_placement": {
+    "expected_world_m": [
+      0.9455,
+      -0.9100000000000001,
+      0.002
+    ],
+    "actual_world_m": [
+      0.9455000162124634,
+      -0.9100000262260437,
+      0.0020000040531158447
+    ],
+    "position_error_m": 3.109786290718876e-08,
+    "pass": true
+  },
+  "reset_stability": {
+    "physics_seconds": 6.0,
+    "object_names": [
+      "BatteryLeft",
+      "BatteryRight"
+    ],
+    "initial_to_final_position_change_m": [
+      [
+        -0.0029228925704956055,
+        -0.00506514310836792,
+        0.0
+      ],
+      [
+        -0.0034148693084716797,
+        -0.0012445449829101562,
+        0.0
+      ]
+    ],
+    "final_one_second_position_change_m": [
+      [
+        1.1920928955078125e-07,
+        4.172325134277344e-07,
+        0.0
+      ],
+      [
+        -5.793571472167969e-05,
+        -2.110004425048828e-05,
+        0.0
+      ]
+    ],
+    "linear_speed_m_s": [
+      0.0002794823085423559,
+      0.000478782516438514
+    ],
+    "angular_speed_rad_s": [
+      0.04309502989053726,
+      0.07692357897758484
+    ],
+    "actual_axis_height_m": [
+      0.7982513308525085,
+      0.7982513308525085
+    ],
+    "expected_axis_height_m": 0.79825,
+    "criteria": "After 5 seconds settling: drift <0.5mm over the next second, final speed <1mm/s, axis height within 1mm of foam support; initial transient is recorded separately.",
+    "pass": true
+  },
+  "red_hole_bottom_rays": [
+    {
+      "hit": true,
+      "position": [
+        1.6770000457763672,
+        -0.8410000205039978,
+        0.7749999761581421
+      ],
+      "collision": "/World/BatteryWorkcell/Props/RedFoam/Body",
+      "ray_origin_local_m": [
+        -0.069,
+        -0.083,
+        0.794
+      ],
+      "expected_bottom_z_m": 0.775,
+      "pass": true
+    },
+    {
+      "hit": true,
+      "position": [
+        1.6770000457763672,
+        -0.8610000014305115,
+        0.7749999761581421
+      ],
+      "collision": "/World/BatteryWorkcell/Props/RedFoam/Body",
+      "ray_origin_local_m": [
+        -0.049,
+        -0.083,
+        0.794
+      ],
+      "expected_bottom_z_m": 0.775,
+      "pass": true
+    },
+    {
+      "hit": true,
+      "position": [
+        1.6770000457763672,
+        -0.8809999823570251,
+        0.7749999761581421
+      ],
+      "collision": "/World/BatteryWorkcell/Props/RedFoam/Body",
+      "ray_origin_local_m": [
+        -0.029,
+        -0.083,
+        0.794
+      ],
+      "expected_bottom_z_m": 0.775,
+      "pass": true
+    }
+  ],
+  "red_solid_top_ray": {
+    "hit": true,
+    "position": [
+      1.659999966621399,
+      -0.8610000014305115,
+      0.7879999876022339
+    ],
+    "collision": "/World/BatteryWorkcell/Props/RedFoam/Body",
+    "ray_origin_local_m": [
+      -0.049,
+      -0.1,
+      0.794
+    ],
+    "pass": true
+  },
+  "table_through_slot_ray": {
+    "hit": false,
+    "position": [],
+    "collision": "",
+    "ray_origin_local_m": [
+      0.0,
+      0.15449999999999997,
+      0.745
+    ],
+    "pass": true
+  },
+  "table_solid_surface_ray": {
+    "hit": true,
+    "position": [
+      1.8545000553131104,
+      -0.9100000262260437,
+      0.7400001883506775
+    ],
+    "collision": "/World/BatteryWorkcell/Table/Tabletop",
+    "ray_origin_local_m": [
+      0.0,
+      0.09449999999999997,
+      0.745
+    ],
+    "pass": true
+  },
+  "native_cameras": {
+    "count": 3,
+    "same_physics_step": true,
+    "nonempty": true
+  },
+  "review_images": {
+    "ReviewSetup": "Robot visible",
+    "other_views": "Robot hidden for object-only inspection; no physics changes or scene save"
+  }
+}

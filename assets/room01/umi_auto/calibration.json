@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "status": "shared_existing_estimated_calibration",
+  "tracking_axes_to_zup": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "initial_hand_midpoint_world": [
+    0.68,
+    -1.937,
+    0.7513109167869632
+  ],
+  "training_tool_to_hand_base": [
+    [
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "note": "Shared across episodes. No object-dependent or per-candidate trajectory adjustment; tool origin/axes remain unmeasured estimates."
+}

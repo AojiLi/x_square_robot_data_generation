@@ -1,0 +1,529 @@
+{
+  "scene": "assets/room01/battery_task/room01_battery_task.usda",
+  "spec_sha256": "1584a05eb59e1a787e6d0c246a2fde2d14e056f2021fcce9ab2c90c944eaedf4",
+  "disabled_old_prims": [
+    "/World/Task/RedCube",
+    "/World/Room/Visual/_08_White_writing_table",
+    "/World/Room/Collisions/Writing_table_apron",
+    "/World/Room/Collisions/Writing_table_apron_001",
+    "/World/Room/Collisions/Writing_table_edge",
+    "/World/Room/Collisions/Writing_table_foot",
+    "/World/Room/Collisions/Writing_table_foot_001",
+    "/World/Room/Collisions/Writing_table_foot_002",
+    "/World/Room/Collisions/Writing_table_foot_003",
+    "/World/Room/Collisions/Writing_table_grommet_rim",
+    "/World/Room/Collisions/Writing_table_leg",
+    "/World/Room/Collisions/Writing_table_leg_001",
+    "/World/Room/Collisions/Writing_table_leg_002",
+    "/World/Room/Collisions/Writing_table_leg_003",
+    "/World/Room/Collisions/Writing_table_top",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_001",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_002",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_003",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_004",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_005",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_006",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_007",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_008",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_009",
+    "/World/Room/Visual/_09_Optical_workstation/Retail_box_print_010",
+    "/World/Room/Visual/_09_Optical_workstation/White_retail_box",
+    "/World/Room/Collisions/White_retail_box"
+  ],
+  "moved_background_prims": [],
+  "loose_accessory_adjustments": [
+    {
+      "path": "/World/Room/Visual/_09_Optical_workstation/Headset_earcup",
+      "action": "hide unobserved old accessory intersecting relocated tabletop"
+    },
+    {
+      "path": "/World/Room/Collisions/Headset_earcup",
+      "action": "hide unobserved old accessory intersecting relocated tabletop"
+    },
+    {
+      "path": "/World/Room/Visual/_09_Optical_workstation/Headset_earcup_001",
+      "action": "hide unobserved old accessory intersecting relocated tabletop"
+    },
+    {
+      "path": "/World/Room/Collisions/Headset_earcup_001",
+      "action": "hide unobserved old accessory intersecting relocated tabletop"
+    },
+    {
+      "path": "/World/Room/Visual/_09_Optical_workstation/Headset_headband",
+      "action": "hide unobserved old accessory intersecting relocated tabletop"
+    },
+    {
+      "path": "/World/Room/Collisions/Headset_headband",
+      "action": "hide unobserved old accessory intersecting relocated tabletop"
+    },
+    {
+      "path": "/World/Room/Visual/_13_Cartons_toolcase_and_floor_cables/Powerstrip_body",
+      "action": "move powerstrip under desk; photo-based estimate"
+    },
+    {
+      "path": "/World/Room/Collisions/Powerstrip_body",
+      "action": "move powerstrip under desk; photo-based estimate"
+    },
+    {
+      "path": "/World/Room/Visual/_13_Cartons_toolcase_and_floor_cables/Powerstrip_contact",
+      "action": "move powerstrip under desk; photo-based estimate"
+    },
+    {
+      "path": "/World/Room/Visual/_13_Cartons_toolcase_and_floor_cables/Powerstrip_contact_001",
+      "action": "move powerstrip under desk; photo-based estimate"
+    },
+    {
+      "path": "/World/Room/Visual/_13_Cartons_toolcase_and_floor_cables/Powerstrip_contact_002",
+      "action": "move powerstrip under desk; photo-based estimate"
+    },
+    {
+      "path": "/World/Room/Visual/_13_Cartons_toolcase_and_floor_cables/Powerstrip_contact_003",
+      "action": "move powerstrip under desk; photo-based estimate"
+    },
+    {
+      "path": "/World/Room/Visual/_13_Cartons_toolcase_and_floor_cables/Powerstrip_contact_004",
+      "action": "move powerstrip under desk; photo-based estimate"
+    },
+    {
+      "path": "/World/Room/Visual/_13_Cartons_toolcase_and_floor_cables/Powerstrip_contact_005",
+      "action": "move powerstrip under desk; photo-based estimate"
+    },
+    {
+      "path": "/World/Room/Visual/_13_Cartons_toolcase_and_floor_cables/Powerstrip_contact_006",
+      "action": "move powerstrip under desk; photo-based estimate"
+    },
+    {
+      "path": "/World/Room/Visual/_13_Cartons_toolcase_and_floor_cables/Powerstrip_contact_007",
+      "action": "move powerstrip under desk; photo-based estimate"
+    }
+  ],
+  "relocation": {
+    "user_correction": "Robot and white table moved beside the computer; computer workstation remained fixed.",
+    "original_table_center_world_m": [
+      1.0345,
+      -1.937,
+      0.0
+    ],
+    "translation_from_original_world_m": [
+      0.7255,
+      1.027,
+      0.0
+    ],
+    "computer_workstation_moved": false,
+    "robot_table_relative_transform": "preserved from original workcell",
+    "placement_basis": "White table to photo-right of stationary optical/computer desk, rear edges aligned; approximately 14mm lateral gap from modeled desk. Absolute placement remains estimated.",
+    "powerstrip_translation_world_m": [
+      0.97,
+      0.32,
+      0.586
+    ],
+    "loose_accessories": "Old headset intersecting new tabletop hidden; powerstrip moved from new robot footprint to under desk. These accessory positions are photo-based estimates."
+  },
+  "robot_base_position_world_m": [
+    0.9455,
+    -0.9100000000000001,
+    0.002
+  ],
+  "table": {
+    "root_path": "/World/BatteryWorkcell/Table",
+    "spec": {
+      "length_m": 1.1,
+      "depth_m": 0.57,
+      "height_m": 0.74,
+      "tabletop_thickness_m": 0.024,
+      "slot_total_length_m": 0.23,
+      "slot_straight_length_m": 0.153,
+      "slot_back_edge_distance_m": 0.092,
+      "slot_center_x_m": 0.0,
+      "outer_corner_radius_m": 0.025,
+      "include_photo_markers": true
+    },
+    "coordinate_frame": "+X photo-right; +Y photo-back; +Z up; floor Z=0",
+    "tabletop_bounds_m": [
+      [
+        -0.5500000000000002,
+        -0.285,
+        0.716
+      ],
+      [
+        0.5500000000000002,
+        0.285,
+        0.74
+      ]
+    ],
+    "floor_z_m": 0.0,
+    "tabletop_z_m": 0.74,
+    "slot": {
+      "center_xy_m": [
+        0.0,
+        0.15449999999999997
+      ],
+      "total_length_m": 0.23,
+      "straight_length_m": 0.153,
+      "width_m": 0.07700000000000001,
+      "back_edge_distance_m": 0.092,
+      "open_through_tabletop": true,
+      "collision_approximation": "none"
+    },
+    "leg_centers_xy_m": [
+      [
+        -0.516,
+        -0.251
+      ],
+      [
+        -0.516,
+        0.251
+      ],
+      [
+        0.516,
+        -0.251
+      ],
+      [
+        0.516,
+        0.251
+      ]
+    ],
+    "validation": {
+      "slot_centerline_vertical_rays": [
+        {
+          "xy_m": [
+            -0.10345,
+            0.15449999999999997
+          ],
+          "hit_z_m": []
+        },
+        {
+          "xy_m": [
+            -0.06896666666666668,
+            0.15449999999999997
+          ],
+          "hit_z_m": []
+        },
+        {
+          "xy_m": [
+            -0.03448333333333334,
+            0.15449999999999997
+          ],
+          "hit_z_m": []
+        },
+        {
+          "xy_m": [
+            -1.3877787807814457e-17,
+            0.15449999999999997
+          ],
+          "hit_z_m": []
+        },
+        {
+          "xy_m": [
+            0.034483333333333324,
+            0.15449999999999997
+          ],
+          "hit_z_m": []
+        },
+        {
+          "xy_m": [
+            0.06896666666666666,
+            0.15449999999999997
+          ],
+          "hit_z_m": []
+        },
+        {
+          "xy_m": [
+            0.10345,
+            0.15449999999999997
+          ],
+          "hit_z_m": []
+        }
+      ],
+      "all_slot_rays_open": true,
+      "solid_surface_probe_xy_m": [
+        0.0,
+        0.10599999999999996
+      ],
+      "solid_surface_probe_hit_z_m": [
+        0.716,
+        0.74
+      ],
+      "tabletop_triangles": 3668
+    },
+    "estimated_parameters": [
+      "tabletop_thickness_m",
+      "outer_corner_radius_m",
+      "slot_center_x_m",
+      "leg cross sections and locations",
+      "apron dimensions",
+      "surface materials",
+      "front photo marker positions"
+    ]
+  },
+  "props": {
+    "parent_path": "/World/BatteryWorkcell/Props",
+    "coordinate_frame": "parent local: +X photo right, +Y table rear, +Z up; apply parent transform for world poses",
+    "units": "metres, kilograms, degrees",
+    "quaternion_order": "xyzw",
+    "spec": {
+      "table_top_z_m": 0.74,
+      "yellow_dims_m": [
+        0.08,
+        0.098,
+        0.052
+      ],
+      "yellow_positions_xy_m": [
+        [
+          -0.27,
+          -0.068
+        ],
+        [
+          0.215,
+          -0.067
+        ]
+      ],
+      "yellow_yaw_deg": [
+        0.0,
+        0.0
+      ],
+      "yellow_bevel_m": 0.0015,
+      "battery_diameter_m": 0.0125,
+      "battery_length_m": 0.049,
+      "battery_mass_kg": 0.02,
+      "battery_yaw_deg": [
+        60,
+        20
+      ],
+      "battery_offsets_xy_m": [
+        [
+          -0.003,
+          0.009
+        ],
+        [
+          -0.012,
+          0.003
+        ]
+      ],
+      "battery_poses": null,
+      "red_dims_m": [
+        0.072,
+        0.048,
+        0.048
+      ],
+      "red_position_xy_m": [
+        -0.049,
+        -0.083
+      ],
+      "red_yaw_deg": 0,
+      "hole_diameter_m": 0.0125,
+      "hole_depth_m": 0.013,
+      "hole_pitch_m": 0.02,
+      "battery_contact_offset_m": 0.0002,
+      "red_contact_offset_m": 0.0002,
+      "yellow_contact_offset_m": 0.0005,
+      "tape_visual": true
+    },
+    "yellow_foams": [
+      {
+        "path": "/World/BatteryWorkcell/Props/YellowFoam_1",
+        "local_position_m": [
+          -0.27,
+          -0.068,
+          0.766
+        ],
+        "local_quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "size_m": [
+          0.08,
+          0.098,
+          0.052
+        ]
+      },
+      {
+        "path": "/World/BatteryWorkcell/Props/YellowFoam_2",
+        "local_position_m": [
+          0.215,
+          -0.067,
+          0.766
+        ],
+        "local_quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "size_m": [
+          0.08,
+          0.098,
+          0.052
+        ]
+      }
+    ],
+    "batteries": [
+      {
+        "path": "/World/BatteryWorkcell/Props/Battery_1",
+        "local_position_m": [
+          -0.273,
+          -0.059000000000000004,
+          0.79825
+        ],
+        "local_quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.49999999999999994,
+          0.8660254037844387
+        ],
+        "size_m": [
+          0.049,
+          0.0125,
+          0.0125
+        ],
+        "mass_kg": 0.02,
+        "local_axis": "X",
+        "dynamic": true,
+        "name": "BatteryLeft",
+        "prim_path": "/World/BatteryWorkcell/Props/Battery_1",
+        "position_local_m": [
+          -0.273,
+          -0.059000000000000004,
+          0.79825
+        ],
+        "orientation_local_xyzw": [
+          0.0,
+          0.0,
+          0.49999999999999994,
+          0.8660254037844387
+        ]
+      },
+      {
+        "path": "/World/BatteryWorkcell/Props/Battery_2",
+        "local_position_m": [
+          0.20299999999999999,
+          -0.064,
+          0.79825
+        ],
+        "local_quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.17364817766693036,
+          0.9848077530122081
+        ],
+        "size_m": [
+          0.049,
+          0.0125,
+          0.0125
+        ],
+        "mass_kg": 0.02,
+        "local_axis": "X",
+        "dynamic": true,
+        "name": "BatteryRight",
+        "prim_path": "/World/BatteryWorkcell/Props/Battery_2",
+        "position_local_m": [
+          0.20299999999999999,
+          -0.064,
+          0.79825
+        ],
+        "orientation_local_xyzw": [
+          0.0,
+          0.0,
+          0.17364817766693036,
+          0.9848077530122081
+        ]
+      }
+    ],
+    "assumptions": [
+      "Default battery diameter 0.0125 m and length 0.049 m are user-confirmed measurements.",
+      "Default hole diameter 0.0125 m and depth 0.013 m are user-confirmed; 0.020 m pitch remains a photo estimate.",
+      "Equal nominal battery/hole diameters imply zero clearance; rigid models do not reproduce compliant foam insertion.",
+      "XY placement and battery yaw are photo estimates, not surveyed poses.",
+      "Both foams use rigid static collision; no foam deformation or insertion compliance is simulated.",
+      "Red foam is assumed fixed to the table based on visible tape; confirm fixation.",
+      "Battery mass, all friction values and contact parameters are uncalibrated estimates."
+    ],
+    "red_foam": {
+      "path": "/World/BatteryWorkcell/Props/RedFoam",
+      "local_position_m": [
+        -0.049,
+        -0.083,
+        0.764
+      ],
+      "local_quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "size_m": [
+        0.072,
+        0.048,
+        0.048
+      ],
+      "hole_top_centers_parent_m": [
+        [
+          -0.069,
+          -0.083,
+          0.788
+        ],
+        [
+          -0.049,
+          -0.083,
+          0.788
+        ],
+        [
+          -0.029,
+          -0.083,
+          0.788
+        ]
+      ],
+      "hole_diameter_m": 0.0125,
+      "hole_depth_m": 0.013,
+      "hole_pitch_m": 0.02,
+      "collision_approximation": "none",
+      "dynamic": false,
+      "nominal_radial_clearance_m": 0.0,
+      "hole_dimension_sources": {
+        "diameter": "user measurement",
+        "depth": "user measurement",
+        "pitch": "photo estimate"
+      }
+    }
+  },
+  "dynamic_objects": {
+    "BatteryLeft": {
+      "prim_path": "/World/BatteryWorkcell/Props/Battery_1",
+      "position": [
+        1.701,
+        -0.637,
+        0.79825
+      ],
+      "orientation_xyzw": [
+        0.0,
+        0.0,
+        -0.25881904510252085,
+        0.9659258262890684
+      ],
+      "mass_kg": 0.02,
+      "diameter_m": 0.0125,
+      "length_m": 0.049
+    },
+    "BatteryRight": {
+      "prim_path": "/World/BatteryWorkcell/Props/Battery_2",
+      "position": [
+        1.696,
+        -1.113,
+        0.79825
+      ],
+      "orientation_xyzw": [
+        0.0,
+        0.0,
+        -0.5735764363510462,
+        0.8191520442889918
+      ],
+      "mass_kg": 0.02,
+      "diameter_m": 0.0125,
+      "length_m": 0.049
+    }
+  },
+  "validation_scope": "Scene geometry, collision openings and reset stability. No completed robotic grasp-and-insert demonstration or real-robot execution is claimed."
+}

@@ -2,16 +2,18 @@
 
 本目录是供 Isaac Sim 运行的桌面操作环境。机器人底座、躯干和头部保持固定工作姿态，动作接口控制双臂与双 Revo2 手。房间地板、墙体、玻璃、桌面和主要家具都有碰撞体；白桌上放置了独立动态方块。
 
+这是原方块工位。2026-09-16 的默认启动入口已切换到[电池与海绵工位](../battery_task/README.md)，本目录的历史尺寸与验证结果仅对应原场景。
+
 ## 打开与验证
 
 在项目根目录运行：
 
 ```bash
 # 图形窗口：控制器运行并保持工作姿态
-bash scripts/open_room01_sim.sh
+bash scripts/open_room01_sim.sh --legacy
 
 # 三路相机及工位总览的离屏截图
-bash scripts/open_room01_sim.sh --headless --capture
+bash scripts/open_room01_sim.sh --legacy --headless --capture
 
 # 物理检查：固定底座、落物接触、手指联动与 URDF 运动学
 source scripts/isaac_env.sh

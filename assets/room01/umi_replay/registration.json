@@ -1,0 +1,147 @@
+{
+  "status": "estimated_registration_not_measured_calibration",
+  "source_episode": "/home/aoji/x_square_robot_data_generation/data/umi_replay/episode_000000",
+  "source_validation": {
+    "state_pose_max_abs_error": 2.966837042706061e-08,
+    "action_max_abs_error": 2.9800576450966787e-08,
+    "raw_local_origin_offset_m": [
+      -0.042,
+      0.0,
+      0.0
+    ],
+    "frames": 123,
+    "first_state_predecessor_raw_row": 6
+  },
+  "tracking_world_to_sim_world": [
+    [
+      -0.9700088741822538,
+      0.0,
+      0.24306950447902032,
+      -22.305563355885063
+    ],
+    [
+      0.24306950447902032,
+      0.0,
+      0.9700088741822538,
+      -3.835395976675217
+    ],
+    [
+      0.0,
+      0.9999999999999999,
+      0.0,
+      0.4767851007786743
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "training_tool_to_urdf_hand_base": [
+    [
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "assumptions": [
+    "UMI tracking +Y is up; initial hand span defines table lateral axis",
+    "Source training-target origin is provisionally identified with the URDF hand base",
+    "Fixed rotations reconcile canonical forward/left/up with mirrored URDF hand frames",
+    "Wood friction estimated at static .75 / dynamic .6; base uses existing table material",
+    "Bottom thickness assumed equal to the approximately measured 2 mm walls"
+  ],
+  "grasp_reference_times_s": [
+    7.5,
+    1.4
+  ],
+  "grasp_center_in_hand_base_m": [
+    [
+      0.05,
+      -0.036,
+      0.087
+    ],
+    [
+      0.05,
+      0.036,
+      0.087
+    ]
+  ],
+  "grasp_height_residual_m": [
+    0.0030204064480377144,
+    -0.0030204064480377837
+  ],
+  "finger_mapping": {
+    "source_order": [
+      "thumb_flex",
+      "thumb_aux",
+      "index",
+      "middle",
+      "ring",
+      "little"
+    ],
+    "urdf_indices": [
+      1,
+      0,
+      2,
+      3,
+      4,
+      5
+    ],
+    "evidence": "names and 59/90/81-degree limits; hardware-to-URDF identity not measured"
+  },
+  "limits": {
+    "local_position_correction_m": 0.01,
+    "local_rotation_correction_deg": 5.0,
+    "max_time_scale": 2.0
+  },
+  "initial_object_pose_method": "Head RGB establishes identities and outside/inside ordering; metric positions use estimated hand-space grasp centers and release centers, not a calibrated RGB reconstruction"
+}

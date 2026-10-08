@@ -1,0 +1,140 @@
+{
+  "scope": "CPU mesh tests plus cooked PhysX rays and uncommanded reset stability; not a grasp/insertion trial",
+  "robotic_insertion_tested": false,
+  "foam_compliance_validated": false,
+  "geometry_source": "scene_spec.json",
+  "asset_checks_pass": false,
+  "reset_stability": {
+    "physics_seconds": 1.5,
+    "object_names": [
+      "BatteryLeft",
+      "BatteryRight"
+    ],
+    "position_change_m": [
+      [
+        -0.0028163790702819824,
+        -0.004880189895629883,
+        5.960464477539063e-08
+      ],
+      [
+        -0.0038762688636779785,
+        -0.0014102458953857422,
+        0.0
+      ]
+    ],
+    "linear_speed_m_s": [
+      0.0007873339927755296,
+      0.0011090646730735898
+    ],
+    "angular_speed_rad_s": [
+      0.1264646351337433,
+      0.17793606221675873
+    ],
+    "actual_axis_height_m": [
+      0.7982513904571533,
+      0.7982513308525085
+    ],
+    "expected_axis_height_m": 0.79825,
+    "pass": false
+  },
+  "red_hole_bottom_rays": [
+    {
+      "hit": true,
+      "position": [
+        0.9514999985694885,
+        -1.8680000305175781,
+        0.7749999761581421
+      ],
+      "collision": "/World/BatteryWorkcell/Props/RedFoam/Body",
+      "ray_origin_local_m": [
+        -0.069,
+        -0.083,
+        0.794
+      ],
+      "expected_bottom_z_m": 0.775,
+      "pass": true
+    },
+    {
+      "hit": true,
+      "position": [
+        0.9514999985694885,
+        -1.8880000114440918,
+        0.7749999761581421
+      ],
+      "collision": "/World/BatteryWorkcell/Props/RedFoam/Body",
+      "ray_origin_local_m": [
+        -0.049,
+        -0.083,
+        0.794
+      ],
+      "expected_bottom_z_m": 0.775,
+      "pass": true
+    },
+    {
+      "hit": true,
+      "position": [
+        0.9514999985694885,
+        -1.9079999923706055,
+        0.7749999761581421
+      ],
+      "collision": "/World/BatteryWorkcell/Props/RedFoam/Body",
+      "ray_origin_local_m": [
+        -0.029,
+        -0.083,
+        0.794
+      ],
+      "expected_bottom_z_m": 0.775,
+      "pass": true
+    }
+  ],
+  "red_solid_top_ray": {
+    "hit": true,
+    "position": [
+      0.934499979019165,
+      -1.8880000114440918,
+      0.7879999876022339
+    ],
+    "collision": "/World/BatteryWorkcell/Props/RedFoam/Body",
+    "ray_origin_local_m": [
+      -0.049,
+      -0.1,
+      0.794
+    ],
+    "pass": true
+  },
+  "table_through_slot_ray": {
+    "hit": false,
+    "position": [],
+    "collision": "",
+    "ray_origin_local_m": [
+      0.0,
+      0.15449999999999997,
+      0.745
+    ],
+    "pass": true
+  },
+  "table_solid_surface_ray": {
+    "hit": true,
+    "position": [
+      1.1290000677108765,
+      -1.9370001554489136,
+      0.7400001883506775
+    ],
+    "collision": "/World/BatteryWorkcell/Table/Tabletop",
+    "ray_origin_local_m": [
+      0.0,
+      0.09449999999999997,
+      0.745
+    ],
+    "pass": true
+  },
+  "native_cameras": {
+    "count": 3,
+    "same_physics_step": true,
+    "nonempty": true
+  },
+  "review_images": {
+    "ReviewSetup": "Robot visible",
+    "other_views": "Robot hidden for object-only inspection; no physics changes or scene save"
+  }
+}

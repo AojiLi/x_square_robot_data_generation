@@ -65,13 +65,13 @@ def actuator_configs(kinematics, locked_joints=()):
 
 
 class RoomTaskSim:
-    def __init__(self, application, *, device="cuda:0", cameras=False, seed=0, review_camera=False, diagnostic_self_collision=True, diagnostic_mimic=True, diagnostic_contacts=False):
+    def __init__(self, application, *, device="cuda:0", cameras=False, seed=0, review_camera=False, diagnostic_self_collision=True, diagnostic_mimic=True, diagnostic_contacts=False, config_path=None, scene_path=None):
         self.application = application
-        self.config = json.loads((ASSETS / "task_config.json").read_text())
+        self.config = json.loads(Path(config_path or ASSETS / "task_config.json").read_text())
         self.kinematics = RobotKinematics()
         self.frames = json.loads((ASSETS / "robot_frames.json").read_text())
         self.rng = np.random.default_rng(seed)
-        stage = open_stage(str(ASSETS / "room01_manipulation.usda"))
+        stage = open_stage(str(scene_path or ASSETS / "room01_manipulation.usda"))
         cache = UsdUtils.StageCache.Get()
         omni.usd.get_context().attach_stage_with_callback(cache.Insert(stage).ToLongInt())
         self.stage = stage
@@ -81,8 +81,10 @@ class RoomTaskSim:
         if diagnostic_contacts:
             from pxr import PhysxSchema, PhysicsSchemaTools, UsdPhysics
             from omni.physx import get_physx_simulation_interface
+            contact_actor_prefixes = ("/World/Robot/", "/World/Task/") + tuple(
+                spec["prim_path"] for spec in self.config.get("task_objects", {}).values())
             for prim in stage.Traverse():
-                if prim.HasAPI(UsdPhysics.RigidBodyAPI) and str(prim.GetPath()).startswith("/World/Robot/"):
+                if prim.HasAPI(UsdPhysics.RigidBodyAPI) and str(prim.GetPath()).startswith(contact_actor_prefixes):
                     PhysxSchema.PhysxContactReportAPI.Apply(prim).CreateThresholdAttr(0.)
             def on_contacts(headers, data):
                 for header in headers:
@@ -122,10 +124,18 @@ class RoomTaskSim:
             actuators=actuator_configs(self.kinematics, self.config.get("locked_joint_names", [])),
         )
         self.robot = Articulation(robot_cfg)
-        self.cube = RigidObject(RigidObjectCfg(
-            prim_path="/World/Task/RedCube", spawn=None,
-            init_state=RigidObjectCfg.InitialStateCfg(pos=tuple(self.config["cube_position"])),
-        ))
+        self.object_specs = self.config.get("task_objects", {
+            "RedCube": {"prim_path": "/World/Task/RedCube", "position": self.config["cube_position"]},
+        })
+        self.objects = {
+            name: RigidObject(RigidObjectCfg(
+                prim_path=spec["prim_path"], spawn=None,
+                init_state=RigidObjectCfg.InitialStateCfg(
+                    pos=tuple(spec["position"]), rot=tuple(spec.get("orientation_xyzw", [0., 0., 0., 1.])),
+                ),
+            )) for name, spec in self.object_specs.items()
+        }
+        self.cube = self.objects[self.config.get("primary_object", "RedCube")]
         self.cameras = {}
         if cameras:
             from room01_sim.sensors import create_cameras
@@ -137,7 +147,8 @@ class RoomTaskSim:
                                                    data_types=["rgb"], update_period=0., update_latest_camera_pose=True))
         self.sim.reset()
         self.robot.update(self.dt)
-        self.cube.update(self.dt)
+        for obj in self.objects.values():
+            obj.update(self.dt)
         self.joint_names = list(self.robot.joint_names)
         self.action_indices = [self.joint_names.index(name) for name in ACTION_JOINTS]
         self.mimic_indices = [(self.joint_names.index(name), self.joint_names.index(joint["mimic"]["joint"]), float(joint["mimic"].get("multiplier", 1.)))
@@ -165,10 +176,12 @@ class RoomTaskSim:
                 gravity[:, distal] = 0.
             self.robot.set_joint_effort_target_index(target=gravity)
             self.robot.write_data_to_sim()
-            self.cube.write_data_to_sim()
+            for obj in self.objects.values():
+                obj.write_data_to_sim()
             self.sim.step(render=render and (index == steps-1))
             self.robot.update(self.dt)
-            self.cube.update(self.dt)
+            for obj in self.objects.values():
+                obj.update(self.dt)
             self.elapsed_steps += 1
             if not bool(torch.isfinite(tensor(self.robot.data.joint_pos)).all()):
                 raise RuntimeError(f"Nonfinite robot joint state at physics step {self.elapsed_steps}")
@@ -177,20 +190,39 @@ class RoomTaskSim:
         if self.review_camera:
             self.review_camera.update(steps*self.dt)
 
-    def reset(self, *, randomize=True, seed=None):
+    def reset(self, *, randomize=True, seed=None, action_pose=None, object_poses=None):
         if seed is not None:
             self.rng = np.random.default_rng(seed)
         q = tensor(self.robot.data.default_joint_pos).clone()
+        if action_pose is not None:
+            action_pose = np.asarray(action_pose, dtype=np.float32)
+            if action_pose.shape != (len(ACTION_JOINTS),) or not np.isfinite(action_pose).all():
+                raise ValueError("Reset action_pose must contain 26 finite joint angles")
+            if np.any(action_pose < self.action_lower-1e-6) or np.any(action_pose > self.action_upper+1e-6):
+                raise ValueError("Reset action_pose exceeds robot joint limits")
+            q[0, self.action_indices] = torch.as_tensor(action_pose, device=self.device)
+            for distal, proximal, multiplier in self.mimic_indices:
+                q[:, distal] = multiplier*q[:, proximal]
+        if object_poses is not None:
+            if set(object_poses) != set(self.objects):
+                raise ValueError("Reset must specify every task object exactly once")
+            for value in object_poses.values():
+                value = np.asarray(value, dtype=float)
+                if value.shape != (7,) or not np.isfinite(value).all() or not np.isclose(np.linalg.norm(value[3:]), 1., atol=1e-5):
+                    raise ValueError("Object reset pose must be finite xyz + normalized xyzw")
         self.targets.copy_(q)
         self.robot.write_joint_state_to_sim_index(position=q, velocity=torch.zeros_like(q))
         self.robot.reset()
-        pose = tensor(self.cube.data.default_root_pose).clone()
-        if randomize:
-            bounds = np.asarray(self.config["object_spawn_xy_range"])
-            pose[0, :2] = torch.tensor(self.rng.uniform(bounds[:, 0], bounds[:, 1]), device=self.device, dtype=torch.float32)
-        self.cube.write_root_pose_to_sim_index(root_pose=pose)
-        self.cube.write_root_velocity_to_sim_index(root_velocity=torch.zeros((1, 6), device=self.device))
-        self.cube.reset()
+        for name, obj in self.objects.items():
+            pose = tensor(obj.data.default_root_pose).clone()
+            if object_poses is not None:
+                pose[0] = torch.as_tensor(object_poses[name], device=self.device, dtype=pose.dtype)
+            elif randomize and obj is self.cube:
+                bounds = np.asarray(self.config["object_spawn_xy_range"])
+                pose[0, :2] = torch.tensor(self.rng.uniform(bounds[:, 0], bounds[:, 1]), device=self.device, dtype=torch.float32)
+            obj.write_root_pose_to_sim_index(root_pose=pose)
+            obj.write_root_velocity_to_sim_index(root_velocity=torch.zeros((1, 6), device=self.device))
+            obj.reset()
         self.advance_physics(48)
         self.episode_step = 0
         self.last_action = self.targets[0, self.action_indices].cpu().numpy().copy()
@@ -215,12 +247,25 @@ class RoomTaskSim:
             matrix[:3, 3] = body[:3]
             pose = matrix@np.asarray(frame["body_to_frame"])
             observation[side+"_hand_pose_xyzw"] = np.concatenate([pose[:3, 3], quaternion_xyzw(pose[:3, :3])]).astype(np.float32)
+        if "task_objects" in self.config:
+            observation["object_names"] = list(self.objects)
+            observation["object_poses_xyzw"] = np.stack([
+                tensor(obj.data.root_link_pose_w)[0].cpu().numpy().copy() for obj in self.objects.values()
+            ])
+            observation["object_velocities"] = np.stack([
+                tensor(obj.data.root_link_vel_w)[0].cpu().numpy().copy() for obj in self.objects.values()
+            ])
         if images and self.cameras:
             from room01_sim.sensors import capture_frames
             observation.update(capture_frames(self))
         return observation
 
     def step(self, action, *, images=True):
+        if self.config.get("reward_model") == "unconfigured_battery_insertion":
+            raise NotImplementedError(
+                "The battery workcell currently supports scene/control preview and camera capture. "
+                "Its insertion reward and foam compliance have not been validated; the cube lift reward does not apply."
+            )
         action = np.asarray(action, dtype=np.float32)
         if action.shape != (len(ACTION_JOINTS),) or not np.isfinite(action).all():
             raise ValueError(f"Action must be {len(ACTION_JOINTS)} finite joint targets in radians")

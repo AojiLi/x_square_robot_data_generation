@@ -1,0 +1,153 @@
+{
+  "version": 2,
+  "task": "battery_pick_and_insert",
+  "source": "user photos and measurements, 2026-09-16",
+  "frame": {
+    "definition": "table-local x=image right, y=toward rear wall, z=up; origin at table center on floor",
+    "world_origin_m": [
+      1.76,
+      -0.91,
+      0.0
+    ],
+    "rotation_world_from_local": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "registration_status": "User confirmed robot and white table relocated beside the stationary computer workstation; absolute placement estimated from photo adjacency and existing room geometry."
+  },
+  "table": {
+    "length_m": 1.1,
+    "depth_m": 0.57,
+    "height_m": 0.74,
+    "tabletop_thickness_m": 0.024,
+    "slot_total_length_m": 0.23,
+    "slot_straight_length_m": 0.153,
+    "slot_back_edge_distance_m": 0.092,
+    "slot_center_x_m": 0.0,
+    "include_photo_markers": true
+  },
+  "props": {
+    "table_top_z_m": 0.74,
+    "yellow_dims_m": [
+      0.08,
+      0.098,
+      0.052
+    ],
+    "battery_diameter_m": 0.0125,
+    "battery_length_m": 0.049,
+    "battery_mass_kg": 0.02,
+    "red_dims_m": [
+      0.072,
+      0.048,
+      0.048
+    ],
+    "hole_diameter_m": 0.0125,
+    "hole_depth_m": 0.013,
+    "hole_pitch_m": 0.02,
+    "yellow_positions_xy_m": [
+      [
+        -0.27,
+        -0.068
+      ],
+      [
+        0.215,
+        -0.067
+      ]
+    ],
+    "battery_yaw_deg": [
+      60,
+      20
+    ],
+    "red_position_xy_m": [
+      -0.049,
+      -0.083
+    ],
+    "red_yaw_deg": 0,
+    "battery_offsets_xy_m": [
+      [
+        -0.003,
+        0.009
+      ],
+      [
+        -0.012,
+        0.003
+      ]
+    ]
+  },
+  "provenance": {
+    "measured_by_user": [
+      "table.length_m",
+      "table.depth_m",
+      "table.height_m",
+      "table.slot_total_length_m",
+      "table.slot_straight_length_m",
+      "table.slot_back_edge_distance_m",
+      "props.yellow_dims_m",
+      "props.battery_length_m",
+      "props.red_dims_m",
+      "props.battery_diameter_m",
+      "props.hole_diameter_m",
+      "props.hole_depth_m"
+    ],
+    "interpretations": {
+      "table.slot_width_m": "Derived total minus straight length = 0.077m, assuming capsule shape",
+      "table.slot_back_edge_distance_m": "Upper table edge interpreted as rear edge by wall",
+      "props.hole_depth_m": "User follow-up 1.3 interpreted in cm consistent with original measurements = 0.013m",
+      "props.hole_diameter_m": "User specified same nominal diameter as battery, 0.0125m; no artificial clearance added"
+    },
+    "unmeasured": [
+      "table.tabletop_thickness_m",
+      "table.slot_center_x_m",
+      "props.hole_pitch_m",
+      "props.battery_mass_kg",
+      "all material and friction parameters",
+      "object xy positions and yaw",
+      "robot-to-table registration",
+      "relocated table and robot absolute room placement"
+    ],
+    "physics_model": "Yellow and red foam are rigid approximations; red fixture held static based on visible tape. Nominal battery/hole diameters are equal; real compliance, contact/friction and insertion forces remain uncalibrated.",
+    "photo_layout": "Centers estimated from multiple supplied photographs; approximately 1-2cm uncertainty, not measured robot-frame poses",
+    "user_scene_cleanup": "Remove the white packaging box and its barcode-like decorative stripes beside the robot, per user request."
+  },
+  "validation_scope": "Scene geometry, collision openings and reset stability. No completed robotic grasp-and-insert demonstration or real-robot execution is claimed.",
+  "expected_seated_battery_exposure_m": 0.036000000000000004,
+  "relocation": {
+    "user_correction": "Robot and white table moved beside the computer; computer workstation remained fixed.",
+    "original_table_center_world_m": [
+      1.0345,
+      -1.937,
+      0.0
+    ],
+    "translation_from_original_world_m": [
+      0.7255,
+      1.027,
+      0.0
+    ],
+    "computer_workstation_moved": false,
+    "robot_table_relative_transform": "preserved from original workcell",
+    "placement_basis": "White table to photo-right of stationary optical/computer desk, rear edges aligned; approximately 14mm lateral gap from modeled desk. Absolute placement remains estimated.",
+    "powerstrip_translation_world_m": [
+      0.97,
+      0.32,
+      0.586
+    ],
+    "loose_accessories": "Old headset intersecting new tabletop hidden; powerstrip moved from new robot footprint to under desk. These accessory positions are photo-based estimates."
+  },
+  "removed_background_object_prefixes": [
+    "White_retail_box",
+    "Retail_box_print"
+  ]
+}

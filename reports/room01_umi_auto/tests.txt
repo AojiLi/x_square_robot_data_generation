@@ -1,0 +1,13 @@
+test_asset_detection_does_not_treat_skin_as_red_cube (test_umi_layout.LayoutTests.test_asset_detection_does_not_treat_skin_as_red_cube) ... ok
+test_failed_repeat_invalidates_successful_cached_layout (test_umi_layout.LayoutTests.test_failed_repeat_invalidates_successful_cached_layout) ... ok
+test_joint_release_region_can_produce_box_layout (test_umi_layout.LayoutTests.test_joint_release_region_can_produce_box_layout) ... ok
+test_low_sweep_rejected_even_when_release_points_fit (test_umi_layout.LayoutTests.test_low_sweep_rejected_even_when_release_points_fit) ... ok
+test_reference_digest_detects_motion_changes (test_umi_layout.LayoutTests.test_reference_digest_detects_motion_changes) ... ok
+test_sat_checks_rotated_box_edges (test_umi_layout.LayoutTests.test_sat_checks_rotated_box_edges) ... ok
+test_stage_detection_uses_signal_not_episode_timestamps (test_umi_layout.LayoutTests.test_stage_detection_uses_signal_not_episode_timestamps) ... ok
+test_unused_invalid_raw_prefix_does_not_reject_valid_episode (test_umi_layout.LayoutTests.test_unused_invalid_raw_prefix_does_not_reject_valid_episode) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.794s
+
+OK

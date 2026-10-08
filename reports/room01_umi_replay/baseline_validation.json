@@ -1,0 +1,54 @@
+{
+  "engineering_checks_pass": true,
+  "task_success": false,
+  "episode": "/home/aoji/x_square_robot_data_generation/outputs/room01/umi_replays/20260912_092925",
+  "dataset": "/home/aoji/x_square_robot_data_generation/outputs/room01/umi_datasets/baseline_diagnostic",
+  "checks": {
+    "source_files_sha256": 14,
+    "source_pose_contract": {
+      "state_pose_max_abs_error": 2.966837042706061e-08,
+      "action_max_abs_error": 2.9800576450966787e-08,
+      "raw_local_origin_offset_m": [
+        -0.042,
+        0.0,
+        0.0
+      ],
+      "frames": 123,
+      "first_state_predecessor_raw_row": 6
+    },
+    "shared_anchor_actions_and_world_invariance": true,
+    "dynamic_scene_objects": {
+      "RedBig": {
+        "mass_kg": 0.07199999690055847,
+        "collider_count": 1
+      },
+      "Blue": {
+        "mass_kg": 0.07199999690055847,
+        "collider_count": 1
+      },
+      "Green": {
+        "mass_kg": 0.07199999690055847,
+        "collider_count": 1
+      },
+      "RedSmall": {
+        "mass_kg": 0.041999999433755875,
+        "collider_count": 1
+      },
+      "BlackBox": {
+        "mass_kg": 0.10999999940395355,
+        "collider_count": 5
+      }
+    },
+    "finite_states_finger_mapping_10hz_observations_30hz_controls": true,
+    "all_three_native_cameras_synchronized": true,
+    "export_labels_from_achieved_motion_and_padding_stats": true,
+    "failure_not_marked_training_success": true
+  },
+  "limits": {
+    "tcp_measured": false,
+    "scene_registration_measured": false,
+    "camera_extrinsics_measured": false,
+    "wood_friction_measured": false,
+    "real_robot_training_validated": false
+  }
+}
